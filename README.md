@@ -1,8 +1,8 @@
-# <img src="https://microsoft.github.io/VisTalk/vistalk-icon.svg" width="64px" align="left" style="margin-right: 10px;" />  VisTalk: A JavaScript toolkit for Natural Language-based Visualization Authoring
+# <img src="https://microsoft.github.io/VisTalk/vistalk-icon.svg" width="24px" />  VisTalk: A JavaScript toolkit for Natural Language-based Visualization Authoring
 
-# 🚧 This repo is currenty under construction.
+# 🚧 This repo is currenty under construction 🚧
 
-We will add the dataset, model, JavaScript SDK along with our work:
+We will public the VisTalk JavaScript SDK, a Web App and the dataset, DNN model source code along with our work:
 > Y. Wang et al., "[Towards Natural Language-Based Visualization Authoring](https://www.microsoft.com/en-us/research/publication/towards-natural-language-based-visualization-authoring/)," in IEEE Transactions on Visualization and Computer Graphics, 2022, doi: 10.1109/TVCG.2022.3209357.
 
 ## Contributing
