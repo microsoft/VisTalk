@@ -3,7 +3,7 @@
 # 🚧 This repo is currenty under construction.
 
 We will add the dataset, model, JavaScript SDK along with our work:
-> Y. Wang et al., "Towards Natural Language-Based Visualization Authoring," in IEEE Transactions on Visualization and Computer Graphics, 2022, doi: 10.1109/TVCG.2022.3209357.
+> Y. Wang et al., "[Towards Natural Language-Based Visualization Authoring](https://www.microsoft.com/en-us/research/publication/towards-natural-language-based-visualization-authoring/)," in IEEE Transactions on Visualization and Computer Graphics, 2022, doi: 10.1109/TVCG.2022.3209357.
 
 ## Contributing
 
