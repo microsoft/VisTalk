@@ -1,4 +1,4 @@
-# <img src="https://microsoft.github.io/VisTalk/vistalk-icon.svg" width="24px" />  VisTalk: A JavaScript toolkit for Natural Language-based Visualization Authoring
+# <img src="https://microsoft.github.io/VisTalk/vistalk-icon.svg" width="24px" />  Vis Talk: A JavaScript toolkit for Natural Language-based Visualization Authoring
 
 # 🚧 This repo is currenty under construction 🚧
 
