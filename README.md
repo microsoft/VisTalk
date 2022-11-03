@@ -6,7 +6,7 @@ We will public the VisTalk JavaScript SDK, a Web App and the dataset, DNN model 
 > Y. Wang et al., "[Towards Natural Language-Based Visualization Authoring](https://www.microsoft.com/en-us/research/publication/towards-natural-language-based-visualization-authoring/)," in IEEE Transactions on Visualization and Computer Graphics, 2022, doi: 10.1109/TVCG.2022.3209357.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
 
 ## Contributing
 
