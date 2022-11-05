@@ -31,7 +31,7 @@ $ npm install @vis-talk/vega-builder
 ```shell
 $ npx create-react-app my-vis-app
 $ cd my-vis-app
-$ npm install @vis-talk-/vega-builder vega vega-lite react-vega
+$ npm install @vis-talk/vega-builder vega vega-lite react-vega
 ```
 
 Modify App.js to:
