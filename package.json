@@ -11,7 +11,8 @@
     "start": "nx serve",
     "build": "nx run-many --target=build --all=true",
     "test": "nx run-many --target=test --all=true",
-    "package": "nx run-many --target=package --all=true"
+    "package": "nx run-many --target=package --all=true",
+    "e2e": "nx run-many --target=e2e --all=true"
   },
   "private": true,
   "dependencies": {
