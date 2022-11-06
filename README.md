@@ -155,14 +155,31 @@ builder.setInput([
 ![Chart 3](https://microsoft.github.io/VisTalk/vistalk-highlight.svg "Chart 3")
 
 # Build from source code
+
+## Enlist code
+```shell
+$ git clone https://github.com/microsoft/VisTalk.git
+$ cd VisTalk
+```
+
+## Build & Run
 ```shell
 $ yarn
 $ yarn build
+$ yarn start
 ```
-## Run Tests
+Then open browser and navigate to http://localhost:4200/
+
+## Run Unit Tests
 ```shell
 $ yarn test
 ```
+
+## Run E2E Tests
+```shell
+$ yarn e2e
+```
+Then you can explore captured screenshots and videos from <proj>/dist/cypress/apps/playground-e2e
 
 ## Build package
 ```shell
