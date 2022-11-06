@@ -1517,7 +1517,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/react@^15.0.10":
+"@nrwl/react@15.0.10":
   version "15.0.10"
   resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.0.10.tgz#fd865ffc1b5059f2180137053c80ca69f7c6c600"
   integrity sha512-9d1H7XCPRyR8W+aghdVxpeJI6iWuTxU0K8oL3proWDa4Slxh6MjNGT4+HA+I0YyNNDQ53I2Wy93ptQClFMF4yA==
@@ -1594,7 +1594,7 @@
   dependencies:
     nx "15.0.10"
 
-"@nrwl/web@15.0.10", "@nrwl/web@^15.0.10":
+"@nrwl/web@15.0.10":
   version "15.0.10"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.0.10.tgz#95a8415bc0b3d960b08fbdd9c3781029fcd9a252"
   integrity sha512-fikN/ZO53S+xAjNqTxIXQBxGXrXBd9tuHUFDkaB7Q2o1TrMLtrcxwltEvYOHPVAdtVD6V1ENV7xYQmNEU1+3GA==
