@@ -14,3 +14,5 @@ jobs:
           fetch-depth: 0
       - run: yarn install --frozen-lockfile
       - run: npx nx workspace-lint
+      - run: nx run-many --target=build --all=true
+      - run: nx run-many --target=test --all=true
