@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@vis-talk/interpreter": ["packages/interpreter/src/index.ts"],
-      "@vis-talk/vega-builder": ["packages/vega-builder/src/index.ts"]
+      "@vis-talk/interpreter": ["libs/interpreter/src/index.ts"],
+      "@vis-talk/vega-builder": ["libs/vega-builder/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

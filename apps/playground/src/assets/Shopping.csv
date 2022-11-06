@@ -1,0 +1,1001 @@
+﻿Date,Customer,Category,Age,Purchase
+1/1/2020,C000001,Clothing,2 - 4 Years,85
+1/1/2020,C000002,Clothing,8 - 11 Years,63
+1/1/2020,C000003,Toys,2 - 4 Years,315
+2/2/2020,C000004,Clothing,2 - 4 Years,94
+2/2/2020,C000005,Outdoor Play,8 - 11 Years,740
+2/2/2020,C000006,Electronics,12 - 14 Years,319
+2/2/2020,C000007,Bikes,12 - 14 Years,214
+2/2/2020,C000008,Electronics,5 - 7 Years,481
+2/2/2020,C000009,Electronics,12 - 14 Years,279
+2/2/2020,C000010,Electronics,Birth - 12 Monthes,244
+2/2/2020,C000011,Games,12 - 24 Monthes,258
+2/2/2020,C000012,Bikes,12 - 24 Monthes,213
+2/2/2020,C000013,Games,2 - 4 Years,268
+3/3/2020,C000014,Games,8 - 11 Years,2344
+3/3/2020,C000015,Toys,12 - 24 Monthes,317
+3/3/2020,C000016,Electronics,8 - 11 Years,2223
+3/3/2020,C000017,Foods,12 - 24 Monthes,1216
+3/3/2020,C000018,Electronics,12 - 24 Monthes,2363
+3/3/2020,C000001,Toys,2 - 4 Years,1106
+3/3/2020,C000002,Games,8 - 11 Years,909
+4/4/2020,C000019,Foods,12 - 14 Years,1339
+4/4/2020,C000020,Toys,2 - 4 Years,1427
+4/4/2020,C000021,Games,12 - 14 Years,1089
+4/4/2020,C000022,Toys,8 - 11 Years,322
+4/4/2020,C000023,Foods,12 - 24 Monthes,1862
+4/4/2020,C000024,Outdoor Play,Big Kids,2576
+4/4/2020,C000025,Games,12 - 24 Monthes,1616
+4/4/2020,C000026,Foods,2 - 4 Years,3918
+4/4/2020,C000027,Electronics,5 - 7 Years,1603
+4/4/2020,C000028,Games,12 - 24 Monthes,2515
+4/4/2020,C000004,Clothing,2 - 4 Years,245
+4/4/2020,C000006,Foods,12 - 14 Years,1322
+4/4/2020,C000007,Clothing,12 - 14 Years,95
+4/4/2020,C000009,Games,12 - 14 Years,2200
+4/4/2020,C000010,Games,Birth - 12 Monthes,1179
+4/4/2020,C000011,Electronics,12 - 24 Monthes,1849
+4/4/2020,C000012,Games,12 - 24 Monthes,658
+4/4/2020,C000013,Games,2 - 4 Years,2586
+5/5/2020,C000029,Toys,2 - 4 Years,176
+5/5/2020,C000030,Games,12 - 24 Monthes,241
+5/5/2020,C000031,Electronics,12 - 24 Monthes,315
+5/5/2020,C000032,Bikes,8 - 11 Years,120
+5/5/2020,C000033,Outdoor Play,12 - 14 Years,806
+5/5/2020,C000002,Toys,8 - 11 Years,84
+5/5/2020,C000003,Toys,2 - 4 Years,304
+5/5/2020,C000005,Games,8 - 11 Years,230
+5/5/2020,C000014,Electronics,8 - 11 Years,407
+5/5/2020,C000015,Clothing,12 - 24 Monthes,69
+5/5/2020,C000016,Outdoor Play,8 - 11 Years,238
+6/6/2020,C000034,Electronics,2 - 4 Years,494
+6/6/2020,C000035,Foods,8 - 11 Years,1056
+6/6/2020,C000036,Clothing,12 - 14 Years,72
+6/6/2020,C000037,Electronics,12 - 14 Years,410
+6/6/2020,C000038,Games,5 - 7 Years,644
+6/6/2020,C000039,Toys,12 - 24 Monthes,321
+6/6/2020,C000001,Bikes,2 - 4 Years,254
+6/6/2020,C000006,Clothing,12 - 14 Years,59
+6/6/2020,C000009,Books,12 - 14 Years,188
+6/6/2020,C000010,Clothing,Birth - 12 Monthes,94
+6/6/2020,C000018,Clothing,12 - 24 Monthes,97
+6/6/2020,C000019,Toys,12 - 14 Years,315
+6/6/2020,C000021,Electronics,12 - 14 Years,693
+6/6/2020,C000025,Clothing,12 - 24 Monthes,72
+6/6/2020,C000027,Electronics,5 - 7 Years,270
+6/6/2020,C000028,Foods,12 - 24 Monthes,1051
+7/1/2020,C000040,Clothing,2 - 4 Years,21
+7/1/2020,C000041,Games,12 - 24 Monthes,191
+7/1/2020,C000002,Toys,8 - 11 Years,89
+7/1/2020,C000003,Clothing,2 - 4 Years,82
+7/1/2020,C000004,Games,2 - 4 Years,484
+7/1/2020,C000005,Foods,8 - 11 Years,1106
+7/1/2020,C000007,Toys,12 - 14 Years,180
+7/1/2020,C000008,Electronics,5 - 7 Years,307
+7/1/2020,C000012,Foods,12 - 24 Monthes,894
+7/1/2020,C000013,Bikes,2 - 4 Years,432
+7/1/2020,C000014,Outdoor Play,8 - 11 Years,823
+7/1/2020,C000015,Toys,12 - 24 Monthes,219
+7/1/2020,C000016,Electronics,8 - 11 Years,320
+7/1/2020,C000017,Foods,12 - 24 Monthes,317
+7/1/2020,C000023,Games,12 - 24 Monthes,198
+7/1/2020,C000024,Toys,Big Kids,366
+7/1/2020,C000032,Games,8 - 11 Years,322
+8/1/2020,C000042,Toys,2 - 4 Years,304
+8/1/2020,C000043,Books,Big Kids,64
+8/1/2020,C000044,Toys,12 - 14 Years,227
+8/1/2020,C000045,Bikes,8 - 11 Years,334
+8/1/2020,C000046,Games,Big Kids,590
+8/1/2020,C000047,Clothing,12 - 14 Years,72
+8/1/2020,C000010,Electronics,Birth - 12 Monthes,274
+8/1/2020,C000011,Bikes,12 - 24 Monthes,384
+8/1/2020,C000019,Toys,12 - 14 Years,108
+8/1/2020,C000020,Books,2 - 4 Years,80
+8/1/2020,C000021,Bikes,12 - 14 Years,358
+8/1/2020,C000022,Clothing,8 - 11 Years,35
+8/1/2020,C000025,Books,12 - 24 Monthes,153
+8/1/2020,C000026,Foods,2 - 4 Years,702
+8/1/2020,C000027,Toys,5 - 7 Years,214
+8/1/2020,C000028,Bikes,12 - 24 Monthes,206
+8/1/2020,C000029,Books,2 - 4 Years,178
+8/1/2020,C000030,Foods,12 - 24 Monthes,791
+8/1/2020,C000033,Foods,12 - 14 Years,419
+8/1/2020,C000036,Games,12 - 14 Years,838
+8/1/2020,C000037,Bikes,12 - 14 Years,360
+8/1/2020,C000038,Books,5 - 7 Years,174
+8/1/2020,C000039,Bikes,12 - 24 Monthes,260
+9/1/2020,C000048,Foods,12 - 14 Years,472
+9/1/2020,C000049,Clothing,12 - 24 Monthes,51
+9/1/2020,C000050,Toys,8 - 11 Years,148
+9/1/2020,C000051,Toys,12 - 14 Years,295
+9/1/2020,C000052,Outdoor Play,5 - 7 Years,301
+9/1/2020,C000053,Electronics,5 - 7 Years,568
+9/1/2020,C000054,Toys,8 - 11 Years,334
+9/1/2020,C000055,Games,5 - 7 Years,738
+9/1/2020,C000056,Toys,5 - 7 Years,340
+9/1/2020,C000057,Games,5 - 7 Years,479
+9/1/2020,C000058,Games,2 - 4 Years,882
+9/1/2020,C000003,Electronics,2 - 4 Years,534
+9/1/2020,C000004,Electronics,2 - 4 Years,255
+9/1/2020,C000005,Clothing,8 - 11 Years,79
+9/1/2020,C000006,Foods,12 - 14 Years,540
+9/1/2020,C000009,Bikes,12 - 14 Years,428
+9/1/2020,C000012,Clothing,12 - 24 Monthes,68
+9/1/2020,C000016,Toys,8 - 11 Years,178
+9/1/2020,C000018,Outdoor Play,12 - 24 Monthes,434
+9/1/2020,C000032,Outdoor Play,8 - 11 Years,332
+9/1/2020,C000035,Outdoor Play,8 - 11 Years,675
+9/1/2020,C000040,Toys,2 - 4 Years,384
+10/1/2020,C000059,Games,5 - 7 Years,1444
+10/1/2020,C000060,Bikes,8 - 11 Years,1074
+10/1/2020,C000061,Toys,2 - 4 Years,567
+10/1/2020,C000062,Clothing,8 - 11 Years,164
+10/1/2020,C000063,Outdoor Play,2 - 4 Years,3023
+10/1/2020,C000008,Clothing,5 - 7 Years,273
+10/1/2020,C000010,Electronics,Birth - 12 Monthes,1961
+10/1/2020,C000013,Clothing,2 - 4 Years,330
+10/1/2020,C000014,Games,8 - 11 Years,2282
+10/1/2020,C000015,Bikes,12 - 24 Monthes,1362
+10/1/2020,C000017,Foods,12 - 24 Monthes,3529
+10/1/2020,C000019,Games,12 - 14 Years,2702
+10/1/2020,C000022,Outdoor Play,8 - 11 Years,2644
+10/1/2020,C000023,Games,12 - 24 Monthes,1937
+10/1/2020,C000024,Clothing,Big Kids,108
+10/1/2020,C000027,Toys,5 - 7 Years,295
+10/1/2020,C000034,Electronics,2 - 4 Years,731
+10/1/2020,C000036,Games,12 - 14 Years,2619
+10/1/2020,C000037,Clothing,12 - 14 Years,104
+10/1/2020,C000038,Outdoor Play,5 - 7 Years,958
+10/1/2020,C000042,Clothing,2 - 4 Years,231
+10/1/2020,C000043,Outdoor Play,Big Kids,2586
+10/1/2020,C000045,Bikes,8 - 11 Years,948
+10/1/2020,C000046,Foods,Big Kids,2477
+1/2/2021,C000064,Bikes,12 - 24 Monthes,1015
+1/2/2021,C000065,Bikes,12 - 14 Years,1658
+1/2/2021,C000066,Toys,Birth - 12 Monthes,766
+1/2/2021,C000067,Bikes,2 - 4 Years,1048
+1/2/2021,C000068,Bikes,5 - 7 Years,390
+1/2/2021,C000069,Foods,5 - 7 Years,3353
+1/2/2021,C000070,Bikes,5 - 7 Years,876
+1/2/2021,C000071,Clothing,12 - 24 Monthes,339
+1/2/2021,C000072,Foods,8 - 11 Years,3931
+1/2/2021,C000073,Clothing,8 - 11 Years,257
+1/2/2021,C000003,Foods,2 - 4 Years,2078
+1/2/2021,C000004,Toys,2 - 4 Years,718
+1/2/2021,C000011,Toys,12 - 24 Monthes,1437
+1/2/2021,C000012,Books,12 - 24 Monthes,315
+1/2/2021,C000016,Electronics,8 - 11 Years,1217
+1/2/2021,C000018,Games,12 - 24 Monthes,2647
+1/2/2021,C000031,Toys,12 - 24 Monthes,1312
+1/2/2021,C000032,Electronics,8 - 11 Years,1898
+1/2/2021,C000033,Outdoor Play,12 - 14 Years,1390
+1/2/2021,C000035,Clothing,8 - 11 Years,157
+1/2/2021,C000044,Foods,12 - 14 Years,2320
+1/2/2021,C000048,Toys,12 - 14 Years,1280
+1/2/2021,C000049,Books,12 - 24 Monthes,405
+1/2/2021,C000051,Electronics,12 - 14 Years,1459
+1/2/2021,C000052,Toys,5 - 7 Years,861
+1/2/2021,C000053,Clothing,5 - 7 Years,193
+1/2/2021,C000054,Games,8 - 11 Years,1290
+1/2/2021,C000056,Bikes,5 - 7 Years,1116
+1/2/2021,C000057,Bikes,5 - 7 Years,1314
+2/12/2021,C000074,Foods,5 - 7 Years,859
+2/12/2021,C000075,Books,5 - 7 Years,71
+2/12/2021,C000076,Bikes,8 - 11 Years,130
+2/12/2021,C000077,Games,12 - 24 Monthes,597
+2/12/2021,C000078,Toys,Big Kids,168
+2/12/2021,C000079,Foods,Birth - 12 Monthes,3797
+2/12/2021,C000080,Bikes,5 - 7 Years,418
+2/12/2021,C000081,Bikes,Big Kids,1434
+2/12/2021,C000082,Foods,8 - 11 Years,730
+2/12/2021,C000083,Electronics,12 - 14 Years,456
+2/12/2021,C000006,Foods,12 - 14 Years,894
+2/12/2021,C000007,Books,12 - 14 Years,73
+2/12/2021,C000013,Toys,2 - 4 Years,326
+2/12/2021,C000019,Outdoor Play,12 - 14 Years,548
+2/12/2021,C000020,Clothing,2 - 4 Years,84
+2/12/2021,C000021,Outdoor Play,12 - 14 Years,625
+2/12/2021,C000022,Electronics,8 - 11 Years,172
+2/12/2021,C000028,Games,12 - 24 Monthes,392
+2/12/2021,C000029,Outdoor Play,2 - 4 Years,500
+2/12/2021,C000030,Electronics,12 - 24 Monthes,479
+2/12/2021,C000038,Games,5 - 7 Years,472
+2/12/2021,C000041,Foods,12 - 24 Monthes,703
+2/12/2021,C000042,Toys,2 - 4 Years,278
+2/12/2021,C000045,Books,8 - 11 Years,190
+2/12/2021,C000050,Bikes,8 - 11 Years,200
+2/12/2021,C000061,Foods,2 - 4 Years,529
+2/12/2021,C000062,Foods,8 - 11 Years,540
+2/12/2021,C000063,Toys,2 - 4 Years,284
+3/13/2021,C000084,Clothing,12 - 24 Monthes,81
+3/13/2021,C000085,Toys,12 - 14 Years,166
+3/13/2021,C000086,Electronics,2 - 4 Years,267
+3/13/2021,C000087,Toys,2 - 4 Years,106
+3/13/2021,C000088,Toys,Birth - 12 Monthes,262
+3/13/2021,C000002,Electronics,8 - 11 Years,498
+3/13/2021,C000003,Clothing,2 - 4 Years,72
+3/13/2021,C000008,Clothing,5 - 7 Years,62
+3/13/2021,C000011,Bikes,12 - 24 Monthes,296
+3/13/2021,C000023,Foods,12 - 24 Monthes,259
+3/13/2021,C000024,Games,Big Kids,202
+3/13/2021,C000027,Foods,5 - 7 Years,572
+3/13/2021,C000031,Games,12 - 24 Monthes,468
+3/13/2021,C000032,Foods,8 - 11 Years,661
+3/13/2021,C000033,Toys,12 - 14 Years,269
+3/13/2021,C000035,Electronics,8 - 11 Years,550
+3/13/2021,C000037,Games,12 - 14 Years,343
+3/13/2021,C000039,Bikes,12 - 24 Monthes,164
+3/13/2021,C000040,Toys,2 - 4 Years,378
+3/13/2021,C000044,Electronics,12 - 14 Years,220
+3/13/2021,C000047,Clothing,12 - 14 Years,23
+3/13/2021,C000051,Clothing,12 - 14 Years,27
+3/13/2021,C000052,Electronics,5 - 7 Years,458
+3/13/2021,C000054,Clothing,8 - 11 Years,38
+3/13/2021,C000055,Foods,5 - 7 Years,422
+3/13/2021,C000056,Toys,5 - 7 Years,191
+3/13/2021,C000059,Electronics,5 - 7 Years,438
+3/13/2021,C000064,Clothing,12 - 24 Monthes,56
+3/13/2021,C000067,Books,2 - 4 Years,126
+3/13/2021,C000068,Clothing,5 - 7 Years,95
+3/13/2021,C000069,Toys,5 - 7 Years,351
+3/13/2021,C000072,Electronics,8 - 11 Years,346
+4/3/2021,C000089,Outdoor Play,Big Kids,507
+4/3/2021,C000090,Clothing,Big Kids,77
+4/3/2021,C000091,Electronics,12 - 14 Years,688
+4/3/2021,C000092,Toys,12 - 24 Monthes,300
+4/3/2021,C000093,Toys,Big Kids,382
+4/3/2021,C000094,Games,12 - 24 Monthes,855
+4/3/2021,C000095,Bikes,2 - 4 Years,366
+4/3/2021,C000096,Electronics,12 - 14 Years,612
+4/3/2021,C000097,Clothing,2 - 4 Years,48
+4/3/2021,C000098,Clothing,8 - 11 Years,52
+4/3/2021,C000099,Foods,12 - 24 Monthes,305
+4/3/2021,C000001,Bikes,2 - 4 Years,236
+4/3/2021,C000005,Games,8 - 11 Years,351
+4/3/2021,C000007,Outdoor Play,12 - 14 Years,802
+4/3/2021,C000012,Electronics,12 - 24 Monthes,328
+4/3/2021,C000014,Toys,8 - 11 Years,95
+4/3/2021,C000016,Clothing,8 - 11 Years,21
+4/3/2021,C000018,Electronics,12 - 24 Monthes,536
+4/3/2021,C000022,Electronics,8 - 11 Years,169
+4/3/2021,C000026,Clothing,2 - 4 Years,29
+4/3/2021,C000030,Books,12 - 24 Monthes,85
+4/3/2021,C000034,Clothing,2 - 4 Years,61
+4/3/2021,C000036,Electronics,12 - 14 Years,589
+4/3/2021,C000038,Games,5 - 7 Years,799
+4/3/2021,C000041,Clothing,12 - 24 Monthes,65
+4/3/2021,C000043,Foods,Big Kids,817
+4/3/2021,C000048,Electronics,12 - 14 Years,688
+4/3/2021,C000049,Toys,12 - 24 Monthes,86
+4/3/2021,C000053,Outdoor Play,5 - 7 Years,412
+4/3/2021,C000057,Electronics,5 - 7 Years,267
+4/3/2021,C000060,Toys,8 - 11 Years,291
+4/3/2021,C000061,Games,2 - 4 Years,616
+4/3/2021,C000062,Outdoor Play,8 - 11 Years,554
+4/3/2021,C000065,Electronics,12 - 14 Years,354
+4/3/2021,C000066,Games,Birth - 12 Monthes,439
+4/3/2021,C000074,Bikes,5 - 7 Years,414
+4/3/2021,C000078,Electronics,Big Kids,592
+4/3/2021,C000080,Clothing,5 - 7 Years,89
+5/2/2021,C000100,Outdoor Play,5 - 7 Years,373
+5/2/2021,C000101,Outdoor Play,5 - 7 Years,503
+5/2/2021,C000102,Outdoor Play,8 - 11 Years,186
+5/2/2021,C000103,Games,12 - 24 Monthes,467
+5/2/2021,C000104,Electronics,2 - 4 Years,420
+5/2/2021,C000105,Toys,8 - 11 Years,398
+5/2/2021,C000106,Foods,12 - 24 Monthes,875
+5/2/2021,C000002,Clothing,8 - 11 Years,57
+5/2/2021,C000008,Foods,5 - 7 Years,714
+5/2/2021,C000011,Clothing,12 - 24 Monthes,36
+5/2/2021,C000013,Clothing,2 - 4 Years,34
+5/2/2021,C000017,Outdoor Play,12 - 24 Monthes,839
+5/2/2021,C000019,Bikes,12 - 14 Years,323
+5/2/2021,C000020,Clothing,2 - 4 Years,100
+5/2/2021,C000021,Games,12 - 14 Years,426
+5/2/2021,C000024,Clothing,Big Kids,92
+5/2/2021,C000025,Foods,12 - 24 Monthes,1154
+5/2/2021,C000028,Foods,12 - 24 Monthes,671
+5/2/2021,C000029,Electronics,2 - 4 Years,306
+5/2/2021,C000035,Foods,8 - 11 Years,608
+5/2/2021,C000045,Bikes,8 - 11 Years,274
+5/2/2021,C000046,Electronics,Big Kids,201
+5/2/2021,C000047,Books,12 - 14 Years,152
+5/2/2021,C000052,Bikes,5 - 7 Years,238
+5/2/2021,C000054,Clothing,8 - 11 Years,44
+5/2/2021,C000058,Toys,2 - 4 Years,292
+5/2/2021,C000063,Games,2 - 4 Years,578
+5/2/2021,C000064,Toys,12 - 24 Monthes,178
+5/2/2021,C000067,Games,2 - 4 Years,443
+5/2/2021,C000069,Books,5 - 7 Years,173
+5/2/2021,C000072,Clothing,8 - 11 Years,84
+5/2/2021,C000073,Games,8 - 11 Years,504
+5/2/2021,C000079,Clothing,Birth - 12 Monthes,40
+5/2/2021,C000081,Games,Big Kids,467
+5/2/2021,C000082,Clothing,8 - 11 Years,77
+5/2/2021,C000085,Electronics,12 - 14 Years,235
+5/2/2021,C000086,Outdoor Play,2 - 4 Years,267
+5/2/2021,C000087,Games,2 - 4 Years,389
+6/7/2021,C000107,Toys,8 - 11 Years,369
+6/7/2021,C000108,Toys,12 - 24 Monthes,367
+6/7/2021,C000109,Clothing,Birth - 12 Monthes,67
+6/7/2021,C000110,Toys,5 - 7 Years,274
+6/7/2021,C000111,Books,12 - 14 Years,164
+6/7/2021,C000112,Foods,12 - 24 Monthes,420
+6/7/2021,C000001,Bikes,2 - 4 Years,138
+6/7/2021,C000005,Games,8 - 11 Years,618
+6/7/2021,C000006,Bikes,12 - 14 Years,310
+6/7/2021,C000009,Foods,12 - 14 Years,1164
+6/7/2021,C000010,Games,Birth - 12 Monthes,327
+6/7/2021,C000014,Foods,8 - 11 Years,361
+6/7/2021,C000018,Games,12 - 24 Monthes,657
+6/7/2021,C000022,Games,8 - 11 Years,485
+6/7/2021,C000023,Bikes,12 - 24 Monthes,419
+6/7/2021,C000026,Foods,2 - 4 Years,454
+6/7/2021,C000031,Books,12 - 24 Monthes,131
+6/7/2021,C000032,Games,8 - 11 Years,763
+6/7/2021,C000034,Games,2 - 4 Years,281
+6/7/2021,C000036,Foods,12 - 14 Years,642
+6/7/2021,C000043,Electronics,Big Kids,554
+6/7/2021,C000050,Outdoor Play,8 - 11 Years,554
+6/7/2021,C000051,Toys,12 - 14 Years,376
+6/7/2021,C000053,Books,5 - 7 Years,169
+6/7/2021,C000055,Foods,5 - 7 Years,544
+6/7/2021,C000057,Books,5 - 7 Years,78
+6/7/2021,C000059,Outdoor Play,5 - 7 Years,476
+6/7/2021,C000061,Clothing,2 - 4 Years,53
+6/7/2021,C000062,Games,8 - 11 Years,816
+6/7/2021,C000065,Foods,12 - 14 Years,992
+6/7/2021,C000066,Clothing,Birth - 12 Monthes,97
+6/7/2021,C000068,Electronics,5 - 7 Years,314
+6/7/2021,C000070,Games,5 - 7 Years,823
+6/7/2021,C000076,Toys,8 - 11 Years,189
+6/7/2021,C000080,Clothing,5 - 7 Years,29
+6/7/2021,C000083,Games,12 - 14 Years,477
+6/7/2021,C000088,Foods,Birth - 12 Monthes,3739
+6/7/2021,C000091,Toys,12 - 14 Years,108
+6/7/2021,C000092,Toys,12 - 24 Monthes,357
+6/7/2021,C000094,Books,12 - 24 Monthes,166
+6/7/2021,C000096,Electronics,12 - 14 Years,302
+6/7/2021,C000097,Bikes,2 - 4 Years,237
+6/7/2021,C000099,Foods,12 - 24 Monthes,262
+7/2/2021,C000113,Books,8 - 11 Years,588
+7/2/2021,C000114,Toys,Big Kids,1016
+7/2/2021,C000115,Bikes,Big Kids,3006
+7/2/2021,C000116,Outdoor Play,5 - 7 Years,2155
+7/2/2021,C000117,Clothing,8 - 11 Years,161
+7/2/2021,C000118,Electronics,12 - 14 Years,1875
+7/2/2021,C000119,Clothing,5 - 7 Years,195
+7/2/2021,C000120,Outdoor Play,Big Kids,774
+7/2/2021,C000121,Bikes,12 - 24 Monthes,800
+7/2/2021,C000122,Foods,Big Kids,2428
+7/2/2021,C000123,Electronics,8 - 11 Years,1666
+7/2/2021,C000124,Books,12 - 24 Monthes,465
+7/2/2021,C000125,Electronics,5 - 7 Years,1016
+7/2/2021,C000126,Toys,8 - 11 Years,317
+7/2/2021,C000002,Electronics,8 - 11 Years,743
+7/2/2021,C000004,Bikes,2 - 4 Years,1457
+7/2/2021,C000007,Games,12 - 14 Years,3054
+7/2/2021,C000016,Books,8 - 11 Years,537
+7/2/2021,C000020,Games,2 - 4 Years,2717
+7/2/2021,C000021,Toys,12 - 14 Years,418
+7/2/2021,C000028,Bikes,12 - 24 Monthes,1061
+7/2/2021,C000030,Clothing,12 - 24 Monthes,138
+7/2/2021,C000033,Books,12 - 14 Years,371
+7/2/2021,C000044,Toys,12 - 14 Years,1115
+7/2/2021,C000045,Toys,8 - 11 Years,1096
+7/2/2021,C000046,Foods,Big Kids,2608
+7/2/2021,C000048,Clothing,12 - 14 Years,207
+7/2/2021,C000049,Bikes,12 - 24 Monthes,1608
+7/2/2021,C000052,Foods,5 - 7 Years,3206
+7/2/2021,C000056,Bikes,5 - 7 Years,1046
+7/2/2021,C000064,Bikes,12 - 24 Monthes,1217
+7/2/2021,C000067,Foods,2 - 4 Years,2717
+7/2/2021,C000072,Outdoor Play,8 - 11 Years,890
+7/2/2021,C000074,Clothing,5 - 7 Years,286
+7/2/2021,C000078,Foods,Big Kids,3546
+7/2/2021,C000079,Books,Birth - 12 Monthes,561
+7/2/2021,C000081,Foods,Big Kids,1040
+7/2/2021,C000082,Foods,8 - 11 Years,2909
+7/2/2021,C000084,Bikes,12 - 24 Monthes,1148
+7/2/2021,C000086,Clothing,2 - 4 Years,124
+7/2/2021,C000089,Games,Big Kids,1178
+7/2/2021,C000090,Bikes,Big Kids,1612
+7/2/2021,C000093,Clothing,Big Kids,319
+7/2/2021,C000101,Electronics,5 - 7 Years,2096
+7/2/2021,C000103,Games,12 - 24 Monthes,1539
+7/2/2021,C000104,Clothing,2 - 4 Years,180
+7/2/2021,C000105,Foods,8 - 11 Years,906
+8/3/2021,C000127,Foods,Birth - 12 Monthes,3664
+8/3/2021,C000128,Toys,Big Kids,1438
+8/3/2021,C000129,Foods,8 - 11 Years,2078
+8/3/2021,C000130,Games,5 - 7 Years,1633
+8/3/2021,C000131,Toys,2 - 4 Years,1148
+8/3/2021,C000132,Foods,12 - 24 Monthes,2717
+8/3/2021,C000133,Clothing,5 - 7 Years,105
+8/3/2021,C000134,Electronics,Big Kids,2076
+8/3/2021,C000135,Toys,8 - 11 Years,945
+8/3/2021,C000005,Electronics,8 - 11 Years,1973
+8/3/2021,C000006,Bikes,12 - 14 Years,1686
+8/3/2021,C000008,Toys,5 - 7 Years,1158
+8/3/2021,C000010,Electronics,Birth - 12 Monthes,1534
+8/3/2021,C000012,Electronics,12 - 24 Monthes,2059
+8/3/2021,C000013,Toys,2 - 4 Years,772
+8/3/2021,C000014,Bikes,8 - 11 Years,1158
+8/3/2021,C000015,Toys,12 - 24 Monthes,311
+8/3/2021,C000018,Games,12 - 24 Monthes,664
+8/3/2021,C000019,Bikes,12 - 14 Years,1480
+8/3/2021,C000026,Games,2 - 4 Years,943
+8/3/2021,C000027,Bikes,5 - 7 Years,1776
+8/3/2021,C000029,Foods,2 - 4 Years,2600
+8/3/2021,C000031,Bikes,12 - 24 Monthes,626
+8/3/2021,C000032,Clothing,8 - 11 Years,266
+8/3/2021,C000034,Clothing,2 - 4 Years,307
+8/3/2021,C000036,Foods,12 - 14 Years,3032
+8/3/2021,C000038,Games,5 - 7 Years,2187
+8/3/2021,C000039,Toys,12 - 24 Monthes,609
+8/3/2021,C000043,Electronics,Big Kids,2444
+8/3/2021,C000047,Toys,12 - 14 Years,1407
+8/3/2021,C000050,Toys,8 - 11 Years,472
+8/3/2021,C000051,Electronics,12 - 14 Years,1247
+8/3/2021,C000057,Toys,5 - 7 Years,759
+8/3/2021,C000060,Toys,8 - 11 Years,586
+8/3/2021,C000061,Electronics,2 - 4 Years,1252
+8/3/2021,C000062,Outdoor Play,8 - 11 Years,652
+8/3/2021,C000068,Clothing,5 - 7 Years,326
+8/3/2021,C000070,Bikes,5 - 7 Years,662
+8/3/2021,C000071,Bikes,12 - 24 Monthes,1186
+8/3/2021,C000075,Foods,5 - 7 Years,2911
+8/3/2021,C000076,Outdoor Play,8 - 11 Years,936
+8/3/2021,C000080,Bikes,5 - 7 Years,1238
+8/3/2021,C000083,Bikes,12 - 14 Years,1130
+8/3/2021,C000085,Bikes,12 - 14 Years,508
+8/3/2021,C000088,Clothing,Birth - 12 Monthes,350
+8/3/2021,C000091,Clothing,12 - 14 Years,350
+8/3/2021,C000094,Games,12 - 24 Monthes,2378
+8/3/2021,C000096,Bikes,12 - 14 Years,954
+8/3/2021,C000106,Foods,12 - 24 Monthes,1874
+8/3/2021,C000107,Bikes,8 - 11 Years,1280
+8/3/2021,C000108,Foods,12 - 24 Monthes,3102
+8/3/2021,C000112,Toys,12 - 24 Monthes,1041
+9/3/2021,C000136,Games,12 - 24 Monthes,626
+9/3/2021,C000137,Outdoor Play,12 - 14 Years,464
+9/3/2021,C000138,Games,12 - 24 Monthes,726
+9/3/2021,C000139,Outdoor Play,Big Kids,608
+9/3/2021,C000140,Books,12 - 24 Monthes,153
+9/3/2021,C000141,Games,12 - 24 Monthes,858
+9/3/2021,C000142,Clothing,8 - 11 Years,54
+9/3/2021,C000143,Bikes,2 - 4 Years,108
+9/3/2021,C000144,Foods,2 - 4 Years,1133
+9/3/2021,C000145,Electronics,2 - 4 Years,570
+9/3/2021,C000001,Games,2 - 4 Years,604
+9/3/2021,C000004,Games,2 - 4 Years,743
+9/3/2021,C000007,Toys,12 - 14 Years,209
+9/3/2021,C000009,Toys,12 - 14 Years,269
+9/3/2021,C000011,Books,12 - 24 Monthes,193
+9/3/2021,C000017,Foods,12 - 24 Monthes,348
+9/3/2021,C000021,Bikes,12 - 14 Years,462
+9/3/2021,C000022,Outdoor Play,8 - 11 Years,320
+9/3/2021,C000024,Outdoor Play,Big Kids,222
+9/3/2021,C000028,Bikes,12 - 24 Monthes,443
+9/3/2021,C000030,Outdoor Play,12 - 24 Monthes,405
+9/3/2021,C000033,Bikes,12 - 14 Years,108
+9/3/2021,C000044,Foods,12 - 14 Years,877
+9/3/2021,C000049,Clothing,12 - 24 Monthes,34
+9/3/2021,C000052,Games,5 - 7 Years,509
+9/3/2021,C000053,Games,5 - 7 Years,688
+9/3/2021,C000055,Clothing,5 - 7 Years,61
+9/3/2021,C000056,Toys,5 - 7 Years,211
+9/3/2021,C000059,Bikes,5 - 7 Years,300
+9/3/2021,C000063,Clothing,2 - 4 Years,74
+9/3/2021,C000064,Foods,12 - 24 Monthes,824
+9/3/2021,C000066,Toys,Birth - 12 Monthes,348
+9/3/2021,C000072,Foods,8 - 11 Years,662
+9/3/2021,C000082,Toys,8 - 11 Years,260
+9/3/2021,C000097,Electronics,2 - 4 Years,634
+9/3/2021,C000098,Foods,8 - 11 Years,678
+9/3/2021,C000099,Games,12 - 24 Monthes,394
+9/3/2021,C000100,Toys,5 - 7 Years,126
+9/3/2021,C000101,Outdoor Play,5 - 7 Years,594
+9/3/2021,C000102,Games,8 - 11 Years,551
+9/3/2021,C000111,Games,12 - 14 Years,205
+9/3/2021,C000113,Foods,8 - 11 Years,1002
+9/3/2021,C000114,Bikes,Big Kids,1680
+9/3/2021,C000117,Electronics,8 - 11 Years,648
+9/3/2021,C000119,Electronics,5 - 7 Years,235
+9/3/2021,C000121,Foods,12 - 24 Monthes,316
+9/3/2021,C000122,Foods,Big Kids,1032
+9/3/2021,C000124,Toys,12 - 24 Monthes,324
+9/3/2021,C000126,Bikes,8 - 11 Years,382
+10/23/2021,C000146,Games,5 - 7 Years,616
+10/23/2021,C000147,Games,12 - 14 Years,629
+10/23/2021,C000148,Books,Birth - 12 Monthes,92
+10/23/2021,C000149,Bikes,5 - 7 Years,117
+10/23/2021,C000150,Toys,12 - 14 Years,262
+10/23/2021,C000151,Books,2 - 4 Years,81
+10/23/2021,C000152,Toys,5 - 7 Years,179
+10/23/2021,C000153,Games,12 - 14 Years,678
+10/23/2021,C000154,Toys,8 - 11 Years,313
+10/23/2021,C000155,Toys,12 - 14 Years,100
+10/23/2021,C000156,Books,12 - 24 Monthes,56
+10/23/2021,C000002,Outdoor Play,8 - 11 Years,454
+10/23/2021,C000008,Clothing,5 - 7 Years,55
+10/23/2021,C000016,Outdoor Play,8 - 11 Years,825
+10/23/2021,C000018,Outdoor Play,12 - 24 Monthes,426
+10/23/2021,C000020,Toys,2 - 4 Years,260
+10/23/2021,C000023,Electronics,12 - 24 Monthes,318
+10/23/2021,C000025,Outdoor Play,12 - 24 Monthes,724
+10/23/2021,C000026,Foods,2 - 4 Years,431
+10/23/2021,C000027,Games,5 - 7 Years,229
+10/23/2021,C000034,Bikes,2 - 4 Years,434
+10/23/2021,C000035,Clothing,8 - 11 Years,69
+10/23/2021,C000036,Foods,12 - 14 Years,965
+10/23/2021,C000037,Bikes,12 - 14 Years,462
+10/23/2021,C000038,Bikes,5 - 7 Years,222
+10/23/2021,C000039,Foods,12 - 24 Monthes,1172
+10/23/2021,C000041,Toys,12 - 24 Monthes,95
+10/23/2021,C000043,Toys,Big Kids,230
+10/23/2021,C000045,Electronics,8 - 11 Years,318
+10/23/2021,C000047,Games,12 - 14 Years,657
+10/23/2021,C000051,Outdoor Play,12 - 14 Years,221
+10/23/2021,C000054,Books,8 - 11 Years,81
+10/23/2021,C000061,Clothing,2 - 4 Years,22
+10/23/2021,C000062,Clothing,8 - 11 Years,76
+10/23/2021,C000065,Toys,12 - 14 Years,286
+10/23/2021,C000067,Toys,2 - 4 Years,84
+10/23/2021,C000068,Books,5 - 7 Years,81
+10/23/2021,C000069,Bikes,5 - 7 Years,113
+10/23/2021,C000074,Outdoor Play,5 - 7 Years,544
+10/23/2021,C000075,Toys,5 - 7 Years,182
+10/23/2021,C000076,Foods,8 - 11 Years,942
+10/23/2021,C000078,Clothing,Big Kids,64
+10/23/2021,C000083,Games,12 - 14 Years,657
+10/23/2021,C000084,Games,12 - 24 Monthes,825
+10/23/2021,C000085,Foods,12 - 14 Years,942
+10/23/2021,C000086,Bikes,2 - 4 Years,174
+10/23/2021,C000087,Clothing,2 - 4 Years,34
+10/23/2021,C000091,Electronics,12 - 14 Years,392
+10/23/2021,C000092,Games,12 - 24 Monthes,530
+10/23/2021,C000093,Clothing,Big Kids,81
+10/23/2021,C000095,Foods,2 - 4 Years,812
+10/23/2021,C000096,Electronics,12 - 14 Years,507
+10/23/2021,C000103,Foods,12 - 24 Monthes,692
+10/23/2021,C000105,Foods,8 - 11 Years,427
+10/23/2021,C000106,Clothing,12 - 24 Monthes,25
+10/23/2021,C000107,Toys,8 - 11 Years,148
+10/23/2021,C000108,Outdoor Play,12 - 24 Monthes,475
+10/23/2021,C000109,Toys,Birth - 12 Monthes,389
+10/23/2021,C000116,Outdoor Play,5 - 7 Years,436
+10/23/2021,C000118,Toys,12 - 14 Years,125
+10/23/2021,C000123,Toys,8 - 11 Years,369
+10/23/2021,C000125,Books,5 - 7 Years,141
+10/23/2021,C000133,Games,5 - 7 Years,219
+10/23/2021,C000135,Toys,8 - 11 Years,317
+1/3/2022,C000157,Bikes,8 - 11 Years,238
+1/3/2022,C000158,Foods,8 - 11 Years,590
+1/3/2022,C000159,Games,Birth - 12 Monthes,630
+1/3/2022,C000160,Clothing,12 - 24 Monthes,38
+1/3/2022,C000161,Foods,Birth - 12 Monthes,1594
+1/3/2022,C000162,Foods,12 - 24 Monthes,949
+1/3/2022,C000163,Bikes,12 - 24 Monthes,456
+1/3/2022,C000164,Foods,12 - 24 Monthes,988
+1/3/2022,C000165,Toys,Birth - 12 Monthes,366
+1/3/2022,C000166,Games,Big Kids,895
+1/3/2022,C000001,Outdoor Play,2 - 4 Years,737
+1/3/2022,C000004,Foods,2 - 4 Years,920
+1/3/2022,C000005,Books,8 - 11 Years,140
+1/3/2022,C000006,Games,12 - 14 Years,571
+1/3/2022,C000007,Bikes,12 - 14 Years,390
+1/3/2022,C000010,Games,Birth - 12 Monthes,458
+1/3/2022,C000011,Electronics,12 - 24 Monthes,144
+1/3/2022,C000013,Toys,2 - 4 Years,285
+1/3/2022,C000015,Bikes,12 - 24 Monthes,237
+1/3/2022,C000028,Books,12 - 24 Monthes,81
+1/3/2022,C000030,Toys,12 - 24 Monthes,398
+1/3/2022,C000031,Toys,12 - 24 Monthes,295
+1/3/2022,C000032,Foods,8 - 11 Years,607
+1/3/2022,C000033,Electronics,12 - 14 Years,545
+1/3/2022,C000046,Electronics,Big Kids,655
+1/3/2022,C000049,Bikes,12 - 24 Monthes,346
+1/3/2022,C000052,Foods,5 - 7 Years,664
+1/3/2022,C000053,Clothing,5 - 7 Years,78
+1/3/2022,C000056,Outdoor Play,5 - 7 Years,836
+1/3/2022,C000057,Electronics,5 - 7 Years,623
+1/3/2022,C000058,Clothing,2 - 4 Years,64
+1/3/2022,C000059,Electronics,5 - 7 Years,489
+1/3/2022,C000060,Outdoor Play,8 - 11 Years,374
+1/3/2022,C000064,Foods,12 - 24 Monthes,613
+1/3/2022,C000072,Books,8 - 11 Years,184
+1/3/2022,C000073,Toys,8 - 11 Years,282
+1/3/2022,C000079,Toys,Birth - 12 Monthes,225
+1/3/2022,C000081,Bikes,Big Kids,712
+1/3/2022,C000082,Bikes,8 - 11 Years,223
+1/3/2022,C000088,Toys,Birth - 12 Monthes,90
+1/3/2022,C000097,Toys,2 - 4 Years,183
+1/3/2022,C000098,Games,8 - 11 Years,517
+1/3/2022,C000099,Clothing,12 - 24 Monthes,20
+1/3/2022,C000100,Clothing,5 - 7 Years,88
+1/3/2022,C000101,Outdoor Play,5 - 7 Years,355
+1/3/2022,C000102,Toys,8 - 11 Years,82
+1/3/2022,C000110,Clothing,5 - 7 Years,66
+1/3/2022,C000111,Clothing,12 - 14 Years,55
+1/3/2022,C000112,Toys,12 - 24 Monthes,385
+1/3/2022,C000114,Toys,Big Kids,350
+1/3/2022,C000119,Toys,5 - 7 Years,238
+1/3/2022,C000120,Outdoor Play,Big Kids,503
+1/3/2022,C000122,Toys,Big Kids,237
+1/3/2022,C000124,Toys,12 - 24 Monthes,236
+1/3/2022,C000126,Games,8 - 11 Years,790
+1/3/2022,C000128,Outdoor Play,Big Kids,847
+1/3/2022,C000129,Foods,8 - 11 Years,413
+1/3/2022,C000130,Foods,5 - 7 Years,1138
+1/3/2022,C000136,Toys,12 - 24 Monthes,205
+1/3/2022,C000139,Foods,Big Kids,512
+1/3/2022,C000140,Foods,12 - 24 Monthes,264
+1/3/2022,C000142,Clothing,8 - 11 Years,45
+1/3/2022,C000143,Bikes,2 - 4 Years,457
+1/3/2022,C000144,Clothing,2 - 4 Years,65
+2/3/2022,C000167,Clothing,12 - 24 Monthes,29
+2/3/2022,C000168,Toys,12 - 14 Years,105
+2/3/2022,C000169,Books,12 - 14 Years,51
+2/3/2022,C000170,Toys,12 - 14 Years,222
+2/3/2022,C000171,Games,2 - 4 Years,563
+2/3/2022,C000172,Foods,8 - 11 Years,1033
+2/3/2022,C000008,Books,5 - 7 Years,84
+2/3/2022,C000012,Toys,12 - 24 Monthes,230
+2/3/2022,C000014,Games,8 - 11 Years,497
+2/3/2022,C000016,Bikes,8 - 11 Years,324
+2/3/2022,C000017,Clothing,12 - 24 Monthes,48
+2/3/2022,C000018,Foods,12 - 24 Monthes,450
+2/3/2022,C000021,Games,12 - 14 Years,830
+2/3/2022,C000022,Electronics,8 - 11 Years,366
+2/3/2022,C000026,Toys,2 - 4 Years,200
+2/3/2022,C000027,Electronics,5 - 7 Years,496
+2/3/2022,C000029,Clothing,2 - 4 Years,83
+2/3/2022,C000034,Toys,2 - 4 Years,103
+2/3/2022,C000038,Outdoor Play,5 - 7 Years,401
+2/3/2022,C000041,Books,12 - 24 Monthes,125
+2/3/2022,C000043,Clothing,Big Kids,48
+2/3/2022,C000045,Clothing,8 - 11 Years,67
+2/3/2022,C000051,Foods,12 - 14 Years,1115
+2/3/2022,C000055,Bikes,5 - 7 Years,210
+2/3/2022,C000061,Clothing,2 - 4 Years,27
+2/3/2022,C000062,Clothing,8 - 11 Years,78
+2/3/2022,C000063,Games,2 - 4 Years,652
+2/3/2022,C000065,Bikes,12 - 14 Years,346
+2/3/2022,C000067,Electronics,2 - 4 Years,225
+2/3/2022,C000069,Outdoor Play,5 - 7 Years,388
+2/3/2022,C000071,Outdoor Play,12 - 24 Monthes,284
+2/3/2022,C000074,Toys,5 - 7 Years,231
+2/3/2022,C000076,Games,8 - 11 Years,782
+2/3/2022,C000084,Bikes,12 - 24 Monthes,174
+2/3/2022,C000085,Bikes,12 - 14 Years,178
+2/3/2022,C000086,Outdoor Play,2 - 4 Years,861
+2/3/2022,C000089,Clothing,Big Kids,75
+2/3/2022,C000090,Toys,Big Kids,130
+2/3/2022,C000091,Foods,12 - 14 Years,254
+2/3/2022,C000092,Foods,12 - 24 Monthes,1087
+2/3/2022,C000093,Electronics,Big Kids,288
+2/3/2022,C000095,Clothing,2 - 4 Years,29
+2/3/2022,C000096,Books,12 - 14 Years,164
+2/3/2022,C000103,Games,12 - 24 Monthes,440
+2/3/2022,C000106,Toys,12 - 24 Monthes,245
+2/3/2022,C000116,Electronics,5 - 7 Years,296
+2/3/2022,C000123,Electronics,8 - 11 Years,584
+2/3/2022,C000125,Games,5 - 7 Years,713
+2/3/2022,C000127,Electronics,Birth - 12 Monthes,271
+2/3/2022,C000131,Clothing,2 - 4 Years,91
+2/3/2022,C000134,Bikes,Big Kids,578
+2/3/2022,C000141,Toys,12 - 24 Monthes,319
+2/3/2022,C000146,Toys,5 - 7 Years,332
+2/3/2022,C000147,Electronics,12 - 14 Years,160
+2/3/2022,C000148,Clothing,Birth - 12 Monthes,78
+2/3/2022,C000152,Games,5 - 7 Years,803
+3/3/2022,C000173,Foods,2 - 4 Years,395
+3/3/2022,C000174,Books,Birth - 12 Monthes,196
+3/3/2022,C000175,Clothing,12 - 14 Years,89
+3/3/2022,C000002,Bikes,8 - 11 Years,234
+3/3/2022,C000004,Bikes,2 - 4 Years,384
+3/3/2022,C000006,Electronics,12 - 14 Years,370
+3/3/2022,C000007,Outdoor Play,12 - 14 Years,677
+3/3/2022,C000010,Foods,Birth - 12 Monthes,1238
+3/3/2022,C000020,Clothing,2 - 4 Years,68
+3/3/2022,C000023,Outdoor Play,12 - 24 Monthes,604
+3/3/2022,C000028,Clothing,12 - 24 Monthes,99
+3/3/2022,C000030,Electronics,12 - 24 Monthes,405
+3/3/2022,C000031,Foods,12 - 24 Monthes,756
+3/3/2022,C000032,Electronics,8 - 11 Years,143
+3/3/2022,C000033,Clothing,12 - 14 Years,80
+3/3/2022,C000035,Outdoor Play,8 - 11 Years,862
+3/3/2022,C000037,Toys,12 - 14 Years,138
+3/3/2022,C000042,Outdoor Play,2 - 4 Years,397
+3/3/2022,C000044,Clothing,12 - 14 Years,83
+3/3/2022,C000046,Books,Big Kids,187
+3/3/2022,C000052,Bikes,5 - 7 Years,352
+3/3/2022,C000053,Foods,5 - 7 Years,376
+3/3/2022,C000056,Electronics,5 - 7 Years,382
+3/3/2022,C000059,Bikes,5 - 7 Years,312
+3/3/2022,C000060,Books,8 - 11 Years,75
+3/3/2022,C000064,Books,12 - 24 Monthes,179
+3/3/2022,C000066,Books,Birth - 12 Monthes,98
+3/3/2022,C000077,Foods,12 - 24 Monthes,456
+3/3/2022,C000078,Games,Big Kids,606
+3/3/2022,C000079,Clothing,Birth - 12 Monthes,80
+3/3/2022,C000081,Electronics,Big Kids,461
+3/3/2022,C000082,Clothing,8 - 11 Years,62
+3/3/2022,C000083,Bikes,12 - 14 Years,180
+3/3/2022,C000088,Electronics,Birth - 12 Monthes,648
+3/3/2022,C000094,Foods,12 - 24 Monthes,679
+3/3/2022,C000097,Electronics,2 - 4 Years,555
+3/3/2022,C000098,Clothing,8 - 11 Years,66
+3/3/2022,C000099,Foods,12 - 24 Monthes,624
+3/3/2022,C000100,Electronics,5 - 7 Years,453
+3/3/2022,C000101,Bikes,5 - 7 Years,205
+3/3/2022,C000104,Foods,2 - 4 Years,589
+3/3/2022,C000105,Bikes,8 - 11 Years,332
+3/3/2022,C000107,Games,8 - 11 Years,457
+3/3/2022,C000111,Outdoor Play,12 - 14 Years,510
+3/3/2022,C000113,Clothing,8 - 11 Years,40
+3/3/2022,C000115,Foods,Big Kids,380
+3/3/2022,C000120,Foods,Big Kids,1117
+3/3/2022,C000122,Games,Big Kids,667
+3/3/2022,C000124,Clothing,12 - 24 Monthes,96
+3/3/2022,C000129,Books,8 - 11 Years,111
+3/3/2022,C000135,Bikes,8 - 11 Years,496
+3/3/2022,C000137,Bikes,12 - 14 Years,477
+3/3/2022,C000138,Toys,12 - 24 Monthes,367
+3/3/2022,C000140,Electronics,12 - 24 Monthes,653
+3/3/2022,C000143,Bikes,2 - 4 Years,377
+3/3/2022,C000144,Bikes,2 - 4 Years,164
+3/3/2022,C000149,Electronics,5 - 7 Years,178
+3/3/2022,C000153,Clothing,12 - 14 Years,30
+3/3/2022,C000154,Bikes,8 - 11 Years,462
+3/3/2022,C000155,Clothing,12 - 14 Years,41
+3/3/2022,C000160,Foods,12 - 24 Monthes,923
+3/3/2022,C000161,Electronics,Birth - 12 Monthes,650
+3/3/2022,C000162,Books,12 - 24 Monthes,152
+3/3/2022,C000165,Electronics,Birth - 12 Monthes,316
+4/3/2022,C000176,Toys,Birth - 12 Monthes,377
+4/3/2022,C000177,Bikes,12 - 14 Years,902
+4/3/2022,C000178,Bikes,12 - 24 Monthes,1576
+4/3/2022,C000179,Games,12 - 14 Years,844
+4/3/2022,C000180,Foods,2 - 4 Years,1093
+4/3/2022,C000181,Games,12 - 14 Years,1652
+4/3/2022,C000182,Bikes,Birth - 12 Monthes,1044
+4/3/2022,C000001,Toys,2 - 4 Years,929
+4/3/2022,C000005,Foods,8 - 11 Years,833
+4/3/2022,C000008,Bikes,5 - 7 Years,1275
+4/3/2022,C000009,Games,12 - 14 Years,2090
+4/3/2022,C000011,Outdoor Play,12 - 24 Monthes,2408
+4/3/2022,C000018,Foods,12 - 24 Monthes,2366
+4/3/2022,C000021,Games,12 - 14 Years,1410
+4/3/2022,C000025,Electronics,12 - 24 Monthes,2078
+4/3/2022,C000026,Clothing,2 - 4 Years,243
+4/3/2022,C000040,Toys,2 - 4 Years,408
+4/3/2022,C000041,Outdoor Play,12 - 24 Monthes,1331
+4/3/2022,C000043,Toys,Big Kids,443
+4/3/2022,C000048,Bikes,12 - 14 Years,1513
+4/3/2022,C000049,Toys,12 - 24 Monthes,378
+4/3/2022,C000051,Bikes,12 - 14 Years,632
+4/3/2022,C000057,Outdoor Play,5 - 7 Years,706
+4/3/2022,C000058,Clothing,2 - 4 Years,155
+4/3/2022,C000062,Games,8 - 11 Years,1989
+4/3/2022,C000067,Books,2 - 4 Years,386
+4/3/2022,C000070,Electronics,5 - 7 Years,1732
+4/3/2022,C000072,Outdoor Play,8 - 11 Years,2050
+4/3/2022,C000073,Clothing,8 - 11 Years,256
+4/3/2022,C000074,Games,5 - 7 Years,1940
+4/3/2022,C000075,Foods,5 - 7 Years,1824
+4/3/2022,C000080,Toys,5 - 7 Years,279
+4/3/2022,C000084,Toys,12 - 24 Monthes,713
+4/3/2022,C000085,Bikes,12 - 14 Years,846
+4/3/2022,C000086,Foods,2 - 4 Years,3937
+4/3/2022,C000087,Outdoor Play,2 - 4 Years,2717
+4/3/2022,C000092,Bikes,12 - 24 Monthes,1348
+4/3/2022,C000095,Foods,2 - 4 Years,894
+4/3/2022,C000096,Toys,12 - 14 Years,696
+4/3/2022,C000102,Bikes,8 - 11 Years,449
+4/3/2022,C000106,Books,12 - 24 Monthes,140
+4/3/2022,C000109,Foods,Birth - 12 Monthes,12142
+4/3/2022,C000110,Bikes,5 - 7 Years,1492
+4/3/2022,C000114,Toys,Big Kids,509
+4/3/2022,C000117,Clothing,8 - 11 Years,212
+4/3/2022,C000118,Bikes,12 - 14 Years,680
+4/3/2022,C000121,Foods,12 - 24 Monthes,894
+4/3/2022,C000130,Electronics,5 - 7 Years,2028
+4/3/2022,C000133,Games,5 - 7 Years,1912
+4/3/2022,C000136,Foods,12 - 24 Monthes,3546
+4/3/2022,C000141,Toys,12 - 24 Monthes,1046
+4/3/2022,C000145,Clothing,2 - 4 Years,103
+4/3/2022,C000147,Games,12 - 14 Years,2785
+4/3/2022,C000150,Electronics,12 - 14 Years,1278
+4/3/2022,C000156,Bikes,12 - 24 Monthes,1390
+4/3/2022,C000158,Toys,8 - 11 Years,375
+4/3/2022,C000163,Toys,12 - 24 Monthes,708
+4/3/2022,C000164,Games,12 - 24 Monthes,933
+4/3/2022,C000167,Foods,12 - 24 Monthes,4027
+4/3/2022,C000171,Books,2 - 4 Years,250
+5/3/2022,C000183,Clothing,12 - 24 Monthes,313
+5/3/2022,C000184,Games,2 - 4 Years,862
+5/3/2022,C000185,Outdoor Play,8 - 11 Years,2683
+5/3/2022,C000186,Outdoor Play,5 - 7 Years,2754
+5/3/2022,C000187,Clothing,12 - 14 Years,248
+5/3/2022,C000188,Electronics,Birth - 12 Monthes,602
+5/3/2022,C000189,Toys,12 - 14 Years,542
+5/3/2022,C000190,Clothing,12 - 24 Monthes,152
+5/3/2022,C000191,Clothing,12 - 14 Years,98
+5/3/2022,C000192,Books,8 - 11 Years,210
+5/3/2022,C000193,Clothing,12 - 14 Years,125
+5/3/2022,C000194,Bikes,Big Kids,1994
+5/3/2022,C000195,Clothing,12 - 14 Years,203
+5/3/2022,C000196,Outdoor Play,12 - 14 Years,2942
+5/3/2022,C000002,Foods,8 - 11 Years,1236
+5/3/2022,C000004,Electronics,2 - 4 Years,1315
+5/3/2022,C000007,Books,12 - 14 Years,474
+5/3/2022,C000013,Clothing,2 - 4 Years,294
+5/3/2022,C000014,Clothing,8 - 11 Years,313
+5/3/2022,C000016,Bikes,8 - 11 Years,1215
+5/3/2022,C000017,Electronics,12 - 24 Monthes,1180
+5/3/2022,C000019,Bikes,12 - 14 Years,1686
+5/3/2022,C000023,Bikes,12 - 24 Monthes,1080
+5/3/2022,C000024,Books,Big Kids,184
+5/3/2022,C000028,Clothing,12 - 24 Monthes,203
+5/3/2022,C000033,Outdoor Play,12 - 14 Years,1847
+5/3/2022,C000034,Games,2 - 4 Years,2174
+5/3/2022,C000036,Books,12 - 14 Years,657
+5/3/2022,C000038,Books,5 - 7 Years,219
+5/3/2022,C000042,Electronics,2 - 4 Years,832
+5/3/2022,C000046,Games,Big Kids,2920
+5/3/2022,C000050,Electronics,8 - 11 Years,869
+5/3/2022,C000052,Toys,5 - 7 Years,707
+5/3/2022,C000054,Outdoor Play,8 - 11 Years,1798
+5/3/2022,C000055,Electronics,5 - 7 Years,769
+5/3/2022,C000056,Games,5 - 7 Years,1798
+5/3/2022,C000060,Foods,8 - 11 Years,2104
+5/3/2022,C000061,Games,2 - 4 Years,3227
+5/3/2022,C000065,Games,12 - 14 Years,891
+5/3/2022,C000076,Electronics,8 - 11 Years,1540
+5/3/2022,C000079,Electronics,Birth - 12 Monthes,2507
+5/3/2022,C000081,Bikes,Big Kids,4010
+5/3/2022,C000083,Foods,12 - 14 Years,1603
+5/3/2022,C000089,Toys,Big Kids,1158
+5/3/2022,C000090,Electronics,Big Kids,1383
+5/3/2022,C000091,Games,12 - 14 Years,2686
+5/3/2022,C000093,Bikes,Big Kids,5112
+5/3/2022,C000097,Outdoor Play,2 - 4 Years,2790
+5/3/2022,C000100,Electronics,5 - 7 Years,1474
+5/3/2022,C000103,Books,12 - 24 Monthes,321
+5/3/2022,C000104,Toys,2 - 4 Years,1142
+5/3/2022,C000107,Toys,8 - 11 Years,1326
+5/3/2022,C000108,Foods,12 - 24 Monthes,3322
+5/3/2022,C000113,Electronics,8 - 11 Years,1270
+5/3/2022,C000124,Foods,12 - 24 Monthes,1490
+5/3/2022,C000126,Toys,8 - 11 Years,747
+5/3/2022,C000134,Clothing,Big Kids,176
+5/3/2022,C000137,Clothing,12 - 14 Years,222
+5/3/2022,C000138,Bikes,12 - 24 Monthes,709
+5/3/2022,C000139,Clothing,Big Kids,317
+5/3/2022,C000151,Outdoor Play,2 - 4 Years,2339
+5/3/2022,C000168,Outdoor Play,12 - 14 Years,2758
+5/3/2022,C000169,Foods,12 - 14 Years,1914
+5/3/2022,C000170,Foods,12 - 14 Years,2986
+5/3/2022,C000173,Toys,2 - 4 Years,1130
+5/3/2022,C000175,Bikes,12 - 14 Years,1179
+6/3/2022,C000197,Clothing,12 - 24 Monthes,76
+6/3/2022,C000198,Outdoor Play,Birth - 12 Monthes,788
+6/3/2022,C000199,Toys,12 - 14 Years,274
+6/3/2022,C000200,Clothing,Big Kids,63
+6/3/2022,C000201,Clothing,8 - 11 Years,61
+6/3/2022,C000202,Foods,12 - 24 Monthes,242
+6/3/2022,C000003,Books,2 - 4 Years,70
+6/3/2022,C000005,Electronics,8 - 11 Years,484
+6/3/2022,C000006,Toys,12 - 14 Years,252
+6/3/2022,C000008,Toys,5 - 7 Years,143
+6/3/2022,C000009,Outdoor Play,12 - 14 Years,374
+6/3/2022,C000011,Foods,12 - 24 Monthes,517
+6/3/2022,C000022,Electronics,8 - 11 Years,482
+6/3/2022,C000026,Clothing,2 - 4 Years,39
+6/3/2022,C000027,Toys,5 - 7 Years,212
+6/3/2022,C000029,Electronics,2 - 4 Years,214
+6/3/2022,C000030,Books,12 - 24 Monthes,91
+6/3/2022,C000032,Clothing,8 - 11 Years,26
+6/3/2022,C000037,Games,12 - 14 Years,857
+6/3/2022,C000039,Electronics,12 - 24 Monthes,342
+6/3/2022,C000040,Clothing,2 - 4 Years,99
+6/3/2022,C000058,Clothing,2 - 4 Years,87
+6/3/2022,C000059,Foods,5 - 7 Years,985
+6/3/2022,C000064,Electronics,12 - 24 Monthes,155
+6/3/2022,C000067,Toys,2 - 4 Years,110
+6/3/2022,C000069,Bikes,5 - 7 Years,178
+6/3/2022,C000071,Toys,12 - 24 Monthes,259
+6/3/2022,C000072,Books,8 - 11 Years,74
+6/3/2022,C000077,Books,12 - 24 Monthes,168
+6/3/2022,C000084,Toys,12 - 24 Monthes,353
+6/3/2022,C000085,Clothing,12 - 14 Years,84
+6/3/2022,C000086,Bikes,2 - 4 Years,136
+6/3/2022,C000087,Clothing,2 - 4 Years,36
+6/3/2022,C000088,Outdoor Play,Birth - 12 Monthes,870
+6/3/2022,C000092,Toys,12 - 24 Monthes,109
+6/3/2022,C000094,Clothing,12 - 24 Monthes,47
+6/3/2022,C000095,Games,2 - 4 Years,227
+6/3/2022,C000096,Foods,12 - 14 Years,269
+6/3/2022,C000102,Foods,8 - 11 Years,451
+6/3/2022,C000105,Toys,8 - 11 Years,138
+6/3/2022,C000110,Toys,5 - 7 Years,147
+6/3/2022,C000112,Toys,12 - 24 Monthes,134
+6/3/2022,C000114,Bikes,Big Kids,664
+6/3/2022,C000115,Bikes,Big Kids,1864
+6/3/2022,C000116,Foods,5 - 7 Years,811
+6/3/2022,C000118,Bikes,12 - 14 Years,448
+6/3/2022,C000120,Foods,Big Kids,312
+6/3/2022,C000122,Books,Big Kids,167
+6/3/2022,C000123,Toys,8 - 11 Years,281
+6/3/2022,C000127,Games,Birth - 12 Monthes,570
+6/3/2022,C000128,Bikes,Big Kids,1404
+6/3/2022,C000129,Foods,8 - 11 Years,496
+6/3/2022,C000130,Electronics,5 - 7 Years,688
+6/3/2022,C000131,Foods,2 - 4 Years,982
+6/3/2022,C000132,Books,12 - 24 Monthes,198
+6/3/2022,C000135,Electronics,8 - 11 Years,410
+6/3/2022,C000140,Foods,12 - 24 Monthes,466
+6/3/2022,C000141,Bikes,12 - 24 Monthes,166
+6/3/2022,C000145,Foods,2 - 4 Years,1109
+6/3/2022,C000146,Electronics,5 - 7 Years,513
+6/3/2022,C000149,Foods,5 - 7 Years,566
+6/3/2022,C000150,Games,12 - 14 Years,655
+6/3/2022,C000152,Books,5 - 7 Years,81
+6/3/2022,C000155,Electronics,12 - 14 Years,419
+6/3/2022,C000157,Toys,8 - 11 Years,228
+6/3/2022,C000158,Books,8 - 11 Years,187
+6/3/2022,C000159,Foods,Birth - 12 Monthes,2544
+6/3/2022,C000161,Electronics,Birth - 12 Monthes,360
+6/3/2022,C000163,Games,12 - 24 Monthes,622
+6/3/2022,C000164,Bikes,12 - 24 Monthes,178
+6/3/2022,C000167,Toys,12 - 24 Monthes,200
+6/3/2022,C000172,Toys,8 - 11 Years,354
+6/3/2022,C000176,Bikes,Birth - 12 Monthes,232
+6/3/2022,C000178,Bikes,12 - 24 Monthes,310
+6/3/2022,C000182,Clothing,Birth - 12 Monthes,34
+7/3/2022,C000203,Clothing,12 - 24 Monthes,80
+7/3/2022,C000204,Toys,12 - 14 Years,338
+7/3/2022,C000205,Bikes,8 - 11 Years,228
+7/3/2022,C000206,Bikes,12 - 24 Monthes,214
+7/3/2022,C000207,Electronics,12 - 24 Monthes,332
+7/3/2022,C000208,Games,Big Kids,448
+7/3/2022,C000209,Games,8 - 11 Years,555
+7/3/2022,C000004,Foods,2 - 4 Years,610
+7/3/2022,C000010,Bikes,Birth - 12 Monthes,149
+7/3/2022,C000013,Games,2 - 4 Years,839
+7/3/2022,C000014,Games,8 - 11 Years,878
+7/3/2022,C000015,Clothing,12 - 24 Monthes,95
+7/3/2022,C000016,Books,8 - 11 Years,190
+7/3/2022,C000017,Toys,12 - 24 Monthes,269
+7/3/2022,C000020,Electronics,2 - 4 Years,376
+7/3/2022,C000024,Foods,Big Kids,1135
+7/3/2022,C000025,Foods,12 - 24 Monthes,587
+7/3/2022,C000031,Bikes,12 - 24 Monthes,360
+7/3/2022,C000035,Bikes,8 - 11 Years,158
+7/3/2022,C000036,Books,12 - 14 Years,113
+7/3/2022,C000042,Foods,2 - 4 Years,940
+7/3/2022,C000044,Games,12 - 14 Years,899
+7/3/2022,C000047,Outdoor Play,12 - 14 Years,586
+7/3/2022,C000048,Electronics,12 - 14 Years,262
+7/3/2022,C000049,Games,12 - 24 Monthes,794
+7/3/2022,C000051,Toys,12 - 14 Years,377
+7/3/2022,C000053,Toys,5 - 7 Years,262
+7/3/2022,C000054,Foods,8 - 11 Years,266
+7/3/2022,C000055,Electronics,5 - 7 Years,656
+7/3/2022,C000060,Foods,8 - 11 Years,1012
+7/3/2022,C000062,Electronics,8 - 11 Years,332
+7/3/2022,C000063,Foods,2 - 4 Years,324
+7/3/2022,C000065,Foods,12 - 14 Years,1116
+7/3/2022,C000066,Clothing,Birth - 12 Monthes,58
+7/3/2022,C000068,Electronics,5 - 7 Years,193
+7/3/2022,C000075,Toys,5 - 7 Years,100
+7/3/2022,C000076,Electronics,8 - 11 Years,569
+7/3/2022,C000078,Electronics,Big Kids,492
+7/3/2022,C000079,Foods,Birth - 12 Monthes,3461
+7/3/2022,C000080,Books,5 - 7 Years,114
+7/3/2022,C000082,Electronics,8 - 11 Years,692
+7/3/2022,C000083,Toys,12 - 14 Years,212
+7/3/2022,C000089,Games,Big Kids,754
+7/3/2022,C000090,Games,Big Kids,641
