@@ -157,19 +157,16 @@ builder.setInput([
 # Build from source code
 ```shell
 $ yarn
-$ nx run interpreter:build
-$ nx run vega-builder:build
+$ yarn build
 ```
 ## Run Tests
 ```shell
-$ nx run interpreter:test
-$ nx run vega-builder:test
+$ yarn test
 ```
 
 ## Build package
 ```shell
-$ nx run interpreter:package
-$ nx run vega-builder:package
+$ yarn package
 ```
 
 # Citation
