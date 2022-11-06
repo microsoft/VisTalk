@@ -149,9 +149,7 @@ let impl : PredictModel | null = null;
  */
 export function getModel(): PredictModel {
   if (!impl) {
-    console.time('loadModel');
     impl = new PredictModel();
-    console.timeEnd('loadModel');
   }
   return impl;
 }

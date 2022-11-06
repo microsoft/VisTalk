@@ -154,6 +154,24 @@ builder.setInput([
 ```
 ![Chart 3](https://microsoft.github.io/VisTalk/vistalk-highlight.svg "Chart 3")
 
+# Build from source code
+```shell
+$ yarn
+$ nx run interpreter:build
+$ nx run vega-builder:build
+```
+## Run Tests
+```shell
+$ nx run interpreter:test
+$ nx run vega-builder:test
+```
+
+## Build package
+```shell
+$ nx run interpreter:package
+$ nx run vega-builder:package
+```
+
 # Citation
 
 If you use VisTalk in your research, please cite as follows:
