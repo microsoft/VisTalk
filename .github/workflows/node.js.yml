@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - uses: nrwl/nx-set-shas@v3
+    - run: yarn
     - run: npm ci
 
     - run: npx nx workspace-lint
