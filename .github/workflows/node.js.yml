@@ -16,4 +16,6 @@ jobs:
       - run: yarn install --frozen-lockfile
 
       - run: npx nx workspace-lint
-      - run: npx nx run-many --target=test
+      - run: npx nx affected --base main --target=lint --parallel=3
+      - run: npx nx affected --base main --target=test --parallel=3 --ci --code-coverage
+      - run: npx nx affected --base main --target=build --parallel=3
