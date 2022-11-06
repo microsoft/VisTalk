@@ -12,10 +12,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - uses: nrwl/nx-set-shas@v3
       - run: yarn install --frozen-lockfile
-
       - run: npx nx workspace-lint
-      - run: npx nx affected --base main --target=lint --parallel=3
-      - run: npx nx affected --base main --target=test --parallel=3 --ci --code-coverage
-      - run: npx nx affected --base main --target=build --parallel=3
