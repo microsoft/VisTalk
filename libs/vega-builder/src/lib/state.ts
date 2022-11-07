@@ -573,11 +573,6 @@ export class VegaSpecState extends ActionVisitor {
     const unit = getUnitSpec(this._spec);
     if (!unit) return;
 
-    unit.mark = {
-      type: markType,
-      innerRadius,
-    };
-
     const x = this.getX(unit);
     const y = this.getY(unit);
     const aggrTransforms = this.getAggregateTransforms(unit);
@@ -616,6 +611,12 @@ export class VegaSpecState extends ActionVisitor {
       }
     }
 
+
+    unit.mark = {
+      type: markType,
+      innerRadius,
+    };
+
     if (unit.encoding && unit.encoding.y) {
       if (markType === 'arc') {
         // pie chart
@@ -624,8 +625,6 @@ export class VegaSpecState extends ActionVisitor {
           'field' in unit.encoding.x &&
           typeof unit.encoding.x.field === 'string'
         ) {
-          unit.mark = { type: 'arc' };
-
           unit.encoding = {
             color: {
               field: unit.encoding.x.field,
@@ -641,7 +640,6 @@ export class VegaSpecState extends ActionVisitor {
       }
     } else if (unit.encoding && unit.encoding.x && 'field' in unit.encoding.x) {
       if (markType === 'arc') {
-        unit.mark = { type: 'arc' };
         unit.encoding = {
           color: {
             field: unit.encoding.x.field,

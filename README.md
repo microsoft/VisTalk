@@ -114,7 +114,7 @@ builder.setInput(['total sales by brand', 'sort it'])
 ```
 
 #### builder.build
-This property allow you get the generated vega-lite spec as a javascript JSON object (Type defined in Vega-Lite package).
+Generate vega-lite spec as a javascript JSON object (Type defined in Vega-Lite package).
 ```ts
 let spec = builder.build({name: 'table'});
 ```
