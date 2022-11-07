@@ -11,10 +11,10 @@
 &nbsp;
 
 ## Try it out
-You can try the [Vis Talk Playground Web App](https://microsoft.github.io/VisTalk/) or Fork [Vis Talk Observable Notebook](https://observablehq.com/@zhitao/vistalk)
-#### Demo:
-![vis-talk-playground](https://user-images.githubusercontent.com/822440/200222498-11df1cd5-8426-4086-803d-50b7028032a9.gif)
+You can try the [Playground Web App](https://microsoft.github.io/VisTalk/) or fork example [Observable Notebook](https://observablehq.com/@zhitao/vistalk)
 
+#### Playground Demo:
+![vis-talk-playground](https://user-images.githubusercontent.com/822440/200222498-11df1cd5-8426-4086-803d-50b7028032a9.gif)
 
 ## For Developers
 ### Installing
@@ -30,14 +30,16 @@ $ npm install @vis-talk/vega-builder
 
 ## Build a simple react sample app
 
-```shell
-$ npx create-react-app my-vis-app
+```
+$ npx create-react-app my-vis-app --template typescript
 $ cd my-vis-app
-$ npm install @vis-talk/vega-builder vega vega-lite react-vega
+$ npm install @vis-talk/vega-builder react-vega
 ```
 
-Modify App.js to:
-```js
+Modify _src/App.tsx_ to:
+
+```tsx
+import React from 'react';
 import { createBuilder } from "@vis-talk/vega-builder";
 import { VegaLite } from "react-vega";
 
@@ -52,12 +54,15 @@ function App() {
     { Brand: "BrandC", Category: "Midsize", Sales: 20 },
     { Brand: "BrandD", Category: "Midsize", Sales: 5 },
   ];
+  
   const builder = createBuilder(table);
+  
   builder.setInput([
     "total sales by brand",
     "highlight midsize in orange",
     "add line in 60 in red",
     "add rect from 12 to 37 in green"]);
+    
   const spec = builder.build({ name: "table" });
 
   return (
@@ -159,13 +164,13 @@ builder.setInput([
 # Build from source code
 
 ## Enlist code
-```shell
+```
 $ git clone https://github.com/microsoft/VisTalk.git
 $ cd VisTalk
 ```
 
 ## Build & Run
-```shell
+```
 $ yarn
 $ yarn build
 $ yarn start
