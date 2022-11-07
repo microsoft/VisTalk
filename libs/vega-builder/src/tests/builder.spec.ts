@@ -59,6 +59,15 @@ describe('session', () => {
     expect(actual).toEqual(['sum of Sales', 'sum']);
   });
 
+  it('total sales by brand as donut chart', () => {
+    const spec = session.setInput(['total sales by brand as donut chart']).build();
+    const actual = at(spec as any, [
+      'mark.type',
+      'mark.innerRadius',
+    ]);
+    expect(actual).toEqual(['arc', 80]);
+  });
+
   it('average of sales', () => {
     const spec = session.setInput(['average of sales']).build();
     const actual = at(spec as any, [
