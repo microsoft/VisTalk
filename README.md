@@ -12,11 +12,13 @@
 
 ## Try it out
 You can try the [Vis Talk Playground Web App](https://microsoft.github.io/VisTalk/) or Fork [Vis Talk Observable Notebook](https://observablehq.com/@zhitao/vistalk)
+#### Demo:
+![vis-talk-playground](https://user-images.githubusercontent.com/822440/200222498-11df1cd5-8426-4086-803d-50b7028032a9.gif)
 
 
 ## For Developers
 ### Installing
-----
+
 Install using yarn:
 ```shell
 $ yarn add @vis-talk/vega-builder
