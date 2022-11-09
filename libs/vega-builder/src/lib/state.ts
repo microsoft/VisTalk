@@ -73,7 +73,8 @@ export class VegaSpecState extends ActionVisitor {
   private _spec: TopLevelSpec;
 
   private _interpretations: Interpretation[];
-  private autoMarkType: boolean;
+  private _autoMarkType: boolean;
+  private _isTimeSeries: boolean;
   private _data: { values: object[] } | { name: string };
 
   constructor(dataProvider: DataProvider, interpretations: Interpretation[]) {
@@ -81,7 +82,8 @@ export class VegaSpecState extends ActionVisitor {
 
     this._dataProvider = dataProvider;
     this._interpretations = interpretations;
-    this.autoMarkType = true;
+    this._autoMarkType = true;
+    this._isTimeSeries = false;
 
     this._data = { name: 'table' };
     this._spec = this.createInitSpec();
@@ -95,15 +97,7 @@ export class VegaSpecState extends ActionVisitor {
    * @memberof VegaSpecState
    */
   public get isTimeSeries(): boolean {
-    const unit = getUnitSpec(this._spec);
-    if (unit) {
-      const x = this.getX(unit);
-      if (x) {
-        return x.type === 'temporal';
-      }
-    }
-
-    return false;
+    return this._isTimeSeries;
   }
 
   /**
@@ -289,6 +283,8 @@ export class VegaSpecState extends ActionVisitor {
 
     if (!unit.encoding) return;
 
+    this._isTimeSeries = command.field.dataType === 'datetime';
+    
     const bindY = this.getY(unit);
     let width = 300;
     const height =
@@ -327,7 +323,9 @@ export class VegaSpecState extends ActionVisitor {
     const x: PositionDef<Field> = {
       field: command.field.name,
       type,
-      axis: {
+      axis: this._isTimeSeries ? {
+        labelAngle: 0,
+      } : {
         labelLimit: type === 'ordinal' ? 50 : undefined,
         labelAngle: type === 'ordinal' ? 30 : undefined,
         labelOffset: -10,
@@ -356,7 +354,7 @@ export class VegaSpecState extends ActionVisitor {
         };
         unit.encoding = { ...(unit.encoding ?? {}), y };
         this.setHeight(300);
-        if (this.autoMarkType) {
+        if (this._autoMarkType) {
           unit.mark = { type: 'square' };
         }
       } else {
@@ -498,8 +496,8 @@ export class VegaSpecState extends ActionVisitor {
       unitSpec.transform = transform;
     }
 
-    if (this.autoMarkType && typeof unitSpec.mark === 'object') {
-      unitSpec.mark.type = this.isTemporal()
+    if (this._autoMarkType && typeof unitSpec.mark === 'object') {
+      unitSpec.mark.type = this.isTimeSeries
         ? 'line'
         : aggregate
         ? 'bar'
@@ -514,7 +512,7 @@ export class VegaSpecState extends ActionVisitor {
     }
 
     if (
-      this.autoMarkType &&
+      this._autoMarkType &&
       typeof unit.mark === 'object' &&
       'type' in unit.mark &&
       unit.encoding &&
@@ -524,25 +522,6 @@ export class VegaSpecState extends ActionVisitor {
     ) {
       unit.mark = 'circle';
     }
-  }
-
-  private isTemporal() {
-    if ('mark' in this._spec)
-      return (
-        this._spec.encoding?.x &&
-        typeof this._spec.encoding.x === 'object' &&
-        'type' in this._spec.encoding.x &&
-        this._spec.encoding.x.type === 'temporal'
-      );
-
-    return (
-      'layer' in this._spec &&
-      this._spec.layer.length > 0 &&
-      this._spec.layer[0].encoding?.x &&
-      typeof this._spec.layer[0].encoding.x === 'object' &&
-      'type' in this._spec.layer[0].encoding.x &&
-      this._spec.layer[0].encoding.x.type === 'temporal'
-    );
   }
 
   visitChangeAggregation(command: ChangeAggregation): void {
@@ -653,7 +632,7 @@ export class VegaSpecState extends ActionVisitor {
       this.visitSwapAxis({ type: 'SwapAxis' });
     }
 
-    this.autoMarkType = false;
+    this._autoMarkType = false;
   }
 
   visitAddLine(command: AddLine): void {
@@ -872,11 +851,11 @@ export class VegaSpecState extends ActionVisitor {
       encoding: {
         x: {
           field: layer.encoding.x.field,
-          type: 'temporal',
+          type: layer.encoding.x.type,
         },
         y: {
           field: layer.encoding.y.field,
-          type: 'quantitative',
+          type: layer.encoding.y.type,
         },
         strokeWidth: {
           value: 2,
@@ -1473,7 +1452,7 @@ export class VegaSpecState extends ActionVisitor {
     if (aggr && aggr.field) {
       if (aggr.aggregate) return 'quantitative';
 
-      if (aggr.field.dataType === 'datetime') {
+      if (aggr.field.dataType === 'datetime' && !aggr.field.dataCategory) {
         return 'temporal';
       }
 

@@ -221,12 +221,20 @@ $ yarn train
 
 Manually replace the generated _model-data.ts_ to libs/interpreter/src/lib/model-data.ts
 
+&nbsp;
+
+# Feedback
+If you have any questions, feel free to [open an issue](https://github.com/microsoft/VisTalk/issues/new/choose) or contact us: [Vis Talk Team](mailto:vistalk@microsoft.com).
+
+&nbsp;
+
 # Citation
 
 If you use VisTalk in your research, please cite as follows:
 
 > Y. Wang et al., "Towards Natural Language-Based Visualization Authoring," in IEEE Transactions on Visualization and Computer Graphics, 2022, doi: 10.1109/TVCG.2022.3209357.
 
+&nbsp;
 
 ## License
 This project is licensed under the [MIT License](LICENSE.txt).
