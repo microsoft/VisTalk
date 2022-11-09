@@ -12,7 +12,8 @@
     "build": "nx run-many --target=build --all=true",
     "test": "nx run-many --target=test --all=true",
     "package": "nx run-many --target=package --all=true",
-    "e2e": "nx run-many --target=e2e --all=true"
+    "e2e": "nx run-many --target=e2e --all=true",
+    "train": "nx run train-model:train"
   },
   "private": true,
   "dependencies": {

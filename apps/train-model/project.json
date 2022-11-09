@@ -1,0 +1,19 @@
+{
+    "root": "apps/train-model",
+    "sourceRoot": "apps/train-model",
+    "projectType": "application",
+    "targets": {
+        "train": {
+            "executor": "nx:run-commands",
+            "options": {
+                "commands": [
+                    "python train.py",
+                    "tensorflowjs_converter --control_flow_v2=True --input_format=tf_saved_model --metadata= --saved_model_tags=serve --signature_name=serving_default --strip_debug_ops=True --weight_shard_size_bytes=4194304 dist/saved_model dist/web_model",
+                    "node convert.js"
+                ],
+                "cwd": "apps/train-model",
+                "parallel": false
+            }
+        }
+    }
+}
