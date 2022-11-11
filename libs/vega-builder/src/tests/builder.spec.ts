@@ -65,7 +65,7 @@ describe('session', () => {
       'mark.type',
       'mark.innerRadius',
     ]);
-    expect(actual).toEqual(['arc', 80]);
+    expect(actual).toEqual(['arc', 40]);
   });
 
   it('average of sales', () => {

@@ -55,10 +55,11 @@ import { Dict } from 'vega-lite/build/src/util';
 
 export class Defaults {
   public static minHeight = 150;
-  public static minWidth = 150;
+  public static minWidth = 200;
   public static defaultHistogramHeight = 250;
   public static defaultHistogramWidth = 300;
-  public static defaultFillColor = '#418ded';
+  public static defaultFillColor = '#118dff';
+  public static defaultWidth = 200;
 }
 
 /**
@@ -76,6 +77,7 @@ export class VegaSpecState extends ActionVisitor {
   private _autoMarkType: boolean;
   private _isTimeSeries: boolean;
   private _data: { values: object[] } | { name: string };
+  private _swapAxis: boolean;
 
   constructor(dataProvider: DataProvider, interpretations: Interpretation[]) {
     super();
@@ -84,6 +86,7 @@ export class VegaSpecState extends ActionVisitor {
     this._interpretations = interpretations;
     this._autoMarkType = true;
     this._isTimeSeries = false;
+    this._swapAxis = false;
 
     this._data = { name: 'table' };
     this._spec = this.createInitSpec();
@@ -127,11 +130,26 @@ export class VegaSpecState extends ActionVisitor {
       data: this._data,
       width: Defaults.minWidth,
       height: Defaults.minHeight,
-      mark: { type: 'tick' },
+      mark: { type: 'tick', tooltip: true },
       encoding: { color: { value: Defaults.defaultFillColor } },
       autosize: {
         type: 'fit',
         contains: 'padding',
+      },
+      config: {
+        font: 'Segoe UI',
+        axis: {
+          labelColor: '#777777',
+          titleColor: '#999999',
+          titleFontWeight: 'normal',
+        },
+        axisXBand: {
+          labelPadding: 0,
+          labelAngle: -35,
+        },
+        axisQuantitative: {
+          format: '~s',
+        },
       },
       usermeta: this.usermeta,
     };
@@ -284,7 +302,7 @@ export class VegaSpecState extends ActionVisitor {
     if (!unit.encoding) return;
 
     this._isTimeSeries = command.field.dataType === 'datetime';
-    
+
     const bindY = this.getY(unit);
     let width = 300;
     const height =
@@ -302,10 +320,7 @@ export class VegaSpecState extends ActionVisitor {
       columns[0].dataType !== 'datetime' &&
       columns[0].distinctValuesCount > 0
     ) {
-      width = Math.min(
-        600,
-        200 + Math.max(10, columns[0].distinctValuesCount) * 20
-      );
+      width = Math.min(600, 100 + columns[0].distinctValuesCount * 30);
     }
 
     if ('width' in this._spec && this._spec.width) {
@@ -323,14 +338,6 @@ export class VegaSpecState extends ActionVisitor {
     const x: PositionDef<Field> = {
       field: command.field.name,
       type,
-      axis: this._isTimeSeries ? {
-        labelAngle: 0,
-      } : {
-        labelLimit: type === 'ordinal' ? 50 : undefined,
-        labelAngle: type === 'ordinal' ? 30 : undefined,
-        labelOffset: -10,
-        // labelOverlap: "greedy"
-      },
     };
 
     unit.encoding = { ...(unit.encoding ?? {}), x };
@@ -355,7 +362,7 @@ export class VegaSpecState extends ActionVisitor {
         unit.encoding = { ...(unit.encoding ?? {}), y };
         this.setHeight(300);
         if (this._autoMarkType) {
-          unit.mark = { type: 'square' };
+          unit.mark = { type: 'square', tooltip: true };
         }
       } else {
         const color: PositionDef<Field> = {
@@ -475,11 +482,13 @@ export class VegaSpecState extends ActionVisitor {
       return;
     }
 
-    if (unitSpec.encoding) {
-      unitSpec.encoding.y = { field, type };
-    } else {
-      unitSpec.encoding = { y: { field, type } };
-    }
+    unitSpec.encoding = {
+      ...(unitSpec.encoding ?? {}),
+      y: {
+        field,
+        type,
+      },
+    };
 
     if (unitSpec.encoding) {
       if (!('color' in unitSpec.encoding)) {
@@ -520,7 +529,10 @@ export class VegaSpecState extends ActionVisitor {
       unit.encoding.y &&
       (!unit.transform || unit.transform.length === 0)
     ) {
-      unit.mark = 'circle';
+      unit.mark = {
+        type: 'circle',
+        tooltip: true,
+      };
     }
   }
 
@@ -581,19 +593,29 @@ export class VegaSpecState extends ActionVisitor {
       if (x) {
         x.bin = true;
         x.type = undefined;
+        x.axis = {
+          labelColor: '#777777',
+          titleColor: '#999999',
+          titleFontWeight: 'normal',
+        };
       } else if (y) {
         unit.encoding = {
           ...(unit.encoding ?? {}),
-          x: { field: y.field, bin: true },
-          y: { aggregate: 'count' },
+          x: {
+            field: y.field,
+            bin: true,
+          },
+          y: {
+            aggregate: 'count',
+          },
         };
       }
     }
 
-
     unit.mark = {
       type: markType,
       innerRadius,
+      tooltip: true,
     };
 
     if (unit.encoding && unit.encoding.y) {
@@ -636,24 +658,64 @@ export class VegaSpecState extends ActionVisitor {
   }
 
   visitAddLine(command: AddLine): void {
-    const y = { datum: command.value };
     const stroke = { value: command.color };
 
     this.convertToLayerSpec();
 
     if (!('layer' in this._spec)) return;
 
-    this._spec.layer.push({
-      data: {
-        values: [{}],
-      },
-      encoding: { y, stroke },
-      layer: [
-        {
-          mark: 'rule',
+    if (command.aggr) {
+      if (this._spec.layer.length > 0) {
+        const layer = this._spec.layer[0];
+        if (
+          'encoding' in layer &&
+          layer.encoding &&
+          layer.encoding.y &&
+          'field' in layer.encoding.y &&
+          typeof layer.encoding.y.field === 'string'
+        ) {
+          const field = layer.encoding.y.field;
+          const op = command.aggr;
+          const as = command.aggr;
+          const transform = [...(layer.transform ?? [])];
+          transform.push({
+            aggregate: [
+              {
+                op,
+                field,
+                as,
+              },
+            ],
+            groupby: [],
+          });
+          this._spec.layer.push({
+            data: this._data,
+            mark: 'rule',
+            transform,
+            encoding: {
+              y: { field: as, axis: null },
+              color: { value: command.color },
+            },
+          });
+        }
+      }
+    } else {
+      const encoding = this._swapAxis
+        ? { x: { datum: command.value } }
+        : { y: { datum: command.value } };
+
+      this._spec.layer.push({
+        data: {
+          values: [{}],
         },
-      ],
-    });
+        encoding: { ...encoding, stroke },
+        layer: [
+          {
+            mark: 'rule',
+          },
+        ],
+      });
+    }
   }
 
   visitSetColor(command: SetColor): void {
@@ -663,7 +725,16 @@ export class VegaSpecState extends ActionVisitor {
     switch (command.target) {
       case 'DataPoint':
         if (unit.encoding) {
-          unit.encoding.color = { value: command.color };
+          if (
+            unit.encoding.color &&
+            unit.encoding.color.condition &&
+            'value' in unit.encoding.color &&
+            unit.encoding.color.value
+          ) {
+            unit.encoding.color.value = command.color;
+          } else {
+            unit.encoding.color = { value: command.color };
+          }
         }
         break;
 
@@ -682,6 +753,10 @@ export class VegaSpecState extends ActionVisitor {
       return;
     }
 
+    if ('width' in this._spec && typeof this._spec.width === 'number') {
+      this.setWidth(this._spec.width + 100);
+    }
+
     if (unit.encoding) {
       unit.encoding.color = { field: command.field.name };
     }
@@ -698,6 +773,8 @@ export class VegaSpecState extends ActionVisitor {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   visitSwapAxis(_: SwapAxis): void {
+    this._swapAxis = !this._swapAxis;
+
     const unit = getUnitSpec(this._spec);
     if (!unit) return;
     const y = this.getX(unit);
@@ -707,6 +784,12 @@ export class VegaSpecState extends ActionVisitor {
       y.axis.labelAngle = undefined;
       y.axis.labelOffset = undefined;
       y.axis.labelLimit = undefined;
+    }
+
+    if ('width' in this._spec && 'height' in this._spec) {
+      const { width, height } = this._spec;
+      this._spec.width = height;
+      this._spec.height = width;
     }
 
     const x = this.getY(unit);
@@ -884,6 +967,7 @@ export class VegaSpecState extends ActionVisitor {
             transform: this._spec.transform,
           },
         ],
+        config: this._spec.config,
         usermeta: this._spec.usermeta,
       };
     }
@@ -927,8 +1011,15 @@ export class VegaSpecState extends ActionVisitor {
           'field' in unit.encoding.x &&
           unit.encoding.x.field === sort.field.name
         ) {
-          unit.encoding.x.sort =
-            sort.direction == 'asc' ? 'ascending' : 'descending';
+          if (sort.direction === 'auto') {
+            unit.encoding.x.sort =
+              sort.field && sort.field.dataType === 'string'
+                ? 'ascending'
+                : 'descending';
+          } else {
+            unit.encoding.x.sort =
+              sort.direction == 'asc' ? 'ascending' : 'descending';
+          }
           return;
         }
 
@@ -942,12 +1033,23 @@ export class VegaSpecState extends ActionVisitor {
           return;
         }
       }
-      if (
-        unit.encoding.x &&
-        typeof unit.encoding.x === 'object' &&
-        'field' in unit.encoding.x
-      ) {
-        unit.encoding.x.sort = sort.direction === 'asc' ? 'y' : '-y';
+
+      if (this._swapAxis) {
+        if (
+          unit.encoding.y &&
+          typeof unit.encoding.y === 'object' &&
+          'field' in unit.encoding.y
+        ) {
+          unit.encoding.y.sort = sort.direction === 'asc' ? 'x' : '-x';
+        }
+      } else {
+        if (
+          unit.encoding.x &&
+          typeof unit.encoding.x === 'object' &&
+          'field' in unit.encoding.x
+        ) {
+          unit.encoding.x.sort = sort.direction === 'asc' ? 'y' : '-y';
+        }
       }
     }
   }
@@ -960,7 +1062,11 @@ export class VegaSpecState extends ActionVisitor {
         const from = new Date(Date.parse(commmand.timeRange.from));
         const to = new Date(Date.parse(commmand.timeRange.to));
         this._spec.layer = [
+          ...this._spec.layer,
           {
+            data: {
+              values: [{}],
+            },
             mark: 'rect',
             encoding: {
               x: {
@@ -974,23 +1080,33 @@ export class VegaSpecState extends ActionVisitor {
                 },
               },
               color: { value: commmand.color },
-              opacity: { value: 0.2 },
+              opacity: { value: 0.6 },
             },
           },
-          ...this._spec.layer,
         ];
       } else if (commmand.yRange) {
-        this._spec.layer = [
-          {
-            mark: 'rect',
-            encoding: {
+        const encoding = this._swapAxis
+          ? {
+              x: { datum: commmand.yRange.from },
+              x2: { datum: commmand.yRange.to },
+            }
+          : {
               y: { datum: commmand.yRange.from },
               y2: { datum: commmand.yRange.to },
+            };
+        this._spec.layer = [
+          ...this._spec.layer,
+          {
+            data: {
+              values: [{}],
+            },
+            mark: 'rect',
+            encoding: {
+              ...encoding,
               color: { value: commmand.color },
-              opacity: { value: 0.2 },
+              opacity: { value: 0.6 },
             },
           },
-          ...this._spec.layer,
         ];
       }
     }
@@ -1031,52 +1147,51 @@ export class VegaSpecState extends ActionVisitor {
 
     this.convertToLayerSpec();
     if (commmand.values) {
-      for (const value of commmand.values) {
-        if (!('layer' in this._spec) || this._spec.layer.length === 0) return;
+      const or = commmand.values.map((x) => ({
+        field: x.key.name,
+        equal: x.value,
+      }));
 
-        if (this._spec.layer.length > 0) {
-          const layer = this._spec.layer[0];
-          if (
-            'mark' in layer &&
-            layer.encoding &&
-            layer.encoding.x &&
-            'field' in layer.encoding.x &&
-            layer.encoding.y &&
-            'field' in layer.encoding.y
-          ) {
-            const filter = `datum['${value.key.name}'] == '${value.value}'`;
-            const transform: Transform[] = [{ filter }];
-            if (layer.transform) {
-              for (const t of layer.transform) {
-                transform.push(t);
+      const unit = getUnitSpec(this._spec);
+      if (!unit) return;
+
+      if (commmand.values) {
+        for (const key of commmand.values) {
+          const transform = unit.transform;
+          if (transform) {
+            for (const t of transform) {
+              if ('groupby' in t && t.groupby) {
+                if (!t.groupby.includes(key.key.name)) {
+                  t.groupby.push(key.key.name);
+                }
               }
             }
 
-            const highlightLayer: UnitSpec<string> = {
-              mark: layer.mark,
-              transform,
-              encoding: {
-                x: layer.encoding.x,
-                y: layer.encoding.y,
-                color: { value: commmand.color },
-              },
-            };
-            this._spec.layer.push(highlightLayer);
+            const hasOrder = transform.filter(x => 'as' in x && x.as === 'order').length > 0;
+            let calculate = `if(datum['${ key.key.name }'] === '${ key.value }', 0, 1)`;
+            if (hasOrder) {
+              calculate += '+datum.order';
+            }
+            transform.push({
+              calculate,
+              as: 'order',
+            });
           }
-          // const category = layer.;
-          // const value = this.bindY[0].field.name;
-          // const aggregate = 'sum';
-          // const highlightLayer: UnitSpec<string> = this.createHighlightLayer(
-          //   highlight,
-          //   category.field,
-          //   value,
-          //   aggregate,
-          //   this.swapAxis
-          // );
-          // layer1.push(highlightLayer);
         }
       }
+      unit.encoding = {
+        ...unit.encoding,
+        color: {
+          condition: {
+            test: { or },
+            value: commmand.color,
+          },
+          value: Defaults.defaultFillColor,
+        },
+        order: { field: 'order' }
+      };
     }
+
     if (commmand.topN !== undefined) {
       if (!('layer' in this._spec) || this._spec.layer.length === 0) return;
 
@@ -1187,6 +1302,7 @@ export class VegaSpecState extends ActionVisitor {
               field: command.field,
             },
           },
+          config: this._spec.config,
           usermeta: this._spec.usermeta,
         };
       }

@@ -220,15 +220,22 @@ export function createEditAction(dataProvider: DataProvider, intent: string, ter
       const colors = entities.filter(
         (x) => x.type === 'color'
       ) as ColorEntity[];
+      const aggrs = entities.filter(
+        (x) => x.type === 'aggrType'
+      ) as AggregationTypeEntity[];
       let value = 0;
       let color = 'black';
+      let aggr: AggregationType | undefined = undefined;
       if (values.length > 0) {
         value = values[0].value;
       }
       if (colors.length) {
         color = colors[0].color;
       }
-      return { type: 'AddLine', value, color };
+      if (aggrs.length) {
+        aggr = aggrs[0].aggregate;
+      }
+      return { type: 'AddLine', value, color, aggr };
     }
     case 'IncreaseHeight':
       return { type: 'IncreaseHeight' };
@@ -377,6 +384,8 @@ export function createEditAction(dataProvider: DataProvider, intent: string, ter
     case 'Highlight': {
       const highlightValues: { key: Field; value: string; }[] = [];
       const values: { key: Field; value: string; }[] = [];
+      
+      let aggr : AggregationType | undefined = undefined;
       let fill = 'orange';
       let topN: number | undefined = undefined;
       for (const term of terms) {
@@ -391,6 +400,8 @@ export function createEditAction(dataProvider: DataProvider, intent: string, ter
               value: term.entity.filter.target.value,
             });
           }
+        }  else if (term.entity.type === 'aggrType') {
+          aggr = term.entity.aggregate;
         }
       }
       for (const value of values) {
@@ -402,6 +413,7 @@ export function createEditAction(dataProvider: DataProvider, intent: string, ter
       return {
         type: 'Highlight',
         values: highlightValues,
+        aggr,
         topN,
         color: fill,
       };

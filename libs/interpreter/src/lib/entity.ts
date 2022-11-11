@@ -118,7 +118,7 @@ function resolveChartType(chart: string): Entity {
         markType: 'arc',
         isClustered: false,
         swapAxis: false,
-        innerRadius: 80,
+        innerRadius: 40,
         implictAggregation: true,
       };
 
@@ -321,6 +321,18 @@ export function resolveEntity(
           case 'one':
           case 'once':
             return { type: 'number', value: 1 };
+
+          case 'avg':
+          case 'average':
+          case 'mean':
+          case 'middle':
+            return { type: 'aggrType', aggregate: 'mean' };
+            
+          case 'max':
+            return { type: 'aggrType', aggregate: 'max' };
+
+          case 'min':
+            return { type: 'aggrType', aggregate: 'min' };
         }
       }
       return tokens[0].entity;

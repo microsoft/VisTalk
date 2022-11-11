@@ -431,6 +431,7 @@ export interface AddLine {
   type: 'AddLine';
   value: number;
   color: string;
+  aggr?: AggregationType;
 }
 
 /**
@@ -485,6 +486,9 @@ export interface Highlight {
      */
     value: string;
   }[];
+
+  aggr?: AggregationType;
+
   /**
    * Highlight by topN data points.
    */

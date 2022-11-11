@@ -91,6 +91,7 @@ export class Interpreter {
     }
 
     const preds = this._model.predict(listOfTokenIds);
+    console.log({preds: JSON.stringify(preds)});
     const interpretations = new Array<Interpretation>();
 
     for (let i = 0; i < lines.length; i++) {
@@ -100,7 +101,8 @@ export class Interpreter {
       for (let j = 0; j < tokens.length; j++) {
         tokens[j].tag = tags[j];
       }
-      interpretations.push(
+    console.log({intents});
+    interpretations.push(
         this.interpret(this._dataProvider, input, tokens, intents)
       );
     }
@@ -158,6 +160,7 @@ export class Interpreter {
       });
     }
 
+    console.log({itnents: JSON.stringify(intents)})
     if (
       terms.filter((x) => x.entity.type === 'chart').length > 0 &&
       !intents.includes('SetChartType')
@@ -173,23 +176,23 @@ export class Interpreter {
       intents.push('BindY');
     }
 
-    if (
-      terms.filter((x) => x.tag === 'sorted' && x.entity.type === 'field')
-        .length > 0 &&
-      !intents.includes('BindY') &&
-      !intents.includes('Highlight')
-    ) {
-      intents.push('BindY');
-    }
+    // if (
+    //   terms.filter((x) => x.tag === 'sorted' && x.entity.type === 'field')
+    //     .length > 0 &&
+    //   !intents.includes('BindY') &&
+    //   !intents.includes('Highlight')
+    // ) {
+    //   intents.push('BindY');
+    // }
 
-    if (
-      terms.filter((x) => x.entity.type === 'field').length > 0 &&
-      !intents.includes('BindX') &&
-      !intents.includes('Repeat') &&
-      !intents.includes('BindSeries')
-    ) {
-      intents.push('BindX');
-    }
+    // if (
+    //   terms.filter((x) => x.entity.type === 'field').length > 0 &&
+    //   !intents.includes('BindX') &&
+    //   !intents.includes('Repeat') &&
+    //   !intents.includes('BindSeries')
+    // ) {
+    //   intents.push('BindX');
+    // }
 
     if (
       terms.filter((x) => isComparison(x.tag) || x.tag === 'filter').length >

@@ -33,15 +33,15 @@
       "executor": "@nrwl/web:rollup",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "project": "libs/interpreter/package.json",
-        "outputPath": "dist/libs/@vis-talk/interpreter",
-        "entryFile": "libs/interpreter/src/index.ts",
-        "tsConfig": "libs/interpreter/tsconfig.lib.json",
+        "project": "libs/vega-builder/package.json",
+        "outputPath": "dist/libs/@vis-talk/vega-builder",
+        "entryFile": "libs/vega-builder/src/index.ts",
+        "tsConfig": "libs/vega-builder/tsconfig.lib.json",
         "compiler": "babel",
-        "umdName": "vistalk-interpreter",
+        "umdName": "vistalk-vega-builder",
         "external": ["typescript"],
         "format": ["esm", "umd"],
-        "rollupConfig": "libs/interpreter/rollup.config.js"
+        "rollupConfig": "libs/vega-builder/rollup.config.js"
       }
     }
   },
