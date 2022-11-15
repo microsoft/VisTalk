@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
-import { setBackend } from '@tensorflow/tfjs';
+import { getBackend } from '@tensorflow/tfjs-node';
 import { at } from 'lodash';
 import { createBuilder } from '../lib/builder';
 
-setBackend('cpu');
+console.log(getBackend());
 
 const carSales = [
   {

@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
-import { setBackend } from "@tensorflow/tfjs";
+import { getBackend } from '@tensorflow/tfjs-node';
 import { createDataProvider } from "../lib/data";
 import { Interpreter } from "../lib/interpreter";
 import { tokenize } from "../lib/tokenize";
@@ -23,7 +23,7 @@ const carSales = [
   },
 ];
 
-setBackend('cpu');
+console.log(getBackend());
 
 const interpreter = new Interpreter(createDataProvider(carSales));
 const tests = [

@@ -106,7 +106,6 @@ export class PredictModel {
         preds[id].tags = tags;
       }
     }
-    console.log({pred: JSON.stringify(preds)});
   
     return preds;
   }

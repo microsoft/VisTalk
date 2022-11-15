@@ -91,7 +91,6 @@ export class Interpreter {
     }
 
     const preds = this._model.predict(listOfTokenIds);
-    console.log({preds: JSON.stringify(preds)});
     const interpretations = new Array<Interpretation>();
 
     for (let i = 0; i < lines.length; i++) {
@@ -101,7 +100,6 @@ export class Interpreter {
       for (let j = 0; j < tokens.length; j++) {
         tokens[j].tag = tags[j];
       }
-    console.log({intents});
     interpretations.push(
         this.interpret(this._dataProvider, input, tokens, intents)
       );
@@ -160,7 +158,6 @@ export class Interpreter {
       });
     }
 
-    console.log({itnents: JSON.stringify(intents)})
     if (
       terms.filter((x) => x.entity.type === 'chart').length > 0 &&
       !intents.includes('SetChartType')
