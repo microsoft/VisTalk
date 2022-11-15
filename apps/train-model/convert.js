@@ -10,11 +10,11 @@ const tags = fs.readFileSync('./dataset/tag_list.txt').toString();
 const words = fs.readFileSync('./dataset/word_list.txt').toString();
 const intent_list = fs.readFileSync('./dataset/intent_list.txt').toString();
 const intents = JSON.stringify(
-  intent_list.toString().split('\r\n')
+  intent_list.toString().split(os.EOL)
   .filter(x => x !== '').map(x => x.split(' ')[0]), null, 2);
 
 const model_data = bin.toString('base64');
-const wordDict = Object.fromEntries(words.split('\r\n').map(x => x.split(' ')).filter(x => x.length === 2).map(x => [x[0], parseInt(x[1])]));
+const wordDict = Object.fromEntries(words.split(os.EOL).map(x => x.split(' ')).filter(x => x.length === 2).map(x => [x[0], parseInt(x[1])]));
 const tagNames = tags.split('\n').map(x => x.split(' ')[0]).filter(x => x !== '');
 const source = [
   '// Copyright (c) Microsoft Corporation. All rights reserved.',

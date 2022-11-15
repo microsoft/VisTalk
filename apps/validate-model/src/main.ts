@@ -3,6 +3,7 @@ import { getBackend } from '@tensorflow/tfjs-node';
 import { getModel } from '@vis-talk/interpreter';
 import { last } from 'lodash';
 import { resolve } from 'path';
+import { EOL } from 'os';
 
 console.log(`Tensorflow Backend ${ getBackend() }`);
 console.time('validate-model');
@@ -13,7 +14,7 @@ for (const file of files) {
   const data_all = readFileSync(resolve(dir, `${file}.txt`)).toString();
   const test_cases = new Array<string[]>();
   const intents = new Set<string>();
-  const lines = data_all.split('\n');
+  const lines = data_all.split(EOL);
   const groups = new Map<string, string[]>();
   const items = new Array<string>();
   const tokenIdArray = new Array<number[]>();
