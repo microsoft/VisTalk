@@ -1,0 +1,36 @@
+- Intents:
+  - Repeat
+  Templates:
+  - '{verb_prep} {verb} {prep} {field}'
+  - repeat it for each {field}
+  - repeat by {field}
+  Parameters:
+  - Name: verb_prep
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: verb
+    EntityType: None
+    Templates:
+    - repeat
+    - repeat it
+    - expand
+    - expand it
+    - do again
+  - Name: prep
+    EntityType: None
+    Templates:
+    - by
+    - to
+    - to other
+    - for each
+    - foreach
+    - by each
+    - with each
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>

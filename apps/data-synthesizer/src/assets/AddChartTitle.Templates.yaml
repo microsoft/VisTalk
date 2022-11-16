@@ -1,0 +1,58 @@
+- Intents:
+  - AddChartTitle
+  Templates:
+  - add a {target}
+  - add chart {target}
+  - add a {target} to the chart
+  - add {target} {text}
+  - add a chart description
+  - add chart {target} as {text}
+  - add a {target} called {text}
+  - add a text description to the top of the chart
+  - give the chart the {target} {text}
+  - insert chart {target}
+  - add the {target} to graph namely {text}
+  - add {target} at the top that says, {text}
+  - add the {target} {text} to the top
+  - add a chart heading {text} 
+  - insert {target} line at the top of the graph
+  - set chart {target}
+  - set {target} of the chart as {text}
+  - set {target} to be {text}
+  - put a {target} to the chart
+  - put a {target} {text} over the chart
+  - show a {target} {text}
+  - show chart {target}
+  - show {text} as chart {target}
+  - create chart {target}
+  - use {text} to be the {target} of the chart
+  - make its {target} to be {text}
+  - put a chart {target} {text} on the chart
+  - set title text {text}
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - title
+  - Name: text
+    EntityType: String
+    Templates:
+    - <string>
+
+- Intents:
+  - AddChartTitle
+  Templates:
+  - set {target} text {text}
+  - set {target} text {text}
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - title
+    - chart title
+  - Name: text
+    EntityType: String
+    Templates:
+    - <measure> by <column>
+    - a simple bar chart
+    - chart <number>

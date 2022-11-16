@@ -1,0 +1,227 @@
+- Intents:
+  - SwapAxis
+  Templates:
+  - 'exchanging x and y values'
+  - 'swap x and y values'
+  - switched from left to right horizontally to bottom up to top vertically
+  - change axis with each other
+  - change axis, horizontal {aggr} and vertical {field}.
+  - change both x and y axis
+  - change chart columns in horizontal {aggr} values
+  - change chart configuration from vertical to horizontal
+  - change chart direction
+  - change chart orientation
+  - change chart y axis from horizontal to vertical
+  - change orientation
+  - change orientation of chart for 90 degrees
+  - change orientation
+  - change the axis for {field} from the x-axis to the y-axis, and do the opposite for {aggr}.
+  - change the axis of {field} from x-axis to y-axis, do the opposite for {aggr}.
+  - change the axis of distribution of {aggr} to x axis and for {field} to y axis
+  - change the axis, {aggr} horizontally and {field} vertically.
+  - change the bar from horizontal to vertical
+  - change the bar from horizontal to vertical ones
+  - change the chart column in the horizontal {aggr} value
+  - change the chart disposition from vertical to horizontal
+  - change the chart from vertical to horizontal.
+  - change the chart to horizontal chart.
+  - change the direction of the chart
+  - change the graph to a horizontal graph.
+  - change the graph to vertical histogram
+  - swap the horizontal and vertical values.
+  - change the lines orientation in both x and y axis and left right positions
+  - change the orientation of the chart to 90 degrees
+  - swap the values in horizontal and vertical.
+  - change the x and y axes
+  - change the x-axis to the y-axis and vice versa
+  - change to vertical
+  - change x axis and y axis
+  - change x-axis to y-axis and vice versa
+  - changed {aggr} and {field} axis
+  - changed bar markers to horizontal bars
+  - changed the axis
+  - changed the axises
+  - changes in vertical bar diagram to horizontal bar diagram.
+  - chart flipped to vertical and and zoomed in
+  - chart flipped to vertical and zoomed in
+  - chart has been transposed
+  - chart shifted in opposite direction.
+  - component changes on the right chart
+  - convert graph to horizontal
+  - convert graphics to levels
+  - convert the vertical {chart} to a horizontal {chart}
+  - convert to horizontal chart
+  - convert vertical {chart} to horizontal {chart}
+  - exchange {field} & {aggr}.
+  - exchange {aggr} and {field}
+  - exchange axis data
+  - exchange {aggr} and {field}
+  - exchange the positions of x and y axis.
+  - exchange the x and y axis on the chart.
+  - exchange x-axis with the y-axis
+  - flip {aggr} and {field} axis
+  - flip chart x and y value positions
+  - flip the {field} and {aggr} axes on this {chart}
+  - flip the {field} and {aggr} axis on this {chart}
+  - flip the {aggr} and {field} axes
+  - flip the x and y axes
+  - flip the x and y axes.
+  - flip the x and y axis
+  - flipchart x and y value locations
+  - flipped it to the right
+  - flipped the x and y axis
+  - give me a transposed chart
+  - give me a transposed graph
+  - graph it horizontally
+  - interchange {field} and {aggr}
+  - interchange axes.
+  - interchange chart axis values
+  - interchange the axis data
+  - interchange x axis and y axis
+  - inverse {field} and {aggr}
+  - inverse the axes
+  - inversion of the description and data of the x {aggr} and y {field} axes to x {field} and y {aggr} of the {chart}
+  - invert axes for the {chart}.
+  - invert axis
+  - invert axis y and x
+  - invert graphic position
+  - invert the axes
+  - invert the chart.
+  - invert the graph axes
+  - invert the graph position
+  - invert the graph to vertical
+  - invert the x y axis
+  - invert x and y. put y and numbers on the bottom row, and x and letters on the side rows.
+  - make a horizontal {chart}
+  - make into horizontal {chart}
+  - make the {chart} horizontal
+  - mark the rise and fall but interchange the x axis and y axis
+  - mark up and down, but swap the x and y axes
+  - markers are rotated
+  - marks are rotate
+  - only a horizontal and vertical {chart}
+  - only one horizontal and vertical {chart}
+  - orient the chart 90 degrees.
+  - orient the chart at 90 degrees.
+  - please exchange axes with each other
+  - reverse axes
+  - reverse axes y and x
+  - reverse axis
+  - reverse axis on {chart}
+  - reverse the axis of {chart}.
+  - reverse the description and data of the x and y axes of the {chart}
+  - reverse the position of the x and y axes
+  - reverse the x y axises
+  - reverse x and y. put y with the numbers on the bottom row and put x with the letters on the side row.
+  - rewrite the graph by treating columns as rows and rows as columns
+  - rotate 90 degree to the left the graph
+  - rotate 90 degrees clockwise
+  - rotate chart
+  - rotate chart to the left
+  - rotate chart.
+  - rotate counterclockwise.
+  - rotate graph by 90 degrees
+  - rotate graphics
+  - rotate horizontally
+  - rotate the chart
+  - rotate the chart 90 degrees
+  - rotate the chart 90 degrees clockwise and flip it vertically
+  - rotate the chart 90 degrees left
+  - rotate the chart 90 degrees to the left
+  - rotate the chart clockwise once
+  - rotate the chart so that the x and y axes are switched.
+  - rotate the chart to the left
+  - rotate the chart to the left side
+  - rotate the chart.
+  - rotate the figure 90 degree clockwise
+  - rotate the graph
+  - rotate the graph 90 degree clockwise
+  - rotate the graph 90 degrees
+  - rotate the graph 90 degrees clockwise
+  - rotate the graph clockwise 90 degrees
+  - rotate the graph clockwise at a right angle
+  - rotate the graph to vertical
+  - rotated chart
+  - swap {field} and {aggr}
+  - swap {field} and {aggr}.
+  - swap axes to make vertical/left {aggr} axis
+  - swap chart axis values
+  - swap shafts.
+  - swap the axes
+  - swap the axes so the vertical/left "{aggr}" axis is now on the horizontal/bottom axis and the horizontal/bottom {field} axis is now the vertical/left axis.
+  - swap the chart directions so that the {field} increases along the vertical axis and the {aggr} increases along the horizontal axis.
+  - swap the chart orientation so {field} is increasing up the vertical axis and {aggr} is increasing along the horizontal axis.
+  - swap the {field} and {aggr} values
+  - swap the horizontal and vertical axis on the chart so that {aggr} is the x axis and {field} is the y axis.
+  - swap the position of the x and y axes.
+  - swap the x and y axes and change the vertical {chart} to horizontal {chart}
+  - swap the x and y axes on the chart.
+  - swap the x and y axes.
+  - swap the x and y axis
+  - swap the x and y axis.
+  - swap the x-axis with the y-axis
+  - swap x and y axes
+  - swap x and y axis
+  - switch x and y axis
+  - switch axis
+  - switch chart axis
+  - switch chart from horizontal mode to landscape mode.
+  - switch the x and y axes
+  - switch the axes
+  - switch the axis
+  - switch the chart from horizontal to landscape mode.
+  - switch the horizontal and vertical axes of the chart
+  - switch the positions of the years and {aggr}. it also means chart rotated
+  - switch the variables
+  - switch the x-axis and y-axis
+  - switch the y and x axis data.
+  - switch the y-axis and x-axis with each other.
+  - switch to {field} and {aggr} charts.
+  - switch to horizontal bar
+  - switch to horizontal bars
+  - switch to the {field} and {aggr} chart.
+  - switch x y
+  - switch x and y
+  - switch x and y axes
+  - switch x axis to y axis and plot chart over y axis
+  - switch x axis with y axis
+  - switch x-axis and y-axis
+  - switch x-axis to y-axis and graph on y-axis
+  - switch y-axis and x-axis to each other.
+  - switched {field} and {aggr}
+  - the bar view is change
+  - the chart matrix has been changed from vertical bars to horizontal bars.
+  - the chart matrix has changed, turning vertical bars into horizontal bars.
+  - the first one is ideal
+  - the position of the chart gets modified.
+  - this chart are rotate
+  - this chart is rotated
+  - toggle {field} and {aggr}
+  - toggle chart axes
+  - toggle the horizontal and vertical axis of the chart
+  - toggle the x-axis with the y-axis
+  - toggle variable
+  - toggle x and y axis
+  - toggle y and x axis data.
+  - transfer the graph data on the x and y axis
+  - transforms into horizontal chart
+  - transpose chart
+  - transpose graph
+  - transposed graph
+  - turn graph 90 degrees clockwise and flip vertically
+  - vertical bar graph changed to horizontal bar graph.
+  - x axis and y axis value interchanging
+  - x-axis and y-axis values are swapped
+  Parameters:
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>

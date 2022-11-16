@@ -1,0 +1,240 @@
+- Intents:
+  - SetMark
+  Templates:
+  - '{verb_prep} change mark to {mark} icon'
+  - fill the column with {mark} icon
+  - set mark using {mark} icon
+  - set mark in {mark}
+  - set mark to {mark}
+  - change mark to {mark}
+  - '{verb_prep} set mark {mark}'
+  - change to use mark {mark}
+  - modify mark using shape {mark}
+  - replace the bar to use {mark} icon
+  - change the bars to {mark}
+  - graph represented through {mark} figures.
+  - converted bars with a {mark} representation.
+  - change the bars from solid to made out of {mark}
+  - change chart graphics from bars to avatars that represent {mark}
+  - put the chart into individual {mark}.
+  - portray the bars in units of {mark}
+  - change the design and style of the graph from simple bar to {mark} bar
+  - change design of bars to show graphic of {mark} individuals.
+  - change the graph to {mark} resemblance in the thousands
+  - change the graphic to stacked {mark} icons
+  - illustrate relative share compared to the top value using {mark} graphs
+  - show the bars using silhouettes of {mark}.
+  - replace the bars with column of {mark} icons each. show the value with {color} icons, then fill up the rest of the height with grey ones.
+  - replace bar with {mark} icon
+  - swap the bars from solid colour to little {mark}.
+  - represent bar size with {mark} icons.
+  - change the bars from solid colors to {mark}.
+  - change graph display from bar to units.
+  - display bars to represent number of {mark}
+  - change chart type to percent out of 100 displayed visually with {mark} graphics.
+  - change the bars from solid rectangles to stacks of {mark} figures four wide, where the number value is represented by {color} figures
+  - change bar scale to a {mark} scale
+  - change the bars to shapes of {mark} and high light each shape in {color} to mark the sales number.
+  - convert the chart to bars of {mark}.
+  - change graph into {mark} graph
+  - convert bars to {mark}
+  - convert to {mark} icon chart
+  - change bars from the whole light to {mark}'s figures
+  - change the type of chart from plain bar to customized bar having {mark} outline.
+  - user {mark} icon instead of bars throughout chart
+  - show how many {mark} have purchase each vehicle
+  - transfrom the bar in little {mark}
+  - show bar value in numbers of {mark} units stacked inside the bar
+  - display bar data using {mark} icons
+  - represent columns as {mark} icons
+  - change original settings from {color} bar icons to {mark} icons
+  - use {mark} icon to show user counts
+  - change the chart theme to {mark}
+  - show number of {mark}  for each product
+  - use the {mark} icon as a filler of the chart bars
+  - replace the bars with stacked graphics of {mark}, colored in to represent the bar height
+  - change the graph's bars to icons of {mark}
+  - emphasize bars being shown as {mark} on graph
+  - change the solid bars to pictograph bars of {mark}.
+  - change the columns into representations with person models.
+  - change the bars into a pictograph using a person icon  to show the quantities.
+  - show bars in the graph as {mark} icons
+  - change the chart into a pictogram with men.
+  - change the bar style to {mark}
+  - highlighted in {color} color using mark {mark}
+  - solid bars are replaced with {mark}
+  - apply {mark} icons to the graph
+  - change the bars to using mark {mark}
+  - add all the {mark} in categories
+  - categorize the bars in number of {mark} view.
+  - change the bars to {mark}.
+  - mark number of consumers per respective vehicle size with {mark} icons.
+  - make the bars {mark} make {color} the number and grey out the others
+  - bar represents in {mark} images .
+  - show usage of vehicals by {mark} from total
+  - the bars are indicated in {mark}
+  - change chart to stacked columns with {mark} background
+  - change the bars to icons to {mark} that represent the data in a more accurate way.
+  - highlight top bars with symbol {mark}
+  - indicate with {mark} symbol the top performers
+  - to differentiate the {mark} picture at right database
+  - represent graph using {mark} icons shaded to represent how many {mark} gave each response
+  - change mark to {mark}
+  - change the data point shape using {mark}
+  - change the mark from {from} to {mark}
+  Parameters:
+  - Name: verb_prep
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <mark>
+  - Name: from
+    EntityType: Mark
+    Templates:
+    - <mark>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+
+- Intents:
+  - SetMark
+  Templates:
+  - '{verb} {prep} {mark} {icon}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - set mark
+    - change mark
+    - set mark type
+    - change mark type
+    - modify mark
+  - Name: prep
+    EntityType: None
+    Templates:
+    -
+    - as
+    - in
+    - to
+    - to be
+    - with
+    - using
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <mark>
+  - Name: icon
+    EntityType: None
+    Templates:
+    -
+    - icon
+    - icons
+
+- Intents:
+  - SetMark
+  Templates:
+  - '{verb} {prep} {mark} {prep_target} {top} {top_n} {field}' # set mark using area for higlight top 2 brand
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - set mark
+    - change mark
+    - set mark type
+    - modify mark
+  - Name: prep
+    EntityType: None
+    Templates:
+    - with
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <mark>
+  - Name: prep_target
+    EntityType: None
+    Templates:
+    - of
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: top
+    EntityType: None
+    Templates:
+    - top
+    - highest
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+
+- Intents:
+  - SetMark
+  Templates:
+  - '{verb_prep} {verb} {prep} {mark}'
+  Parameters:
+  - Name: verb_prep
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: verb
+    EntityType: None
+    Templates:
+    - set mark
+    - change mark
+    - modify mark
+  - Name: prep
+    EntityType: None
+    Templates:
+    - with
+    - using
+    - as
+    - to
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <mark>
+
+- Intents:
+  - SetMark
+  Templates:
+  - '{verb_prep} set mark to {mark}'
+  Parameters:
+  - Name: verb_prep
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: verb
+    EntityType: None
+    Templates:
+    - set mark
+    - change mark
+    - modify mark
+  - Name: prep
+    EntityType: None
+    Templates:
+    - with
+    - using
+    - as
+    - to
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <string>

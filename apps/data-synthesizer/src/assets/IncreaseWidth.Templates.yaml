@@ -1,0 +1,91 @@
+- Intents:
+  - IncreaseWidth
+  Templates:
+  - '{prefix} make the graph {wider} horizontally'
+  - '{prefix} {verb} the graph size horizantaly'
+  - '{prefix} modify the chart to have more space '
+  - '{prefix} widen chart'
+  - '{prefix} {verb} the width of the chart'
+  - '{prefix} change graph width to {wider} size'
+  - '{prefix} small size to the {wider} size'
+  - '{prefix} {verb} the width of the chart so it covers twice as much space.'
+  - "{prefix} {verb} the chart's width, so there is more space between x-axis labels."
+  - '{prefix} {verb} the chart'
+  - "{prefix} change line's range to {wider}"
+  - '{prefix} chart appears {wider} from before.'
+  - '{prefix} chart has been expanded horizontally'
+  - '{prefix} change the chart width'
+  - '{prefix} horizontally extend the width of the chart.'
+  - '{prefix} add lines to the bars and amplifier the figure'
+  - '{prefix} the width has changes making the bar get separated.'
+  - '{prefix} change graph width to {wider}'
+  - '{prefix} {verb} chart width'
+  - '{prefix} zoom in the chart'
+  - '{prefix} increase the x axis (date) scale'
+  - '{prefix} {wider}'
+  - '{prefix} make it {wider}'
+  - '{prefix} set it {wider}'
+  - '{prefix} modify the chart to {wider}'
+  - '{prefix} {verb} the chart and including line in the chart'
+  - '{prefix} {verb} spacing between data points'
+  - '{prefix} {verb} the chart to 1.75 times the original.'
+  - '{prefix} {verb} the width of the chart window by dragging the right side edge'
+  - '{prefix} {verb} the width of the x-axis'
+  - '{prefix} add more space between each year (in the x-axis).'
+  - '{prefix} double the horizontal width of the chart, keeping the same year range'
+  - '{prefix} {verb} the chart horizontally.'
+  - "{prefix} {verb} the graph along the x-axis so the data points aren't crowded together."
+  - '{prefix} {verb} horizontally.'
+  - '{prefix} resize the length of the chart to twice the size of the first'
+  - '{prefix} {verb} to the left the chart'
+  - '{prefix} {verb} the x axis to visualize better in term of the distribution across year.'
+  - '{prefix} add more bins to the chart'
+  - '{prefix} {verb} the chart'
+  - '{prefix} make date line longer, zoom in on the date axis'
+  - '{prefix} change the format to bar'
+  - '{prefix} the right chart modified about extension of clear view.'
+  - '{prefix} {verb} the the width of the graph'
+  - '{prefix} add lines between the bars'
+  - '{prefix} drag the right hand side of the chart to extend the length of the chat so it is much more of a horizontal rectangle.'
+  - '{prefix} the chart on the right is expanded'
+  - '{prefix} {verb} the space between years on the x-axis.'
+  - '{prefix} make the graph square.'
+  - '{prefix} {verb} chart size on x axis'
+  - '{prefix} {verb} graph width by {value}'
+  - '{prefix} bar chart size {verb}'
+  - '{prefix} {verb} the width of the graph'
+  - '{prefix} {verb} bar graph horizontally'
+  - '{prefix} {verb} the width of the graph'
+  - '{prefix} make the x axis {wider} in width'
+  - '{prefix} make the chart smaller by reducing the horizontal axis.'
+  - '{prefix} re-structure the graph table size to {wider}'
+  - '{prefix} {verb} graph width'
+  - '{prefix} {verb} the size of the graph to double its current width'
+  - '{prefix} {verb} the size of this chart'
+  - '{prefix} {verb} the bar graphs width'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - expand
+    - increase
+    - stretch
+    - enlarge
+    - widen
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: wider
+    EntityType: None
+    Templates:
+    - wider
+    - larger
+    
+  - Name: value
+    EntityType: Number
+    Templates:
+    - <number>

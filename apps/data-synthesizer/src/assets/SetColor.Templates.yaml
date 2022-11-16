@@ -1,0 +1,282 @@
+# SetColor - specifies the intention to set the color of a given component of the chart.
+# The target component may or may not be explicitily mentioned.
+# Expected Entities:
+# - color: the color to be set
+# - target: the targeted chart component
+- Intents:
+  - SetColor
+  Templates:
+  - '{filter} labeled in {color}'
+  - '{filter}, {filter}, and {filter} indicate in {color}.'
+  - change {filter} graph color to {color}.
+  - change {filter} graph to {color}.
+  - change {filter} to {color}
+  - change {filter} to {color} instead of {from}.
+  - change {filter} to {color}.
+  - change {filter}, {filter} and {filter} to {color}.
+  - change {filter}, {filter}, and {filter} to {color}
+  - change {filter}, {filter}, and {filter} to {color} instead of {from}.
+  - change column {filter} into {color}
+  - change the color in {color}
+  - change the color of graph {filter} to {color}.
+  - change the color of the first three columns to {color}
+  - change the color of the negative column {filter} from {from} to {color}.
+  - change the colors of the columns {filter}, {filter} and {filter} from {from} to {color}.
+  - change the first three values to {color}.
+  - color the lowest value {color}
+  - colour {filter}, {filter} and {filter} in {color}
+  - colour column {filter} in {color}
+  - first data group reporting in {color} color
+  - lowest number in the graph colored {color}.
+  - make {filter} {color}
+  - make {filter}, {filter}, and {filter} {color}.
+  - mark in {color} for all data points prior to "d'
+  - mark in {color}, the {target} that is most negative.
+  - mark only data for {filter} in {color}.
+  - mark the data points {filter}, {filter} and {filter} in {color}
+  - show {filter} in {color}
+  - show {filter}, {filter}, and {filter} in {color}
+  - show all columns from {filter} to {filter} in {color}
+  - show column {filter} in {color}
+  - starting from the left, change the first {first_n} columns to {color}.
+  - starting from the left, change the third column in to {color}.
+  - the first three graphs to be marked in {color} colour
+  - turn {filter} {color}
+  - turn {target} {filter} {color}
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - data point
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: first_n
+    EntityType: Number
+    Templates:
+    - <number>
+    
+- Intents:
+  - SetColor
+  Templates:
+  - the {filter} {target} colour is changed in {color} colour
+  - the third {target} is indicated in {color}
+  - the third {target} was changed to {color} colour
+  - the three {target} are {color} in color
+  - make {target} {filter} {color}
+  - make {filter} {target} {color}
+  - label {filter} {target} {color}.
+  - changed first three {target} to {color}
+  - color first three {target} as {color}
+  - change the color of the y axis {target} value for {filter} to {color}
+  - change the first {first_n} {target} graphs colors to {color}.
+  - change color of {target} {filter} to {color}
+  - change color of {filter} {target} to {color}.
+  - change {filter} {target} from {from} to {color}.
+  - change {filter} {target} to {color}.
+  - change {filter}, {filter}, and {filter} {target} graphs to {color}.
+  - change the {filter}, {filter} and {filter} {target} into {color} color.
+  - change the {target} color for {filter} to {color}.
+  - change the {target} color for {filter}, {filter} and {filter} to {color}.
+  - change the color of the {target} for {filter} to {color}
+  - change the color of the {target} graphs of {filter}, {filter} and {filter} to {color}.
+  - change the color of the {target} labeled {filter} to {color}.
+  - change the second {target} that is below zero to {color}
+  - change the third {target} from {from} to {color}
+  - change the third {target} to {color}.
+  - change the three {target} on the left to {color}.
+  - change third {target} to {color}
+  - color the {target} {filter} in {color}
+  - color the {target} at {filter} with {color}
+  - make largest negative {target} {color}
+  - make the {target} above {filter} {color}
+  - make the {target} showing data in column {filter} {color}
+  - make the first three {target} {color}
+  - make the first three {target} {color}.
+  - make the third {target} {color}.
+  - makes {target} {filter}, {filter}, and {filter} {color}
+  - mark {target} {filter} in {color}.
+  - the first {first_n} {target} are changed to {color} colour
+  - colour the first three {target} in {color}
+  - label first {first_n} {target} {color}.
+  - make first {first_n} {target} {color}
+  - make first three {target} {color}
+  - change the colors of {filter}, {filter}, {filter} {target} to {color}.
+  - change first three {target} to {color}
+  - change color of first three {target} to {color}.
+  - change {filter}, {filter}, and {filter} {target} to {color}
+  - change color of {filter},{filter}, & {filter} {target} from {from} to {color}.
+  - change the color of the {target} for {filter}, {filter}, and {filter} to {color}
+  - change the color of the {target} labeled {filter}, {filter}, and {filter} to {color}.
+  - change the color of the {target} on the y axis values of {filter} {filter} and {filter} to {color}
+  - change the first {first_n} {target} to {color} colour to portray their importance.
+  - change the first three {target} from {from} to {color}
+  - change the first three data {target} to {color}
+  - color the {target} {filter}, {filter} and {filter} in {color}
+  - color the {target} at and before {filter} with {color}
+  - color the {target} showing date in columns {filter}, {filter} and {filter} {color}
+  - the first three {target} are indicated in {color}
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - bar
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: first_n
+    EntityType: Number
+    Templates:
+    - <number>
+
+
+- Intents:
+  - SetColor
+  Templates:
+  - set color to {color}
+  - fill in color {color}
+  - change to color {color}
+  Parameters:
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <UNK>
+    - <string>
+
+#- Intents:
+#  - SetColor
+#  Templates:
+#  - '{verb} color {prep_color} {color}'
+#  - '{verb} {target} with {color} color'
+#  - '{verb} {target} {prep_color} {color}'
+#  - '{verb} color {prep_target} {target} {prep_color} {color}'
+#  Parameters:
+#  - Name: verb
+#    EntityType: None
+#    Templates:
+#    - set
+#    - specify
+#  - Name: prep_color
+#    EntityType: None
+#    Templates:
+#    - in
+#    - with
+#    - using
+#  - Name: prep_target
+#    EntityType: None
+#    Templates:
+#    - for
+#    - of
+#  - Name: color
+#    EntityType: Color
+#    Templates:
+#    # basic color will not bind to <color> to avoid conflict
+#    - <color>
+#  - Name: target
+#    EntityType: ChartComponentType
+#    Templates:
+#    - chart title
+#    - {target}
+#    - bars
+#    - line series
+#    - {target}
+#    - background
+
+- Intents:
+  - SetColor
+  Templates:
+  - '{verb} {filter} {prep_color} {color}' # higlight ford
+  - '{verb} {filter} {aggr} {prep_color} {color}' # higlight ford sales in red
+  - '{verb} {filter} {split} {filter} {prep_color} {color}' # highlight ford, bmw
+  - '{verb} {filter} {split} {filter} {split} {filter} {prep_color} {color}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - set
+    - specify
+  - Name: split
+    EntityType: None
+    Templates:
+    - ','
+    - and
+    -
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: prep_color
+    EntityType: None
+    Templates:
+    - in
+    - with
+    - using
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+
+- Intents:
+  - Highlight
+  Templates:
+  - 'highlight {top} {top_n} {field} {prep_color} {color}' # higlight top 2 brand
+  - 'highlight {top} {top_n} {field} by {sorted} {prep_color} {color}' # higlight top 2 brand by sales
+  Parameters:
+  - Name: top
+    EntityType: None
+    Templates:
+    - top
+    - highest
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+  - Name: prep_color
+    EntityType: None
+    Templates:
+    -
+    - as
+    - in
+    - to
+    - to be
+    - with
+    - using
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>

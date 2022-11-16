@@ -1,0 +1,25 @@
+- Intents:
+  - NameComponent
+  Templates:
+  - '{verb} {prep} {name}'
+  - 'please {verb} {prep} {name}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - set name
+    - name it
+    - save as
+  - Name: prep
+    EntityType: None
+    Templates:
+    -
+    - to
+    - using
+    - as
+    - to be
+    - in
+  - Name: name
+    EntityType: String
+    Templates:
+    - <string>

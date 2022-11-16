@@ -8,7 +8,7 @@ import { EOL } from 'os';
 console.log(`Tensorflow Backend ${ getBackend() }`);
 console.time('validate-model');
 const files = ['data_all', 'data_train', 'data_test'];
-const dir = resolve(__dirname, '..', '..', '..', 'apps', 'train-model', 'dataset');
+const dir = resolve(__dirname, '..', '..', '..', 'libs', 'dataset', 'assets');
 
 for (const file of files) {
   const data_all = readFileSync(resolve(dir, `${file}.txt`)).toString();

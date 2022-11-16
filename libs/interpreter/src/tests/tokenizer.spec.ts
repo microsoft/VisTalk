@@ -34,7 +34,7 @@ describe('tokenize number date entity', () => {
   });
 
   it('tokenize test number', () => {
-    const tokens = tokenize('sales greater than 10K');
+    const tokens = tokenize('sales greater than 10k');
     expect(tokens[3]).toEqual({ type: 'number', text: '10k', tag: 'O', start: 19, length: 3, norm: '10k', term: '<number>',
       entity: { 'type': 'number', value: 10000 } });
   });

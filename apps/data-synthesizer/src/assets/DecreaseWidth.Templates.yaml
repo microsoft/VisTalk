@@ -1,0 +1,96 @@
+- Intents:
+  - DecreaseWidth
+  Templates:
+  - "{prefix} lower the graph's width by half"
+  - '{prefix} bar chart size reduced'
+  - '{prefix} change the width of the graph'
+  - '{prefix} compress the size of the a axis'
+  - '{prefix} condense the entirety of the chart.'
+  - '{prefix} condense the size of the graph to half its current width'
+  - '{prefix} decrease chart length'
+  - '{prefix} decrease plot width by {value}'
+  - '{prefix} decrease the horizontal width of the bar chart'
+  - '{prefix} decrease the size of the graph in length without losing any information'
+  - '{prefix} decrease the width of the graph'
+  - '{prefix} decrease width of height'
+  - '{prefix} decrease x-axis scale to 20 unit intervals'
+  - '{prefix} fit the chart into a square'
+  - '{prefix} horizontally comprise the bar chart to half of its size.'
+  - '{prefix} image of the chart is small'
+  - '{prefix} make chart {smaller}'
+  - '{prefix} make it {smaller}'
+  - '{prefix} make the chart {smaller} by reducing the horizontal axis by about half.'
+  - '{prefix} make the chart {smaller}.'
+  - '{prefix} make the chart more narrow in size'
+  - '{prefix} make the columns {smaller}'
+  - '{prefix} make the columns {smaller} and decrease the width of chart'
+  - '{prefix} make the graph {smaller}'
+  - '{prefix} make the graph {smaller}'
+  - '{prefix} make the graph {smaller} horizontally'
+  - '{prefix} make the graph {smaller}.'
+  - '{prefix} make the graph less wide by making it more level'
+  - '{prefix} make the graph more {smaller} and compact'
+  - '{prefix} make the x axis {smaller} in width'
+  - '{prefix} minimize and condense the size of the chart'
+  - '{prefix} narrow chart.'
+  - '{prefix} narrow the bar graph to half its width.'
+  - '{prefix} pinch the graph so that it is {smaller} horizontally.'
+  - '{prefix} reduce chart size on x axis'
+  - '{prefix} {verb} horizontal size of graph'
+  - '{prefix} {verb} the length of the chart.'
+  - '{prefix} {verb} the length of the graph to make it {smaller}.'
+  - '{prefix} {verb} the length of the x-axis.'
+  - '{prefix} {verb} the size of the bar diagram to {value} horizontally.'
+  - '{prefix} {verb} the space between columns'
+  - '{prefix} {verb} the width of the graph'
+  - '{prefix} {verb} the width of the graph.'
+  - '{prefix} reduce width by {value}'
+  - '{prefix} reduce width of chart by {value}'
+  - '{prefix} reduce width of chart to {value}.'
+  - '{prefix} reduce width of graph by {value}.'
+  - '{prefix} re-size and condense the bar chart by {value}.'
+  - '{prefix} resize the chart to a thinner size'
+  - '{prefix} re-structure the graph table size to {smaller}'
+  - '{prefix} scale down the width of each bar by {value}'
+  - '{prefix} {verb} bar graph'
+  - '{prefix} {verb} bar graph horizontally'
+  - '{prefix} {verb} graph width'
+  - '{prefix} {verb} the graph along the x-axis in order to make general trends clearer.'
+  - '{prefix} show graph in half width'
+  - '{prefix} {verb} graph width by {value}'
+  - '{prefix} {verb} the bar graphs width in half.'
+  - '{prefix} {verb} the chart size horizontally'
+  - '{prefix} {verb} the graph vertically by about {value}'
+  - '{prefix} {verb} the length of the x-axis'
+  - '{prefix} {verb} the width of the bar graph by half.'
+  - '{prefix} shrinkage modification of the chart.'
+  - '{prefix} small the whole the chart pattern'
+  - '{prefix} square the size of this chart'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - compress
+    - shrink
+    - shorten
+    - reduce
+    - decrease
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: smaller
+    EntityType: None
+    Templates:
+    - smaller
+    - skinnier
+    - slimmer
+    - narrower
+    - thinner
+  - Name: value
+    EntityType: Number
+    Templates:
+    - <number>

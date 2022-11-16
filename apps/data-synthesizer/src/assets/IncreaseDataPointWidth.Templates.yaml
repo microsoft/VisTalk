@@ -1,0 +1,57 @@
+- Intents:
+  - IncreaseDataPointWidth
+  Templates:
+  - '{prefix} make the {bar} {wider}'
+  - '{prefix} better presentation of the {bar} on the chart to {wider}'
+  - '{prefix} {verb} {bar} width to {wider} size'
+  - "{prefix} {verb} line's range to {wider}"
+  - '{prefix} {verb} the {bar} scale to {wider}'
+  - '{prefix} {verb} the {bar} width to {wider}'
+  - '{prefix} {verb} the width of the {bar}'
+  - '{prefix} {verb} the width of the {bar} so it covers twice as much space.'
+  - '{prefix} {verb} length of {bar}'
+  - '{prefix} {verb} the {bar} {wider}'
+  - '{prefix} {verb} the {bar} more long'
+  - '{prefix} {verb} the {bar} wider horizontally'
+  - '{prefix} {verb} the {bar} from small size to the big size'
+  Parameters:
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: verb
+    EntityType: None
+    Templates:
+    - change
+    - expand
+    - increase
+    - stretch
+    - enlarge
+    - widen
+    - make
+  - Name: bar
+    EntityType: None
+    Templates:
+    - bars
+    - data point
+  - Name: wider
+    EntityType: None
+    Templates:
+    - wider
+    - larger
+    - bigger
+  - Name: verb
+    EntityType: None
+    Templates:
+    - expand
+    - increase
+    - stretch
+    - enlarge
+    - widen
+  - Name: value
+    EntityType: Number
+    Templates:
+    - <number>

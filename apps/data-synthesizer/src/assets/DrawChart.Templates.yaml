@@ -1,0 +1,23 @@
+- Intents:
+  - SetChartType
+  Templates:
+  - '{chart}'
+  - draw {chart}
+  - show me a {chart}
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - stacked column chart
+    - stacked bar chart
+    - clustered column chart
+    - clustered bar chart
+    - column chart
+    - bar chart
+    - area chart
+    - bar
+    - bars
+    - lines
+    - line
+    - pie
+    - donut

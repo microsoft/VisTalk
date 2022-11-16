@@ -1,0 +1,258 @@
+- Intents:
+  - BindY
+  Templates:
+  - '{aggr}'
+  - show me {aggr}
+  - add {aggr}
+  - plot {aggr}
+  - show {aggr}
+  - sum of {aggr_sum}
+  - total {aggr_sum}
+  - min {aggr_min}
+  - min of {aggr_min}
+  - max {aggr_max}
+  - most {aggr_max}
+  - max of {aggr_max}
+  - average of {aggr_avg}
+  - number of {aggr_count}
+  - bind y to {aggr}
+  - bind y to total {aggr_sum}
+  - bind y to average {aggr_avg}
+  - '{filter} {aggr}'
+  - 'total {filter} {aggr_sum}'
+  - 'average {filter} {aggr_avg}'
+  - 'sum {aggr_sum} for {filter}'
+  - 'average {aggr_avg} for {filter}'
+  - '{aggr} of {filter}'
+  - '{aggr} {filter}'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - 'the number of {aggr_count} {as}'
+  - 'plot how many {aggr_count} {as}'
+  - associate {aggr} to vertical axis
+  - '{bind_verb} the number of {aggr_count} {as}'
+  - '{bind_verb} total number of {aggr_count} {as}'
+  - '{bind_verb} the {min} {aggr_min} {as}'
+  - '{bind_verb} the {max} {aggr_max} {as}'
+  - '{bind_verb} the {avg} {aggr_avg} {as}'
+  - '{bind_verb} the {sum} {aggr_sum} {as}'
+  - '{bind_verb} the {count} {aggr_count} {as}'
+  - '{bind_verb} the {dcount} {aggr_dcount} {as}'
+  - '{bind_verb} the {min} {aggr_min} and {max} {aggr_max} {as}'
+  - '{bind_verb} how many {aggr_count} in total {as}'
+  - 'highest {aggr_max} {as}'
+  - '{bind_verb} total number of {aggr_count} {as}'
+  - '{bind_verb} total {aggr_sum} {as}'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - '{bind_verb} the number of {aggr_count} {as}'
+  - '{bind_verb} the highest number of {aggr_max} {as}'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - 'average of {aggr_avg} {as}'
+  - 'median {aggr_median} {as}'
+  - '{bind_verb} {min} {aggr_min} {as}'
+  - 'show the highest {aggr_max} number {as}'
+  - 'sum of {aggr_sum} {as}'
+  - '{bind_verb} the highest {aggr_max} {as}'
+  - 'average {aggr_avg} {as}'
+  - '{bind_verb} the average number of {aggr_avg} in Y axis'
+  - '{bind_verb} the median number of {aggr_median} in Y axis'
+  - '{bind_verb} the highest {aggr_max} {as}'
+  - '{bind_verb} the median {aggr_median} {as}'
+  - 'plot how many {aggr_count} are there in total in Y axis'
+  - 'show the total {aggr_sum} {as}'
+  - 'the median number of {aggr_median} {as}'
+  - 'show the lowest number of {aggr_min} in Y '
+  - 'highest {aggr_max} {as}'
+  - 'show the total of {aggr_sum} {as}'
+  - '{bind_verb} the total number of {aggr_count} {as}'
+  - '{bind_verb} the number of {aggr_count}  {as}'
+  - '{bind_verb} number of {aggr_sum} in total {as}'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - 'show the lowest {aggr_min} number {as}'
+  - 'show total {aggr_sum} {as}'
+  - '{bind_verb} total {aggr_sum} number {as}'
+  - '{bind_verb} sum {aggr_sum} {as}'
+  - 'show average {aggr_avg} {as}'
+  - '{bind_verb} the highest {aggr_max} {as}'
+  - 'show the total of {aggr_sum} {as}'
+  - 'show the median of {aggr_median} {as}'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - '{bind_verb} number of {aggr_count} in Y axis'
+  - 'total {aggr_sum} {as}'
+  - 'show the total number of {aggr_sum} {as}'
+  - 'number of {aggr_count} in total as Y axis'
+  - 'plot the number of the {aggr_count} {as}'
+  - '{bind_verb} the highest {aggr_max} {as}'
+  - '{bind_verb} the average {aggr_avg} {as}'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - '{bind_verb} the average {aggr_avg} {as}'
+  - the {aggr_median} ' s median as Y
+  - 'show the average {aggr_avg} {as}'
+  - 'show the highest number for {aggr_max} {as}'
+  - '{bind_verb} total {aggr_sum} {as}'
+  - 'show the total {aggr_sum}{as}'
+  - '{aggr_avg} number in average {as}'
+  - '{aggr_sum} number in total {as}'
+  - sum of {aggr_sum} number in Y
+  - '{bind_verb} number of {aggr_count} in total as Y axis'
+  - 'show average {aggr_avg} in y axis'
+  - 'show average of {aggr_avg} {as}'
+  - '{bind_verb} the highest {aggr_max} {as}'
+  - '{bind_verb} the highest {aggr_max} {as}'
+  - '{bind_verb} the median of the {aggr_median} {as}'
+  - 'show the average {aggr_avg} {as}'
+  - '{bind_verb} number of {aggr_sum} total {as}'
+  - 'place the average {aggr_avg} {as}'
+  - '{bind_verb} number of total {aggr_sum} {as}'
+  - 'specify the highest {aggr_max} {as}'
+  - 'specify the lowest {aggr_min} {as}'
+  - 'show the median for {aggr_median}'
+  - 'the total number of {aggr_count} {as}'
+  - 'median {aggr_median} number {as}'
+  - '{bind_verb} number of total {aggr_count}  {as}'
+  - 'the average {aggr_avg} number {as}'
+  - 'lowest {aggr_min}  {as}'
+  - 'show the median {aggr_median}  {as}'
+  - 'highest number of {aggr_max} {as}'
+  - 'show total number of {aggr_count} {as}'
+  - 'the total {aggr_sum}  {as}'
+  - '{bind_verb} number of {aggr_count} total {as}'
+  - 'the total number of {aggr_sum}  {as}'
+  - '{bind_verb} number of {aggr_count} in {aggr_count} {as}'
+  - 'the lowest {aggr_min} {as}'
+  - '{bind_verb} y as {aggr_median} median'
+  - '{bind_verb} the average {aggr_avg} {as}'
+  - 'show the median of the {aggr_median} {as}'
+  - 'the number of {aggr_count} {as}'
+  - 'which {aggr_max} is the highest {as}'
+  - 'total {aggr_sum} {as}'
+  - 'show the total in {aggr_sum} {as}'
+  - 'show me median of {aggr_median} .'
+  - 'show the total number of {aggr_count} {as}'
+  - 'total number of {aggr_sum} {as}'
+  - 'the total {aggr_sum} {as}'
+  - 'the {aggr_avg} on average {as}'
+  - '{bind_verb} median of {aggr_median} {as}'
+  - '{aggr_median} median number {as}'
+  - 'the highest {aggr_max} {as}'
+  - 'total number of {aggr_count}'
+  - 'the number of {aggr_count} .'
+  - '{bind_verb} number of {aggr_count} {as}'
+  - '{bind_verb} the {count} {aggr_count} .'
+  - '{bind_verb} number of {aggr_sum} are there {as}'
+  - 'show the average {aggr_avg} number {as}'
+  - '{bind_verb} the lowest {aggr_min} {as}'
+  - '{bind_verb} the highest {aggr_max} {as}'
+  - '{bind_verb} number of {aggr_count} are there total {as}'
+  - 'show the highest {aggr_max} in <unk} {as}'
+  - 'show the highest {aggr_max} for the'
+  - 'name the number of {aggr_count}'
+  - '{bind_verb} number of {aggr_count} did each team {aggr_count} {as}'
+  - '{bind_verb} the highest {aggr_max} number {as}'
+  - '{bind_verb} the {min} number of {aggr_min}'
+  - '{bind_verb} the {min} {aggr_min}'
+  - '{bind_verb} {min} number of {aggr_min} {as}'
+  - '{bind_verb} the {max} value for {aggr_max}'
+  - '{bind_verb} number of {aggr_sum} total are there {as}'
+  - '{bind_verb} the highest {aggr_max} number {as}'
+  - '{bind_verb} median {aggr_median} {as}'
+  - '{bind_verb} total {aggr_sum} {as}'
+  - '{bind_verb} average {aggr_avg} {as}'
+  - '{bind_verb} {aggr_sum} in total {as}'
+  - '{bind_verb} number of {aggr_sum} in total {as}'
+  - '{bind_verb} total {aggr_sum} {as}'
+  - '{bind_verb} highest {aggr_max} {as}'
+  - max {aggr_max}
+  - min {aggr_min}
+  - average {aggr_avg}
+  Parameters:
+  - Name: bind_verb
+    EntityType: None
+    Templates:
+    - encode
+    - bind
+    - specify
+    - assign
+    - put
+    - use
+    - associate
+  - Name: as
+    EntityType: None
+    Templates:
+    - as Y
+    - as value axis
+    - in Y axis
+    - in Y
+    - to vertical axis
+  - Name: count
+    EntityType: None
+    Templates:
+    - number of
+    - count of
+  - Name: dcount
+    EntityType: None
+    Templates:
+    - distinct number of
+    - distinct count of
+  - Name: sum
+    EntityType: None
+    Templates:
+    - sum of
+    - total
+  - Name: min
+    EntityType: None
+    Templates:
+    - minimum
+    - min
+    - lowest
+    - smallest
+  - Name: max
+    EntityType: None
+    Templates:
+    - maximum
+    - max
+    - largest
+    - highest
+  - Name: avg
+    EntityType: None
+    Templates:
+    - average
+    - avg
+    - average of
+    - mean
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_max
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_min
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_sum
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_dcount
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_count
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_median
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>

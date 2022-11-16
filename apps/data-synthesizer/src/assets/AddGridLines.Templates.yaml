@@ -1,0 +1,117 @@
+- Intents:
+  - AddGridLines
+  Templates:
+  - add {target} to both axis
+  - add the reference lines of each point of the graph to make it more precise.
+  - add {target} to graph
+  - show {target} plotted by all available data points in the chart
+  - add {target} to chart
+  - add a {target} to the graph.
+  - show chart lines
+  - add {target} to the back of the chart.
+  - add a {target} pattern behind the statistics.
+  - add columns and lines to the background of the chart
+  - please add the lines to the chart from figures
+  - add x and y axis lines
+  - add a {target} to the background of the graph
+  - show {target}.
+  - add {target}
+  - add {target} to the graph
+  - add axis lines in the background
+  - adding graph to the chart
+  - add background line particle in the graph.
+  - add {target} to data chart
+  - add a {target} to this graph
+  - add {target} to the graph area
+  - add {target} background to graph.
+  - add a {target} along the axes
+  - put a {target} in the background of the chart.
+  - add a {target} to the second graph
+  - add light gray {target} behind the graph data that line up horizontally and vertically
+  - imply {target} for the data given.
+  - apply squares on the graph so that it is clear where each line of the graph falls.
+  - add a {target} to the graph
+  - add grids to the chart
+  - add {target} to background.
+  - add {target} to background
+  - add square graphs in the background
+  - add background squares.
+  - insert {target}
+  - add {target} behind data
+  - add {target} to the chart
+  - put the rows and column lines into the chart
+  - add a {target} pattern to the background of the graph.
+  - add {target} to both axes
+  - add reference lines for each point of the chart to make it more precise.
+  - displays {target} drawn by all available data points in the chart
+  - add chart lines on the chart from price and date.
+  - add a {target} to the diagram.
+  - add {target} to the back of the chart.
+  - added {target} mode after stats.
+  - please add lines from the chart
+  - add x and y axes
+  - add a {target} to the background of the chart
+  - show {target}.
+  - add {target}
+  - add {target} to charts
+  - add axes in the background
+  - add charts to charts
+  - add chart lines to make data easier to understand
+  - add background line particles to graphics.
+  - add graphic lines in the background
+  - add {target} to data charts
+  - add {target} to this chart
+  - add {target} to the graphics area
+  - add {target} background to chart.
+  - add chart lines to the chart
+  - add {target} along axis
+  - place a {target} in the background of the chart.
+  - add {target} to the chart
+  - adds {color} {target} behind horizontally and vertically arranged graph data
+  - add {target} that imply the given data.
+  - apply squares on the chart to make it clear where each line of the chart is.
+  - add chart lines
+  - add a square figure in the background
+  - added background squares.
+  - insert {target}
+  - put rows and columns into charts
+  - add a {target} pattern to the background of the chart.
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - grid
+    - gridlines
+    - grid lines
+  - Name: color
+    EntityType: Color
+    Templates:
+    - light gray
+    - gray
+
+- Intents:
+  - AddGridLines
+  Templates:
+  - '{verb} {target}'
+  - '{verb} {target}'
+  - '{verb} {target} to the chart'
+  - '{verb} the {target} in the background'
+  - '{verb} {target} across the graph for x and y axis'
+  - '{verb} {target} to make data easier to understand'
+  - '{verb} {target} to the chart in {color}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+    - show
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - graph lines
+    - grid lines
+  - Name: color
+    EntityType: Color
+    Templates:
+    - light gray
+    - gray

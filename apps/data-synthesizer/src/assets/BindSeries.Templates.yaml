@@ -1,0 +1,122 @@
+- Intents:
+  - BindSeries
+  Templates:
+  - '{series} as series'
+  - '{series} for series axis'
+  - series axis with {series} column
+  - arrange {series} on series
+  - create an series axis with {series}
+  - add {series} to color axis  
+  - group by {series} on series axis
+  - break down series axis by {series}
+  - '{bind_verb} series axis with {series}'
+  - '{bind_verb} series with {series}'
+  - '{bind_verb} {series} to series axis'
+  - '{bind_verb} {series} for color axis'
+  - add {series} to series axis of the chart
+  - plot {series} on series axis
+  - plot series with {series} data points
+  - '{bind_verb} {series} to series axis'
+  - '{bind_verb} series axis with {series} field'
+  - '{bind_verb} {series} as series values'
+  - '{bind_verb} series axis with {series} column'
+  - '{bind_verb} series axis using {series} values'
+  - '{bind_verb} {series} on series axis'
+  - '{bind_verb} series to be {series}'
+  - '{bind_verb} {series} as series axis field'
+  - '{bind_verb} series axis using {series}'
+  - '{bind_verb} {series} field to the series axis'
+  - '{bind_verb} {series} on series axis'
+  - '{bind_verb} {series} on legend axis'
+  - '{bind_verb} {series} field as series axis'
+  - '{bind_verb} {series} on series axis'
+  - '{bind_verb} {series} on color axis'
+  - '{bind_verb} {series} on depth axis'
+  - '{bind_verb} {series} to draw series axis'
+  - using {series} for series axis
+  - choose {series} for series
+  - select {series} as series axis
+  - pick up {series} for series axis
+  - associate series axis with {series}
+  - name series axis using {series}
+  - specify {series} to be the field of series axis
+  - specify series axis to be {series}
+  - visualize {series} on the series axis
+  - map series axis with the {series} values
+  - display series axis with {series}
+  - display {series} data points along series axis
+  - need {series} to be displayed on series
+  - map {series} to series axis
+  - change series to {series}
+  - modify series axis of the chart with {series}
+  - refer series axis to {series}
+  - '{bind_verb} {series} in series'
+  - encode the {series} on color series
+  - encode the {series} on legend
+  - name the {series} in series
+  - '{bind_verb} {series} in series'
+  - show me {series} in series axis
+  - show me each {series} in series axis
+  - plot each {series} in series
+  - show the {series} as series axis
+  Parameters:
+  - Name: bind_verb
+    EntityType: None
+    Templates:
+    - assign
+    - bind
+    - encode
+    - specify
+    - put
+    - use
+  - Name: series
+    EntityType: DataField
+    Templates:
+    - <column>
+
+- Intents:
+  - BindSeries
+  Templates:
+  - emphasize each {series} in a different color
+  - create a legend which shows how much of the {aggr} is composed by each {series}.
+  - add more data changing the colors to data and add legend {series}
+  - stack bars by {series}
+  - changing the chart colors and inserting the legend {series}
+  - subdivide the chart with colors by {series}
+  - detail the chart data using {series}
+  - use multiple colors for various {series}
+  - add shading differentiation for different {series} .
+  - change the chart to see the data grouped with legend by {series}
+  - changed chart to multiple colors with legend {series}
+  - include details about the {series} in chart
+  - separate the {aggr} data according to the individual {series} using different colors, and add a legend.
+  - display each {series} on a different color
+  - display each {series} on a different color, and change vertical range properly.
+  - add a legend by {series} to the chart marking it colorful
+  - differentiate the data from different {series} by assigning them each a different color, and make sure they are labeled on the chart.
+  - make the bars on the chart in different color that is {color}, {color} then {color} from the bottom upwards.
+  - overlay the bar charts in different colors with legend {series}.
+  - chart have got more in depth information
+  - insert a color code by {series}
+  - superimpose data from other {series} on top for comparison against {filter}.
+  - break the price chart into {aggr} by {series}
+  - assign the data from each {series} a different color and include a color key
+  - add to the chart the data for {filter} and include a legend on the right hand side.
+  Parameters:
+  - Name: series
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - y
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>

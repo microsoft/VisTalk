@@ -308,6 +308,12 @@ export function resolveEntity(
       if (tokens[0].entity.type === 'field') {
         return tokens[0].entity;
       }
+      if (tokens[0].text === 'x') {
+        return { type: 'axis', value: 'x' }
+      }
+      if (tokens[0].text === 'y') {
+        return { type: 'axis', value: 'y' }
+      }
       break;
 
     case 'value':

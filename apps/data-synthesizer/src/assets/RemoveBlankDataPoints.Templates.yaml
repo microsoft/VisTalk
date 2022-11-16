@@ -1,0 +1,68 @@
+- Intents:
+  - RemoveBlankDataPoints
+  Templates:
+  - '{prefix} only include data shown for corresponding {field}.'
+  - '{prefix} {verb} column identifiers that are not used'
+  - '{prefix} {verb} the data and {field} with unused figures on the x-axis.'
+  - '{prefix} {verb} the {field} not used'
+  - '{prefix} {verb} the {field} with no data points from the graph.'
+  - '{prefix} {verb} all unused x-axis labels.'
+  - "{prefix} don't chart zero data."
+  - '{prefix} {verb} all {field} with empty value'
+  - '{prefix} {verb} all points on the x-axis which have a count of zero'
+  - '{prefix} {verb} any {field} that has empty value on the bar graph'
+  - '{prefix} {verb} empty {field}'
+  - '{prefix} {verb} unused {field} and resize to fit page.'
+  - '{prefix} {verb} unused categories.'
+  - '{prefix} {verb} the data points that have no data to it, and thicken the graph bars.'
+  - '{prefix} {verb} the empty data sets from chart'
+  - '{prefix} hide all {field} that have no column and widen the existing columns'
+  - '{prefix} hide unused x-axis categories'
+  - '{prefix} included only {field} with frequencies'
+  - '{prefix} only including lines that contain data.'
+  - '{prefix} {verb} any {field} with no bar.'
+  - '{prefix} exclude empty columns'
+  - '{prefix} {verb} column identifiers that are not used'
+  - '{prefix} {verb} {field} with no frequency data available'
+  - '{prefix} only include {field} with data.'
+  - '{prefix} only show me the {field} with data.'
+  - '{prefix} plot the graph only for the existing data.'
+  - '{prefix} reduce the number of data points along the bottom to the ones that have data'
+  - '{prefix} {verb} any {field} with no bar.'
+  - '{prefix} {verb} blank {field}'
+  - '{prefix} {verb} {field} not used'
+  - '{prefix} {verb} {field} where value is 0 from graph'
+  - '{prefix} {verb} {field} with no data'
+  - '{prefix} {verb} nonexistent {field} '
+  - '{prefix} {verb} points on x-axis without data'
+  - '{prefix} {verb} the {field} that are blank from the horizontal axis.'
+  - '{prefix} {verb} the y axis categories with no values'
+  - '{prefix} {verb} unused columns'
+  - '{prefix} {verb} unused x axis labels'
+  - '{prefix} show bar graph with x label value that have data'
+  - '{prefix} show only {field} that have some kind of data'
+  - '{prefix} show only {field} with data'
+  - '{prefix} show only occurring {field}'
+  - '{prefix} {verb} the unused {field} on the x axis.'
+  - '{prefix} {verb}d unused categories.'
+  - '{prefix} widen the bars on the graph, eliminating {field} not being used'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - omit
+    - remove
+    - delete
+    - eliminate
+    - got rid of
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you

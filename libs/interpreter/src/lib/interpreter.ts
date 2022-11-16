@@ -100,7 +100,7 @@ export class Interpreter {
       for (let j = 0; j < tokens.length; j++) {
         tokens[j].tag = tags[j];
       }
-    interpretations.push(
+      interpretations.push(
         this.interpret(this._dataProvider, input, tokens, intents)
       );
     }
@@ -193,7 +193,7 @@ export class Interpreter {
 
     if (
       terms.filter((x) => isComparison(x.tag) || x.tag === 'filter').length >
-        0 &&
+      0 &&
       !intents.includes('Filter') &&
       !intents.includes('AddTrendLine') &&
       !intents.includes('Highlight') &&

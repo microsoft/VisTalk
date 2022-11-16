@@ -1,0 +1,97 @@
+- Intents:
+  - SetChartType
+  Templates:
+  - change mark to {chart}.
+  - switch to {chart}
+  - change from {from} to {chart}
+  - change {from} chart to a {chart}
+  - switch to xy {chart}
+  - change chart from {from} graph to {chart}
+  - change to {chart}
+  - change {from} to {chart}
+  - change it to {chart}.
+  - use {chart} instead of {from}
+  - change {from} chart to {chart}
+  - change this to a {chart} with circled {chart} for the {from} values.
+  - change it to a {chart}
+  - mark data values as bubble point
+  - change from {from} graph to xy chart
+  - switch {from} graph to plot graph
+  - change it to a {chart}
+  - change it to {chart}
+  - change it to a {chart}
+  - make this {from} graph a {chart}
+  - turn {from} chart into {chart}
+  - change it to a points chart
+  - change it to a {chart}
+  - change {from} graph to {chart}
+  - switch to {chart}
+  - change the {from} graph to a {chart}
+  - change mark from {from} to {chart}
+  - make a {chart}.
+  - change it to a {chart}
+  - convert the {from} chart into {chart}.
+  - change mark from {from} to point
+  - could you make that a chart with {chart} instead of {from}
+  - change this chart to a {chart}
+  - convert the graph to {chart}
+  - change to {chart}
+  - change to {chart}
+  - transform {from} to {chart}
+  - change {from} graph to {chart}
+  - switch to {chart} only
+  - change mark of {from} to bubble
+  - change it to {chart}
+  - change it to a {chart}
+  - change it to a {chart}
+  - change to a {chart}
+  - change from a {from} graph to a plot graph.
+  - make the {from} chart into a {chart} diagram
+  - change it to a {chart}
+  - change to {chart}
+  - change to a {chart}
+  - convert {from} chart to point chart
+  - change it to a {chart}
+  - change {from} chart to {chart}
+  - change mark from {from} to {chart}
+  - change to {chart}
+  - change {from} chart into dotted chart
+  - change the chart from bars to a {chart}
+  - change it to a {chart} without connecting lines.
+  - change it into {chart}
+  - change the {from} values to points
+  - change to a {chart}
+  - convert to {chart}
+  - switch to a {chart}
+  - change from a {from} graph to a {chart}
+  - adjust it as {chart}
+  - changed the {from} to circle points on the graph, use the same data.
+  - change chart to a {chart}
+  - change chart to {chart}
+  - change {from} diagram to plot graph.
+  - make it a plot graph
+  - change from a {from} graph to a {chart}
+  - change it to show values as points
+  - convert {from} graph to {chart}
+  - change it to {chart}
+  - switch from {from} to {chart}
+  - change from a {from} graph to a {chart}/bubble graph
+  - change the {from} and mark the top points as {chart} like {chart}.
+  - convert this {from} chart to {chart} plot.
+  - convert this to a point chart
+  - make the {from} into points
+  - change mark from {from} to {chart}
+  - change {from} chart to point plot chart
+  - chart is bubble chart
+  - change {from} from chart into {chart}
+  - change chart type to {chart}
+  - i need {chart} for the same column and row
+  Parameters:
+  - Name: from
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - scatter chart

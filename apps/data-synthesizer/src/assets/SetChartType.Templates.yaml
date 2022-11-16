@@ -1,0 +1,255 @@
+- Intents:
+  - SetChartType
+  Templates:
+  - draw {chart}
+  - made it to a {chart}
+  - give me a {chart}
+  - encode the mark with {chart}
+  - set the chart type as {chart}
+  - '{prefix} {change} it to a {chart} visualization'
+  - plot it as a {chart}
+  - create a {chart}
+  - '{prefix} {change} the mark to {chart}'
+  - '{prefix} {change} the chart to a {chart}'
+  - '{prefix} {change} {from} chart to {chart}'
+  - encode with {chart}
+  - '{prefix} {change} it to a {chart}.'
+  - '{prefix} {change} mark from {from} to {chart}'
+  - '{prefix} {change} from {from} chart to {chart}'
+  - '{prefix} {change} to a {chart}'
+  - '{prefix} {change} {from} chart to a {chart}'
+  - '{prefix} {change} chart from {from} to {chart}'
+  - '{prefix} {change} the {from} into {chart}.'
+  - '{prefix} {change} from {from} to {chart}'
+  - '{prefix} {change} {from} to {chart}'
+  - '{prefix} {change} the chart to a {chart}.'
+  - '{prefix} {change} it to a {chart}'
+  - avoid using bars and instead use {chart}
+  - '{prefix} {change} the {from} chart to {chart}'
+  - '{prefix} {change} it to {chart}.'
+  - mark the rise and fall using {chart}
+  - '{prefix} {change} from {from} graph to {chart}.'
+  - '{prefix} {change} {from} graph to {chart}'
+  - '{prefix} {change} it to a {chart}'
+  - '{prefix} {change} this chart to be a {chart}.'
+  - '{prefix} {change} {from} chart into {chart}'
+  - '{prefix} {change} {from} graph to {chart}'
+  - '{prefix} {change} to {chart}'
+  - '{prefix} {change} the graph to a {chart}.'
+  - '{prefix} {change} to a {chart}'
+  - make a {chart}.
+  - '{prefix} {change} the {from} chart into {chart}.'
+  - '{prefix} {change} mark from {from} to {chart}'
+  - make that a {chart}
+  - '{prefix} {change} this chart to a {chart}'
+  - '{prefix} {change} the graph to {chart}'
+  - '{prefix} {change} to a {chart}'
+  - '{prefix} {change} {from} to {chart}'
+  - transform {from} to {chart}
+  - '{prefix} {change} {from} graph to {chart}'
+  - '{prefix} {change} it to {chart}'
+  - '{prefix} {change} mark of {from} to {chart}'
+  - '{prefix} {change} it to a {chart}'
+  - '{prefix} {change} a {chart}'
+  - '{prefix} {change} from a {from} graph to a {chart}.'
+  - make the {from} chart into a {chart}
+  - '{prefix} {change} to {chart}'
+  - '{prefix} {change} to a {chart}'
+  - '{prefix} {change} {from} graph to {chart}'
+  - '{prefix} {change} {from} chart to {chart}'
+  - a {from} chart is changed to {chart}
+  - '{prefix} {change} the {from} chart into {chart}'
+  - '{prefix} {change} to a {from} chart'
+  - '{prefix} {change} the graph from {from} to a {chart}'
+  - '{prefix} {change} the {from} graph to the {chart}.'
+  - '{prefix} {change} from {from} graph to a {chart}.'
+  - '{prefix} {change} into a {chart}'
+  - '{prefix} {change} it to a {chart}'
+  - '{prefix} {change} to {chart}'
+  - '{prefix} {change} from {from} graph to a {chart}'
+  - adjust it by {chart}
+  - '{prefix} {change} the bars to {chart}, show same data.'
+  - '{prefix} {change} chart to {chart}'
+  - '{prefix} {change} {from} diagram to {chart}.'
+  - '{prefix} {change} a {chart}'
+  - '{prefix} {change} from a {from} graph to a {chart}'
+  - '{prefix} {change} it to a {chart}'
+  - '{prefix} {change} {from} chart to {chart}'
+  - '{prefix} {change} from {from} chart to {chart}'
+  - '{prefix} {change} from {from} graph to {chart}'
+  - '{prefix} {change} the {from} graph to {chart}.'
+  - '{prefix} {change} this {from} chart to {chart}'
+  - '{prefix} {change} this to a {chart}'
+  - '{prefix} {change} mark from {from} to {chart}'
+  - '{prefix} {change} {from} chart to {chart}'
+  - '{prefix} {change} {from} chart into a {chart}'
+  - '{prefix} {change} chart type {from} chart to {chart}'
+  - i do not want a {from} chart. give something like a {chart}
+  - modify it to a {chart}.
+  - '{prefix} {change} to {chart}'
+  - '{prefix} {change} it to a {chart} convex with color solid.'
+  - '{prefix} {change} from {from} to graph'
+  - '{prefix} {change} to {chart}'
+  - '{prefix} {change} {from} chart to an {chart}'
+  - '{prefix} {change} to a {chart}'
+  - '{prefix} {change} from {from} graph to {chart}'
+  - '{prefix} {change} it from {from} to {chart}'
+  - try to change the bars into {chart}.
+  - '{prefix} {change} from {from} to {chart}'
+  - '{prefix} {change} {from} to {chart}'
+  - '{prefix} {change} the {from} chart to {chart}'
+  - '{prefix} {change} this to a {chart}.'
+  - '{prefix} {change} it to {chart}'
+  - '{prefix} {change} from {from} graph to a filled in {chart}'
+  - '{prefix} {change} {from} graph to {chart}'
+  - '{prefix} {change} it to a filled in {chart}'
+  - '{prefix} {change} to a filled-in {chart}'
+  - '{prefix} {change} it to a {chart}'
+  - '{prefix} {change} {from} into {chart}'
+  - '{prefix} {change} it to a filled {chart}'
+  - '{prefix} {change} it to a {chart}'
+  - '{prefix} {change} {from} to filled {chart}'
+  - '{prefix} {change} to bold {chart}'
+  - '{prefix} {change} the {from} into a {chart}'
+  - '{prefix} {change} mark from bar to {chart}'
+  - make an {chart}.
+  - '{prefix} {change} it to a filled in {chart}'
+  - '{prefix} {change} the {from} into {chart}.'
+  - '{prefix} {change} mark from bar to {chart}'
+  - make that a {chart} with {chart} filled in
+  - '{prefix} {change} this chart to an {chart}'
+  - '{prefix} {change} the graph to {chart}'
+  - '{prefix} {change} to {chart}'
+  - transform {from} to {chart} and fill the {chart} under the graph
+  - '{prefix} {change} {from} to filled lines'
+  - '{prefix} {change} it to {chart}'
+  - '{prefix} {change} mark of bar to {chart}'
+  - '{prefix} {change} it to an {chart}'
+  - '{prefix} {change} it to an {chart}'
+  - '{prefix} {change} it to a {chart} with full color filled'
+  - '{prefix} {change} a {chart} full'
+  - '{prefix} {change} to a filled {chart}'
+  - '{prefix} {change} from a {from} graph to a filled {chart}.'
+  - make the {from} chart into a {chart}
+  - '{prefix} {change} it to a {chart}'
+  - '{prefix} {change} to solid {chart}.'
+  - '{prefix} {change} to a filled {chart}'
+  - '{prefix} {change} {from} graph to {chart} with shade'
+  - '{prefix} {change} {from} chart to {chart} with color'
+  - '{prefix} {change} it to a shadow {chart}'
+  - '{prefix} {change} {from} chart to {chart}'
+  - '{prefix} {change} mark from {from} to {chart}'
+  - '{prefix} {change} to filled {chart}'
+  - '{prefix} {change} {from} chart into filled {chart}'
+  - '{prefix} {change} it to an {chart}.'
+  - '{prefix} {change} it to a {chart} with a shaded range'
+  - '{prefix} {change} to an {chart}'
+  - '{prefix} {change} to {chart}'
+  - '{prefix} {change} mark from {from} to {chart}'
+  - '{prefix} {change} from {from} graph to a {chart}'
+  - adjust it by {chart} with full colored {chart}
+  - '{prefix} {change} {from} to {chart} and then shade them in, use the same data.'
+  - '{prefix} {change} the chart to an {chart}'
+  - '{prefix} {change} into {chart} plot'
+  - '{prefix} {change} chart to {chart}'
+  - '{prefix} {change} {from} diagram to {chart}'
+  - '{prefix} {change} an {chart}'
+  - '{prefix} {change} from a {from} graph to a shaded {chart}'
+  - '{prefix} {change} it to show the {chart}'
+  - '{prefix} {change} {from} graph to {chart} under graph filled in'
+  - '{prefix} {change} it to {chart}'
+  - '{prefix} {change} from {from} to filled in {chart}'
+  - '{prefix} {change} from a {from} to an {chart}'
+  - '{prefix} {change} the {from} to {chart}'
+  - '{prefix} {change} this {from} chart to {chart} and paint {chart} below it.'
+  - '{prefix} {change} this to a {chart}'
+  - '{prefix} {change} mark from {from} to shadowed {chart}'
+  - '{prefix} {change} {from} chart to {chart}'
+  - '{prefix} {change} {from} chart into {chart} and colour the inside of the graph'
+  - '{prefix} {change} {from} chart type to {chart}'
+  - i need {chart}
+  Parameters:
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: change
+    EntityType: None
+    Templates:
+    - change
+    - turn
+    - make it
+    - modify
+    - convert
+    - switch
+  - Name: from
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+
+- Intents:
+  - SetChartType
+  Templates:
+  - '{verb} {prep} {chart}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - use
+    - switch to
+    - modify it to
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: prep
+    EntityType: None
+    Templates:
+    - a
+    - one
+
+- Intents:
+  - SetChartType
+  - BindX
+  - BindY
+  Templates:
+  - '{verb} {prep} {chart} {for} {aggr} {by} {field}'
+  - '{verb} {prep} {chart} of {field} and {aggr}'
+  - '{aggr} {by} {field} as {prep} {chart}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - create
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    # basic chart will not bind to <visual> to avoid conflict
+    - <visual>
+  - Name: prep
+    EntityType: None
+    Templates:
+    - a
+  - Name: by
+    EntityType: None
+    Templates:
+    - by
+  - Name: for
+    EntityType: None
+    Templates:
+    - for
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>

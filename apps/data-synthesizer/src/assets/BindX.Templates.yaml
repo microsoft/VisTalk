@@ -1,0 +1,104 @@
+- Intents:
+  - BindX
+  Templates:
+  - '{field}'
+  - show {field}
+  - group by {field}
+  - groupby {field}
+  - put {field}
+  - by {field}
+  - break {field}
+  - break down by {field}
+  - break by {field}
+  - visualize {field}
+  - plot {field} on x
+  - '{field} as x'
+  - '{field} for x axis'
+  - bind x to {field}
+  - x axis with {field} column
+  - arrange {field} on x
+  - create an x axis with {field}
+  - add {field} to categorical axis  
+  - group by {field} on x axis
+  - break down x axis by {field}
+  - '{bind_verb} x axis with {field}'
+  - '{bind_verb} x with {field}'
+  - '{bind_verb} {field} to x axis'
+  - '{bind_verb} {field} for horizontal axis'
+  - add {field} to x axis of the chart
+  - plot {field} on x axis
+  - plot x with {field} data points
+  - '{bind_verb} {field} to x axis'
+  - '{bind_verb} x axis with {field} field'
+  - '{bind_verb} {field} as x values'
+  - '{bind_verb} x axis with {field} column'
+  - '{bind_verb} x axis using {field} values'
+  - '{bind_verb} {field} on x axis'
+  - '{bind_verb} x to be {field}'
+  - '{bind_verb} {field} as x axis field'
+  - '{bind_verb} x axis using {field}'
+  - '{bind_verb} {field} field to the horizontal axis'
+  - '{bind_verb} {field} on x axis'
+  - '{bind_verb} {field} field as categorical axis'
+  - '{bind_verb} {field} on x'
+  - '{bind_verb} {field} to draw x axis'
+  - using {field} for x axis
+  - choose {field} for x
+  - select {field} as x axis
+  - pick up {field} for x axis
+  - associate x axis with {field}
+  - associate {field} to x axis
+  - associate {field} to x
+  - bind {field} to horizontal axis
+  - name x axis using {field}
+  - specify {field} to be the field of x axis
+  - specify x axis to be {field}
+  - visualize {field} on the x axis
+  - map x axis with the {field} values
+  - display x axis with {field}
+  - display {field} data points along x axis
+  - need {field} to be displayed on x
+  - map {field} to x axis
+  - change x to {field}
+  - modify x axis of the chart with {field}
+  - refer x axis to {field}
+  - '{bind_verb} {field} in x'
+  - encode the {field}
+  - encode the {field} .
+  - name the {field} in x
+  - '{bind_verb} {field} in x'
+  - show me {field} in x axis
+  - show me each {field} in x axis
+  - plot each {field} in x
+  - show the {field} as x axis
+  Parameters:
+  - Name: bind_verb
+    EntityType: None
+    Templates:
+    - assign
+    - bind
+    - encode
+    - specify
+    - put
+    - use
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+
+- Intents:
+  - BindX
+  - SetChartType
+  Templates:
+  - '{chart} of {aggr}'
+  - create a {chart} of {aggr}
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - histogram
+    - distribution
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>

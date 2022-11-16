@@ -34,4 +34,4 @@ const source = [
   '};'
 ].join(os.EOL);
 
-fs.writeFileSync('./dist/model-data.ts', source);
+fs.writeFileSync('../../libs/interpreter/src/lib/model-data.ts', source);

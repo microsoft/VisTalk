@@ -1,0 +1,19 @@
+- Intents:
+  - ChangeAggregation
+  Templates:
+  - '{aggregation}'
+  - change to {aggregation}
+  - using {aggregation}
+  - switch to {aggregation}
+  - calculate in {aggregation}
+  Parameters:
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+    - average
+    - min
+    - max
+    - count
+    - distinct count
+    - median

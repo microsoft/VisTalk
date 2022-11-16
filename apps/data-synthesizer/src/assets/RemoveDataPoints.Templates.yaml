@@ -1,0 +1,170 @@
+- Intents:
+  - RemoveDataPoints
+  Templates:
+  - '{verb} {filter}'
+  - '{verb} {filter} and {filter}'
+  - '{prefix} exclude {filter} to {filter}'
+  - except {filter}, {filter}, {filter} and {filter}
+  - '{prefix} only show first six items of the bar graph'
+  - '{prefix} decrease the number of entries'
+  - '{prefix} {verb} column {filter}, {filter}, {filter}'
+  - '{prefix} {verb} bars from {filter} to {filter} to the chart.'
+  - '{prefix} truncate y axis of the chart to {filter}'
+  - '{prefix} {verb} the bar graphs of {filter}, {filter} and {filter}'
+  - '{prefix} show only the values {filter}, {filter} and {filter} of the chart'
+  - '{prefix} {verb} values {filter}, {filter} and {filter}'
+  - '{prefix} {verb} the values for {filter} {filter} and {filter}'
+  - '{prefix} {verb} x values {filter} {filter} and {filter}'
+  - '{prefix} exclude data after the {filter} point.'
+  - '{prefix} {verb} {filter} {filter} and {filter}'
+  - '{prefix} {verb} {filter}'
+  - '{prefix} truncate the x axis to {top_n} entries.'
+  - '{prefix} show only {filter} to {filter}'
+  - '{prefix} {verb} bars {filter}, {filter}, and {filter}'
+  - '{prefix} {verb} {bottom_n} bars from the end of this chart'
+  - '{prefix} {verb} the bars to up to {filter}'
+  - '{prefix} change a axis to a to {filter}; {verb} {filter}, {filter}, and {filter} from a axis'
+  - '{prefix} {verb} {filter}, {filter} and {filter} from the graph'
+  - '{prefix} {verb} columns'
+  - '{prefix} {verb} the last {bottom_n} {field} of the header'
+  - '{prefix} keep data until {field} {filter} on the horizontal axis'
+  - '{prefix} {verb} the last {bottom_n} data points'
+  - '{prefix} omit {filter}, {filter}, {filter} data'
+  - '{prefix} leave out values for {filter}-{filter} from the bar graph.'
+  - '{prefix} {verb} columns {filter}, {filter} and {filter} from the chart'
+  - '{prefix} change the chart to values up to the {field} {filter}'
+  - '{prefix} {verb} amount of bars/information on graph.'
+  - '{prefix} show me only a axis data a to {filter}'
+  - '{prefix} only show first {top_n} columns of the chart'
+  - '{prefix} {verb} {filter} to {filter}'
+  - '{prefix} make the chart more narrow and only include items a-{filter}'
+  - '{prefix} show me only items a through {filter} on the x-axis.'
+  - '{prefix} {verb} the x-axis to the first {top_n} items.'
+  - '{prefix} {verb} the items {filter}, {filter} ,{filter}'
+  - '{prefix} {verb} {filter}, {filter}, and {filter}'
+  - '{prefix} {verb} the weight of the x axe'
+  - '{prefix} {verb} entries {filter}, {filter}, and {filter} from x axis'
+  - '{prefix} {verb} last {bottom_n} sets of data points'
+  - '{prefix} left only first {top_n} columns'
+  - '{prefix} use the same bars but downsize form {filter} to {filter}, omit {filter}, {filter} and {filter}, use the same data.'
+  - '{prefix} {verb} {filter}, {filter} and {filter} from the chart.'
+  - '{prefix} change x axis value up to {filter}'
+  - '{prefix} change bar diagram to less statistics'
+  - '{prefix} exclude values {filter} {filter} {filter}'
+  - '{prefix} {verb} columns {filter} from {filter}'
+  - '{prefix} {verb} elements from {filter} to {filter} in the a axis'
+  - '{prefix} display first {top_n} entries of the chart'
+  - '{prefix} {verb} the last columns until you only have data for a'
+  - '{prefix} graph only a through {filter}'
+  - '{prefix} {verb} data points {filter}, {filter}, and {filter} on the x axis'
+  - '{prefix} crop the bar graph to only {filter} column.'
+  - '{prefix} show the chart up to {filter} only'
+  - '{prefix} show only the values of a to {filter}'
+  - '{prefix} show only first {top_n} columns'
+  - '{prefix} cut sections {filter} to {filter} from chart'
+  - '{prefix} change the x-axis points up to {filter} only.'
+  - '{prefix} graph stops on {filter} value'
+  - '{prefix} only show first six items of the chart'
+  - '{prefix} {verb} number of entrants to keep only the first {top_n} items'
+  - '{prefix} {verb} column {filter}, {filter}, {filter}'
+  - '{prefix} {verb} the time series.'
+  - '{prefix} shrink chart to keep first {top_n} items'
+  - '{prefix} truncate the chart to {filter}'
+  - '{prefix} keep only values till {filter} on x axis.'
+  - '{prefix} {verb} {filter} to {filter} from the chart'
+  - '{prefix} change chart x-axis to a to {filter}'
+  - '{prefix} {verb} values {filter},{filter} and {filter}'
+  - '{prefix} take up to {filter} only x axis'
+  - '{prefix} {verb} the values for {filter}, {filter} and {filter}'
+  - '{prefix} {verb} x values {filter}, {filter}, and {filter}.'
+  - '{prefix} exclude data after the {filter} point.'
+  - '{prefix} show till {filter} on y axis'
+  - '{prefix} {verb} {filter} {filter} and {filter}'
+  - '{prefix} change chart x value range, {filter} to {filter}'
+  - '{prefix} {verb} [a-{filter}] to [a-{filter}]'
+  - '{prefix} change the x axis in chart to {filter}'
+  - '{prefix} shorten the chart'
+  - '{prefix} truncate the x axis of the chart to {top_n} entries.'
+  - '{prefix} show only a to {filter}'
+  - '{prefix} {verb} the points from {filter} onwards'
+  - '{prefix} shorten the x-axis to {filter}'
+  - '{prefix} make a axis a to {filter} data point; {verb} {filter}, {filter}, and {filter} from a axis'
+  - '{prefix} {verb} {filter}, {filter} and {filter} from x axis'
+  - '{prefix} {verb} the columns'
+  - '{prefix} change mark of line to line upto {filter} column'
+  - '{prefix} show chart from a to {filter} only'
+  - '{prefix} {verb} the last {bottom_n} {field} of the header'
+  - '{prefix} keep data until {filter} {field} on a axis'
+  - '{prefix} {verb} the last {bottom_n} data points'
+  - '{prefix} omit data from {filter}, {filter}, {filter}'
+  - '{prefix} leave out values for {filter} to {filter} from the chart.'
+  - '{prefix} {verb} values {filter}, {filter} and {filter} from the chart'
+  - '{prefix} change the chart to values up to the {field} {filter}'
+  - '{prefix} show me a axis data a to {filter} only'
+  - '{prefix} show only first {top_n} columns of the chart'
+  - '{prefix} you would stop the values upto {filter}'
+  - '{prefix} {verb} {filter} to {filter}'
+  - '{prefix} show only half of the chart'
+  - '{prefix} only include items {filter} in the chart'
+  - '{prefix} show me only x-axis items {filter} through {filter}.'
+  - '{prefix} {verb} the number of items to the first {top_n}.'
+  - '{prefix} {verb} the items {filter}, {filter}, {filter}'
+  - '{prefix} {verb} the last {bottom_n} x-values'
+  - '{prefix} {verb} entries {filter}, {filter}, and {filter} from x axis'
+  - '{prefix} {verb} last {bottom_n} sets of data points ({filter}, {filter} & {filter})'
+  - '{prefix} draw half of the graph'
+  - '{prefix} left only first {top_n} data'
+  - '{prefix} use the same lines and data but only go to letter {filter}, omit {field} {filter}, {filter} and {filter}.'
+  - '{prefix} {verb} data points {filter}, {filter} and {filter} from the chart'
+  - '{prefix} change chart x axis value upto {filter}'
+  - '{prefix} change chart to less statistical record'
+  - '{prefix} exclude values {filter} {filter} {filter}'
+  - '{prefix} only show {filter} in the chart'
+  - '{prefix} {verb} elements from {filter} to {filter} in the a axis'
+  - '{prefix} show first {top_n} entries of line plot'
+  - '{prefix} keep data from a to {filter} and get rid of the other data'
+  - '{prefix} graph only from a to {filter}'
+  - '{prefix} {verb} data points {filter}, {filter}, and {filter} on the x axis'
+  - '{prefix} crop the chart till {filter} column only.'
+  - '{prefix} show chart upto {filter} only'
+  - '{prefix} show values for a to {filter} only'
+  - '{prefix} only show the first half'
+  - '{prefix} show only first {top_n} columns'
+  - '{prefix} cut sections {filter} to {filter} from chart'
+  - '{prefix} change the x-axis points upto {filter} only.'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - remove
+    - delete
+    - eliminate
+    - omit
+    - remove
+    - except
+    - delete
+    - eliminate
+    - got rid of
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: bottom_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you

@@ -1,0 +1,21 @@
+- Intents:
+  - SetMark
+  Templates:
+  - 'set mark {mark}'
+  - 'change mark to {mark}'
+  Parameters:
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <UNK>
+
+- Intents:
+  - SetMark
+  Templates:
+  - 'set mark {mark}'
+  - 'change mark to {mark}'
+  Parameters:
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <value>

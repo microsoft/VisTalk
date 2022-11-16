@@ -1,0 +1,82 @@
+- Intents:
+  - DecreaseDataPointWidth
+  Templates:
+  - decrease line weight to {percent} scale
+  - thicken the line of the graph.
+  - decrease boldness of line
+  - decrease thickness of plot line
+  - reduce the thickness of the line in the {chart} by {percent}
+  - change the graph line from bold to skinny.
+  - thin out the response line
+  - make chart line thinner
+  - change the font of the line to not be bolded.
+  - unbold line in graph
+  - decrease the plotted line weight of results
+  - make the {chart} less bolder.
+  - make the graph line lite.
+  - put the line in normal format and not bold
+  - please make the line thinner
+  - reduce thickness of graph line
+  - make the line on the graph thinner.
+  - remove bold from chart line.
+  - unbold the graph line
+  - decrease the thickness of the line used in the chart
+  - change the graph line to a thinner one
+  - thin the chart line for better understanding.
+  - thin the graph line.
+  - thin graph line to make it easier to understand
+  - change the trend line bold format into normal.
+  - lighten the lines
+  - make the line of the {chart} thinner
+  - show rising value in finer line
+  - unbold the data line
+  - make the line {percent} times thinner
+  - the line of the chart is lean
+  - decrease the graph area line width
+  - remove boldness form graph line.
+  - make the line used in the graph thinner
+  - make the line thinner
+  - decrease the chart stroke width
+  - thin the line on the graph.
+  - lighten the line
+  - change the entire line to be thinner.
+  - size is thinner
+  - make the blue line thinner.
+  - make the lines thinner
+  - make the graph line less bold.
+  - unbold the lines
+  - make the line in a smaller print, or less bold.
+  - make the line more narrow
+  - reduce the thickness of the line.
+  - make chart line thinner
+  - minimize stroke on data line
+  - make the line slimmer.
+  - remove boldness everywhere
+  - decrease bold thickening of graph line
+  - make the line thinner.
+  - thinner line in the chart
+  - make the line clearer
+  - bold curves are thinned
+  - make the bar long thinner
+  - make line thinner
+  - change the thickness of the line on the graph
+  - make the trend line less thick
+  - change the graph line to light blue and make it about {percent} thinner.
+  - thin the graph line
+  - make graph light smaller
+  - change the thickness of the line to a thinner size
+  - thinner the graph line which is in the blue
+  - decrease the thickness of the line in the {chart}.
+  Parameters:
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: percent
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>

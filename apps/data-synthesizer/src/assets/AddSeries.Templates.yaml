@@ -1,0 +1,155 @@
+- Intents:
+  - AddSeries
+  Templates:
+  - Add {filter} stock series in {color}
+  - add {filter} stock to the graph.
+  - added another kind of data from {filter}
+  - Overlay the current data with data from {filter} and chart it in {color}
+  - add data for {filter} to the chart
+  - add in company {filter} to the graph.
+  - show this chart with the price of {filter} transposed from the same time frame
+  - Add a line for {filter} and make it {color}
+  - Show the difference in price throughout the years with a {color} line
+  - Add the {filter} trend into the existing chart.
+  - put {filter} column data in {color} line
+  - Add {filter} data set to chart
+  - Add {filter} to graph.
+  - Add {filter} to the graph.
+  - overlap it with another graph for {filter}.
+  - Add a line for {filter}.
+  - Superimpose a {color} chart for the change in price (%) of {filter} on the {filter} chart.
+  - Add a chart for the {filter} and make in in the shade of {color}.
+  - Compare {filter} to {filter}
+  - Add {filter} to the graph in {color}
+  - Add the same graph but for {filter} instead of {filter}, showing it in {color}
+  - Insert a price change line of {filter} in {color}.
+  - Add new line for stock {filter} for the same time horizon.
+  - add a {color} line for {filter} data
+  - Add the data for {filter}
+  - Add {filter} chart
+  - Please add the {filter} line in {color} color
+  - Include {filter} price in this chart so we can compare their movements.
+  - Add {filter} values to graph in {color}
+  - Show a comparison between {filter} and {filter}
+  - add another graphic line into an existing graph for {filter}
+  - add the stock {filter} to the chart to compare {filter} to {filter}
+  - Overlay a comparison chart for {filter}
+  - add {filter} to graph
+  - add the {filter} in price in {color} color
+  - add the price history of {filter} stock in {color} in the same graph as {filter} for comparison
+  - Show {filter} data on the graph also.
+  - compare with {filter}'s data
+  - Add a second line {filter} to the chart
+  - Add the {filter} stocks to this chart
+  - Add {filter}'s information difference to the graph and make it {color}
+  - emphasize addition of {color} line on graph with {filter}
+  - Add a second chart to show {filter}.
+  - Add a graph showing the {filter} with the same starting point of {filter}.
+  - Add an overlapping graph with {filter} in {color}.
+  - Add second chart {filter} to current one
+  - Add the data for {filter} to the graph in {color}. 
+  - draw {filter} and {filter} graphs
+  - A {color} line is added for {filter}
+  - Jot down graph of {filter} against {filter}.
+  - add {filter} change in price
+  - Create a series for {filter} in {color}
+  - Simultaneously depict the chart for {filter} along with {filter}.
+  - Add the data for {filter} in {color}.
+  - Add {filter} sales in {color}.
+  - add a second {color} line {filter}
+  - color wave line {filter} is added to {color}.
+  - the {color} bar also drawn for {filter}
+  - overlay {filter} on same axes
+  - A another line {color} color is drawn over the wave for {filter}
+  - add in {color} the values for {filter}
+  - add {filter} data to chart
+  Parameters:
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+
+
+- Intents:
+  - AddSeries
+  Templates:
+  - '{verb} {series} {filter} {aggr}' # add series ford sales
+  - '{verb} {series} {filter} {aggregation} {aggr}' # add series ford total sales
+  - '{verb} {series} {aggregation} {aggr}' # add series max sales
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: series
+    EntityType: None
+    Templates:
+    - series
+    - line
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+    - <filter>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+    - average
+    - min
+    - max
+    - count
+    - distinct count
+    - median
+
+- Intents:
+  - AddSeries
+  Templates:
+  - '{verb} {series} {filter} {aggregation} {aggr} {by} {field}'
+  - '{verb} {series} {aggregation} {aggr} {by} {field}'
+  - '{verb} {series} {aggr} {by} {field}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: series
+    EntityType: None
+    Templates:
+    - series
+    - line
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+    - <filter>
+  - Name: by
+    EntityType: None
+    Templates:
+    - by
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+    - average
+    - min
+    - max
+    - count
+    - distinct count
+    - median

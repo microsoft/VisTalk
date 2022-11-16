@@ -1,0 +1,79 @@
+- Intents:
+  - IncreaseHeight
+  Templates:
+  - '{prefix} add more range for the {aggr}'
+  - '{prefix} add more space for the {aggr}'
+  - '{prefix} amplifier the figure in the y range, without changing the y range'
+  - '{prefix} bars got longer'
+  - '{prefix} change chart to bigger'
+  - '{prefix} change the chart scale to longer in y axis'
+  - '{prefix} change the dimensions of the chart to taller'
+  - '{prefix} change the gap of y axis values into larger'
+  - '{prefix} change the height of the chart'
+  - '{prefix} change the y-axis increment'
+  - '{prefix} change to see the chart more vertical'
+  - '{prefix} chart enlarged and zoomed in more'
+  - '{prefix} chart has been expanded vertically'
+  - '{prefix} double figure height'
+  - '{prefix} double the graph height'
+  - '{prefix} double the height of the chart, keeping the same vertical range'
+  - '{prefix} drag the bottom of the chart down so that it is much more of a vertical rectangle'
+  - '{prefix} drag the bottom of the chart down to create a vertically rectangular chart.'
+  - '{prefix} elongate the graph'
+  - '{prefix} elongate upwards the chart'
+  - '{prefix} enlarge the graph {percent}'
+  - '{prefix} enlarge the y axis'
+  - "{prefix} expand the chart's height, so there is more space between y-axis labels."
+  - '{prefix} extend the graph size vertically'
+  - '{prefix} increase height of chart'
+  - '{prefix} increase number of data points on the y-axis'
+  - '{prefix} increase the {aggr} scale'
+  - '{prefix} increase the chart height'
+  - '{prefix} increase the height of the chart'
+  - '{prefix} increase the height of the chart by {percent}'
+  - '{prefix} increase the height of the chart by {percent}.'
+  - '{prefix} increase the height of the chart so it covers {percent} as much space.'
+  - '{prefix} increase the height of the chart window by dragging the bottom edge down'
+  - '{prefix} increase the price scale'
+  - '{prefix} increase y axis to visualize {aggr} better'
+  - '{prefix} increase y axis to visualize y better'
+  - '{prefix} increased graph length'
+  - '{prefix} increased length of y axis'
+  - '{prefix} lengthen entire chart'
+  - '{prefix} lengthen the chart on the y axis'
+  - '{prefix} made it taller'
+  - '{prefix} make bars longer to show more difference'
+  - '{prefix} make chart longer'
+  - '{prefix} make chart taller'
+  - '{prefix} make the chart taller but narrower.'
+  - '{prefix} make the chat bigger'
+  - '{prefix} make the graph more high'
+  - '{prefix} make the graph taller vertically'
+  - '{prefix} make {aggr} ax longer'
+  - '{prefix} make price ax longer'
+  - '{prefix} resize the height of the chart to twice the size of the first'
+  - '{prefix} stretch the height of the graph'
+  - '{prefix} stretch vertically.'
+  - '{prefix} the chart is expanded vertically'
+  - '{prefix} the first one is smaller but easier to look at'
+  - '{prefix} the height has changed larger'
+  - '{prefix} this chart was vertically stretched'
+  - '{prefix} vertically extend the length of the chart.'
+  - '{prefix} zoom in on the {aggr} axis'
+  - '{prefix} zoom in on the y axis'
+  Parameters:
+  - Name: prefix
+    EntityType: None
+    Templates:
+    - modify it to
+    - please
+    - pls
+    -
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: percent
+    EntityType: Number
+    Templates:
+    - <number>

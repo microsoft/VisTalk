@@ -1,0 +1,312 @@
+- Intents:
+  - Filter
+  Templates:
+  - '{filter_verb} {subject} {eq} {equal}'
+  - '{filter_verb} {subject} {gt} {greaterThan}'
+  - '{filter_verb} {subject} {gte} {greaterThanOrEqual}'
+  - '{filter_verb} {subject} {lt} {lessThan}'
+  - '{filter_verb} {subject} {lte} {lessThanOrEqual}'
+  - '{filter_verb} {subject} {gt} {greaterThan} and {lt} {lessThan}'
+  - '{filter_verb} {subject} {lt} {lessThan} or {gt} {greaterThan}'
+  - '{filter_verb} {subject} {gte} {greaterThanOrEqual} and {lte} {lessThanOrEqual}'
+  - '{filter_verb} {subject} at least {greaterThanOrEqual}'
+  - '{filter_verb} {subject} at most {lessThanOrEqual}'
+  Parameters:
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: filter_verb
+    EntityType: None
+    Templates:
+    - filter the data where 
+    - filter with 
+    - show me the data where
+    - only keep the data where
+    - filter by
+    - show me where
+  - Name: gt
+    EntityType: None
+    Templates:
+    - greater than
+    - higher than
+    - larger than
+    - more than
+    - '>'
+  - Name: gte
+    EntityType: None
+    Templates:
+    - greater than or equals to
+    - higher than or equals to
+    - larger than or equals to
+    - more than or equals to
+    - '>='
+  - Name: greaterThan
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lt
+    EntityType: None
+    Templates:
+    - less than
+    - lower than
+    - smaller than
+    - '<'
+  - Name: eq
+    EntityType: None
+    Templates:
+    - is
+    - equal to
+    - equals
+  - Name: lte
+    EntityType: None
+    Templates:
+    - less than or equals to
+    - lower than or equals to
+    - smaller than or equals to
+    - '<='
+  - Name: lessThan
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: equal
+    EntityType: Filter
+    Templates:
+    - <number>
+
+- Intents:
+  - Filter
+  Templates:
+  - '{filter_verb} {subject} {gt} {greaterThan}'
+  - '{filter_verb} {subject} {gte} {greaterThanOrEqual}'
+  - '{filter_verb} {subject} {lt} {lessThan}'
+  - '{filter_verb} {subject} {lte} {lessThanOrEqual}'
+  - '{filter_verb} {subject} {gt} {greaterThan} and {lt} {lessThan}'
+  - '{filter_verb} {subject} {gte} {greaterThanOrEqual} and {lte} {lessThanOrEqual}'
+  - '{filter_verb} {subject} {lt} {lessThan} or {gt} {greaterThan}'
+  - '{filter_verb} from {greaterThanOrEqual} to {lessThanOrEqual}'
+  - '{filter_verb} where {subject} > {greaterThan} in {equal} .'
+  - '{filter_verb} the {subject} after {greaterThan}'
+  - '{subject} after {greaterThan}'
+  - '{filter_verb} {subject} after {greaterThan}'
+  - the {subject} in {equal}
+  - '{filter_verb} {subject} in {equal}'
+  - '{filter_verb} {subject} in the {equal}'
+  - 'in {equal}'
+  - '{filter_verb} {subject} in {equal}'
+  - '{filter_verb} {subject} over the {greaterThan}'
+  - '{filter_verb} {subject} < {lessThan}'
+  - '{filter_verb} {subject} on {equal}'
+  - '{filter_verb} {subject} in {equal}'
+  - '{filter_verb} {subject} for {equal}'
+  Parameters:
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: filter_verb
+    EntityType: None
+    Templates:
+    - filter the data where 
+    - filter with 
+    - show me the data where
+    - only keep the data where
+    - filter by
+    - show me
+  - Name: gt
+    EntityType: None
+    Templates:
+    - later than
+    - after
+  - Name: gte
+    EntityType: None
+    Templates:
+    - later than or on
+    - after or on
+  - Name: greaterThan
+    EntityType: Filter
+    Templates:
+    - <date>
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <date>
+  - Name: lt
+    EntityType: None
+    Templates:
+    - before
+    - earlier than
+  - Name: lte
+    EntityType: None
+    Templates:
+    - before or on
+    - earlier than or on
+  - Name: lessThan
+    EntityType: Filter
+    Templates:
+    - <date>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <date>
+  - Name: equal
+    EntityType: Filter
+    Templates:
+    - <date>
+
+
+- Intents:
+  - Filter
+  Templates:
+  - '{filter_verb} {gt} {subject} than {greaterThan}'
+  - '{filter_verb} {gte} {subject} than {greaterThanOrEqual}'
+  - '{filter_verb} {lt} {subject} than {lessThan}'
+  - '{filter_verb} {lte} {subject} than {lessThanOrEqual}'
+  Parameters:
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: filter_verb
+    EntityType: None
+    Templates:
+    - filter the data 
+    - show me the data
+    - only keep the data
+    - show me
+  - Name: gt
+    EntityType: None
+    Templates:
+    - have higher
+    - have larger
+  - Name: gte
+    EntityType: None
+    Templates:
+    - have higher or equals
+    - have larger or equals
+  - Name: greaterThan
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lt
+    EntityType: None
+    Templates:
+    - have less
+    - have lower
+  - Name: lte
+    EntityType: None
+    Templates:
+    - have less or equals
+    - have lower or equals
+  - Name: lessThan
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+    
+
+- Intents:
+  - Filter
+  Templates:
+  - '{filter}'
+  - '{subject} is {equal}'
+  - '{subject} > {greaterThan}'
+  - '{subject} over {greaterThan}'
+  - whose {subject} is {equal}
+  - which {subject} number is {equal}
+  - '{subject} < {lessThan}'
+  - more than {greaterThan} {subject}
+  - '{subject} is {equal}'
+  - '{subject} is {filter} and {subject} is {equal}'
+  - '{subject} is {filter}'
+  - '{subject} {filter}'
+  - '{subject} larger than {greaterThan}'
+  - '{subject} more than {greaterThan}'
+  - what is the {subject} of {filter}
+  - what is {subject} of {filter}
+  - what is {filter}
+  - which {subject} is {equal}
+  - '{subject} > {greaterThan} which {subject} is {equal}'
+  - '{subject} {equal} and {subject} {filter}'
+  - '{subject} less than {lessThan}'
+  - '{subject} > {greaterThan} with {subject} {filter}'
+  - show the {subject} > {greaterThan} with {subject} {filter}'
+  - '{filter} {subject}'
+  - show {subject} that were {filter} and {filter}
+  - show the {subject} that were {filter}
+  - '{filter} as the {subject} and {filter} as the {subject}'
+  - '{filter} as {subject} and {filter} as {subject}'
+  - '{subject} as {filter} and {subject} as {filter}'
+  - '{subject} is {filter} and {subject} is {filter}'
+  - '{filter} {subject} and {filter} {subject}'
+  - '{subject} > {greaterThan}'
+  - '{subject} {filter} or {filter} with a {subject} of {equal}'
+  - '{subject} {equal}'
+  - '{filter} which {subject} less than {lessThan}'
+  - the number of {lessThanOrEqual} {subject} or less .
+  - the {filter}
+  - '{filter} {filter} {filter}'
+  - '{filter} in {filter}'
+  - '{subject} with {filter}'
+  - '{filter} {filter} in {filter}'
+  - '{subject} {equal} and {subject} {equal}'
+  - the {filter} {subject} .
+  - '{subject} over {greaterThan}'
+  - '{filter} and {filter}'
+  - show {filter} and {filter}
+  - the {filter} or {filter}
+  - which {filter} ' s {subject} is {filter} ?
+  - '{filter} with {subject} < {lessThan}'
+  - '{filter} with {filter}'
+  - '{subject} > {greaterThan} or < {lessThan}'
+  - '{subject} > {greaterThan} and {subject} > {greaterThan}'
+  - '{subject} < {lessThan}'
+  - average {subject} for {filter} in {equal}
+  - where {subject} is {equal}
+  - where {subject} is greater than {greaterThan}
+  - whose {subject} is {filter} and {subject} is {filter}
+  Parameters:
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: greaterThan
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThan
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: equal
+    EntityType: Filter
+    Templates:
+    - <number>

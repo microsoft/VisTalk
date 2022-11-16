@@ -1,0 +1,70 @@
+- Intents:
+  - BindY
+  Templates:
+  - '{field} as y'
+  - '{field} for y axis'
+  - y axis with {field} column
+  - arrange {field} on y
+  - create an y axis with {field}
+  - add {field} to value axis  
+  - group by {field} on y axis
+  - break down y axis by {field}
+  - '{bind_verb} y axis with {field}'
+  - '{bind_verb} y with {field}'
+  - '{bind_verb} {field} to y axis'
+  - '{bind_verb} {field} for vertical axis'
+  - add {field} to y axis of the chart
+  - plot {field} on y axis
+  - plot y with {field} data points
+  - '{bind_verb} {field} to y axis'
+  - '{bind_verb} y axis with {field} field'
+  - '{bind_verb} {field} as y values'
+  - '{bind_verb} y axis with {field} column'
+  - '{bind_verb} y axis using {field} values'
+  - '{bind_verb} {field} on y axis'
+  - '{bind_verb} y to be {field}'
+  - '{bind_verb} {field} as y axis field'
+  - '{bind_verb} y axis using {field}'
+  - '{bind_verb} {field} field to the vertical axis'
+  - '{bind_verb} {field} on y axis'
+  - '{bind_verb} {field} field as value axis'
+  - '{bind_verb} {field} on y'
+  - '{bind_verb} {field} to draw y axis'
+  - using {field} for y axis
+  - choose {field} for y
+  - select {field} as y axis
+  - pick up {field} for y axis
+  - associate y axis with {field}
+  - name y axis using {field}
+  - specify {field} to be the field of y axis
+  - specify y axis to be {field}
+  - visualize {field} on the y axis
+  - map y axis with the {field} values
+  - display y axis with {field}
+  - display {field} data points along y axis
+  - need {field} to be displayed on y
+  - map {field} to y axis
+  - change y to {field}
+  - modify y axis of the chart with {field}
+  - refer y axis to {field}
+  - '{bind_verb} {field} in y'
+  - name the {field} in y
+  - '{bind_verb} {field} in y'
+  - show me {field} in y axis
+  - show me each {field} in y axis
+  - plot each {field} in y
+  - show the {field} as y axis
+  Parameters:
+  - Name: bind_verb
+    EntityType: None
+    Templates:
+    - assign
+    - bind
+    - encode
+    - specify
+    - put
+    - use
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>

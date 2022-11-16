@@ -1,0 +1,85 @@
+- Intents:
+  - SortDefault
+  Templates:
+  - sort
+  - sort it
+  - order
+  - order it
+  - sort by {sorted}
+  - order by {sorted}
+  - order {sorted}
+  - sort {sorted}
+  - arrange {sorted} in order
+  - '{prefix} reorder the chart'
+  - '{prefix} organize x values by size'
+  - '{prefix} change the order of the letters below'
+  - '{prefix} change the order of the values on the x axis'
+  - '{prefix} sort it'
+  - '{prefix} sort the chart'
+  - '{prefix} order the chart'
+  - '{prefix} sort'
+  - '{prefix} order'
+  - '{prefix} reorder'
+  - '{prefix} reorder the chart'
+  - '{prefix} sort it'
+  - '{prefix} sort the chart'
+  - '{prefix} order the chart'
+  - '{prefix} sort'
+  - '{prefix} order it'
+  - '{prefix} change the order'
+  - '{prefix} order the data'
+  - '{prefix} {sort_verb} {sorted}'
+  Parameters:
+  - Name: prefix
+    EntityType: None
+    Templates:
+    - modify it to
+    - please
+    - pls
+    - update the chart to
+    -
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+
+- Intents:
+  - SortDefault
+  Templates:
+  - sort by {sorted}
+  - order by {sorted}
+  - order {sorted}
+  - sort {sorted}
+  - arrange {sorted} in order
+  - '{prefix} {sort_verb} {sorted}'
+  Parameters:
+  - Name: prefix
+    EntityType: None
+    Templates:
+    - modify it to
+    - please
+    - pls
+    - update the chart to
+    -
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+    - x
+    - y

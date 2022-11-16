@@ -1,0 +1,111 @@
+# each bar
+- Intents:
+  - AddDataLabels
+  Templates:
+  - At the {position} of each {target} write the absolute value
+  - add the exact {aggr} on {position} of each {target}
+  - show the exact value at the {position} of each {target} in a font/size that fits on the bar
+  - Put data over each {target}.
+  - Show values at the {position} of each {target}.
+  - Add the reference value into each {target}.
+  - put data legend on {position} of each {target}
+  - Add the number for each {target} at the {position}.
+  - put exact number for each {target}.
+  - Add the number that represents the corresponding bar {aggr} as a digit with one decimal place above each {target}.
+  - On {position} of each {target} of the graph place the numeric total of what they each represent.
+  - Add data labels above each {target}, rounded to the nearest tenth
+  - Incorporate exact data numbers for each {target}
+  - Add exact values of frequency on {position} of each {target}.
+  - add the exact values of the bar on {position} of each {target}
+  - Write on {position} of each {target} with exact label
+  - Add numeric value above each {target}, to one decimal place
+  - Add the {aggr} to each {target}
+  - add numeric values to the {position} of each {target}
+  - Label the precise values on {position} of each {target}
+  - Write the value on {position} of each {target}
+  - add the y-axis values on {position} of each {target}
+  - Print the {aggr} above each {target}
+  - add value to {position} of each {target}
+  - The number is specified each {target}
+  - Values are added to the {position} of each {target}
+  - Add the accurate number of {aggr} on {position} on each {target}
+  - Depict the true value for each {target}.
+  - Add exact {aggr} percentages at the {position} of each {target}.
+  - Add {aggr} label at the {position} of each {target}
+  - Add the {aggr} above each {target}.
+  - put {aggr} on {position} of each {target}
+  - Add the bar value on {position} of each {target}
+  - Add the values to the {position} of each {target}.
+  - Add the sum at the {position} of each {target}
+  - add on the {position} the value of each {target}
+  - Add the exact {aggr} number with decimals included above each {target}.
+  Parameters:
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: chart
+    EntityType: DataField
+    Templates:
+    - <visual>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - bar
+    - column
+  - Name: position
+    EntityType: Position
+    Templates:
+    - top
+
+- Intents:
+  - AddDataLabels
+  Templates:
+  - add numbers to the lines on the chart
+  - add a value to the {target} on the graph
+  - includes numbers above {target}.
+  - added value on the graphic {target}
+  - exact value has been added to have better clarity
+  - Add value above each vertical bar
+  - Add the precise values above the {target}.
+  - Add numbers to show the vertical quantities above the {target}.
+  - Display numerical value at {position} of bar.
+  - Show exact number at the {position} of each graph bar.
+  - Add data labels above {target} to one decimal place
+  - Add data values to outside end of bar.
+  - add numbers on {position}
+  - Add exact values above each rect
+  - Add values
+  - Please write all figures above the {target}
+  - below every column put the number
+  - insert the exact values on {position} of the charts please
+  - add the value of the Y axis to the {position} of each X axis bar
+  - Add number indicators above the {target}
+  - emphasize numbers above {target} on graph
+  - show the bar values
+  - Exact number of points mentioned in chart
+  - Show the amount of {aggr} on the {position} of the bar
+  - Add the {aggr} on {position} of the {target}.
+  - shows accurate value in the chart.
+  - Add {aggr} to the nearest 10th of a percent on {position} of graph {target}.
+  - Add the values to the {position} of the {target}
+  - modify {target} represent with frequency values.
+  - display the data labels on the graph.
+  - the bar value number was indicated
+  - add column totals at {position} of {target}
+  - Add exact numbers to the chart.
+  - Database to show the measurement at the {position} side
+  Parameters:
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - bars
+    - columns
+  - Name: position
+    EntityType: Position
+    Templates:
+    - top

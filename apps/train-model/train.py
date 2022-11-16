@@ -1,8 +1,6 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT license.
 
-# A transformer-based seq2seq model for role labeling
-# and intent classification
 import numpy as np
 import time
 import os
@@ -15,7 +13,7 @@ from seqeval.metrics import f1_score
 def to_dict(f):
     return dict([(x[0], int(x[1])) for x in [r.strip().split(' ') for r in open(f, "r").readlines()]])
 
-dataset_path = "./dataset/"
+dataset_path = os.path.abspath(os.path.join(os.getcwd(), '../../libs/dataset/assets')) + '/'
 word2index = to_dict(dataset_path + "word_list.txt")
 slot2index = to_dict(dataset_path + "tag_list.txt")
 intent2index = to_dict(dataset_path + "intent_list.txt")
@@ -27,7 +25,7 @@ num_words = 1 + max([int(x[1]) for x in [r.strip().split(' ') for r in
     open(dataset_path + "word_list.txt", "r").readlines()]])
 num_intents = len(intent2index)
 vocab_size = num_words
-epochs = 200
+epochs = 150
 batch_size = 32
 
 def get_word_id(word):
@@ -54,7 +52,7 @@ shapes = (([None]), ([None], ()))
 types = ((tf.int32), (tf.int32, tf.int32))
 
 train_data = tf.data.Dataset.from_generator(
-    functools.partial(generator_fn, dataset_path + 'data_train.txt'), # replace to 'data_all.txt' to use all data as train
+    functools.partial(generator_fn, dataset_path + 'data_train.txt'),
     output_shapes=shapes, output_types=types)
 
 val_data = tf.data.Dataset.from_generator(
@@ -293,12 +291,13 @@ def train_step(features):
     intent_acc(features['intents'], tf.argmax(intent_logits, -1))
     tags_acc(slot_accuracy_function(features['tags'], tags_logits))
     
-def calculate_metrics(dataset, ep):
+def calculate_metrics(dataset):
     true_s = []
     pred_s = []
     true_intents_a = []
-    pred_intents_a =[]
-    intent_acc =[]
+    pred_intents_a = []
+    intent_acc = []
+    len = 0
     for y in dataset:
         pred_tags, pred_intents = model.predict(y['words'])
         true_tags = y['tags']
@@ -311,6 +310,7 @@ def calculate_metrics(dataset, ep):
                 predicted_intents,
                 true_intents):
 
+            len = len + 1
             mask = (true_tag_ids > 0) & (pred_tag_ids > 0)
             true_tag_ids = true_tag_ids[mask]
             predicted_tag_ids = pred_tag_ids[mask]
@@ -325,23 +325,19 @@ def calculate_metrics(dataset, ep):
             true_intents_a.append(true_intent)
             intent_acc.append(1 if true_intent == pred_intent else 0)
 
-
-    print(classification_report(true_s, pred_s))
-
-    print('intent')
-    print(np.average(intent_acc))
-
+    # print(len)
+    # print(classification_report(true_s, pred_s))
+    intent = np.average(intent_acc)
     slot_f1 = f1_score(true_s, pred_s, average='micro')
-    print('f1 slot {}'.format(slot_f1))
-    return slot_f1
+    return slot_f1, intent
 
 best_acc = 0
-best_f1 = 0
+best_tag_f1_val = 0
 best_intent = 0
 best_total = 0
 start = time.time()
 for epoch in range(epochs):
-    print(f'Epoch {epoch + 1}')
+    print(f'Epoch {epoch + 1}', flush=True)
 
     train_loss.reset_states()
     tags_acc.reset_states()
@@ -358,18 +354,25 @@ for epoch in range(epochs):
     if acc > best_acc:
         best_acc = acc
 
+    print(f'calculate_metrics')
+    tag_f1_train, intent_train = calculate_metrics(train_dataset)
+
+    tag_f1_val, intent_val = calculate_metrics(val_dataset)
+    print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
+
+    total = tag_f1_val + intent_val
     save = False
-    total = it_acc + acc
+
+    if tag_f1_val > best_tag_f1_val:
+        best_tag_f1_val = tag_f1_val
     if total > best_total:
         best_total = total
         save = True
-    print(f'Best F1 {best_f1:.4f} best_acc {best_acc:.4f} acc {acc:.4f} best intent {best_intent:.4f} / {it_acc:.4f} ')
+    print(f'best f1 val {best_tag_f1_val:.4f} train acc {acc:.4f}')
+    print(f'train intent acc: {it_acc:.4f} val intent acc: {intent_val:.4f}', flush=True)
     if save:
-        f1 = calculate_metrics(val_dataset, epoch)
-        if f1 > best_f1:
-            best_f1 = f1
         ckpt_save_path = ckpt_manager.save()
-        print(f'Epoch {epoch + 1} Loss {train_loss.result():.4f} Acc_tags {tags_acc.result():.4f} intent_acc {intent_acc.result():.4f}')
+        print(f'Epoch {epoch + 1} Loss {train_loss.result():.4f} Acc_tags {tags_acc.result():.4f} intent_acc {intent_acc.result():.4f}', flush=True)
         print(f'Time used: {time.time() - start:.2f} secs\n')
 
 class ExportModel(tf.Module):
@@ -385,5 +388,5 @@ class ExportModel(tf.Module):
 
 if ckpt_manager.latest_checkpoint:
   checkpoint.restore(ckpt_manager.latest_checkpoint)
-  print('Latest checkpoint restored')
+  print('Latest checkpoint restored', flush=True)
   tf.saved_model.save(ExportModel(model), export_dir='./dist/saved_model')
