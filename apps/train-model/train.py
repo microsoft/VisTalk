@@ -6,6 +6,7 @@ import time
 import os
 import functools
 import tensorflow as tf
+import datetime
 import tensorflow_addons as tfa
 from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score
@@ -25,7 +26,7 @@ num_words = 1 + max([int(x[1]) for x in [r.strip().split(' ') for r in
     open(dataset_path + "word_list.txt", "r").readlines()]])
 num_intents = len(intent2index)
 vocab_size = num_words
-epochs = 150
+epochs = 100
 batch_size = 32
 
 def get_word_id(word):
@@ -229,9 +230,11 @@ def tags_loss_function(y_true, y_pred, loss_fn):
     loss = loss * mask
     return tf.reduce_sum(loss) / tf.reduce_sum(mask)
 
-train_loss = tf.keras.metrics.Mean(name='train_loss')
-tags_acc = tf.keras.metrics.Mean(name='acc_tags')
-intent_acc = tf.keras.metrics.Accuracy(name='acc_intent')
+train_loss = tf.keras.metrics.Mean(name='train_loss', dtype=tf.float32)
+test_loss = tf.keras.metrics.Mean(name='test_loss', dtype=tf.float32)
+tags_acc = tf.keras.metrics.Mean(name='acc_tags', dtype=tf.float32)
+tags_test_acc = tf.keras.metrics.Mean(name='test_acc_tags', dtype=tf.float32)
+intent_acc = tf.keras.metrics.Accuracy(name='acc_intent', dtype=tf.float32)
 
 def slot_accuracy_function(real, pred):
   accuracies = tf.equal(real, tf.argmax(pred, axis=2, output_type=tf.dtypes.int32))
@@ -290,7 +293,16 @@ def train_step(features):
     train_loss(loss)
     intent_acc(features['intents'], tf.argmax(intent_logits, -1))
     tags_acc(slot_accuracy_function(features['tags'], tags_logits))
-    
+
+@tf.function(input_signature=train_step_signature)
+def test_step(features):
+    words = features['words']
+    tags = features['tags']
+    true_intents = features['intents']
+    nwords = tf.math.reduce_sum(tf.cast(tf.math.not_equal(words, 0), dtype=tf.int32), axis=-1)
+    tags_logits, intent_logits = model(words)
+    tags_test_acc(slot_accuracy_function(features['tags'], tags_logits))
+
 def calculate_metrics(dataset):
     true_s = []
     pred_s = []
@@ -336,15 +348,32 @@ best_tag_f1_val = 0
 best_intent = 0
 best_total = 0
 start = time.time()
+
+
+
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/gradient_tape/' + current_time + '/train'
+test_log_dir = 'logs/gradient_tape/' + current_time + '/test'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+test_summary_writer = tf.summary.create_file_writer(test_log_dir)
+
 for epoch in range(epochs):
     print(f'Epoch {epoch + 1}', flush=True)
-
-    train_loss.reset_states()
-    tags_acc.reset_states()
-    intent_acc.reset_states()
-
     for (batch, input) in enumerate(train_dataset):
         train_step(input)
+
+    with train_summary_writer.as_default():
+        tf.summary.scalar('loss', train_loss.result(), step=epoch)
+        tf.summary.scalar('accuracy', tags_acc.result(), step=epoch)
+        
+    for (batch, input) in enumerate(val_dataset):
+        test_step(input)
+
+    with test_summary_writer.as_default():
+        tf.summary.scalar('loss', test_loss.result(), step=epoch)
+        tf.summary.scalar('accuracy', tags_test_acc.result(), step=epoch)
+
+    print(f'Epoch {epoch + 1} train_loss {train_loss.result():.4f} test_loss {test_loss.result():.4f} train acc {tags_acc.result():.4f}  test acc {tags_test_acc.result():.4f}', flush=True)
 
     it_acc = intent_acc.result()
     if it_acc > best_intent:
@@ -353,27 +382,23 @@ for epoch in range(epochs):
     acc = tags_acc.result()
     if acc > best_acc:
         best_acc = acc
-
-    print(f'calculate_metrics')
-    tag_f1_train, intent_train = calculate_metrics(train_dataset)
-
-    tag_f1_val, intent_val = calculate_metrics(val_dataset)
-    print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
-
-    total = tag_f1_val + intent_val
-    save = False
-
-    if tag_f1_val > best_tag_f1_val:
-        best_tag_f1_val = tag_f1_val
-    if total > best_total:
-        best_total = total
         save = True
-    print(f'best f1 val {best_tag_f1_val:.4f} train acc {acc:.4f}')
-    print(f'train intent acc: {it_acc:.4f} val intent acc: {intent_val:.4f}', flush=True)
+
+    if epoch % 10 == 0:        
+        tag_f1_train, intent_train = calculate_metrics(train_dataset)
+        tag_f1_val, intent_val = calculate_metrics(val_dataset)
+        print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
+
     if save:
         ckpt_save_path = ckpt_manager.save()
         print(f'Epoch {epoch + 1} Loss {train_loss.result():.4f} Acc_tags {tags_acc.result():.4f} intent_acc {intent_acc.result():.4f}', flush=True)
         print(f'Time used: {time.time() - start:.2f} secs\n')
+
+    train_loss.reset_states()
+    tags_acc.reset_states()
+    intent_acc.reset_states()
+    tags_test_acc.reset_states()
+    test_loss.reset_states()
 
 class ExportModel(tf.Module):
   def __init__(self, m):
@@ -389,4 +414,10 @@ class ExportModel(tf.Module):
 if ckpt_manager.latest_checkpoint:
   checkpoint.restore(ckpt_manager.latest_checkpoint)
   print('Latest checkpoint restored', flush=True)
+
+  print(f'calculate_metrics')
+  tag_f1_train, intent_train = calculate_metrics(train_dataset)
+  tag_f1_val, intent_val = calculate_metrics(val_dataset)
+  print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
+
   tf.saved_model.save(ExportModel(model), export_dir='./dist/saved_model')

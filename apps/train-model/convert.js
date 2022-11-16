@@ -6,9 +6,9 @@ const os = require('os');
 
 const bin = fs.readFileSync('./dist/web_model/group1-shard1of1.bin');
 const model = fs.readFileSync('./dist/web_model/model.json').toString();
-const tags = fs.readFileSync('./dataset/tag_list.txt').toString();
-const words = fs.readFileSync('./dataset/word_list.txt').toString();
-const intent_list = fs.readFileSync('./dataset/intent_list.txt').toString();
+const tags = fs.readFileSync('../../libs/dataset/assets/tag_list.txt').toString();
+const words = fs.readFileSync('../../libs/dataset/assets/word_list.txt').toString();
+const intent_list = fs.readFileSync('../../libs/dataset/assets/intent_list.txt').toString();
 const intents = JSON.stringify(
   intent_list.toString().split(os.EOL)
   .filter(x => x !== '').map(x => x.split(' ')[0]), null, 2);
