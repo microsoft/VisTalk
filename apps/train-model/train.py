@@ -375,9 +375,14 @@ for epoch in range(epochs):
     for (batch, input) in enumerate(train_dataset):
         train_step(input)
 
+    tag_f1_train, intent_train = calculate_metrics(train_dataset)
+    tag_f1_val, intent_val = calculate_metrics(val_dataset)
     with train_summary_writer.as_default():
         tf.summary.scalar('loss', train_loss.result(), step=epoch)
         tf.summary.scalar('accuracy', tags_acc.result(), step=epoch)
+        tf.summary.scalar('f1', tag_f1_train, step=epoch)
+        tf.summary.scalar('intent', intent_train, step=epoch)
+        
         
     for (batch, input) in enumerate(val_dataset):
         test_step(input)
@@ -385,6 +390,8 @@ for epoch in range(epochs):
     with test_summary_writer.as_default():
         tf.summary.scalar('loss', test_loss.result(), step=epoch)
         tf.summary.scalar('accuracy', tags_test_acc.result(), step=epoch)
+        tf.summary.scalar('f1', tag_f1_val, step=epoch)
+        tf.summary.scalar('intent', intent_val, step=epoch)
 
     print(f'Epoch {epoch + 1} train_loss {train_loss.result():.4f} test_loss {test_loss.result():.4f} train acc {tags_acc.result():.4f}  test acc {tags_test_acc.result():.4f}', flush=True)
 
@@ -397,10 +404,10 @@ for epoch in range(epochs):
         best_acc = acc
         save = True
 
-    if epoch % 10 == 0:        
-        tag_f1_train, intent_train = calculate_metrics(train_dataset)
-        tag_f1_val, intent_val = calculate_metrics(val_dataset)
-        print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
+    # if epoch % 10 == 0:        
+    #     tag_f1_train, intent_train = calculate_metrics(train_dataset)
+    #     tag_f1_val, intent_val = calculate_metrics(val_dataset)
+    #     print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
 
     if save:
         ckpt_save_path = ckpt_manager.save()

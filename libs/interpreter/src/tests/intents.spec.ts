@@ -203,9 +203,9 @@ const tests = [
       "O B-filter",
   ],
   [
-      "remove the background lines from the chart.",
+      "hide the grid",
       "RemoveGridLines",
-      "O O O O O O O O",
+      "O O O",
   ],
   [
       "remove blue line from graph",
