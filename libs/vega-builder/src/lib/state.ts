@@ -1179,6 +1179,12 @@ export class VegaSpecState extends ActionVisitor {
           }
         }
       }
+      let color = Defaults.defaultFillColor;
+      if (unit.encoding && unit.encoding.color && 'value' in unit.encoding.color &&
+        typeof unit.encoding.color.value === 'string') {
+          color = unit.encoding.color.value;
+      }
+      
       unit.encoding = {
         ...unit.encoding,
         color: {
@@ -1186,7 +1192,7 @@ export class VegaSpecState extends ActionVisitor {
             test: { or },
             value: commmand.color,
           },
-          value: Defaults.defaultFillColor,
+          value: color,
         },
         order: { field: 'order' }
       };
