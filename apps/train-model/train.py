@@ -26,7 +26,7 @@ num_words = 1 + max([int(x[1]) for x in [r.strip().split(' ') for r in
     open(dataset_path + "word_list.txt", "r").readlines()]])
 num_intents = len(intent2index)
 vocab_size = num_words
-epochs = 100
+epochs = 150
 batch_size = 32
 
 def get_word_id(word):
@@ -302,6 +302,19 @@ def test_step(features):
     nwords = tf.math.reduce_sum(tf.cast(tf.math.not_equal(words, 0), dtype=tf.int32), axis=-1)
     tags_logits, intent_logits = model(words)
     tags_test_acc(slot_accuracy_function(features['tags'], tags_logits))
+    log_likelihood, _ = tfa.text.crf_log_likelihood(tags_logits,
+                                                    tags,
+                                                    nwords,
+                                                    model.transition_params)
+    loss = tf.reduce_mean(-log_likelihood)
+    
+    mask = tf.math.logical_not(tf.math.equal(words, 0))
+    loss_tags = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=tags, logits=tags_logits)
+    mask = tf.cast(mask, dtype=loss_tags.dtype)
+    loss_tags *= mask
+    loss += tf.reduce_sum(loss_tags)/tf.reduce_sum(mask)
+    loss += tf.nn.sparse_softmax_cross_entropy_with_logits(labels=true_intents, logits=intent_logits)
+    test_loss(loss)
 
 def calculate_metrics(dataset):
     true_s = []
