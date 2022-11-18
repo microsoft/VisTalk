@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT license.
+
 # BindAxis - specifies the intention to set the data fields of X Axis and/or Y Axis.
 # Expected Entities:
 # - field: the data field on X axis

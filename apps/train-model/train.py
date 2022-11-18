@@ -26,7 +26,7 @@ num_words = 1 + max([int(x[1]) for x in [r.strip().split(' ') for r in
     open(dataset_path + "word_list.txt", "r").readlines()]])
 num_intents = len(intent2index)
 vocab_size = num_words
-epochs = 150
+epochs = 120
 batch_size = 32
 
 def get_word_id(word):
@@ -406,11 +406,6 @@ for epoch in range(epochs):
     if acc > best_acc:
         best_acc = acc
         save = True
-
-    # if epoch % 10 == 0:        
-    #     tag_f1_train, intent_train = calculate_metrics(train_dataset)
-    #     tag_f1_val, intent_val = calculate_metrics(val_dataset)
-    #     print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
 
     if save:
         ckpt_save_path = ckpt_manager.save()
