@@ -1,0 +1,97 @@
+- Intents:
+  - ChangePosition
+  Templates:
+  - move the {target} from the {from} to the {position} hand side
+  - put {aggr} indicator on {position} side
+  - reverse the {target}
+  - move {aggr} to {position} side of chart
+  - move {from} marks to the {position} of chart
+  - change the {target} position from {from} to {position}
+  - move {from} scale to the {position}
+  - move {target} to {position} hand side
+  - move {target} to the {position}
+  - change the {aggr} to {position} side
+  - moved the {aggr} from the {from} to the {position} of the graph
+  - move the labels on the vertical {aggr} axis from the {from} of the graph to the {position}.
+  - move the {target} labels and tick marks from the {from} to the {position} hand side of the chart.
+  - change {target} to {position} chart
+  - move {aggr} to {position} side of chart
+  - move the {target} on the {position}
+  - move the {target} labels to the {position} side of the chart.
+  - please locate {aggr} ax at the {position}
+  - place the {target} on the {position} hand side
+  - change {aggr} s place to {position}
+  - '{aggr} has been shifted to {position}'
+  - change the {aggr} line to the {position} side
+  Parameters:
+  - Name: from
+    EntityType: Position
+    Templates:
+    - left
+  - Name: position
+    EntityType: Position
+    Templates:
+    - right
+    - bottom
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - x axis
+    - y axis
+    - legend
+    - title
+
+- Intents:
+  - ChangePosition
+  Templates:
+  - move the {target} from the {from} side to {position} of the graph
+  - shift the chart {target} to the {position}
+  - move {target} to {position}
+  - move {target} to {position} of chart
+  - move {target} to the {position}
+  - moved the location of the {target} to {position}
+  - move the {target} from the {from} of the chart to the {position} of the chart.
+  - change the position of the {target} from {from} to {position}.
+  - change the {target} location from {from} to {position} the chart
+  - move {target} {position} of the chart
+  - move the {target}
+  - move the {target} to the {position} of the cart.
+  - please locate {target} {position} of the chart
+  - move the {target} to the {position} 
+  - move the {target} from {from} to {position}
+  - shift the chart {target} to the {position}
+  - move {target} to {position}
+  - move {target} to {position} of chart
+  - move {target} to the {position}
+  - moved the location of the {target}
+  - move the {target} from the {from} of the chart to the {position} of the chart.
+  - change the position of the {target} from {from} to {position}.
+  - change the {target} location from {from} to {position} of the chart
+  - move {target} below chart
+  - move the {target} to the {position} of the cart.
+  - move the {target} to the {position}
+  Parameters:
+  - Name: from
+    EntityType: Position
+    Templates:
+    - left
+  - Name: position
+    EntityType: Position
+    Templates:
+    - right
+    - bottom
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - y axis
+    - x axis
+    - legend
+    - title

@@ -1,0 +1,107 @@
+- Intents:
+  - HighlightNegative
+  Templates:
+  - change color of bars below 0 to {color}.
+  - change color of bars below the 0 line to {color}.
+  - change color of bars in negative  to {color}
+  - change color of data in negative quadrant to {color}
+  - change color of negative bars to {color}
+  - change colors for all bars below zero to {color}
+  - change every bar that's below zero to the color {color}.
+  - change negative bar graphs to {color}
+  - change negative bars to {color} colour in order to differentiate between positive and negative sets.
+  - change negative blocks to {color}.
+  - change negative data points to {color}
+  - change negative graphed points to {color}.
+  - change negative valued bars to {color}
+  - change negative values to {color}
+  - change negative values to {color}.
+  - change the bar color for negative values to {color}.
+  - change the bars with negative y-axis values from {from} to {color}
+  - change the color of all bars with negative values to {color}.
+  - change the color of the bars that are below the 0 line  to {color}.
+  - change the color of the bars with negative value to {color}
+  - change the color of the bars with values less than zero to {color}
+  - change the color of the negative columns from {from} to {color}.
+  - change the color of the negative side of the graph into {color}.
+  - change the color of the negative value bars to {color}
+  - change the negative side graph color into {color}.
+  - change x-axis items with bars with negative values to {color}.
+  - changed negative data sets to {color}
+  - color all bars below zero in {color}
+  - color all values below zero to {color}
+  - color below 0 {color}
+  - color columns below the zero baseline {color}
+  - color the bars in the negative with {color}
+  - colour minus values in {color}
+  - colour the bars that have negative values in {color}
+  - emphasize data with negative ones in {color}
+  - emphasize category with negative ones in {color}
+  - emphasize negative data in {color}
+  - emphasized negative values in {color}
+  - highlight all inverted bars in {color} color.
+  - highlight all negative bars in {color} color.
+  - highlight bars under zero in {color}
+  - highlight bottom {color} color
+  - highlight bars with negative values in {color}
+  - highlight negative bar values in {color}
+  - highlight negative bars in {color}
+  - highlight negative values in {color}
+  - highlight negative values with {color} color
+  - highlight the negative bars in {color}
+  - highlight the negative data using {color}
+  - highlight the negative data bars in {color} color.
+  - highlighted the negative value in {color}.
+  - indicate negative bars in {color}.
+  - label negative data {color}.
+  - make any negative bars appear in {color} instead of {from}.
+  - make any negative figures appear in {color} instead of {from}.
+  - make bars that have a value of less than zero {color}.
+  - make bars that have a y label value of less than zero {color}.
+  - make data with a negative value {color}
+  - make negative bars {color}
+  - make negative values {color}.
+  - make the negative amounts {color}.
+  - mark in {color} for all data points that trend downward.
+  - mark negative data points in {color}.
+  - mark the negative columns in {color}
+  - negative highlighted in {color}
+  - negative numbers in graph represented in {color}
+  - negatives in {color}
+  - recolor the negative bar values from {from} to {color}.
+  - show negative columns in {color}
+  - show negative comments in {color}
+  - show negative values in {color}
+  - show negatives in {color}
+  - the downward bars are {color} in color
+  - the lower bar is changed in {color} colour
+  - the negative bars are changed to {color} colour
+  - the negative bars are indicated in {color} color
+  - the negtive bars are changed in {color} colour
+  Parameters:
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+    - average
+    - min
+    - max
+    - count
+    - distinct count
+    - median

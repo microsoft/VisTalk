@@ -632,6 +632,16 @@ const parsers: Parser[] = [
   { key: 'word', regex: /^\w+\b/ },
   { key: 'word', regex: /^(aren|didn|does|don|isn|doesn|weren)'t\b/ },
   { key: 'string', buildEntity: strExpr, regex: /^"(((\\")|[^"(\\")])+)"/ },
+  {
+    key: 'parameter', buildEntity: (r: RegExpExecArray) => {
+      return { type: 'parameter', name: r[1] };
+    }, regex: /^{([^}]*)}/
+  },
+  {
+    key: 'term', buildEntity: (r: RegExpExecArray) => {
+      return { type: 'term', name: r[1] };
+    }, regex: /^<([^>]*)>/
+  },
   { key: 'other', regex: /^./ },
 ];
 
@@ -646,7 +656,7 @@ export const MAX_TOKENS = 50;
  * @return {*}  {Token[]}
  */
 export function tokenize(input: string): Token[] {
-  let s = input.toLowerCase();
+  let s = input;
   let m = 0;
   let r: RegExpExecArray | null = null;
   let t: Token | null = null;
@@ -660,8 +670,8 @@ export function tokenize(input: string): Token[] {
       r = parser.regex.exec(s);
       if (r && r[0].length > m) {
         const key = parser.key;
-        const token = r[0].toLowerCase();
-        let term = token;
+        const text = r[0].toLowerCase();
+        let term = text;
 
         switch (key) {
           case 'string':
@@ -682,13 +692,13 @@ export function tokenize(input: string): Token[] {
         }
 
         t = {
-          text: r[0],
-          norm: normalize(r[0]),
+          text,
+          norm: normalize(text),
           term,
           type: key,
           start,
-          entity: { type: 'core', text: r[0] },
-          length: r[0].length,
+          entity: { type: 'core', text },
+          length: text.length,
           tag: 'O',
         };
 

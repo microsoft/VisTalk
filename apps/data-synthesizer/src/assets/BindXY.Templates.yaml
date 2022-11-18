@@ -1,0 +1,921 @@
+- Intents:
+  - BindY
+  Templates:
+  - '{aggr} by {aggr}'
+  - '{aggr} per {aggr}'
+  Parameters:
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+
+- Intents:
+  - BindX
+  - BindY
+  Templates:
+  - axes are {aggr} and {aggr}
+  - '{aggr} by {aggr}'
+  Parameters:
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - count
+
+- Intents:
+  - BindX
+  - BindY
+  Templates:
+  - plot average {aggr_avg} growth over {field}
+  - '{filter} {aggr} by {field}'
+  - '{aggr} by {field}'
+  - show {aggr} by {field}
+  - mean {field} {aggr_avg}
+  - show {field} and {aggr}
+  - '{aggr_avg} {field} avg'
+  - breakdown of the {field}
+  - total {aggr_sum} {field}
+  - avg {aggr_avg} by {field}
+  - breakdown of {field} type
+  - max {aggr_max} by {field}
+  - min {aggr_min} by {field}
+  - top {aggr_max} by {field}
+  - '{aggr} from each {field}'
+  - average {field} {aggr_avg}
+  - total {aggr_sum} over time
+  - break down {filter} {field}
+  - total {aggr_sum} by {field}
+  - '{field} average {aggr_avg}'
+  - lowest {aggr_min} by {field}
+  - oldest {aggr_min} by {field}
+  - total {aggr_sum} for {field}
+  - '{aggr} breakdown by {field}'
+  - '{field} and mean {aggr_avg}'
+  - amount {aggr_sum} per {field}
+  - average {aggr_avg} by {field}
+  - average {aggr_avg} of {field}
+  - breakdown {field} of {filter}
+  - highest {aggr_max} by {field}
+  - total {aggr_sum} by {field} .
+  - total {aggr_sum} of {field} .
+  - what is the {field} breakdown
+  - '{field} and total {aggr_sum}'
+  - show {field} ' mean {aggr_avg}
+  - show max {aggr_max} by {field}
+  - show min {aggr_min} by {field}
+  - top {aggr_max} of each {field}
+  - what is the {aggr} for {field}
+  - which {field} have less {aggr_min}
+  - '{aggr_avg} average by {field}'
+  - '{aggr_max} maximum by {field}'
+  - '{aggr_min} minimum by {field}'
+  - '{field} and lowest {aggr_min}'
+  - average {aggr_avg} by {field} .
+  - average {aggr_avg} over {field}
+  - avg {aggr_avg} for each {field}
+  - max {aggr_max} for each {field}
+  - max {aggr_max} for each {field}
+  - median {aggr_median} of {field}
+  - min {aggr_max} for each {field}
+  - min {aggr_min} for each {field}
+  - show {filter} {aggr} by {field}
+  - the mean {aggr_avg} for {field}
+  - total {aggr_count} by {field} .
+  - '{aggr_sum} in total by {field}'
+  - amount of {aggr_sum} per {field}
+  - average {aggr_avg} for {field} .
+  - average of {aggr_avg} by {field}
+  - count of {aggr_count} by {field}
+  - each {field} s lowest {aggr_min}
+  - max {aggr_max} of each {field} .
+  - max of {aggr_max} each {field} .
+  - maximum of {aggr_max} by {field}
+  - mid of {aggr_median} for {field}
+  - minimum of {aggr_min} by {field}
+  - show total {aggr_sum} by {field}
+  - the mean {aggr_avg} over {field}
+  - '{aggr_avg} avg for each {field}'
+  - '{aggr_max} max for each {field}'
+  - '{aggr_min} min for each {field}'
+  - count of {aggr_count} per {field}
+  - each {aggr} ' s lowest {aggr_min}
+  - max of {aggr_max} of each {field}
+  - median {aggr_median} of {field} .
+  - number of {aggr_count} by {field}
+  - quantity of {aggr_sum} by {field}
+  - show {aggr_avg} {field} ' s avg .
+  - show {field} ' average {aggr_avg}
+  - show {field} ' total ' {aggr_sum}
+  - show {field} and total {aggr_sum}
+  - show sum of {aggr_sum} by {field}
+  - the average {aggr_avg} of {field}
+  - the mean {aggr_avg} for {field} .
+  - the total {aggr_sum} of {field} .
+  - top {top_n} {aggr_max} by {field}
+  - total {aggr_sum} for each {field}
+  - '{field} and their max {aggr_max}'
+  - '{field} and their min {aggr_min}'
+  - '{field} and their top {aggr_max}'
+  - '{field} by count of {aggr_count}'
+  - amount of {aggr_count} per {field}
+  - avg {aggr_avg} by distinct {field}
+  - each {field} ' s lowest {aggr_min}
+  - lowest {aggr_min} for each {field}
+  - lowest {aggr_min} per each {field}
+  - mean {aggr_avg} for each {field} .
+  - median {aggr_median} per {field} .
+  - number of {aggr_count} per {field}
+  - show {aggr_avg} average by {field}
+  - show {aggr_max} maximum by {field}
+  - show {aggr_min} minimum by {field}
+  - show average {aggr_avg} by {field}
+  - show me total {aggr_sum} over time
+  - show total {aggr_sum} by {field} .
+  - total {aggr_sum} from each {field}
+  - which {field} contains more {aggr}
+  - average {aggr_avg} for each {field}
+  - average {aggr_avg} per {field} type
+  - avg {aggr_avg} breakdown by {field}
+  - avg {aggr_avg} for {filter} {field}
+  - count {aggr_count} for each {field}
+  - highest {aggr_max} for each {field}
+  - highest {aggr_max} per each {field}
+  - 'how many {field} per {aggr_sum} ?'
+  - max of {aggr_max} of each {field} .
+  - number of {aggr_count} with {field}
+  - show {aggr_sum} in total by {field}
+  - sum {aggr_sum} breakdown by {field}
+  - total {aggr_sum} for each {field} .
+  - average {aggr_avg} amount by {field}
+  - average {aggr_avg} of each {field} .
+  - highest {aggr_max} of each {field} .
+  - how much did we {aggr_sum} {field} ?
+  - number of {aggr_count} per {field} .
+  - show {aggr_avg} avg for each {field}
+  - show {aggr_max} max for each {field}
+  - show {aggr_min} min for each {field}
+  - show {field} with total {aggr_sum} >
+  - show me total {aggr_sum} over time .
+  - smallest {aggr_max} for each {field}
+  - the {field} number of {aggr_count} .
+  - the average {aggr_avg} among {field}
+  - the average {aggr_avg} for {field} .
+  - the mean of the {aggr_avg} {field} .
+  - total {aggr_count} from each {field}
+  - total {aggr_sum} by distinct {field}
+  - total {aggr_sum} of {filter} {field}
+  - total {aggr_sum} of distinct {field}
+  - which {field} have less {aggr_count}
+  - which {field} have more {aggr_count}
+  - '{aggr_sum} in total of each {field}'
+  - '{field} and their bottom {aggr_min}'
+  - average {aggr_avg} by date of {field}
+  - '{count_verb} {aggr_count} {field} ?'
+  - 'how many {field} per {aggr_count} ?'
+  - show {field} and their max {aggr_max}
+  - show {field} and their min {aggr_min}
+  - show {field} and their top {aggr_max}
+  - show average of {aggr_avg} by {field}
+  - sum of {aggr_sum} by distinct {field}
+  - the {aggr_avg} on average for {field}
+  - the mean {aggr_avg} for every {field}
+  - the most {aggr_max} in each {field} .
+  - total {aggr_count} for each {field} .
+  - total {aggr_sum} breakdown by {field}
+  - total {aggr_sum} for distinct {field}
+  - total {aggr_sum} per distinct {field}
+  - '{aggr_sum} in total for each {field}'
+  - '{field} and their highest {aggr_max}'
+  - average {aggr_avg} by distinct {field}
+  - average {aggr_avg} of {filter} {field}
+  - average {filter} {aggr_avg} by {field}
+  - count of {aggr_count} for each {field}
+  - how old is each {field} , on average ?
+  - lowest amount of {aggr_min} by {field}
+  - number of {aggr_count} at each {field}
+  - number of {aggr_count} by each {field}
+  - show count of {aggr_count} per {field}
+  - show number of {aggr_count} by {field}
+  - sum of {aggr_sum} breakdown by {field}
+  - sum of {aggr_sum} for distinct {field}
+  - the average {aggr_avg} among {field} .
+  - the most {aggr_max} for each {field} .
+  - total {aggr_sum} {field} after {field}
+  - total {aggr_sum} by {field} as a table
+  - average {aggr_avg} per distinct {field}
+  - each {field} lowest value for high jump
+  - each {field} with its lowest {aggr_min}
+  - for each {field} , count the {aggr_sum}
+  - highest amount of {aggr_max} by {field}
+  - number of {aggr_count} for each {field}
+  - number of {aggr_count} of every {field}
+  - show {field} and number of {aggr_count}
+  - show {field} and number of {aggr_count}
+  - sum {aggr_sum} numbers for each {field}
+  - the highest {aggr_max} for each {field}
+  - the lowest {aggr_min} of each {field} .
+  - total {aggr_sum} held by each {field} .
+  - average {aggr_avg} by {field} as a table
+  - compare total {aggr_sum} between {field}
+  - each {field} with its highest {aggr_max}
+  - every {field} ' s number of {aggr_count}
+  - highest {aggr_max} value of each {field}
+  - number of {aggr_count} in each {field} .
+  - number of {aggr_count} of each {field} .
+  - show {field} and their bottom {aggr_min}
+  - the average {aggr_avg} in each {field} .
+  - the average {aggr_avg} of each {field} .
+  - the number of {aggr_count} for {field} .
+  - the number of {aggr_count} per {field} .
+  - the total {aggr_sum} {field} in {filter}
+  - total {aggr_sum} by {field} except empty
+  - total number of {aggr_sum} per {field}
+  - what is the average {field} {aggr_avg} ?
+  - what is the mean {aggr_avg} of {field} ?
+  - which {field} contains more {aggr_count}
+  - count {aggr_count} of {filter} by {field}
+  - for each {field} , count the {aggr_count}
+  - number of {aggr_count} for each {field} .
+  - number of {aggr_count} requiring {aggr} .
+  - number of {aggr_count} using each {field}
+  - show {aggr_sum} in total for each {field}
+  - show {field} and their highest {aggr_max}
+  - show {field} with higher total {aggr_sum}
+  - show {field} with total {aggr_sum} higher
+  - show me the highest {aggr_max} by {field}
+  - sum {aggr_count} numbers for each {field}
+  - sum {aggr_sum} numbers for each {field} .
+  - the average {aggr_avg} for each {field} .
+  - the highest {aggr_max} under each {field}
+  - the number of {aggr_count} having {field}
+  - the number of {aggr_count} with {field} .
+  - the total {aggr_sum} under each {field} .
+  - total {aggr_count} held by each {field} .
+  - total {aggr_sum} by {field} {greaterThan}
+  - total {aggr_sum} by each distinct {field}
+  - total {aggr_sum} of each {filter} {field}
+  - total {filter} {aggr_sum} in each {field}
+  - what is the {field} average of {aggr_avg}
+  - what is the average {aggr_avg} by {field}
+  - average {aggr_avg} amount for each {field}
+  - count of {filter} {aggr_count} by {field}
+  - find the highest {aggr_max} of any {field}
+  - number of {aggr_count} from each {field} .
+  - number of {aggr_count} taking each {field}
+  - number of {filter} {aggr_count} by {field}
+  - show {aggr_count} counts of each {field} .
+  - the average {aggr_avg} of {field} {filter}
+  - the least {aggr_min} of different {aggr} .
+  - the median {aggr_median} in each {field} .
+  - the number of {aggr_count} in each {field}
+  - the number of {aggr_count} of each {field}
+  - the total {aggr_sum} for different {field}
+  - total {aggr_sum} for each distinct {field}
+  - total {aggr_sum} offered by each {field} .
+  - total {filter} {aggr_sum} for each {field}
+  - total number of {aggr_sum} per {field} .
+  - what is the amount {aggr_sum} by {field} ?
+  - what is the average {aggr_avg} for {field}
+  - what is the mean of {aggr_avg} s {field} ?
+  - average {aggr_avg} of {field} with {filter}
+  - each {field} s total number of {aggr_sum}
+  - find the total {aggr_sum} of each {field} .
+  - median {aggr_median} in different {field} .
+  - number of {aggr_count} in different {field}
+  - number of {aggr_count} playing each {field}
+  - number of {aggr_count} under each {field} .
+  - number of {filter} {aggr_count} by {field}
+  - percentage of average {aggr_avg} by {field}
+  - show average {filter} {aggr_avg} by {field}
+  - sum {aggr_count} numbers for each {field} .
+  - the amount of {aggr_sum} for each {field} .
+  - the number of {aggr_count} by their {field}
+  - the number of {aggr_count} for each {field}
+  - total {aggr_sum} of each {filter} {field} .
+  - total {aggr_sum} spending on each {field} .
+  - total {filter} {aggr_sum} in each {field} .
+  - what is the {aggr_sum} s {field} in total ?
+  - what is the average {aggr_avg} of {field} ?
+  - which {field} have more {aggr_sum} in total
+  - find the total {aggr_sum} for each {field} .
+  - 'how many {filter} {aggr_count} by {field}'
+  - how much did we {aggr_sum} through {field} ?
+  - number of {aggr_count} within each {field} .
+  - show average number of {aggr_avg} by {field}
+  - the {aggr_avg} on average for each {field} .
+  - the count of {aggr_count} for each {field} .
+  - the mean {aggr_avg} of {field} in {filter} .
+  - the number of {aggr_count} in each {field} .
+  - the number of {aggr_count} of each {field} .
+  - the quantity of {aggr_sum} in each {field} .
+  - total number of {aggr_sum} in each {field}
+  - what are total {aggr_sum} for each {field} ?
+  - what is the {aggr_sum} in total of {field} ?
+  - what is the average {aggr_avg} per {field} ?
+  - what is the avg of {aggr_avg} {field} number
+  - what is the mean of {aggr_avg} ' s {field} ?
+  - each {field} ' s total number of {aggr_sum}
+  - each {field} s highest high jump {aggr_max} .
+  - find highest {aggr_max} score in each {field}
+  - longest working {aggr_max} for each {field} .
+  - number of {aggr_count} bought in each {field}
+  - number of {aggr_count} played in each {field}
+  - show median {filter} {aggr_median} by {field}
+  - the {field} {aggr_sum} of {filter} in total .
+  - the amount of {aggr_count} for each {field} .
+  - the average amount of {aggr_avg} by {field} .
+  - the highest {aggr_max} in different {field} .
+  - the lowest {aggr_min} score in each {field} .
+  - the number of {aggr_count} for each {field} .
+  - the number of {aggr_count} under each {field}
+  - the number of {aggr_count} using same {field}
+  - top {top_n} {aggr_max} of {filter} by {field}
+  - total {aggr_sum} by {field} that has {filter}
+  - total number of {aggr_sum} for each {field}
+  - what ' s the {field} {aggr_sum} of {filter} ?
+  - what is the {aggr_sum} ' s {field} in total ?
+  - what is the mean {aggr_avg} of each {field} ?
+  - which {field} have same count of {aggr_count}
+  - average {aggr_avg} for each {field} category .
+  - find the average {aggr_avg} for each {field} .
+  - 'how many {aggr_count} are in each {field} ?'
+  - 'how many total {aggr_sum} for each {field} ?'
+  - number of {aggr_count} listed for each {field}
+  - number of {aggr_dcount} from different {field}
+  - the average {aggr_avg} for different {field} .
+  - the number of {aggr_count} which got {field} .
+  - the quantity of {aggr_count} in each {field} .
+  - total {aggr_sum} by {filter} in each {field} .
+  - total {aggr_sum} per {field} who have {filter}
+  - what is the mean {aggr_avg} for each {field} ?
+  - what is the total {aggr_sum} of each {field} ?
+  - what the smallest {aggr_min} and its {field} ?
+  - bind x axis with {field} and y axis with {aggr}
+  - avg {aggr_avg} by {field} that is {greaterThan}
+  - count different {aggr_dcount} of each {field} .
+  - count of {aggr_count} for each kinds of {field}
+  - each {field} ' s highest high jump {aggr_max} .
+  - find the number of {aggr_count} in each {field}
+  - 'how many {aggr_count} of different {field} ?'
+  - number of {aggr_count} counted for each {field}
+  - number of {aggr_count} which use same {field} .
+  - show {field} ' lowest {aggr_min} of high jump .
+  - the number of {aggr_count} under each {field} .
+  - the number of {aggr_count} used by each {field}
+  - the total {aggr_sum} of {filter} over {field} .
+  - the total number of {aggr_sum} each {field} .
+  - the total number of {aggr_sum} over {field} .
+  - total {aggr_sum} by {field} which have {filter}
+  - total number of {aggr_sum} for each {field} .
+  - what ' s the median {aggr_median} for {field} ?
+  - what ' s the total {aggr_sum} of each {field} ?
+  - what are the total {aggr_sum} of each {field} ?
+  - what is the avg {aggr_avg} breakdown by {field}
+  - what is the total {aggr_sum} for each {field} ?
+  - count of distinct {aggr_dcount} for each {field}
+  - distribution of {field} for {subject} {filter} .
+  - number of {aggr_count} each director has {field}
+  - number of {aggr_count} by {field} from {filter}
+  - return the average {aggr_avg} for each {field} .
+  - show the total number of {aggr_sum} by {field}
+  - the number of {aggr_dcount} at different {field}
+  - the number of {aggr_dcount} in different {field}
+  - what ' s {filter} ' s total {field} {aggr_sum} ?
+  - what ' s the total {aggr_sum} for each {field} ?
+  - what is the average of {aggr_avg} {field} number
+  - what is the biggest {aggr_max} in each {field} ?
+  - what is the biggest {aggr_max} of each {field} ?
+  - what is the highest {aggr_max} of each {field} ?
+  - what is the minimum {aggr_min} in each {field} ?
+  - what is total number of {aggr_sum} per {field} ?
+  - avg {aggr_median} by {field} and median number of
+  - distribution of {filter} and {filter} per {field}
+  - max {aggr_max} of each {filter} {subject} {field}
+  - number of {aggr_count} recorded in each {field} .
+  - show all {field} and the number of {aggr_count} .
+  - show me the total {field} {aggr_sum} for {filter}
+  - show me total {aggr_sum} of each {filter} {field}
+  - the number of {aggr_dcount} for different {field}
+  - the quantity of {aggr_sum} where {field} locate .
+  - the total {aggr_sum} of {field} owned by {filter}
+  - total {aggr_sum} by {field} filter out {filter} .
+  - total {aggr_sum} by {field} that is {greaterThan}
+  - what ' s the average {aggr_avg} of each {field} ?
+  - what is the average {aggr_avg} for each {field} ?
+  - what is the highest {aggr_max} for each {field} ?
+  - what is the mean {aggr_avg} of {filter} {field} ?
+  - what is the total {aggr_sum} breakdown by {field}
+  - count of {aggr_count} by {field} that has {filter}
+  - each {field} ' s highest {aggr_max} of high jump .
+  - find the number of {aggr_count} in each {field} .
+  - for each {field} , how many {aggr_count} are there
+  - how does {aggr_sum} change over {field} in total ?
+  - 'how many types of {aggr_sum} with each {field} ?'
+  - number of {aggr_count} per each {filter} {field} .
+  - number of {aggr_count} published by each {field} .
+  - number of {filter} {aggr_count} for each {field} .
+  - return the smallest {aggr_min} for every {field} .
+  - the most {aggr_max} for each {field} of {filter} .
+  - the number of {aggr_dcount} from different {field}
+  - the number of {aggr_dcount} in different {field} .
+  - the total number of {aggr_sum} in each {field} .
+  - total {aggr_sum} for every {field} except {filter}
+  - amount of {aggr_count} played during each {field} .
+  - each {field} ' s highest number of {aggr_max} won .
+  - every {field} ' s number of {aggr_count} recorded .
+  - for each {field} , what is the average {aggr_avg} ?
+  - for each {field} , what is the maximum {aggr_max} ?
+  - greatest record of {aggr_max} won by each {field} .
+  - 'how many {filter} {aggr_count} for each {field} ?'
+  - 'how many times has each {field} been {aggr_sum} ?'
+  - show {filter} {aggr} for {filter} {subject} {field}
+  - show the average {aggr_avg} for different {field} .
+  - the average number of {aggr_avg} for each {field} .
+  - the number of {aggr_count} chosen by each {field} .
+  - the numbers of {aggr_sum} located in each {field} .
+  - the quantity of {aggr_count} where {field} locate .
+  - the total {aggr_sum} of {filter} over the {field} .
+  - what is the amount of {aggr_sum} for each {field} ?
+  - what is the mean value of {aggr_avg} {field} number
+  - does the {field} number of total {aggr_sum} change ?
+  - each {field} ' s respective number of {aggr_count} .
+  - each {field} with corresponding highest {aggr_max} .
+  - highest {aggr_max} of crops with different {field} .
+  - '{count_verb} {aggr_count} on average for {field} ?'
+  - 'how many total {aggr_sum} does each {field} have ?'
+  - 'how many types of {aggr_count} with each {field} ?'
+  - max of {aggr_max} of each {filter} {subject} {field}
+  - median {aggr_median} in diverse degrees of {field} .
+  - number of {aggr_count} in each {field} in {filter} .
+  - the highest {aggr_max} scores in different {field} .
+  - what are the total {aggr_sum} based on the {field} ?
+  - what is the maximum {aggr_max} for different {field}
+  - what is the number of {aggr_count} of each {field} ?
+  - what is the quantity of {aggr_sum} in each {field} ?
+  - which {field} is in the middle of {aggr_median} list
+  - 'how many times has each {field} been {aggr_count} ?'
+  - show the {field} and the total amount of {aggr_sum} .
+  - show the number of {aggr_count} for different {field}
+  - the number of {aggr_count} in total on each {field} .
+  - the numbers of {aggr_count} located in each {field} .
+  - the total amount of {aggr_sum} in different {field} .
+  - what are the total {aggr_sum} for different {field} ?
+  - what is the average {aggr_avg} of cars each {field} ?
+  - what is the number of {aggr_count} for each {field} ?
+  - list the total number of {field} created by {aggr_sum}
+  - number of {aggr_count} with a {filter} in each {field}
+  - number of {field} younger than {equal} in each {field}
+  - please list all {field} and the number of {aggr_count}
+  - return the average {aggr_avg} that have each {field} .
+  - sum of {aggr_sum} for each {field} which have {filter}
+  - the mean {aggr_avg} for {field} with {filter} material
+  - the number of {filter} {aggr_count} for each {field} .
+  - total {aggr_sum} by {field} who has {subject} {filter}
+  - what ' s the {field} {aggr_sum} in total of {filter} ?
+  - what are the average {aggr_avg} , grouped by {field} ?
+  - what is the avg . of {aggr_avg} in different {field} ?
+  - what is the highest {aggr_max} dealt by each {field} ?
+  - what is the mean {aggr_avg} of each {field} category ?
+  - what is the quantity of {aggr_count} in each {field} ?
+  - what is the total {aggr_sum} does each {field} offer ?
+  - what is the total {aggr_sum} for {field} in {filter} ?
+  - how do total {filter} {aggr_sum} change between {field}
+  - '{count_verb} {aggr_count} according to each {field} ?'
+  - show me total {aggr_sum} by {field} filter out {filter}
+  - the average {aggr_avg} number for {field} in {filter} .
+  - the total number of {aggr_sum} from different {field}
+  - the total number of {aggr_sum} in different {field} .
+  - total {aggr_sum} by {field} that have {equal} {subject}
+  - total {aggr_sum} by {field} that have {subject} {equal}
+  - total {aggr_sum} by {field} whose {subject} is {filter}
+  - total {filter} {aggr_sum} of {filter} in each {field} .
+  - total number of {aggr_sum} for each different {field}
+  - what is the highest {aggr_max} number of each {field} ?
+  - what is the highest {aggr_max} value for each {field} ?
+  - what is the mean number of {aggr_avg} in each {field} ?
+  - what is the number of {aggr_count} under each {field} ?
+  - what is the total {aggr_sum} of the {field} of {filter}
+  - what was the average number of {aggr_avg} per {field} ?
+  - count {aggr_count} by {field} with {filter} and {filter}
+  - find the total number of {aggr_sum} for each {field} .
+  - 'how many {filter} {aggr_count} in different {field} ?'
+  - 'how many of each {aggr_count} of {field} is {filter} ?'
+  - median numbers of {aggr_median} earned by each {field} .
+  - numbers of {aggr_count} manufacturing the same {field} ?
+  - show all {field} and total {aggr_sum} in each industry .
+  - show me lowest {aggr_min} by {field} which have {filter}
+  - the number of {aggr_count} which each {field} suffered .
+  - total {aggr_sum} by {field} which have {equal} {subject}
+  - what is average {aggr_avg} for different {field} title ?
+  - what is minimum {aggr_min} for different {field} title ?
+  - what would be the average {filter} {aggr_avg} by {field}
+  - average {aggr_avg} by {field} that have {equal} {subject}
+  - for each distinct {field} , show its average {aggr_avg} .
+  - 'how many {filter} {aggr_sum} happened in each {field} ?'
+  - 'how many total {aggr_sum} are offered by each {field} ?'
+  - 'how many total {aggr_sum} were there for each {field} ?'
+  - show {aggr_sum} of {filter} , {filter} in total over time
+  - show me highest {aggr_max} by {field} which have {filter}
+  - the {aggr_sum} in total of each {field} except {filter} .
+  - the number of {aggr_count} recorded in different {field}
+  - the total {aggr_sum} of each {field} excluding {filter} .
+  - what is the average {aggr_avg} for each type of {field} ?
+  - what is the highest {aggr_max} value under each {field} ?
+  - what is the mean {aggr_avg} of {filter} in each {field} ?
+  - what is the total amount of {aggr_sum} for each {field} ?
+  - which {field} is the dominant {field} by total {aggr_sum}
+  - average {aggr_avg} by {field} which have {equal} {subject}
+  - median {aggr_median} for {field} in {filter} or {filter} .
+  - the median students ' {aggr_median} in different {field} .
+  - the number of {aggr_count} corresponding to each {field} .
+  - the number of {aggr_count} of each {chart} and its {field}
+  - the number of {aggr_count} supported by different {field}
+  - the total {aggr_sum} of {filter} or {filter} per {field} .
+  - total {aggr_sum} by {field} with {equal} or more {subject}
+  - total {aggr_sum} by {field} with {subject} > {greaterThan}
+  - what ' s the number of {aggr_count} used by each {field} ?
+  - what is the number of {aggr_count} in different {field} ?
+  - what is the total number of {aggr_sum} in each {field} ?
+  - what is the total number of {aggr_sum} on each {field} ?
+  - what is the total quantity of {aggr_sum} in each {field} ?
+  - average {aggr_avg} per {field} which have {equal} {subject}
+  - does each {field} have the same average {aggr_avg} number ?
+  - how does the total {aggr_sum} change depending on {field} ?
+  - median {aggr_median} of different {field} except {filter} .
+  - show {aggr_sum} of {filter} and {filter} in total over time
+  - show all {field} and corresponding number of {aggr_count} .
+  - show me the highest number of {aggr_max} for each {field} .
+  - the total {aggr_sum} of {filter} or {filter} over {field} .
+  - total {aggr_sum} for {field} with {equal} or more {subject}
+  - total {aggr_sum} for {field} with {subject} > {greaterThan}
+  - does each {field} have the same number of total {aggr_sum} ?
+  - does each {field} have the same total amount of {aggr_sum} ?
+  - does the total amount of {aggr_sum} change between {field} ?
+  - highest {aggr_max} of medical gadgets in different {field} .
+  - number of {aggr_count} opening an {field} for each {field} ?
+  - show {filter} or {filter} average {aggr_avg} among {field} .
+  - the total number of {aggr_sum} that each {field} assigns .
+  - what ' s the mean number of {aggr_avg} in {filter} {field} ?
+  - what ' s the total number of {aggr_sum} for each {field} ?
+  - what is the mean number of {aggr_avg} in different {field} ?
+  - for {filter} , find their greatest {aggr_max} on each {field}
+  - for each {field} , what is the median student {aggr_median} ?
+  - greatest {aggr_max} for each {field} of {filter} and {filter}
+  - how does the mean {aggr_avg} change from {field} to {field} ?
+  - in each {field} , how many {field} are younger than {equal} ?
+  - number of {aggr_count} who have a {filter} for each {field} .
+  - show the {field} and number of {aggr_count} in each {field} .
+  - the number of {aggr_count} {field} from {field} in {filter} .
+  - what are the {field} and total {aggr_sum} for each industry ?
+  - what is the average {aggr_avg} and {field} for each {field} ?
+  - what is the avg . number of {aggr_avg} in different {field} ?
+  - what is the maximum {aggr_max} for all the different {aggr} ?
+  - what is the mean number of {filter} {aggr_avg} over {field} ?
+  - what is the number of {aggr_count} drafted for each {field} ?
+  - what would be the total of the {filter} {aggr_sum} by {field}
+  - average of {aggr_avg} for {filter} or {filter} among {field} .
+  - can you show different {field} and total {aggr_sum} in a graph
+  - does each {field} have the same amount of total {aggr_count} ?
+  - does each {field} have the same average number of {aggr_avg} ?
+  - does the total {aggr_sum} number change depending on {field} ?
+  - how does the total {aggr_sum} change from {field} to {field} ?
+  - median {aggr_median} of {field} with {equal} {subject} cases .
+  - median {aggr_median} of different {field} excluding {filter} .
+  - number of {aggr_count} that each {field} has been {filter} for
+  - sum of the {aggr_sum} of all {field} in the {filter} {subject}
+  - total {filter} and {filter} {aggr_sum} for different {field} .
+  - what is the mean number of {filter} {aggr_avg} every {field} ?
+  - what is the total {aggr_sum} of companies started by {field} ?
+  - '{count_verb} {aggr_count} does each {field} last on average ?'
+  - 'how many different {aggr_dcount} correspond to each {field} ?'
+  - show all {field} and the number of {aggr_count} in each {field}
+  - show me total {aggr_sum} by {field} where {subject} is {filter}
+  - the total amount of {aggr_sum} which happened in each {field} .
+  - total {filter} {aggr_sum} for each {field} excluding {filter} .
+  - what ' s the difference in average {aggr_avg} of each {field} ?
+  - what is the average {aggr_avg} for a {filter} in each {field} ?
+  - what is the maximum {aggr_max} for different number of {aggr} ?
+  - find each target user ' s {field} and average {aggr_avg} score .
+  - 'how many {filter} {aggr_avg} on average in different {field} ?'
+  - please list all {field} and the number of {aggr_count} they have
+  - the average {aggr_avg} of students who is learning from {filter}
+  - what are the median number of {aggr_median} in different years ?
+  - what is the {field} number of {filter} and {filter} {aggr_sum} ?
+  - what is the {field} total for {filter} and {filter} {aggr_sum} ?
+  - does each {field} have the same number of {aggr_avg} on average ?
+  - does the total amount of {aggr_sum} change in different {field} ?
+  - average {aggr_avg} of each {field} whose {subject} > {greaterThan}
+  - count of {filter} or {filter} {aggr_count} in different {field} .
+  - please list all {field} and the number of {aggr_count} they have .
+  - return me the number of {aggr_count} of {filter} in each {field} .
+  - show each {field} and the number of {aggr_count} of each {field} .
+  - total {aggr_sum} of each {field} with {subject} over {greaterThan}
+  - what ' s the {aggr_sum} amount of {field} in {filter} , {filter} ?
+  - which {field} has higher average {aggr_avg} , {filter} or {filter}
+  - does the total {aggr_sum} of {filter} change depending on {field} ?
+  - heaviest {aggr_max} for {field} with {equal} or {equal} {subject} .
+  - what ' s the difference of the average {aggr_avg} of each {field} ?
+  - what are the total number of {aggr_sum} offered by each {field} ?
+  - how does the number of {aggr_count} change from {field} to {field} ?
+  - show me the total number of {aggr_sum} for {filter} each {field} .
+  - the smallest {aggr_min} of each {field} whose {subject} is {equal} .
+  - what ' s the average number of {filter} {aggr_avg} in each {field} ?
+  - what are {field} and total number of {aggr_sum} for each {field} ?
+  - what is average {aggr_avg} of {filter} for different {field} title ?
+  - what is the median {aggr_median} for a home in each of the {field} ?
+  - for each {field} , find the average {aggr_avg} of different {field} .
+  - how does the number of total {aggr_sum} change by different {field} ?
+  - how does the number of total {aggr_sum} change in different {field} ?
+  - number of {field} with less than {equal} {subject} for each {field} ?
+  - return the lowest {aggr_min} , along with its corresponding {field} .
+  - show each {field} and the number of {aggr_count} they submitted to .
+  - total number of {field} with {subject} below {equal} for each {field}
+  - what ' s the average number of {filter} {aggr_avg} for each {field} ?
+  - what ' s the total {aggr_sum} for different {field} except {filter} ?
+  - what is the average {aggr_avg} of the {field} with {filter} {subject}
+  - what is the total {aggr_sum} of each {field} excluding the {filter} ?
+  - for each {field} , show the number of {aggr_count} members who have it
+  - 'how many different {aggr_dcount} are produced in each {field} city ?'
+  - what ' s the total number of {aggr_sum} in {filter} for each {field}
+  - number of {field} who got less than {equal} {subject} at each {field} .
+  - number of {field} with an {subject} over {greaterThan} for each {field}
+  - total number of {aggr_sum} on {filter} for each {field} in {filter} .
+  - what is the average {aggr_avg} for {subject} over {greaterThan} {field}
+  - what is the number of {aggr_count} that {filter} acts in per {field} ?
+  - does the total amount of {aggr_sum} change from one {field} to another ?
+  - find the number of {aggr_count} directed by each of the listed {field} .
+  - how did the total number of {filter} {aggr_sum} change between {field} ?
+  - show {aggr_sum} of {filter} , {filter} , and {filter} in total over time
+  - show me how the number of {aggr_count} can change depending on {field} ?
+  - the number of {aggr_count} whose {subject} is {filter} in each {field} .
+  - what is the difference of the total amount of {aggr_sum} among {field} ?
+  - what is the highest {aggr_max} number for each of the {filter} {field} ?
+  - what is the total amount of {aggr_sum} of each {field} except {filter} ?
+  - how did the total {aggr_sum} in {filter} change from {field} to {field} ?
+  - what is minimum {aggr_min} of the students playing in different {field} ?
+  - what is the total amount of {aggr_sum} for each {field} except {filter} ?
+  - how does the total {aggr_sum} of {filter} change from {field} to {field} ?
+  - number of {aggr_count} for each {field} who {subject} over {greaterThan} .
+  - show me the total number of {aggr_sum} of each {field} except {filter} .
+  - the {field} with corresponding {aggr_count} number of {filter} {subject} .
+  - the total number of {aggr_sum} on {filter} by each {field} in {filter} .
+  - what are greatest {aggr_max} for different {field} {filter} and {filter} ?
+  - what is the average {aggr_avg} for {field} over {greaterThan} in {subject}
+  - what is the difference of the total amount of {aggr_sum} between {field} ?
+  - did the total quantity of {filter} {aggr_sum} change in different {field} ?
+  - did the total quantity of {filter} {aggr_sum} increase {field} by {field} ?
+  - how does the quantity of {filter} {aggr_sum} change over {field} in total ?
+  - 'how many {filter} and {filter} {aggr_sum} in different {field} in total ?'
+  - the {field} with corresponding {aggr_count} number and {filter} {subject} .
+  - what is the average number of {aggr_avg} for {filter} projects by {field} ?
+  - which {field} has median {aggr_median} and {subject} no more than {equal} ?
+  - does the total quantity of {filter} {aggr_sum} change in different {field} ?
+  - has the total quantity of {filter} {aggr_sum} increased {field} by {field} ?
+  - 'how many {filter} or {filter} {aggr_avg} in different {field} on average ?'
+  - number of {aggr_count} at each {field} who got less than {equal} {subject} .
+  - the number of {aggr_count} with the {subject} {filter} in different {field}
+  - total number of {aggr_sum} on {filter} and {filter} by different {field} .
+  - what is the {field} total of {filter} and {filter} {aggr_sum} respectively ?
+  - what is the average {aggr_avg} for each {field} and what are those {field} ?
+  - does the total amount of {aggr_sum} in {filter} increase {field} by {field} ?
+  - has the total amount of {aggr_sum} in {filter} increased {field} by {field} ?
+  - the number of {aggr_count} for each {field} who {subject} more than {equal} .
+  - show {field} where median {aggr_median} has been less than {equal} {subject} .
+  - the total amount of {aggr_sum} in each {field} with a {subject} < {lessThan} .
+  - total {aggr_sum} by {field} that have {subject} {equal} and {subject} {filter}
+  - total {aggr_sum} by {field} which have {equal} {subject} and {equal} {subject}
+  - students who were born in {filter} or {filter} and their median {aggr_median} .
+  - how did the total number of {filter} {aggr_sum} change {field} through {field} ?
+  - how did the total number of {filter} {aggr_sum} change from {field} to {field} ?
+  - 'how many {filter} or {filter} {aggr_avg} across different {field} on average ?'
+  - the total number of {aggr_sum} on {filter} and {filter} in different {field} .
+  - what is the mean number of {aggr_avg} on {filter} and {filter} in each {field} ?
+  - show {field} whose {subject} are {equal} or less and their median {aggr_median} .
+  - what ' s the total number of {aggr_sum} for different {field} except {filter} ?
+  - what is the mean number of {aggr_avg} on {filter} and {filter} for each {field} ?
+  Parameters:
+  - Name: count_verb
+    EntityType: None
+    Templates:
+    - how many
+    - number of
+    - count of
+  - Name: date
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_min
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_max
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_sum
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_median
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_count
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_dcount
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: greaterThan
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: greaterThanOrEqual
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: lessThan
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: equal
+    EntityType: Filter
+    Templates:
+    - <number>
+    
+- Intents:
+  - BindX
+  - BindY
+  Templates:
+  - what were the total {aggr_sum} of each {field} since {greaterThanOrEqual} ?
+  - what was the total quantity of {aggr_sum} for each {field} on {equal} ?
+  - what was the total number of {aggr_sum} for each {field} on {equal} ?
+  - what was the total amount of {aggr_sum} for each {field} in {equal} ?
+  - what was the mean {aggr_avg} for each {field} since {greaterThan} ?
+  - what was the {field} total {aggr_sum} of {filter} since {greaterThanOrEqual} or before {lessThan} ?
+  - what was the {field} mean {aggr_avg} before {lessThan} ?
+  - what is the total number of {aggr_sum} granted since {greaterThan} for each {filter} {subject} {field} ?
+  - what is the total amount of {aggr_sum} for each {field} from {greaterThanOrEqual} to {lessThanOrEqual} ?
+  - what is the mean {aggr_avg} for each {field} since {greaterThan} ?
+  - what is the mean {field} {aggr_avg} since {greaterThan} ?
+  - what ' s the total {aggr_sum} by {field} from {greaterThanOrEqual} to {lessThanOrEqual} ?
+  - what ' s the {field} total number of {aggr_sum} since {greaterThan} ?
+  - what ' s the {field} total amount of {aggr_sum} since {greaterThanOrEqual} ?
+  - what ' s the {field} total {aggr_sum} since {greaterThanOrEqual} ?
+  - what ' s the {field} number in total of {aggr_sum} since {greaterThan} ?
+  - total number of {aggr_sum} opened before {lessThan} in different {field}
+  - total {aggr_sum} where {field} is {equal}
+  - total {aggr_sum} over time between {greaterThanOrEqual} and {lessThanOrEqual}
+  - total {aggr_sum} of {filter} per {field} from before {lessThan} and since {greaterThanOrEqual} .
+  - total {aggr_sum} of {filter} by {field} since {greaterThan}
+  - total {aggr_sum} by month of {subject} since {greaterThan}
+  - total {aggr_sum} by {field} since {greaterThanOrEqual}
+  - total {aggr_sum} by {field} in {equal}
+  - total {aggr_sum} by {field} for {filter} and {equal} as table
+  - total {aggr_sum} by {field} for {filter} and {equal}
+  - the total number of {aggr_sum} per {field} since {greaterThanOrEqual} .
+  - the mean {aggr_avg} over {field} since {greaterThan} .
+  - the mean {aggr_avg} of each {field} since {greaterThan} .
+  - the mean {aggr_avg} for {field} produced before {lessThan}
+  - the average {aggr_avg} of the {field} opened in {equal} .
+  - the {field} total {aggr_sum} since {greaterThan}
+  - the {field} {aggr_sum} in total since {greaterThan}
+  - smallest {aggr_min} of different {field} in {subject} of {equal}
+  - show number of {aggr_count} by {field} where {subject} is {equal} or {equal}
+  - show number of {aggr_count} by {field} in {equal} and {equal}
+  - show me each {field} ' s total number of {aggr_sum} since {greaterThanOrEqual}
+  - show me breakdown of {field} in {equal}
+  - number of {aggr_count} opened in each {field} before {lessThan} .
+  - number of {aggr_count} {equal} by {field}
+  - mean {aggr_avg} per {field} since {greaterThan} .
+  - mean {aggr_avg} of each {field} since {greaterThan} .
+  - list average {aggr_avg} of goods sold on or since {greaterThan} with corresponding {field} .
+  - list average {aggr_avg} increasingly for each {field} with {subject} since {greaterThanOrEqual} .
+  - in {equal} , max {aggr_max} for each {field}
+  - how many {aggr_count} under each {field} in the year {equal} ?
+  - how many {aggr_count} per {field} in {equal} ?
+  - how did the total {field} {aggr_sum} of {filter} change from {greaterThanOrEqual} to {lessThanOrEqual} ?
+  - how did the mean {aggr_avg} change by {field} since {greaterThan} ?
+  - for each {field} since {greaterThan} , show me the average {aggr_avg}
+  - for each {field} , show me the average {aggr_avg} since {greaterThan}
+  - for each {filter} {subject} {field} , report the number of {aggr_count} granted since {greaterThan} .
+  - breakdown {field} in {equal}
+  - average {aggr_avg} when {subject} later than {greaterThan} for each {field}
+  - average {aggr_avg} when {subject} earlier than {lessThan} for each {field}
+  - average {aggr_avg} of which were produced between {greaterThanOrEqual} and {lessThanOrEqual} with different {field} .
+  - average {aggr_avg} of which produced between {greaterThanOrEqual} and {lessThanOrEqual} with different {field} .
+  - average {aggr_avg} of which is sold on {equal} or later with corresponding {field} .
+  - average {aggr_avg} of {filter} {subject} and {subject} {equal} for each {field}
+  - average {aggr_avg} in the {subject} {equal} for each {field}
+  - average {aggr_avg} by {field} in {subject} since {greaterThan}
+  - average {aggr_avg} since {greaterThan} by {field}
+  - since {greaterThan} and average {aggr_avg} by {field}
+  Parameters:
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_min
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_max
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_sum
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_median
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_count
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_dcount
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: greaterThan
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: greaterThanOrEqual
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: lessThan
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: lessThanOrEqual
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: equal
+    EntityType: Date
+    Templates:
+    - <date>

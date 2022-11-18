@@ -1,0 +1,182 @@
+- Intents:
+  - AddTrendLine
+  Templates:
+  - '{verb} {det} {trend}'
+  - '{verb} {det} {trend} {prep_color} {color}'
+  - '{verb} {det} {trend} {prep_color} {color} color'
+  - '{verb} {det} {trend} {prep_color} color {color}'
+  - '{verb} a {trend}'
+  - '{verb} {trend} in {color}'
+  - '{verb} the {trend}'
+  - '{verb} {trend} with a {color} line on the chart'
+  - '{verb} a {trend} in {color} on chart'
+  - create a {color} line to show the trend
+  - draw a {trend} on the chart
+  - draw a {trend} on the chart in {color}
+  - draw {color} {trend}
+  - display the trend using a {color} line
+  - use a {color} line to show the trend
+  - trendline in {color}
+  - mark the trend with a {color} line
+  - represent the trend using a line in {color}
+  - add a curve to show the trend
+  - add a curve to show the trend in {color}
+  - draw a line showing the trend
+  - draw a line showing the trend with color {color}
+  - apply a {color} {trend} on the chart
+  - plot a {trend} on the chart
+  - Add curves to show trends
+  - Added curve to show the trend of {color}
+  - draw a line showing the trend with the color {color}
+  - apply {color} {trend} on the chart
+  - draw {trend} on the chart
+  - show {trend} of {field}
+  - '{trend} of {field}'
+  - '{field} {trend}'
+  Parameters:
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+    - overlay
+    - draw
+    - add
+    - show
+    - plot
+  - Name: det
+    EntityType: None
+    Templates:
+    - a
+  - Name: trend
+    EntityType: None
+    Templates:
+    - trend line
+    - trendline
+    - trend
+  - Name: prep_color
+    EntityType: None
+    Templates:
+    - using
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+
+- Intents:
+  - AddTrendLine
+  Templates:
+  - '{verb} {det} {trend} from {greaterThanOrEqual} to {lessThanOrEqual}' # add trend line form 2012 to {greaterThanOrEqual}
+  - '{verb} {det} {trend} from {greaterThanOrEqual} to {lessThanOrEqual} {prep_color} {color}'
+  - '{verb} {det} {trend} from {greaterThanOrEqual} to {lessThanOrEqual} {prep_color} {color} color'
+  - '{verb} {det} {trend} from {greaterThanOrEqual} to {lessThanOrEqual} {prep_color} color {color}'
+  - add trend line in {color} from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add a {color} trend line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add a trend line between {greaterThanOrEqual} to {lessThanOrEqual}
+  - add {color} dashed line to represent slope between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - Materialized by a {color} line the part of {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight a grow from {greaterThanOrEqual} to {lessThanOrEqual} with a {color} trend line
+  - show the up trend with a dotted {color} line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add a linear representation of the data from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add a line for linear slope of {greaterThanOrEqual} to {lessThanOrEqual}
+  - That {color} dotted lines highlighted the growth between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - Show the average slope line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Emphasize the growth from {greaterThanOrEqual} to {lessThanOrEqual} with {color} color
+  - Add dotted {color} trend line for period from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - Use a dashed line to graph the mean between {greaterThanOrEqual} and {lessThanOrEqual}
+  - Draw the trend line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - line has been drawn to show the trend from {greaterThanOrEqual} to {lessThanOrEqual}
+  - put a trend line between the years {greaterThanOrEqual} and {lessThanOrEqual}
+  - add mean value line for the range from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Add a {color} line showing trend from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - indicate the growth rate between {greaterThanOrEqual} and {lessThanOrEqual} with a dotted {color} line
+  - Mark the significant increase with {color} line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Add a {color} dotted line between {greaterThanOrEqual} and {lessThanOrEqual} on the graph.
+  - Highlight dotted lines in {color} color between {greaterThanOrEqual} and {lessThanOrEqual}
+  - add trendline from {greaterThanOrEqual} to {lessThanOrEqual} IN STRAIGHT LINE
+  - Draw a dashed {color} trendline from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - Add a dotted line starting from {greaterThanOrEqual} and extending at a slant toward {lessThanOrEqual}.
+  - Show average rate of increase between 2016 and {lessThanOrEqual}
+  - show a {color} broken straight line on an upward trend between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - Add dashed trendline for {greaterThanOrEqual} to {lessThanOrEqual}
+  - Add a straight {color} dashed best-fit line for the period from {greaterThanOrEqual} through {lessThanOrEqual}
+  - Show line increase from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Insert a {color} regression line from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - Add a trendline from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - line the {color} from {greaterThanOrEqual} to {lessThanOrEqual}
+  - insert dotted trend line between {greaterThanOrEqual} and {lessThanOrEqual}
+  - draw a line of best fit in {color} between {greaterThanOrEqual} and {lessThanOrEqual}
+  - Insert a trend line between {greaterThanOrEqual} and {lessThanOrEqual}
+  - Draw a {color} dotted line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Draw a climbing line in chart from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - Add {color} dotted line to smooth graph points between {greaterThanOrEqual} and {lessThanOrEqual}
+  - Identify years {greaterThanOrEqual} to {lessThanOrEqual} with a {color} trendline
+  - put {color} line in the graphic where the range is between {greaterThanOrEqual} and {lessThanOrEqual}
+  - apply a trend line for the years {greaterThanOrEqual} to {lessThanOrEqual}
+  - Draw a dotted {color} line to show the trending between {greaterThanOrEqual} and {lessThanOrEqual}
+  - show average line in {color} dashes between {greaterThanOrEqual} and {lessThanOrEqual}
+  - Highlight the trend from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Highlight from {greaterThanOrEqual} to {lessThanOrEqual} with dotted line
+  - Insert a dotted {color} average trend line from the year {greaterThanOrEqual} to {lessThanOrEqual}
+  - Use a {color} line to show increase over the years of {greaterThanOrEqual} to {lessThanOrEqual}
+  - insert a indicator line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - draw trendline from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Trace a dashed line from the value of {greaterThanOrEqual} to the {lessThanOrEqual} value.
+  - Add a line of best fit for the years {greaterThanOrEqual} to {lessThanOrEqual}, make it {color} and dashed
+  - Add a dotted line from {greaterThanOrEqual} to {lessThanOrEqual} moving upward
+  - emphasize {color} dotted line on graph for the region between {greaterThanOrEqual} and {lessThanOrEqual}
+  - Add a straight, dotted line from the point at {greaterThanOrEqual} to the point at {lessThanOrEqual}.
+  - Draw a dotted line from {greaterThanOrEqual} to the end of {lessThanOrEqual}, following the elevation of the graph.
+  - Add a {color} dashed line to show the increase in numbers for {greaterThanOrEqual} to {lessThanOrEqual} period.
+  - Place a {color} marker going from {greaterThanOrEqual} to {lessThanOrEqual} showing the increase
+  - Add a line of best fit from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - draw the median line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - '{greaterThanOrEqual} - {lessThanOrEqual} is mentioned with {color} line floating towards'
+  - add {color} dashed line is added to show average increase for {greaterThanOrEqual} to {lessThanOrEqual} range
+  - emphasize trend with {color} dotted line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Place a {color} dotted line in the graph area between {greaterThanOrEqual} and {lessThanOrEqual}
+  - Add a trend line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - Draw a dotted line for the median value for {greaterThanOrEqual} to {lessThanOrEqual} range.
+  - Input a {color}, slanting spaced line from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - Highlight {greaterThanOrEqual} to {lessThanOrEqual} period with a {color} dot line
+  - add {color} dotted line shows trend between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - Indicate trend with dotted {color} line for {greaterThanOrEqual} to {lessThanOrEqual} period.
+  - for {greaterThanOrEqual} to {lessThanOrEqual} apply a dashed {color} line for the trend
+  - '{color} dotted slanting line is placed from {greaterThanOrEqual} to {lessThanOrEqual}.'
+  - draw trend line for {greaterThanOrEqual} to {lessThanOrEqual}
+  - Emphasize the slope increase from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - The {color} dot lines are highlighted during {greaterThanOrEqual} and {lessThanOrEqual} period
+  - draw a {color} dotted line from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add linear regression in dotted {color} line from {greaterThanOrEqual} to {lessThanOrEqual}
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: det
+    EntityType: None
+    Templates:
+    - a
+  - Name: trend
+    EntityType: None
+    Templates:
+    - trend line
+  - Name: prep_color
+    EntityType: None
+    Templates:
+    - in
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <date>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <date>

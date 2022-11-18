@@ -1,0 +1,65 @@
+- Intents:
+  - SetColor
+  Templates:
+  - change {target} color to {color}
+  - change the graph {target} color from {from} to {color}
+  - change {target} color as {color}
+  - change the {target} color to {color}
+  - change {target} to {color}
+  - change chart {target} to {color}
+  - change the {target} to {color}
+  - make the {target} {color}
+  - add a {color} {target}
+  - set {color} {target}
+  - add the {target} color
+  - use the {color} color for the {target}
+  - added a {target} color
+  - change the {target} of the graph from {from} to {color}.
+  - colour the plot area and the chart area {color}.
+  - change the {target} color to {color}
+  - add {color} {target} to chart
+  - change the {target} color to {color}
+  - add a {color} {target} to the chart.
+  - please make the {target} in {color} color
+  - change the chart {target} to gold
+  - change chart's {target} to {color}
+  - modify {target} colour changed from {from} to {color}.
+  - chart {target} has been changed
+  - change the {target} color of the graph to {color}
+  - change the grid {target} from {color} to {color}
+  - change {target} color as {color}
+  - add {color} color the grid region
+  - highlight {target} in {color}
+  - change graph {target} to {color}
+  - change the chart area {target} to {color}
+  - change the grid {color}
+  - add a bright {color} background to chart area
+  - change graph {target} to {color}
+  - change the color in the {target} chart in the graph
+  - added an additional {target} color
+  - change the {target} of the chart inside the axes to {color}, leaving the {target} outside the axes {color}.
+  - colour the plot area {color}.
+  - change the chart {target} color to {color} but only in the data range
+  - make graph line area {color}
+  - change the graph {target} as {color}
+  - change the {target} of the area inside the axes to bright {color}.
+  - please make {target} color {color}
+  - change the {target} to the plot area to {color}
+  - change chart's {target} to {color}
+  - change {target} colour from {color} to {color}.
+  - chart {target} displaying in {color}
+  - change the color of the middle of the graph to {color}
+  Parameters:
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - title
+    - background

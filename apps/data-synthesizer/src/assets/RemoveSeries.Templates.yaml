@@ -1,0 +1,76 @@
+- Intents:
+  - RemoveSeries
+  Templates:
+  - remove {color} line from graph
+  - erase the {color} graph that represents the {filter}.
+  - only show {color} line
+  - remove {filter} from chart
+  - remove the data set of {filter} from the chart
+  - delete the {color} graphline.
+  - delete the {filter} response curve
+  - remove {color} line
+  - delete the {color} line graph.
+  - remove {color} line on graph
+  - delete the data for {filter} from the chart
+  - remove the {color} line chart only leaving the orange line chart on the graph.
+  - delete {color} line from the chart
+  - please delete the {color} line
+  - remove {color} line
+  - remove the {color} line on the graph
+  - remove {filter} data from the chart.
+  - remove the {color} line
+  - delete the {color} line from the chart
+  - remove {filter}
+  - hide the {color} line for better understanding of the orange line.
+  - remove {filter} values.
+  - remove {filter} line to highlight only {filter}
+  - remove the {filter} line.
+  - delete the {filter} trendline
+  - remove the {color} line graph and leave only the orange line graph
+  - show {filter} graph line in {color}
+  - delete the {color} data line
+  - remove the data in {color}
+  - taken {color} graph from the chart
+  - remove the {color} trend lne
+  - remove the aapi graph line.
+  - more curve on the language barrier.
+  - please remove the {color} line in the graph
+  - remove the {color} line and show the orange line alone.
+  - remove the {color} line.
+  - remove the {filter} line
+  - highlight the charge in price in  {color} and orange
+  - remove the entire {color} line.
+  - eliminate the {color} line.
+  - erase the {color} line
+  - remove the {color} graph line.
+  - include the diagram for {filter} for same period.
+  - show just the orange line, and take away the {color} line.
+  - remove the {color} line
+  - only show {filter}
+  - remove {color} chart
+  - remove {color} data line
+  - remove {filter}
+  - show alternative price in {color}
+  - hide the {color} graph line
+  - remove the line for aapi.
+  - remove {color} line from chart
+  - remove {color} line
+  - '{color} curves are negotitated'
+  - remove {filter}
+  - remove {color} line
+  - remove one of the lines from the graph
+  - remove the {color} line
+  - remove the {color} line from the graph.
+  - remove {color} graph line
+  - remove {filter} results from the graph
+  - take the {color} colour graph out in this chart
+  - remove the {filter} data from the line graph
+  Parameters:
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>

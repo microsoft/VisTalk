@@ -1,0 +1,92 @@
+- Intents:
+  - ChangeLayout
+  Templates:
+  - Change the {target} so that its contents are displayed {from} instead of {layout}.
+  - change {target} from list format to side by side.
+  - Use {layout} {target}
+  - change the arrangement of the chart {target} to {layout}
+  - change the {target} to a single line
+  - changed how {target} are lined
+  - change the {target} chart to {layout} form
+  - Make the {target} symbols appear in a {layout} order.
+  - on the color {target}, list company names and colors on a single line instead of one in each line
+  - Change the orientation of the {target} so that it is a {layout} list rather than a {from} one.
+  - Rewrite the {target} section from {from} to {layout}
+  - Change the chart {target} from {from} to {layout}.
+  - arrange the chart {target} in {layout} pattern
+  - Change the {target} layout from {from} to {layout}.
+  - Change {target} from {from} to {layout}
+  - change the way the {target} are listed from {from} to {layout}
+  Parameters:
+  - Name: from
+    EntityType: Layout
+    Templates:
+    - vertical
+  - Name: layout
+    EntityType: Layout
+    Templates:
+    - horizontal
+    - landscape
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - legend
+
+- Intents:
+  - ChangeLayout
+  Templates:
+  - Specify the {target} {layout}
+  - align the {target} {layout}
+  - list the {target} {layout} one after the other, instead of {from}.
+  - Change the list within the key from {from} oriented to {layout} oriented
+  - Modify the {target} in such a way that they are lined up one after the other {layout}
+  - Display chart key {layout}.
+  - Orient the companies included as {target} layout} rather than {from}.
+  - Align the {target} {layout} and not {from}.
+  - Change the {target} {layout}
+  - symbols are now {layout} located instead of {from}
+  - display {target} list {layout}
+  Parameters:
+  - Name: from
+    EntityType: Layout
+    Templates:
+    - vertically
+  - Name: layout
+    EntityType: Layout
+    Templates:
+    - horizontally
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - legend
+
+- Intents:
+  - ChangeLayout
+  Templates:
+  - change {target} from {from} to {layout}.
+  - change the {target} to {layout}
+  - changing the {from} orientation of the {target} caption to {layout}
+  Parameters:
+  - Name: from
+    EntityType: Layout
+    Templates:
+    - portrait
+    - list format
+  - Name: layout
+    EntityType: Layout
+    Templates:
+    - landscape
+    - side by side
+    - row type
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - legend

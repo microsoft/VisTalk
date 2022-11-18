@@ -1,0 +1,113 @@
+- Intents:
+  - BindX
+  - BindY
+  - BindSeries
+  Templates:
+  - '{aggr} {field} {series}'
+  - 'plot {aggr} by {field} and {series}'
+  - '{aggr} by {field} and {series}'
+  - total {aggr_sum} by {field} and {series}
+  - for each {series}, show {aggr} by {field}
+  - what is our {aggr} based on {field} by {series}
+  - show me {aggr} groupped by {field} and {series}
+  - '{aggr} by {field}, {series}'
+  - 'total {aggr_sum} by {field} and {series}'
+  - 'total {aggr_sum} by {field} , colored by {series}'
+  - 'total {aggr_sum} by {field}, {series}'
+  - '{aggr} by {field} and {series}'
+  - max of {aggr_max} by {field} and {series}
+  - min of {aggr_min} by {field} and {series}
+  - average of {aggr_avg} by {field} and {series}
+  - mean of {aggr_avg} by {field} and {series}
+  - show {aggr} by {field} by {series}
+  - show {aggr} by {field} for each {series}
+  - for each {series}, show {aggr} by {field}
+  Parameters:
+  - Name: count_verb
+    EntityType: None
+    Templates:
+    - how many
+    - number of
+    - count of
+  - Name: date
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: series
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_min
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_max
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_sum
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_median
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_count
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_dcount
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: greaterThan
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: greaterThanOrEqual
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: lessThan
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: equal
+    EntityType: Filter
+    Templates:
+    - <number>
+    

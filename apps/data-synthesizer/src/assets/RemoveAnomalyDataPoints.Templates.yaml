@@ -1,0 +1,74 @@
+- Intents:
+  - RemoveAnomalyDataPoints
+  Templates:
+  - '{prefix} {verb} variable in data {postfix}'
+  - '{prefix} {verb} the top right {outliers} circle {postfix}'
+  - '{prefix} {verb} the outlying data point {postfix}.'
+  - '{prefix} {verb} the {outliers}.'
+  - '{prefix} {verb} the {outliers} from the graph.'
+  - '{prefix} {verb} the most outlier plot point {postfix}'
+  - '{prefix} {verb} the more scattered or deviated point {postfix}.'
+  - '{prefix} {verb} the extreme {outliers} {postfix}.'
+  - '{prefix} {verb} the data point that does not follow the pattern {postfix}.'
+  - '{prefix} {verb} the circle that is alone {postfix}.'
+  - '{prefix} {verb} outlying point graphed at approximately 10 at y {postfix}'
+  - '{prefix} {verb} outlying point graphed {postfix}'
+  - '{prefix} {verb} {outliers} {postfix}.'
+  - '{prefix} {verb} {outliers}'
+  - '{prefix} {verb} {outliers} on graph {postfix}'
+  - '{prefix} {verb} outlier data points'
+  - '{prefix} {verb} outlier data point {postfix}'
+  - '{prefix} {verb} {outliers} {postfix}'
+  - '{prefix} {verb} lone dot in upper right {postfix}.'
+  - '{prefix} {verb} data point that is most unlike the rest.'
+  - '{prefix} {verb} circle on the far right {postfix}.'
+  - '{prefix} {verb} any {outliers} {postfix}'
+  - '{prefix} {verb} any abnormal outliers {postfix}.'
+  - '{prefix} {verb} anomaly dot in top right {postfix}.'
+  - '{prefix} {verb} anomaly {postfix}'
+  - '{prefix} {verb} the anomaly in the data {postfix}.'
+  - '{prefix} outlier on scatter plot not included {postfix}'
+  - '{prefix} keep only items merged together {postfix}'
+  - '{prefix} hide furthest {outliers} {postfix}'
+  - '{prefix} {verb} {outliers} {postfix}'
+  - '{prefix} {verb} the {outliers} {postfix}'
+  - '{prefix} {verb} {outliers} {postfix}'
+  - '{prefix} do not graph {outliers} {postfix}.'
+  - '{prefix} {verb} the outlier point in the graph {postfix}.'
+  - '{prefix} {verb} the {outliers} {postfix}'
+  - '{prefix} {verb} the one data point that not similar with other {postfix}.'
+  - '{prefix} {verb} the isolated dot at the right {postfix}.'
+  - '{prefix} {verb} the furthest outlying data point {postfix}.'
+  - '{prefix} {verb} the {outliers} value {postfix}'
+  - '{prefix} {verb} {outliers} point from the graph {postfix}'
+  - '{prefix} {verb} any outlying integers {postfix}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - remove
+    - delete
+    - eliminate
+    - erase
+    - got rid of
+    - discard
+    - omit
+  - Name: outliers
+    EntityType: None
+    Templates:
+    - outliers
+    - anomaly data points
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: postfix
+    EntityType: None
+    Templates:
+    -
+    - from this chart
+    - from chart
+    - in the chart

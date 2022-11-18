@@ -1,0 +1,79 @@
+- Intents:
+  - SetMark
+  Templates:
+  - '{prefix} change the {from} of the graph for {mark}.'
+  - '{prefix} turn {from} into {mark}'
+  - '{prefix} change {from} shape to solid {mark}'
+  - '{prefix} change the {from} into solid {mark} in the dot chart'
+  - '{prefix} change the data points from {from} to {mark}.'
+  - '{prefix} change the {from} markers to {mark} markers.'
+  - '{prefix} make data points {mark}'
+  - '{prefix} change the data points to be filled {mark} instead of open {from}.'
+  - '{prefix} change plot shape to {mark}'
+  - '{prefix} change the plot points from {from} to {mark}'
+  - '{prefix} change the scattered graph from {from} to {mark}.'
+  - '{prefix} use solid {mark} to show data instead of {from}.'
+  - '{prefix} please change the form of dots for painted {mark}'
+  - '{prefix} change data points from {from} to {mark}'
+  - '{prefix} replace the {from} points with filled in {mark}'
+  - '{prefix} change data points from {from} to {mark}.'
+  - '{prefix} change identification images to {mark}'
+  - '{prefix} change the plot markets to filled in {mark}'
+  - '{prefix} change the plot values to {mark}'
+  - '{prefix} use {mark} markers.'
+  - '{prefix} make graph points {mark}'
+  - '{prefix} change the plot from {from} format into {mark}.'
+  - '{prefix} change the indicators from {from} to {mark}'
+  - '{prefix} change the open {from} on the graph to solid {mark}'
+  - '{prefix} replace circular data points with {mark} data points.'
+  - '{prefix} change dots to {mark} for plot points'
+  - '{prefix} replace each {from} with a {mark} '
+  - '{prefix} change the points on the graph from {from} to {mark}'
+  - '{prefix} change markers from rings to {mark}.'
+  - '{prefix} change the markings from {from} to {mark} in the chart'
+  - '{prefix} make the circular data points into {mark}.'
+  - '{prefix} change the dots on the scatter plot to {mark}.'
+  - '{prefix} change the {from} to {mark}'
+  - '{prefix} change all data points to {mark}.'
+  - '{prefix} make the {color} {from} solid {mark}.'
+  - '{prefix} use {mark} instead of {from}'
+  - '{prefix} change the scatter plot icons from open {from} to closed {mark}.'
+  - '{prefix} replace {mark} shape to the bubbles shapes.'
+  - '{prefix} turn the plots from {from} to {mark}.'
+  - '{prefix} make all points solid {mark}.'
+  - '{prefix} change data points to {mark}'
+  - '{prefix} use {mark} instead of {from} for data'
+  - '{prefix} change marks from rings to {mark}'
+  - '{prefix} modify dots to {mark}'
+  - '{prefix} change the data look in the graph from {from} to {mark}'
+  - '{prefix} turn the dots into pixel {mark}.'
+  - '{prefix} define the chart with {mark}'
+  - '{prefix} change {from} to solid {mark}'
+  - '{prefix} change graph marker to {mark}'
+  - '{prefix} turn {from} into {mark} and fill them in'
+  - '{prefix} change value points to {mark}'
+  - '{prefix} change the shape of the points to {mark}'
+  - '{prefix} change the data points to {mark}'
+  - '{prefix} change the shape of data items into {mark}'
+  - '{prefix} square the data point shapes in this chart with mark {mark}'
+  - '{prefix} change the scatterplot points from {from} to {mark}.'
+  Parameters:
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: from
+    EntityType: Mark
+    Templates:
+    - <mark>
+  - Name: mark
+    EntityType: Mark
+    Templates:
+    - <mark>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>

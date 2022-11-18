@@ -1,0 +1,54 @@
+- Intents:
+  - Highlight
+  Templates:
+  - emphasize all {field} in {color}
+  - emphasize first {top_n} in {color}
+  - emphasize first {top_n} bars in {color}
+  - emphasize first {top_n} data points in {color}
+  - emphasize the first {top_n} bars of data
+  - emphasized bars in {filter}, {filter}, {filter} in {color}
+  - emphasized change in {filter}, {filter}, {filter} in {color}
+  - highlight first {top_n} {color} color
+  - highlight {filter} {filter} and {filter} in {color}
+  - highlight {filter}, {filter} and {filter} in {color}
+  - highlight bars {filter}, {filter}, and {filter} in {color}
+  - highlight first {top_n} bar colour is changed in {color}
+  - highlight first {top_n} bar values in {color}
+  - highlight first {top_n} bars in {color}
+  - highlight first {top_n} bars in {color} color
+  - highlight in {color} {filter} and {filter}
+  - highlight letters a, b, and c {color}
+  - highlight only values {filter} through {filter} in {color}
+  - highlight the first {top_n} bars {color}.
+  - highlight the first quarter segment and change the color to {color}.
+  - highlight the first {top_n} and change the color to {color}.
+  - highlight the first {top_n} bars.
+  - highlight the first {top_n} data points in {color}.
+  - highlighted {filter}, {filter}, and {filter} is {color} colour
+  - highlighted in {color} colour {filter} and {filter}
+  - highlighted the first {top_n} column in {color}.
+  Parameters:
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>

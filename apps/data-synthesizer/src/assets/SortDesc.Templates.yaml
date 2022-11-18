@@ -1,0 +1,313 @@
+- Intents:
+  - SortDesc
+  Templates:
+  - Sort {sorted} entries in descending alphabetical order
+  - Sort in reverse alphabetical order on the {sorted} column.
+  - Sort by {sorted} from newest to oldest
+  Parameters:
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+
+- Intents:
+  - SortDesc
+  Templates:
+  - Sort {sorted} by highest to lowest
+  - Sort {sorted} Descending
+  - Sort the {sorted} column from highest to lowest
+  - Organize by high {sorted} to low {sorted}
+  - Sort by {sorted} descending
+  - Change the graph to decreasing values.
+  - Put in order from most expensive to least expensive
+  - arrange the bar in descending order
+  - Charted values arranged in decrescent order
+  - Sort the {chart} in descending order
+  - Sort the bars in descending order
+  - Reorder the chart in a decreasing order of {sorted} values
+  - Sort by Y axis values in descending order
+  - make use of bars according to their descending order
+  - Sort the {chart} from high to low
+  - Arrange bars by descending value.
+  - change the chart to descending order of Y values
+  - Mark the decreasing {chart}
+  - Put the bars in order from greatest to least {sorted} values
+  - organize {chart} from greatest to smallest Y values
+  - Display X axis values from largest to smallest
+  - Make descending order according to values in Y axis
+  - Rearrange the Y values in decreasing value
+  - Sort bars by highest Y value
+  - Change it to a decremental {chart} based on {sorted} value
+  - Order from highest to lowest {sorted}
+  - order Y values, high to low
+  - Order by {sorted} descending 
+  - Put Y values from greatest to least.
+  - organize bars in descending order of {sorted}
+  - Change the bars into descending order of {sorted}.
+  - ordinate from higher to lower
+  - SORT BY DESCENDING ORDER OF Y AXIS
+  - Reorder the bars from highest to lowest of {sorted}
+  - Sort the bars on the chart from high to low of {sorted}
+  - Arrange the bars starting with tallest to shortest
+  - Sort data points/columns by largest to smallest
+  - Change with a values from Higher to Lower on Y axis
+  - Place the columns from higher value of {sorted} to lower
+  - Placing the data in a decreasing way along Y axis
+  - Show in descending order of Y values
+  - ORGANIZE CHART FROM THE HIGHEST TO THE SMALLEST RESULTS
+  - Order columns from higher value to smaller value on Y axis
+  - order the Y data from high to low
+  - Show by descending Y values
+  - Order {sorted} values largest to smallest
+  - Rearrange the columns in descending order of Y value
+  - change the chart to decreasing values of Y axis
+  - organize by most to least on Y axis.
+  - Sort {sorted} values highest to lowest
+  - arrange the graph from peak level to small based on Y values
+  - Sort the {chart} in descending order of Y values
+  - sort chart from highest to lowest {sorted}
+  - show me the {chart} from highest point to lowest on Y axis
+  - PUT THE CHART IN ORDER FROM TALLEST TO SHORTEST
+  - Order the items on the x-axis from greatest to least of Y values.
+  - Rearrange the data from highest on the left down to lowest on the right.
+  - Arrange the items with higher values to lowest values of Y values
+  - Order bars from tallest to shortest
+  - Ordered the column in descending order of Y values
+  - Reorder entries on X axis from highest value to lowest of their Y values
+  - Put all data in order from biggest to littlest of Y values
+  - organize the chart from high to low of {sorted}
+  - Arrange Chart Values order Highest to Lowest of {sorted}
+  - Sort axis A order to plot Y values from high to low
+  - Change the {chart} so that it is by Y values greatest to smallest
+  - order the a axis by decreasing value of {sorted} axis
+  - order entries from greatest to least of {sorted} axis
+  - order column from taller to smaller of Y axis values
+  - put data in decreasing order of Y values
+  - Order the data on this {chart} from greatest to smallest on the y/{sorted} axis value.
+  - Plot the {chart} in decreasing order of Y axis value.
+  - ALLIGN CHART FROM MORE TO LESS OF Y VALUE
+  - Sort {chart} in decreasing order of {sorted} axis
+  - sort from greatest to least according to b values
+  - make the chart bar in descending order of Y values
+  - Rearrange the plot to go highest to lowest of Y values
+  - order bars in decreasing order by value
+  - arrange the chart type by descending order by Y value.
+  - Sort the column in the chart with Y values in a descending order
+  Parameters:
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+
+- Intents:
+  - SortDesc
+  Templates:
+  - sort {sorted} entries in descending alphabetical order
+  - sort in reverse alphabetical order on the {sorted} column.
+  - sort data by {sorted} newest to oldest
+  - change the graph to decreasing values.
+  - arrange the bar in descending order
+  - charted values arranged in decrescent order
+  - sort the {chart} in descending order
+  - sort the bars in descending order
+  - sort x axis by y axis in decending order
+  - make use of bars according to their descending order
+  - sort the {chart} from high to low
+  - arrange bars by descending value.
+  - change the chart to descending order
+  - mark the decreasing {chart}
+  - put the bars in order from greatest to least
+  - organize {chart} from greatest to smallest
+  - display x axis values  from largest to smallest
+  - make decending order in x axis
+  - rearrange the a values in decreasing value
+  - organize x values by size
+  - sort bars by highest value
+  - change it to a decremental {chart}
+  - order from highest to lowest
+  - order chart x values, high to low
+  - put it from greatest to least.
+  - organize bars in descending order
+  - change the data input
+  - change the bars into descending order.
+  - ordenate from higher to lower
+  - sort by descending order
+  - reorder the bars from highest to lowest
+  - wrong way to present a chart
+  - sort the bars on the chart from high to low
+  - arrange the bars from left to right starting with tallest to shortest
+  - sort data points/columns by largest to smallest
+  - change chart with a values from higher b values to lower
+  - place the columns from higher value of a to lower
+  - placing the data in a decreasing way
+  - show in descending order
+  - organize chart from the highest to the smallest results
+  - change the order of the letters below
+  - order columns from higher value to smaller value
+  - filter by descending
+  - order values a-i from largest to smallest
+  - rearrange the columns in descending order of value
+  - change the chart to decreasing values
+  - organize by most to least.
+  - sort a axis by b axis values highest to lowest
+  - arrange the graph from peak level to small
+  - sort the {chart} in descending order
+  - the bar are line by value level
+  - reverse the values
+  - sort chart from highest to lowest
+  - show me the {chart} from highest point lowest
+  - put it in reverse alphabetical order
+  - put the chart in order from tallest to shortest
+  - order the items on the x-axis from greatest to least.
+  - rearrange the data from highest on the left down to lowest on the right.
+  - arrange the items with higher values to lowest values
+  - order bars from tallest to shortest
+  - ordered the column in desc order
+  - reorder entries on x axis from highest value to lowest value
+  - change the order of the values on the x axis
+  - put all data in order from biggest to littlest
+  - organize the chart from high to low
+  - arrange chart values order highest to lowest
+  - changes in amount of statistical report
+  - sort axis a order to high to low
+  - change the {chart} so that it is no longer alphabetical but by greatest to smallest
+  - order the a axis by decreasing value
+  - order entries from greatest to least frequency
+  - order column from taller to smaller
+  - put data in decreasing order
+  - order the data on this {chart} from greatest to smallest on the y/b axis value.
+  - plot the {chart} in decreasing order.
+  - align chart from more to less
+  - sort {chart} in decreasing order
+  - sort a to i from greatest to least
+  - make the second chart bar in descending order
+  - this chart changed by rank
+  - rearrange the letters to go highest to lowest
+  - order bars in decreasing order by {sorted}
+  - sort {sorted} by largest number
+  - sort by {sorted} with highest on top
+  - order by {sorted} with highest on top
+  - arrange the chart type by descending order.
+  - sort the column in the chart with highest on top
+  Parameters:
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+    
+
+
+- Intents:
+  - SortDesc
+  Templates:
+  - '{sort_verb} {aggregation} {sorted} {in} {sort}'
+  Parameters:
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - total
+    - average
+    - sum
+  - Name: in
+    EntityType: None
+    Templates:
+    - 
+    - in
+  - Name: sort
+    EntityType: None
+    Templates:
+    - descending
+    - desc
+    - high to low
+    - large to small
+    - largest to smallest
+    - largest first
+    - with highest on top
+    - with lowest on bottom
+
+- Intents:
+  - SortDesc
+  Templates:
+  - '{sort_verb} {sorted} {in} {sort}'
+  Parameters:
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: in
+    EntityType: None
+    Templates:
+    - 
+    - in
+  - Name: sort
+    EntityType: None
+    Templates:
+    - descending
+    - desc
+
+
+- Intents:
+  - SortDesc
+  Templates:
+  - sort {by} {sorted} {in} {sort}
+  - order {by} {sorted} {in} {sort}
+  - show {sorted} sorted {in} {sort}
+  - sort {by} {sorted} {in} {sort}
+  Parameters:
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: by
+    EntityType: None
+    Templates:
+    - 
+    - by
+  - Name: in
+    EntityType: None
+    Templates:
+    - 
+    - in
+  - Name: sort
+    EntityType: None
+    Templates:
+    - descending
+    - desc
+    - high to low
+    - large to small
+    - largest to smallest
+    - largest first
+    - with highest on top
+    - with lowest on bottom
+    - reverse alphabetically

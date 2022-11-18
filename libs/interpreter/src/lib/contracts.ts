@@ -294,6 +294,11 @@ export interface FieldEntity {
   field: Field;
 }
 
+export interface AxisEntity {
+  type: 'axis';
+  value: 'x' | 'y';
+}
+
 export type AggregationType =
   | 'sum'
   | 'mean'
@@ -306,6 +311,18 @@ export interface AggregateEntity {
   type: 'aggr';
   field: Field;
   aggregate?: AggregationType;
+}
+
+// {name}
+export interface ParameterEntity {
+  type: 'parameter';
+  name: string;
+}
+
+// <name>
+export interface TermEntity {
+  type: 'term';
+  name: string;
 }
 
 export interface AggregationTypeEntity {
@@ -354,6 +371,9 @@ export type Entity =
   | NumberEntity
   | StringEntity
   | DateTimeEntity
+  | ParameterEntity
+  | TermEntity
+  | AxisEntity
   | UNKEntity;
 
 export interface Interpretation {
@@ -451,6 +471,7 @@ export interface SetMark {
 export interface Sort {
   type: 'Sort';
   field?: Field;
+  axis?: 'x' | 'y';
   direction: 'asc' | 'desc' | 'auto';
 }
 

@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
-import { setBackend } from "@tensorflow/tfjs";
+import { getBackend } from '@tensorflow/tfjs-node';
 import { createDataProvider } from "../lib/data";
 import { Interpreter } from "../lib/interpreter";
 import { tokenize } from "../lib/tokenize";
@@ -23,7 +23,7 @@ const carSales = [
   },
 ];
 
-setBackend('cpu');
+console.log(getBackend());
 
 const interpreter = new Interpreter(createDataProvider(carSales));
 const tests = [
@@ -58,14 +58,14 @@ const tests = [
       "O O O O B-value",
   ],
   [
-      "add rectangle from average to average",
+      "add rectangle from 100 to 200",
       "AddRectangle",
       "O O O B-greaterThanOrEqual O B-lessThanOrEqual",
   ],
   [
-      "highlight the area between 10 and 20 in white",
+      "highlight top 2 in red",
       "Highlight",
-      "O O O O B-greaterThanOrEqual O B-lessThanOrEqual O B-color",
+      "O O B-top_n O B-color",
   ],
   [
       "add suv series in light blue",
@@ -98,14 +98,14 @@ const tests = [
       "O B-aggr O O O",
   ],
   [
-      "assign categories with category axis sales with y axis",
+      "sales by brand",
       "BindX,BindY",
-      "O B-field O B-field O B-aggr O O O",
+      "B-aggr O B-field",
   ],
   [
-      "create a histogram of sales",
+      "distribution of sales",
       "BindX,SetChartType",
-      "O O B-chart O B-aggr",
+      "B-chart O B-aggr",
   ],
   [
       "create a column chart for sales break down by categories",
@@ -116,11 +116,6 @@ const tests = [
       "change mark to scatter chart .",
       "SetChartType",
       "O O O B-chart I-chart O",
-  ],
-  [
-      "change the legend so that its contents are displayed vertical instead of horizontal.",
-      "ChangeLayout",
-      "O O B-target O O O O O O B-from O O B-layout O",
   ],
   [
       "move the x axis from the left to the right hand side",
@@ -158,9 +153,9 @@ const tests = [
       "O O O O O O O B-color O",
   ],
   [
-      "make the bars wider",
+      "please make the data point larger",
       "IncreaseDataPointWidth",
-      "O O O O",
+      "O O O O O O",
   ],
   [
       "modify it to add more range for the sales",
@@ -173,9 +168,9 @@ const tests = [
       "O O O O O O",
   ],
   [
-      "count",
+      "change to sum",
       "ChangeAggregation",
-      "B-aggregation",
+      "O O B-aggregation",
   ],
   [
       "set name to \"new component\"",
@@ -208,9 +203,9 @@ const tests = [
       "O B-filter",
   ],
   [
-      "remove the background lines from the chart.",
+      "hide the grid",
       "RemoveGridLines",
-      "O O O O O O O O",
+      "O O O",
   ],
   [
       "remove blue line from graph",

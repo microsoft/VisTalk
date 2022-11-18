@@ -1,0 +1,99 @@
+- Intents:
+  - DecreaseHeight
+  Templates:
+  - '{prefix} make the chart more congested'
+  - '{prefix} {verb} y-axis scale to {value} unit intervals'
+  - '{prefix} {verb} the width of the chart to make it {smaller}.'
+  - '{prefix} {verb} height of graph'
+  - '{prefix} {verb} plot height by {value}'
+  - '{prefix} scale down the height of the chart by {value}'
+  - '{prefix} make the graph {smaller}.'
+  - '{prefix} minimize the {chart} image to half of its size vertically.'
+  - '{prefix} {verb} height by {value}'
+  - '{prefix} {verb} the height of the y-axis.'
+  - '{prefix} make chart {smaller} vertically'
+  - '{prefix} condense the vertical height of the {chart} making it {smaller}'
+  - '{prefix} resize the {chart} by {value} making it {smaller}'
+  - '{prefix} {verb} the height of the chart.'
+  - '{prefix} {verb} the space between line'
+  - '{prefix} please {verb} chart in {value} times'
+  - '{prefix} {verb} verticle size of graph'
+  - '{prefix} make the graph {smaller} vertically'
+  - '{prefix} {verb} height of chart to {value}.'
+  - '{prefix} {verb} the height of the chart and keep same width'
+  - '{prefix} {verb} the graph horizontally by about {value}'
+  - '{prefix} {verb} the chart on the y axis'
+  - '{prefix} zoom out the whole chart pattern'
+  - '{prefix} shorten chart.'
+  - '{prefix} shorten {chart}'
+  - '{prefix} {verb} the chart size vertically'
+  - '{prefix} shorten the graph to half of the size'
+  - '{prefix} show chart in one-half size'
+  - '{prefix} resize the chart to a {smaller} size'
+  - "{prefix} lower the graph's height to {value}"
+  - '{prefix} make the chart small'
+  - '{prefix} {verb} the height of the graph'
+  - '{prefix} {verb} length of graph by {value}.'
+  - '{prefix} make the chart {smaller} in size'
+  - '{prefix} {verb} the height of the chart into half.'
+  - '{prefix} value of g decreasing'
+  - '{prefix} {verb} the graph by a third.'
+  - '{prefix} compress the size of the y axis'
+  - '{prefix} resize bar to {value}'
+  - '{prefix} {verb} the height of the y-axis'
+  - '{prefix} height of the chart showing size is small'
+  - '{prefix} make the chart {smaller}.'
+  - '{prefix} make the second graph {smaller}'
+  - '{prefix} {verb} the height of the {chart} by half.'
+  - '{prefix} {verb} the size of the bar diagram to {value} vertically.'
+  - '{prefix} pinch the graph so that it is shown {smaller} vertically.'
+  - '{prefix} {verb} the size of the graph'
+  - '{prefix} zoom out'
+  - '{prefix} minimize the size of the chart'
+  - '{prefix} make the graph {smaller}.'
+  - '{prefix} {verb} height of chart by {value}'
+  - '{prefix} {verb} the size of the graph in height without losing any information'
+  - '{prefix} make the graph wider and {smaller}.'
+  - '{prefix} {verb} chart size on y axis'
+  - '{prefix} {verb} graph height by {value}'
+  - "{prefix} {chart} height is reduced"
+  - '{prefix} {verb} the height of the graph'
+  - '{prefix} shorten {chart} vertically'
+  - '{prefix} change the height of the graph to {smaller}'
+  - '{prefix} make the y axis {smaller} in size'
+  - '{prefix} make the chart {smaller} by reducing the vertical axis by about half.'
+  - '{prefix} re structure the graph size to {smaller}'
+  - '{prefix} make graph {value} {smaller}'
+  - '{prefix} condense the size of the graph to half its current height'
+  - '{prefix} {verb} the bar graphs size up from the bottom so that the length is half of what it was.'
+  - '{prefix} make the graph more crowded'
+  - '{prefix} {verb} the y-axis scale to {value} unit intervals'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - decrease
+    - shrink
+    - shorten
+    - reduce
+  - Name: prefix
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+    - can you
+  - Name: smaller
+    EntityType: None
+    Templates:
+    - smaller
+    - shorter
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - chart
+    - <visual>
+  - Name: value
+    EntityType: Number
+    Templates:
+    - <number>

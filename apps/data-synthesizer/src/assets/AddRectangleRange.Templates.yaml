@@ -1,0 +1,178 @@
+- Intents:
+  - AddRectangle
+  Templates:
+  - put a {color} area where {gte} {greaterThanOrEqual} and {lte} {lessThanOrEqual} in {color}
+  - highlight the area {gte} {greaterThanOrEqual} and {lte} {lessThanOrEqual} in {color}
+  - highlight the area between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - highlight the area from {greaterThanOrEqual} to {lessThanOrEqual} with {color} rectangle.
+  - highlight using {color} color for the area between {greaterThanOrEqual} and {lessThanOrEqual} on x axis
+  - '{color} box over chart to highlight the range between {greaterThanOrEqual} and {lessThanOrEqual}'
+  - put a {color} area from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the area of interest from {greaterThanOrEqual} to {lessThanOrEqual} with a {color} box
+  - shade the area of the graph from {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - shade the portion ranging from {greaterThanOrEqual} to {lessThanOrEqual} on x axis
+  - draw a {color} box from {greaterThanOrEqual} to {lessThanOrEqual} on the x axis
+  - highlight the period between {greaterThanOrEqual} to {lessThanOrEqual} in the graph with {color} color
+  - add {color} background highlighting from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight the chart in {color} between {greaterThanOrEqual} and {lessThanOrEqual}
+  - emphasize the {greaterThanOrEqual} - {lessThanOrEqual} region at the background in {color}.
+  - graph between {greaterThanOrEqual} to {lessThanOrEqual} is highlighted with {color} box
+  - emphasize data between {greaterThanOrEqual} and {lessThanOrEqual} with a {color} background
+  - highlight vertical background of range {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the area between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - change the background to {color} for the range between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - mark {color} color from {greaterThanOrEqual} to {lessThanOrEqual} in x axis
+  - add a {color} background color from {greaterThanOrEqual} to {lessThanOrEqual} on the horizontal axis.
+  - overlay the chart with a {color} rectangle for data from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - place a {color} square behind the line on the graph and have it start from {greaterThanOrEqual} and extend to {lessThanOrEqual} in x direction
+  - show all values between {greaterThanOrEqual} and {lessThanOrEqual} with a {color} rectangle at the background 
+  - highlight graph between {greaterThanOrEqual} and {lessThanOrEqual}
+  - shade the area between {greaterThanOrEqual} and {lessThanOrEqual} in x axis
+  - shade the area of the chart from the beginning of {greaterThanOrEqual} to the beginning of {lessThanOrEqual} in {color} background
+  - create a non-transparent background from {greaterThanOrEqual} to {lessThanOrEqual} for x axis
+  - apply {color} shading from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - add a shaded box from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight the part ranging from {greaterThanOrEqual} to {lessThanOrEqual} using {color} box in background
+  - highlight the area on the graph between {greaterThanOrEqual} and {lessThanOrEqual} {color}
+  - fill the area of the lowest two {field} with {color} background
+  - please give a shadow to the zone from {greaterThanOrEqual} to {lessThanOrEqual} along x axis
+  - highlight the {field} {greaterThanOrEqual} to {lessThanOrEqual} with {color} as background color.
+  - add {color} background to points between {greaterThanOrEqual} and {lessThanOrEqual}
+  - emphasize {greaterThanOrEqual} through {lessThanOrEqual} filling a {color} background
+  - highlight area of graphic between {greaterThanOrEqual} and {lessThanOrEqual} in {color} box
+  - shade in the range from {greaterThanOrEqual} - {lessThanOrEqual} on the chart
+  - select all data between {greaterThanOrEqual} and {lessThanOrEqual} in solid {color}
+  - color background {color} between {greaterThanOrEqual} and {lessThanOrEqual}
+  - fill with {color} color from {greaterThanOrEqual} to {lessThanOrEqual}
+  - place a large {color} rectangle beginning from {greaterThanOrEqual} and stretch it to {lessThanOrEqual} in x axis
+  - '{color} scale the area of lowest average months in x direction'
+  - create a {color} square from {greaterThanOrEqual} to {lessThanOrEqual} of the x axis 
+  - highlight in {color} from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add a {color} highlight background in {color} to the values from 2018 to {lessThanOrEqual}
+  - emphasize with {color} to highlight area from {greaterThanOrEqual} to {lessThanOrEqual} in x
+  - add a block highlight to the graph between {greaterThanOrEqual} and {lessThanOrEqual} in {color}.
+  - highlight the area shown between {greaterThanOrEqual} to {lessThanOrEqual} in a {color} color.
+  - add a {color} shaded section from {greaterThanOrEqual} to {lessThanOrEqual} data points, highlighting the decline.
+  - create a box in {color} from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color} block.
+  - set the background color from {greaterThanOrEqual} to {lessThanOrEqual} to {color}
+  - only {greaterThanOrEqual} to {lessThanOrEqual} is marked with a light {color} color
+  - '{color} block is used to highlight information from {greaterThanOrEqual} to {lessThanOrEqual}'
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} period in {color}
+  - highlight the entire area between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - shade the lowest point in {color} from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the line area for periods from {greaterThanOrEqual} to {lessThanOrEqual} in {color} box.
+  - highlight the area from {greaterThanOrEqual} to {lessThanOrEqual} in {color}.
+  - use shaded portion in {color} to reveal growth between {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight {greaterThanOrEqual} - {lessThanOrEqual} sales in {color} rectangle.
+  - '{greaterThanOrEqual} to {lessThanOrEqual} to be marked with a {color} box'
+  - square box is filled with {color} colour from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight the {field} {greaterThanOrEqual} - {lessThanOrEqual} in {color} background.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the range from {greaterThanOrEqual} to {lessThanOrEqual}
+  - shade the time range from {greaterThanOrEqual} to {lessThanOrEqual} in {color} color
+  - add shaded {color} area from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add {color} rectangle from {greaterThanOrEqual} to {lessThanOrEqual}
+  - add a rectangular area for values from {greaterThanOrEqual} to {lessThanOrEqual}'
+  - highlight the range from {greaterThanOrEqual} to {lessThanOrEqual} with {color} box
+  - highlight from {greaterThanOrEqual} to {lessThanOrEqual}
+  - draw a box from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the area between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - plot a {color} bar over chart from {greaterThanOrEqual} to {lessThanOrEqual} to highlight.
+  - highlighted the graphic with a {color} area between {greaterThanOrEqual} and {lessThanOrEqual}
+  - shade the area of interest in {color} to show the range from {greaterThanOrEqual} to {lessThanOrEqual}
+  - shade the area of the chart where the value is from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the area around the value between {greaterThanOrEqual} and {lessThanOrEqual}
+  - shaded the portion of {greaterThanOrEqual} to {lessThanOrEqual} on the chart.
+  - put a {color} box along the values from {lessThanOrEqual} to {greaterThanOrEqual} on y axis
+  - highlight the graph with {color} color in range between {greaterThanOrEqual} and {lessThanOrEqual}
+  - add {color} highlight for range from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the chart in {color} from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight the graphical area in the background from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - blur the background by emphasizing the data from {greaterThanOrEqual} to {lessThanOrEqual} in y axis
+  - highlight background color of range {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - change the background color of the graph between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - mark the {greaterThanOrEqual} to {lessThanOrEqual} region with a {color} background filling the whole width.
+  - mark the area {color} color where the line ranges from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight the area between {greaterThanOrEqual} and {lessThanOrEqual} with a {color} background.
+  - overlay the chart with a {color} horizontal rectangle from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - place a {color} background behind the line on the graph between {greaterThanOrEqual} and {lessThanOrEqual}
+  - display all values between {greaterThanOrEqual} and {lessThanOrEqual} with a {color} background.
+  - highlight the results line on graph for the values {greaterThanOrEqual} to {lessThanOrEqual}
+  - set high and low limits at {lessThanOrEqual} and {greaterThanOrEqual} and draw a {color} rectangle 
+  - shade the area of the chart between {greaterThanOrEqual} and {lessThanOrEqual} on the vertical axis in {color}
+  - create a rectangular background behind the data range of {greaterThanOrEqual} to {lessThanOrEqual}
+  - apply {color} shading around the line for data ranged from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - create shaded range of {greaterThanOrEqual} to {lessThanOrEqual} through the horizon.
+  - highlight the area on the graph between {greaterThanOrEqual} and {lessThanOrEqual} {color}
+  - highlight the range between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - please give a shadow to the zone between {greaterThanOrEqual} and {lessThanOrEqual}
+  - make the background colour of the chart as {color} for the vertical region from {greaterThanOrEqual} to {lessThanOrEqual} 
+  - add {color} background to graph line for the {greaterThanOrEqual} to {lessThanOrEqual} range 
+  - highlight between {greaterThanOrEqual} and {lessThanOrEqual}
+  - shade the range between {greaterThanOrEqual} and {lessThanOrEqual} on the chart using color {color}
+  - highlight the area between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - shade line area background in {color} between {greaterThanOrEqual} and {lessThanOrEqual}
+  - emphasize selected data between {greaterThanOrEqual} and {lessThanOrEqual} with {color} rectangle.
+  - add a {color} box in the background of data in the range {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the range {greaterThanOrEqual} to {lessThanOrEqual} using {color} box
+  - highlight from {lessThanOrEqual} to {greaterThanOrEqual}
+  - indicate with {color} box between {lessThanOrEqual} and {greaterThanOrEqual}
+  - highlight with a rectangular box for the value range between {lessThanOrEqual} and {greaterThanOrEqual}.
+  - color the range from {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - add a {color} background for {greaterThanOrEqual} to {lessThanOrEqual} data values.
+  - emphasize {color} highlighting {greaterThanOrEqual} to {lessThanOrEqual} values on graph
+  - add a block highlighting on the chart between {lessThanOrEqual} and {greaterThanOrEqual}.
+  - highlight the area between {lessThanOrEqual} and {greaterThanOrEqual} in a {color} color.
+  - shade the data section in {color} between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - place a highlight box from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the line in {color} for {greaterThanOrEqual} to {lessThanOrEqual} range in y axis.
+  - change the background color to {color} for {greaterThanOrEqual} to {lessThanOrEqual} range
+  - only the {greaterThanOrEqual} to {lessThanOrEqual} portion is marked with a light {color} color
+  - '{color} box is used to highlight the plotted points between {greaterThanOrEqual} and {lessThanOrEqual}'
+  - highlight the space in graph between {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - add a shaded {color} box within the range from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the line bar for full range from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight the area from {greaterThanOrEqual} to {lessThanOrEqual} in {color}.
+  - highlight {greaterThanOrEqual} - {lessThanOrEqual} using {color} box
+  - shaded portion of {greaterThanOrEqual} to {lessThanOrEqual} using {color} color.
+  - highlight data region from {greaterThanOrEqual} to {lessThanOrEqual} in {color}.
+  - add a {color} box behind the line for the values {greaterThanOrEqual} to {lessThanOrEqual}
+  - '{color} colour filled in a rectangle box of the graph for values between {greaterThanOrEqual} to {lessThanOrEqual}'
+  - highlight range {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the range around the line from {greaterThanOrEqual} to {lessThanOrEqual} using {color} rectangle.
+  - shade the area between {greaterThanOrEqual} and {lessThanOrEqual}
+  - add shading of area in {color} color covering the data range of {greaterThanOrEqual} to {lessThanOrEqual} 
+  Parameters:
+  - Name: gte
+    EntityType: None
+    Templates:
+    - greater than or equals to
+    - higher than or equals to
+    - larger than or equals to
+    - more than or equals to
+    - '>='
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lte
+    EntityType: None
+    Templates:
+    - less than or equals to
+    - lower than or equals to
+    - smaller than or equals to
+    - '<='
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+    

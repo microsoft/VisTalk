@@ -16,9 +16,12 @@ describe('tests cases on stocks dataset', () => {
       'histogram of close'
     ],
     [
+      'distribution of close'
+    ],
+    [
       'close by date',
-      'add trend line from 2010 to 2016 in red',
-      'emphasize the slope increase from 2016 to 2020 in green',
+      'add trend line from 2010/1/1 to 2016/1/1 in red',
+      'emphasize the slope increase from 2016/1/1 to 2020/1/1 in green',
     ],
   ];
 

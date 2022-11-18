@@ -1,0 +1,205 @@
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual}' # add rect from min to average
+  - '{verb} the range from {greaterThanOrEqual} to {lessThanOrEqual} with {rect}'
+  - 'show a rect from {greaterThanOrEqual} to {lessThanOrEqual}'
+  - 'brush a range from {greaterThanOrEqual} to {lessThanOrEqual}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rectangle
+  - Name: greaterThanOrEqual
+    EntityType: DataAggregation
+    Templates:
+    - average
+    - min
+    - max
+    - median
+  - Name: lessThanOrEqual
+    EntityType: DataAggregation
+    Templates:
+    - average
+    - min
+    - max
+    - median
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual}' # add rect from 0 to average
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rect
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: DataAggregation
+    Templates:
+    - average
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rect
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: DataAggregation
+    Templates:
+    - min
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rect
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: DataAggregation
+    Templates:
+    - max
+
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rect
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: DataAggregation
+    Templates:
+    - median
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - 'add rect from {greaterThanOrEqual} to {lessThanOrEqual}' # add rect from sep 2012 to last
+  - '{verb} {rect} {prep} from {greaterThanOrEqual} to {lessThanOrEqual}' # add rect from sep 2012 to last
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rect
+    - rectangle
+    - box
+    - area
+  - Name: prep
+    EntityType: None
+    Templates:
+    -
+    - for
+    - where
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <date>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <date>
+
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual}'
+  - brush from {greaterThanOrEqual} to {lessThanOrEqual}
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rect
+    - rectangle
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+
+- Intents:
+  - AddRectangle
+  Templates:
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual} with {color}'
+  - '{verb} {rect} from {greaterThanOrEqual} to {lessThanOrEqual} in {color}'
+  - from {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - add
+  - Name: rect
+    EntityType: None
+    Templates:
+    - rect
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>

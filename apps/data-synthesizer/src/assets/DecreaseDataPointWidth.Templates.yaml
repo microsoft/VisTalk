@@ -1,0 +1,164 @@
+- Intents:
+  - DecreaseDataPointWidth
+  Templates:
+  - set {smaller} {target} width
+  - decrease {target} width
+  - change {target} diagram to lines {target} diagram
+  - decrease the thickness of the {target}
+  - make columns thinner
+  - change the width of the {target} to {smaller} ones
+  - reduce {target} thickness
+  - decrease the {target} width
+  - reduce {target} width
+  - make the {target} {smaller}
+  - shrink data {target} size
+  - reduce the thickness of the {target} in the graph
+  - use narrow {target} in the chart
+  - the {target} size is change
+  - reduce width of each {target}
+  - reduce the width of each {target} in the {chart}.
+  - make {target} {smaller}.
+  - increase the spacing between each {target}
+  - make the second charts vertical growth {target} thick
+  - change {target} size to {smaller}
+  - decrease graph {target} width
+  - set a {smaller} {target} width
+  - decrease {target} width
+  - reduce the thickness of {target}
+  - make the column {smaller}
+  - change the width of {target} to be {smaller}
+  - use a thin {target} to show the difference compared to the previous one
+  - decrease {target} thickness
+  - reduce {target} width
+  - make {target} {smaller}
+  - shrink data {target} size
+  - reduce the thickness of {target} in the image
+  - use narrow {target} in the chart
+  - reduce the width of each {target}
+  - reduce the width of each {target} in {chart}.
+  - narrow {target}.
+  - increase the spacing between each {target}
+  - make the second chart grow {target} thicker vertically
+  - change {target} size to be {smaller}
+  - reduce the width of the image {target}
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: target
+    EntityType: None
+    Templates:
+    - bar
+    - column
+    - data point
+  - Name: smaller
+    EntityType: None
+    Templates:
+    - smaller
+    - skinnier
+    - slimmer
+    - narrower
+    - thinner
+
+- Intents:
+  - DecreaseDataPointWidth
+  Templates:
+  - change the graph to {smaller} vertical {target}
+  - reduce the size of the {target}
+  - switch to to {smaller} {target}
+  - increase the spacing between the two {target} of the {chart}
+  - change the the width of the {target} and add space spaces between them
+  - increase spacing between {target}
+  - make the {target} {smaller}.
+  - thin {target} should be used in chart
+  - make the {target} {smaller}
+  - add spaces between {target}.
+  - change the thickness of the graph
+  - make the {target} {percent} more slender
+  - switch {chart} to thin {chart}
+  - add space in between vertical {target}.
+  - make the {target} thinner
+  - change thickness of {chart}
+  - space out the data
+  - change chart to {smaller} {target}
+  - space out the graphs more.
+  - change the thickness of the {target}
+  - reduce the thickness of the {target}
+  - make the {target} {smaller}
+  - show the gap of each
+  - make the {target} {smaller} by {percent} but keep the same width for the chart
+  - decrease the size of the {target} by {percent}
+  - squeeze the {target} to be narrow
+  - edit width of data columns to make {smaller}
+  - change the chart with narrowed columns
+  - space it out
+  - put more space between the {target}
+  - columns have to be thinner
+  - narrow {target} in graph
+  - split out data between values a-i in the {chart}.
+  - reduce the width of the {target} in the {chart}
+  - charge to a chart with thin {target}
+  - change to thinner {target}.
+  - giving some space
+  - change {chart} to {smaller} {chart}
+  - widen the {target}
+  - make the blocks more narrow
+  - make the {target} of the graph {smaller}.
+  - make the {target} skinnier.
+  - reduce the weight of each column
+  - add visual space between each entry on x axis
+  - simply make the {target} {smaller}
+  - the width is change to broad
+  - make all columns thinner
+  - use a {smaller} scale for the {chart}s. about half the size, same data.
+  - reduce girth of the {target}.
+  - increase thickness
+  - create a value distance in x axis
+  - make format more narrow
+  - make the {chart} skinnier
+  - make the columns for each element less wide
+  - display {smaller} {target}
+  - make the column {smaller}
+  - make the columns skinnier
+  - make the {target} on this {chart} {smaller}
+  - make the {target} more narrow
+  - make {target} more narrow
+  - change the chart design.
+  - increase the space between {target}
+  - decrease the thickness of {target}
+  - change graph as line representation
+  - change the graph to line graph
+  - change the chart type from vertical filled to column
+  - thickness of {target} changed
+  - changed the solid filled in graph to filled in lines
+  - change the chart fill type from solid blocks to thin lines.
+  - increase the gap width between {target} for the charted series.
+  - please make lines in the chart {smaller}
+  - chart has been changed from filled line to single line
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: percent
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: target
+    EntityType: None
+    Templates:
+    - bars
+    - columns
+    - lines
+  - Name: smaller
+    EntityType: None
+    Templates:
+    - smaller
+    - skinnier
+    - slimmer
+    - narrower
+    - thinner
+
+
+

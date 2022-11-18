@@ -1,0 +1,335 @@
+- Intents:
+  - BindX
+  - BindY
+  - SetChartType
+  Templates:
+  - create a {chart} for {aggr} break down by {field}
+  - '{chart} of avg ({aggr_avg}) vs alphabetical order {sorted}'
+  Parameters:
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - column chart
+    - line chart
+    - stacked column chart
+
+- Intents:
+  - BindX
+  - BindY
+  - SetChartType
+  Templates:
+  - show {field} and number of {aggr_count} {chart}
+  - show {aggr} by {field} and {field} render {chart}
+  - show {field} and number of {aggr_count} as a {chart}
+  - create a {chart} showing {aggr} by {field}
+  - create a {chart} for {aggr} break by {field}
+  - create a {chart} that shows the total {aggr_sum} per {field}
+  - draw a {chart} with total {aggr_sum} by different {field}
+  - show a {chart} with total {aggr_sum} by {field}
+  - '{aggr} and {aggr} by {field} as {chart}'
+  - '{aggr} by {field} , {field} as {chart}'
+  - '{aggr} by {field} as {chart}'
+  - total {aggr_sum} over {field} as {chart} .
+  - use a {chart} to show number of {aggr_count} by {field}
+  - use a {chart} to show number of different {aggr_dcount} of {field}
+  - show a {chart} of {field} and sum of {aggr_sum}
+  - 'total {aggr_sum} by {field} as {chart}'
+  - average {aggr_avg} by {field} as a {chart}
+  - show total {aggr_sum} by {field} as a {chart}
+  - show {aggr} by {field} as a {chart}
+  - for {field} , show total {aggr_sum} by {field}
+  - show max {aggr_max} by {field} as a {chart}
+  - total {aggr_sum} by {field} as a {chart}
+  - show median {aggr_median} by {field} as a {chart}
+  - show min {aggr_min} by {field} as a {chart}
+  - show {field} and total {aggr_sum} in a {chart}
+  - show {field} and number of {aggr_count} {chart}
+  - show {field} and number of {aggr_count} as an {chart}
+  - show {field} and {aggr} as an {chart}
+  - show average {aggr_avg} by {field} as a {chart}
+  - show total {aggr_sum} by {field} as a {chart}
+  - show average {aggr_avg} by {field} as a {chart}
+  - show {chart} shows total {filter} and {filter} {aggr_sum} for different {field}
+  - show a {chart} with count of {aggr_count} by {field}
+  - show sum of {aggr_sum} by {field} in a {chart}
+  - show me total {aggr_sum} over time as {chart} .
+  - total {aggr_sum} by {field} as an {chart}
+  - show {field} and {aggr} as a {chart}
+  - show {field} and number of {aggr_count} as a {chart}
+  - '{filter} {aggr} by {field} as {chart}'
+  - show {filter} {aggr} by {field} as {chart}
+  - a {chart} of {aggr} by {field}
+  - give me a {chart} of {aggr} by {field}
+  - show a {chart} of {filter} {aggr} by {field}
+  - as a {chart} , show {field} and number of {aggr_count}
+  - as a {chart} , show {field} and {aggr}
+  - show as a {chart} , {field} and number of {aggr_count}
+  - count {aggr_count} by {field} as {chart}
+  - the number of {aggr_count} of each {chart} and its {field}
+  - how many {aggr_count} use same {chart} {field} ?
+  Parameters:
+  - Name: date
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_min
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_max
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_sum
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_median
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_dcount
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_count
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: greaterThan
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: greaterThanOrEqual
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: lessThan
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: equal
+    EntityType: Filter
+    Templates:
+    - <number>
+
+- Intents:
+  - BindX
+  - BindY
+  - SetChartType
+  Templates:
+  - total {aggr_sum} by {field} between {greaterThanOrEqual} and {lessThanOrEqual} as a {chart}
+  Parameters:
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_min
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_max
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_sum
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_median
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_dcount
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_count
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: greaterThan
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: greaterThanOrEqual
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: lessThan
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: lessThanOrEqual
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: equal
+    EntityType: Date
+    Templates:
+    - <date>
+
+- Intents:
+  - BindX
+  - BindY
+  - SetChartType
+  Templates:
+  - total {aggr_sum} by {field} and {field} as {chart}
+  - show a {chart} for total {aggr_sum} by {field} and {field}
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - clustered column chart
+    - clustered bar chart
+    - clustered column
+    - clustered bar
+    - stacked column chart
+    - stacked bar chart
+    - stacked column
+    - stacked bar
+    - stacked area chart
+    - stacked area
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_avg
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_min
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_max
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_sum
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_median
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggr_dcount
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr_count
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: subject
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: greaterThan
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: greaterThanOrEqual
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: lessThan
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: lessThanOrEqual
+    EntityType: Date
+    Templates:
+    - <date>
+  - Name: equal
+    EntityType: Date
+    Templates:
+    - <date>

@@ -1,0 +1,89 @@
+- Intents:
+  - IncreaseDataPointWidth
+  Templates:
+  - change the graph to ticker lines.
+  - make the graph line bold
+  - thick line for {chart}.
+  - the graphic line is bold
+  - the line in the chart show in bold.
+  - change the charted line from normal to bold
+  - make the line on the chart bold
+  - bold the line
+  - make the line bolder
+  - make the curve bold.
+  - make the line thicker.
+  - make the {chart} bolder
+  - make the trend line into bold.
+  - graph line has been made dark for better visibility
+  - emphasize the data line in bold
+  - change graph line type to bold
+  - make the line thicker.
+  - make the line thicker, the line for the data i mean.
+  - highlight the fine line
+  - make the graph line thicker.
+  - make the line bold.
+  - highlight the graph is dark broad line
+  - make {chart} bold.
+  - make the line on the graph a dark line.
+  - make {chart} bold.
+  - make graph results line bold.
+  - set line bold
+  - increase the line width of the graph line
+  - bold the data line
+  - bold the line.
+  - change line size to 6 point.
+  - make the lines bold
+  - make the line bolder in color
+  - make the line bold
+  - make the line bold
+  - please make the line bolder
+  - increase the line width in the chart.
+  - make graph line bold
+  - bold the charted line
+  - put the graphic line in bold
+  - make the chart line bolder
+  - make the graph line bolder
+  - show line in bold
+  - change  thin {chart} and make it thicker and bolder
+  - double the size of the line in the graph
+  - can you make the line bold
+  - increase thickness of graph line
+  - use a thick bold line to connect the chart values
+  - make the line twice as thick
+  - make the {chart}'s line stand out more and bold it
+  - emphasize bold line in graph
+  - thicken the weight of the {chart}.
+  - highlight the graph line to make it thicker.
+  - make the data line more bold.
+  - increase thickness of graph line
+  - make the line thicker.
+  - bold the line
+  - thick lines with the same graphical lines
+  - line is made thicker
+  - show thick graph line
+  - make graph bold
+  - increase the thickness of the graph line
+  - show the line in a bold {color} color
+  - bold the line bar .
+  - make the graph line bold.
+  - dark {color} shows a graph.
+  - make the line bold
+  - darkness in the line
+  - line indentation is bolder .
+  - bold the graph
+  - the bar was bolded
+  - increase thickness of graph
+  - make the line easier to read.
+  - make the {color} line waves darker
+  - please make the line in bold
+  - the lines are differ thin and thick
+  - make the {chart} line thicker
+  Parameters:
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>

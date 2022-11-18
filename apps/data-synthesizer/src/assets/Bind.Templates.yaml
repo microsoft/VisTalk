@@ -1,0 +1,94 @@
+# BindAxis - specifies the intention to set the data fields of X Axis and/or Y Axis.
+# Expected Entities:
+# - field: the data field on X axis
+# - aggr: the data field on Y axis
+- Intents:
+  - BindX
+  Templates:
+  - '{verb} {field} {field_prep_axis} {x_axis}'
+  - '{verb} {x_axis} {field_prep_axis} {field}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - assign
+    - bind
+    - encode
+    - specify
+  - Name: x_axis
+    EntityType: None
+    Templates:
+    - x axis
+  - Name: field_prep_axis
+    EntityType: None
+    Templates:
+    - with
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+- Intents:
+  - BindY
+  Templates:
+  - '{verb} {aggr} {field_prep_axis} {y_axis}'
+  - '{verb} {y_axis} {field_prep_axis} {aggr}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - assign
+    - bind
+    - encode
+    - specify
+  - Name: y_axis
+    EntityType: None
+    Templates:
+    - y axis
+    - value axis
+  - Name: field_prep_axis
+    EntityType: None
+    Templates:
+    - with
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+- Intents:
+  - BindX
+  - BindY
+  Templates:
+  - '{verb} {field} {field_prep_axis} {x_axis} {aggr} {field_prep_axis} {y_axis}'
+  - '{verb} {field} {field_prep_axis} {x_axis} and {aggr} {field_prep_axis} {y_axis}'
+  - '{verb} {aggr} {field_prep_axis} {y_axis} {field} {field_prep_axis} {x_axis}'
+  - '{verb} {aggr} {field_prep_axis} {y_axis} and {field} {field_prep_axis} {x_axis}'
+  - '{verb} {x_axis} {field_prep_axis} {field} and {y_axis} {field_prep_axis} {aggr}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - assign
+    - bind
+    - encode
+    - specify
+  - Name: x_axis
+    EntityType: None
+    Templates:
+    - x axis
+    - category axis
+  - Name: y_axis
+    EntityType: None
+    Templates:
+    - y axis
+    - value axis
+  - Name: field_prep_axis
+    EntityType: None
+    Templates:
+    - with
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>

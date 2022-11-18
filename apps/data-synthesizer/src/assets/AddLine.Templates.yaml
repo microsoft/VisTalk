@@ -1,0 +1,166 @@
+- Intents:
+  - AddLine
+  Templates:
+  - add dotted line at {value}
+  - show a vertical line to show {value}
+  - added a dashed line at {value}
+  - '{color} dashed line to show which bar is over {value}'
+  - put a mark at {value}
+  - the top bars able to cross a {value} mark.
+  - add a vertical line at the {value} mark through the top of the chart
+  - add a line at {value}.
+  - draw a vertical dotted line at {value}
+  - put a filter line to help illustrate the companies having income more than {value}
+  - place a dotted line marked on the x-axis at {value}
+  - add vertical separator line at {value}
+  - add a dotted line showing {value}.
+  - i want a dotted vertical line to mark {value}.
+  - add vertical line for {value}.
+  - use a dashed line to show the value at {value}
+  - add a vertical dashed {color} line up from {value}.
+  - draw a vertical dashed {color} line at  {value}.
+  - add a vertical line extending up from the {value} mark on the line and going just past the top of the bar for fusion.
+  - indicate {value} units on graph.
+  - add dashed goal line at {value}
+  - add a vertical {color} dashed line at the {value} value, underneath the bars
+  - show a broken guide line marking {value} on the graph.
+  - insert a broken cutoff line at {value} point.
+  - add dotted line at {value} across the dataset.
+  - divide on {value}
+  - draw a dashed {color} line at {value}
+  - insert a guideline at {value}
+  - '{value} limit break'
+  - draw a dotted line from {value} up
+  - draw a vertical dotted line for column {value}.
+  - add vertical dotted line at {value} point
+  - show each vehicle at the {value} mark
+  - put a dashed line at {value}
+  - add a dotted vertical line that goes through all values and is parallel to the y axis at the {value} value on the x axis
+  - highlight {value} using a vertical dotted line
+  - show vertical dashed line at {value} on x axis
+  - "draw a dotted line on {value}"
+  - insert a {color} vertical dotted line start from {value}
+  - insert the dotted line at {value}
+  - indicate {value} sales by vertical line
+  - add a vertical dotted line at {value}
+  - extend a vertical dashed line from the {value} axis x value
+  - add a vertical, dotted line going up from {value}.
+  - draw a dotted line vertically, from {value} as starting point.
+  - add a vertical dashed line at {value}.
+  - place a vertical line at {value} wrapped behind the text
+  - add a dotted line at the {value} mark.
+  - highlighted lines in {value} is marked towards vertically
+  - draw reference line in {color} to show which all brands have crossed {value} users
+  - place a vertical {color} dotted line at {value}
+  - add a {color}, vertical spaced line where {value} is.
+  - at {value} add a {color} dashed line going up past fusion
+  - dotted lines shows on {value} ,space increases in dotted lines from bottom to top.
+  - in graph {value} was drawn in perpendicular line is drawn
+  - insert a break line at {value}
+  - add vertical dotted {color} line across graph at {value}
+  - added a dotted line at {value}
+  - '{color} dashed line shows which bar exceeds {value}'
+  - mark at {value}
+  - ability to go over the top bar of {value} tags.
+  - add a vertical line at the {value} marker at the top of the chart
+  - draw a vertical dashed line at {value}
+  - place a filter line to help describe companies with revenue over {value}
+  - place a marked dashed line at {value} on the x-axis
+  - add vertical divider at {value}
+  - add a dashed line showing {value}.
+  - i want a vertical dashed line to mark {value}.
+  - add vertical line to {value}.
+  - display the car model at {value} with a dashed line
+  - add a vertical dashed {color} line from {value}.
+  - draw a vertical dotted line {color} at {value}.
+  - adds a vertical line extending up from the {value} marker on the line and just past the top of the bar for blending.
+  - mark {value} units on the graph.
+  - add dashed target line at {value}
+  - adds a vertical {color} dashed line below the bar at the {value} value
+  - show broken reference line markers {value} on the graph.
+  - insert a broken cutoff at {value} point.
+  - add a dashed line at {value} of the dataset.
+  - divide by {value}
+  - draw a dotted line {color} at {value}
+  - insert guideline at {value}
+  - draw a dotted line up from {value}
+  - draw a vertical dashed line for column {value}.
+  - display each vehicle at the {value} tag
+  - draw a dotted line at {value}
+  - add a vertical dashed line parallel to the y-axis through all values at the {value} value of the x-axis
+  - highlight {value} with vertical dotted line
+  - display a vertical dashed line at {value} on the x-axis
+  - "draw a dotted line over {value}"
+  - insert a vertical dashed line of {color} starting at {value}
+  - insert dotted line at {value}
+  - represent {value} sales as a vertical line
+  - add a vertical dashed line at {value}
+  - add a vertical dashed line up from {value}.
+  - draw a vertical dashed line starting from {value}.
+  - put a vertical line at {value}, wrapped behind the text
+  - add a dotted line at the {value} marker.
+  - line vertical marker highlighted in {value}
+  - draw guides in {color} to show which brands have crossed {value} users
+  - place a vertical {color} dashed line at {value}
+  - add {color}, vertical spacer line where {value} is.
+  - add a {color} dashed line up past fusion at {value}
+  - the dotted line is displayed on {value}, the dotted line increases from bottom to top.
+  - in the plot {value} is drawn as a vertical line is drawn
+  - insert a newline at {value}
+  - add vertical dashed {color} line at {value}
+  - add line {value} in {color}
+  Parameters:
+  - Name: value
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+
+- Intents:
+  - AddLine
+  Templates:
+  - plot a reference line at the {value}.
+  - draw a line in the {value}
+  - add line in {value}
+  - add line {value}
+  - add line {value} in {color}
+  - add {value} line
+  - add horizontal line to show {value}
+  - draw a dashed line in {value}
+  - mark the {value} with a dotted {color} line
+  - put a partition in {value} and divide the graph in two halves.
+  - highlight center dotted lines
+  - dictate the {value} for all brands
+  - insert dotted line at {value}
+  - print dotted line at the {value} of all
+  - emphasize dotted line on graph in {value}
+  - draw a dotted line at {value}
+  - draw a dotted {value} line
+  - highlight the {value} of products sold with {color} dotted line
+  - add a dotted line to the {value} part of the chart
+  - draw a dotted line for {value} value.
+  - show the {value} range
+  - identify the {value} number in {value}
+  - a {color} dot line is drawn vertically in {value}
+  - vertical dots at the background image in {value}
+  - mark {value} value with vertical dotted line.
+  - insert dotted line halfway
+  - put a dotted line in {color} at {value}
+  - vertical line is added at midway point
+  Parameters:
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: value
+    EntityType: DataAggregation
+    Templates:
+    - average
+    - min
+    - middle
+    - max
+    - median
+    - mid

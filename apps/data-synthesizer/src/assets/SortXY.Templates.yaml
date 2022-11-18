@@ -1,0 +1,56 @@
+- Intents:
+  - SortDesc
+  Templates:
+  - '{sort_verb} {sorted} {sort}'
+  Parameters:
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sort
+    EntityType: None
+    Templates:
+    - descending
+    - desc
+    - high to low
+    - large to small
+    - largest to smallest
+    - largest first
+    - with highest on top
+    - with lowest on bottom
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - x
+    - y
+
+- Intents:
+  - SortAsc
+  Templates:
+  - '{sort_verb} {sorted} {sort}'
+  Parameters:
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sort
+    EntityType: None
+    Templates:
+    - asc
+    - ascending
+    - low to high
+    - small to large
+    - smallest first
+    - with lowest on top
+    - with highest on bottom
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - x
+    - y

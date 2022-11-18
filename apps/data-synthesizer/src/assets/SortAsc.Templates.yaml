@@ -1,0 +1,309 @@
+- Intents:
+  - SortAsc
+  Templates:
+  - Arrange the bars from shortest to tallest of values
+  - Change the graph to increasing values
+  - Sort by {sorted} in an ascending way.
+  - Sort by {sorted} ascending
+  - arrange the bar in ascending order of numerical values
+  - Sort the column by {sorted} ordered from small to large
+  - Sort {sorted} by lowest to highest
+  - Charted {sorted} values arranged in ascending order
+  - Sort the {chart} in ascending order of {sorted}
+  - Sort the bars in ascending order of numerical value
+  - Sort by {sorted} in ascending order
+  - make use of bars according to their ascending order of {sorted}
+  - Sort the {chart} from low to high of {sorted} value
+  - Arrange bars by ascending value of {sorted} value
+  - change the chart to ascending order of {sorted}
+  - Mark the increasing {chart} of {sorted}
+  - Put the bars in order from least to greatest of {sorted}
+  - organize {chart} from smallest to greatest of {sorted} value
+  - Display {sorted} values from smallest to largest
+  - Make ascending order in {sorted}
+  - Rearrange the {sorted} values in increasing value
+  - Sort bars by lowest {sorted} value first 
+  - Change it to a incremental {chart} of {sorted}
+  - Order from lowest to highest for {sorted}
+  - order chart {sorted} values, low to high
+  - Put it from least to greatest based on {sorted} value
+  - organize bars in ascending order of {sorted}
+  - Change the bars into ascending order of {sorted}
+  - ordenate from lower to higher of {sorted}
+  - SORT BY ascending {sorted} ORDER
+  - Reorder the bars from lowest to highest for {sorted} values
+  - Sort the bars on the chart from low to high of {sorted} values 
+  - Sort data points by {sorted} from smallest to largest
+  - Change chart with {sorted} values from lower values to higher
+  - Placing the data in a increasing way for {sorted} values
+  - Show in ascending order of {sorted}
+  - organize chart from the smallest to the highest results for {sorted} axis
+  - Order columns from lower {sorted} value to higher value
+  - Order {sorted} values from smallest to largest
+  - Rearrange the {sorted} columns in ascending order of value
+  - change the chart to increasing {sorted} values
+  - organize by least to most of {sorted} values 
+  - Sort by {sorted} axis values lowest to highest
+  - Sort the {chart} in ascending order of {sorted}
+  - sort chart from lowest to highest {sorted} value
+  - Order the items on from least to greatest {sorted} values
+  - Rearrange the data from lowest to highest {sorted}
+  - Arrange the items based on {sorted} with lowest values to higher values
+  - Order bars from shortest to tallest of {sorted}
+  - Reorder entries from lowest value to highest value of {sorted}
+  - Put all data in order from littlest to biggest {sorted}
+  - organize the chart from low to high {sorted}
+  - Arrange Chart Values order lowest to highest of {sorted}
+  - Sort axis {sorted} order to low to high
+  - Change the {chart} so that it is by smallest to greatest of {sorted}
+  - order the {sorted} by increasing value
+  - order entries from least to greatest of {sorted}
+  - order column from smaller to taller {sorted} values
+  - put data in increasing order of {sorted}
+  - Order the data on this {chart} from smallest to greatest on the {sorted} value
+  - Plot the {chart} in increasing order of {sorted} axis
+  - ALLIGN CHART FROM LESS TO MORE OF {sorted}
+  - Sort {chart} in increasing order of {sorted}
+  - sort {sorted} from least to greatest
+  - make the chart in ascending order of {sorted}
+  - Rearrange the bars to go lowest to highest according to {sorted} value
+  - order bars in increasing order by {sorted} value
+  - Sort chart by smallest number first for {sorted} axis
+  - arrange the chart by ascending order of {sorted} values
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+
+
+    
+- Intents:
+  - SortAsc
+  Templates:
+  - '{sort_verb} {sorted} {in} {sort} order'
+  Parameters:
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+    - x
+    - y
+  - Name: in
+    EntityType: None
+    Templates:
+    - 
+    - in
+  - Name: sort
+    EntityType: None
+    Templates:
+    - asc
+    - ascending
+
+- Intents:
+  - SortAsc
+  Templates:
+  - '{sort_verb} {aggregation} {sorted} {in} {sort}'
+  Parameters:
+  - Name: sort_verb
+    EntityType: None
+    Templates:
+    - sort by
+    - sort
+    - order by
+    - order
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - total
+    - average
+    - sum
+  - Name: in
+    EntityType: None
+    Templates:
+    - 
+    - in
+  - Name: sort
+    EntityType: None
+    Templates:
+    - asc
+    - ascending
+    - low to high
+    - small to large
+    - smallest first
+    - with lowest on top
+    - with highest on bottom
+
+
+
+- Intents:
+  - SortAsc
+  Templates:
+  - sort {sorted} alphabetically
+  - change the order of the values on the x axis asc
+  - organize {sorted} values asc
+  - change the order of x values asc
+  - sort by {sorted} asc
+  - put it in alphabetical order
+  - alphabetical arrangement the chart
+  - sort alphabetically by {sorted} asc
+  - sort {sorted} column from a to z
+  - sort {sorted} in alphabetical order.
+  - sort entries by {sorted} in ascending alphabetical order
+  - sort {sorted} by alphabetical order
+  - sort {sorted} in alphabetical order.
+  - sort the {sorted} column by alphabetical order
+  Parameters:
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - x
+    - y
+
+- Intents:
+  - SortAsc
+  Templates:
+  - sort by {sorted} asc
+  - sort {sorted} asc
+  - sort {sorted} from lowest to highest
+  - order {sorted} asc
+  - alphabetical arrangement the chart
+  - put it in alphabetical order
+  - arrange the bars from left to right starting with shortest to tallest
+  - change the graph to increasing values
+  - arrange the bar in ascending order
+  - charted values arranged in ascending order
+  - sort the {chart} in ascending order
+  - sort the bars in ascending order
+  - sort x axis by y axis in ascending order
+  - make use of bars according to their ascending order
+  - sort the {chart} from low to high
+  - arrange bars by ascending value
+  - change the chart to ascending order
+  - mark the increasing {chart}
+  - put the bars in order from least to greatest
+  - organize {chart} from smallest to greatest
+  - display x axis values from smallest to largest
+  - make ascending order in x axis
+  - rearrange the a values in increasing value
+  - sort bars by lowest value
+  - change it to a incremental {chart}
+  - order from lowest to highest
+  - order chart x values, low to high
+  - put it from least to greatest
+  - organize bars in ascending order
+  - change the bars into ascending order
+  - ordenate from lower to higher
+  - sort by ascending order
+  - reorder the bars from lowest to highest
+  - sort the bars on the chart from low to high
+  - sort data points columns by smallest to largest
+  - change chart with a values from lower values to higher
+  - placing the data in a increasing way
+  - show in ascending order
+  - organize chart from the smallest to the highest results
+  - order columns from lower value to higher value
+  - order values from smallest to largest
+  - rearrange the columns in ascending order of value
+  - change the chart to increasing values
+  - organize by least to most
+  - sort x axis by y axis values lowest to highest
+  - sort the {chart} in ascending order
+  - sort chart from lowest to highest
+  - order the items on the x axis from least to greatest
+  - rearrange the data from lowest on the left down to highest on the right
+  - arrange the items with lowest values to higher values
+  - order bars from shortest to tallest
+  - reorder entries on x axis from lowest value to highest value
+  - put all data in order from littlest to biggest
+  - organize the chart from low to high
+  - arrange chart values order lowest to highest
+  - sort axis a order to low to high
+  - change the {chart} so that it is no longer alphabetical but by smallest to greatest
+  - order the a axis by increasing value
+  - order entries from least to greatest frequency
+  - order column from smaller to taller
+  - put data in increasing order
+  - order the data on this {chart} from smallest to greatest on the y axis value
+  - plot the {chart} in increasing order
+  - align chart from less to more
+  - sort {chart} in increasing order
+  - sort a to i from least to greatest
+  - make the second chart bar in ascending order
+  - rearrange the letters to go lowest to highest
+  - order bars in increasing order by value
+  - sort chart by smallest number
+  - arrange the chart type by ascending order
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+
+
+
+- Intents:
+  - SortAsc
+  Templates:
+  - sort {by} {sorted} {in} {sort}
+  - order {by} {sorted} {in} {sort}
+  - show {sorted} sorted {in} {sort}
+  - sort {by} {sorted} {in} {sort}
+  - order {by} {sorted} {in} {sort}
+  - sort {by} {sorted} {in} {sort}
+  - show {sorted} sorted {in} {sort}
+  - show {sorted} sorted {in} {sort}
+  - order {by} {sorted} {in} {sort}
+  - sort {by} {sorted} {in} {sort}
+  Parameters:
+  - Name: sorted
+    EntityType: DataField
+    Templates:
+    - <column>
+    - <measure>
+    - x
+    - y
+  - Name: by
+    EntityType: None
+    Templates:
+    - 
+    - by
+  - Name: in
+    EntityType: None
+    Templates:
+    - 
+    - in
+  - Name: sort
+    EntityType: None
+    Templates:
+    - asc
+    - ascending
+    - low to high
+    - small to large
+    - smallest first
+    - with lowest on top
+    - with highest on bottom

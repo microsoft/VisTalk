@@ -1,0 +1,108 @@
+- Intents:
+  - Highlight
+  Templates:
+  - highlight top {top_n} {field} in {color}
+  - highlight the {top_n} biggest bars to the color {color}.
+  - highlight of top {top_n} performing categories in {color}
+  - highlighted {filter} and {filter} bars in {color}.
+  - the best selling bar is {filter} and {filter} in {color}.
+  - change the top {top_n} bars to a {color} color
+  - highlight the top {top_n} performing vehicle {field} in {color}
+  - highlight {filter} and {filter} in {color}.
+  - highlight {filter} and taurus bars.
+  - highlight the bars in the graph representing {filter} {color}
+  - highlight the {filter} and {filter} bar with {color} color.
+  - highlight the {filter} and {filter} bars in {color}.
+  - highlight the top {top_n} {filter} in {color}.
+  - highlight the top {top_n} values in {color} color.
+  - highlighted top {top_n} performing bars in {color} color
+  - highlight top {top_n} bar in {color} color
+  - highlight the bars for the top {top_n} brands.
+  - highlight the {top_n} highest with {color}.
+  - highlight the {top_n} biggest bars in {color} color
+  - highlight top {top_n} bar in {color} color
+  - highlight the highest {top_n} bars in {color}.
+  - highlight top {top_n} bar in {color} color
+  - '{top_n} {color} color for top {top_n} {field}'
+  - highlight largest bars in {color}.
+  - highlight the bars for {filter} and {filter}.
+  - highlight top {top_n} bars {color}
+  - change edge and {filter} bars to {color}.
+  - highlight top {top_n} bar in {color} color 
+  - emphasize best selling {top_n} {field} in {color}
+  - highlight {filter} and {filter} in {color}.
+  - highlight the {filter} and {filter} bars in {color}
+  - highlight {filter} and {filter} brands
+  - highlight the best selling {top_n} models in {color}.
+  - highlight the top {top_n} models in {color}.
+  - highlight {filter} and fusion to a {color} color
+  - highlight top {top_n} bars
+  - highlight {filter} and {filter} bar {color}
+  - highlight the highest {top_n} in {color}
+  - highlight the top sections in {color}
+  - highlight the bar of {filter} and fusion brands with {color} color.
+  - change {filter} and {filter} bars from {from} to {color}
+  - highlight top {top_n} bar.
+  - highlight "{filter} and fusion" in {color} color
+  - highlight {filter} and {filter} in {color}
+  - highlight the {filter} and {filter} bars in {color}
+  - highlight top {top_n} highest columns in {color}
+  - highlight top {top_n} bar in {color} color"
+  - emphasize best selling {top_n} {field} in {color}
+  - highlight top {top_n} bars in {color}
+  - highlight top {top_n} in {color}
+  - highlight the highest bars
+  - highlight top sellers in {color} color
+  - '{filter} and fusion is the best selling bar. that color was {color}'
+  - highlight in {color} the top models
+  - make the {top_n} longest bars {color}
+  - highlight {filter} and {filter} by making those bars {color}.
+  - emphasize best {top_n} best selling brands in {color}
+  - highlight the {top_n} highest bars {color}.
+  - highlight the {filter} column and the {filter} column in {color} color.
+  - change the color of the top {top_n} to {color} instead of {from}.
+  - highlight the {top_n} highest bars in {color}
+  - make {filter} and {filter} {color}.
+  - highlight top {top_n} in {color}
+  - highlighted {filter} and {filter} in {color}
+  - highlight the best selling in color {color}.
+  - highlight best selling {field} in {color}
+  - highlight '{filter}' and '{filter}' bars in {color}
+  - highlight the top bars in {color}
+  - highlight top {top_n} bar in {color} color
+  - highlight top {top_n} brands in {color}.
+  - highlight the {filter} and {filter} bar as {color}.
+  - highlight top {top_n} bar in {color}
+  - highlight top selling car model's in {color}
+  - in {color} make {filter} and fusion
+  - '{filter}, fusion in {color} color'
+  - '{filter} and fusion bars are in {color} colour.'
+  - highlight {top_n} top selling {field}
+  - the highest {top_n} bars are indicated in {color}
+  - highlight top {top_n} in {color}
+  - emphasize the highest {top_n} bars using {color}
+  - highlight top {top_n} bar in {color} color
+  - mark the {top_n} top ones in {color}
+  - the {top_n} bar in {color} line is {filter} and fusion
+  - highlight {filter} and fusion bars using {color}
+  Parameters:
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>

@@ -6,7 +6,6 @@ import { DataProvider } from './data';
 
 /**
  * Convert intent and sequence label/entities to EditAction.
- *
  * @export
  * @param {DataProvider} dataProvider data provider/context.
  * @param {string} intent model predicted intent name
@@ -272,7 +271,10 @@ export function createEditAction(dataProvider: DataProvider, intent: string, ter
     case 'SortAsc': {
       const sortFields = terms.filter(x => x.tag === 'sorted').map(x => x.entity) as FieldEntity[];
       const field = sortFields.length === 0 ? undefined : sortFields[0].field;
-      return { type: 'Sort', direction: 'asc', field };
+      const xy = terms.filter(x => x.tag === 'sorted').filter(x => x.text === 'x' || x.text === 'y');
+      console.log({xy, terms});
+      const axis = xy.length > 0 && xy[0].text === 'x' ? 'x' : 'y';
+      return { type: 'Sort', direction: 'asc', field, axis };
     }
 
     case 'SortDesc': {

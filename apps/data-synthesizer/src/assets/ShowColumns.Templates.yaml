@@ -1,0 +1,125 @@
+- Intents:
+  - ShowColumns
+  Templates:
+  - arrange them in {number} columns
+  - readjust charts into make visual more organized into {number} sections.
+  - change the display of each chart to display them in a square instead of a column.
+  - arrange the graphs side by side
+  - rearrange the images in {number} x N format.
+  - layout graphs in {number} by {number} grid
+  - create {number} by {number} grid of the graphs.
+  - display charts in {number} rows
+  - use a {number} column grid to show the bar charts
+  - arrange charts into two {number} rather than one.
+  - changes the position of the graphs, from one below the other to {number} to {number} neighbors
+  - please replace all charts in {number} rows
+  - change orientation from {number} x 1 to {number} x 1
+  - arrange the graphs in a {number} x {number} square
+  - rearrange charts in the format {number} x {number}.
+  - create a {number} square design
+  - change the graphs into a {number} by {number} formation
+  - arrange the charts {number} per row
+  - collaborate all the chart into one
+  - group charts together.
+  - arrange the different graphs {number} columns
+  - arrange the graphs in square format.
+  - organize data charts into a box formation
+  - put the charts in a {number} by {number} grid
+  - layout the graphs so that there are {number} graphs in each row
+  - organize graphs {number} per row.
+  - since there more chart
+  - arrange the charts in a {number} x {number} fashion
+  - make the chart arrangement of {number} x {number}
+  - the diagram shows two increasing products selling
+  - organize the 4 graphs into a {number} x {number} quadrant.
+  - rearrange charts from column to {number} x {number} grid
+  - place all graphs in {number} x {number} grid.
+  - arrange the charts in a {number} by {number} grid.
+  - make the graph placement into a grid of {number} instead of a line
+  - display the bar graphs in a {number} x {number} array instead of a single column.
+  - adjust the data to {number} lines instead of single.
+  - make the charts in {number} columns
+  - organize the four graphs in a square shape.
+  - change layout to {number} columns
+  - rearrange the order of graphs
+  - distribute charts on {number} lines
+  - change graphs to appear in a square format
+  - join the graphs into a square of {number} collected graphs.
+  - arrange graphs in a grid
+  - move graphs to turn into a {number} x {number} grid
+  - place graphs next to each other so there are {number} columns
+  - place the four charts into a {number} x {number} set up
+  - re arrange the structure of graph table
+  - separate graph readings
+  - place the graphs into {number} rows
+  - change the order of this graph into {number} x {number}
+  - place the graphs in square collective pattern instead of a linear pattern
+  Parameters:
+  - Name: number
+    EntityType: Number
+    Templates:
+    - <number>
+
+- Intents:
+  - ShowColumns
+  Templates:
+  - '{verb_prep} {verb} {number}'
+  - in {number} columns
+  Parameters:
+  - Name: verb_prep
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+  - Name: verb
+    EntityType: None
+    Templates:
+    - show columns
+  - Name: number
+    EntityType: Number
+    Templates:
+    - <number>
+- Intents:
+  - ShowColumns
+  Templates:
+  - '{verb_prep} {verb} {number} columns'
+  Parameters:
+  - Name: verb_prep
+    EntityType: None
+    Templates:
+    -
+    - please
+    - pls
+  - Name: verb
+    EntityType: None
+    Templates:
+    - layout to
+  - Name: number
+    EntityType: Number
+    Templates:
+    - <number>
+
+- Intents:
+  - ShowColumns
+  Templates:
+  - '{verb_prep} {verb} {field} in {number} columns'
+  - '{verb_prep} {verb} {field} in {number} column'
+  Parameters:
+  - Name: verb_prep
+    EntityType: None
+    Templates:
+    -
+    - please
+  - Name: verb
+    EntityType: None
+    Templates:
+    - arrange by
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: number
+    EntityType: Number
+    Templates:
+    - <number>

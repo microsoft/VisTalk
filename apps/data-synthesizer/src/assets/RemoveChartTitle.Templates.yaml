@@ -1,0 +1,71 @@
+- Intents:
+  - RemoveChartTitle
+  Templates:
+  - erase the {target} of the chart.
+  - remove {target}
+  - delete {target}
+  - remove the {target} from the chart
+  - remove {target} from chart.
+  - remove the {target}.
+  - remove {target}
+  - remove the {target}.
+  - delete {target} from chart
+  - please delete the name of chart
+  - remove chart {target}
+  - remove the {target} of the chart
+  - remove {target} from chart.
+  - remove {target}
+  - delete the {target} of the chart
+  - remove the {target}
+  - remove {target} and extend chart.
+  - remove the {target} in the graph.
+  - remove the {target}
+  - remove the {target} heading from the graph
+  - remove the {target} from this chart
+  - the chart is formed from a - f
+  - remove the {target} of the graph
+  - delete header.
+  - remove the heading on the chart
+  - some values are increasing and some of them are decreasing
+  - remove {target} of chart
+  - remove the {target} of the chart.
+  - remove the {target} from the chart.
+  - delete the {target}
+  - remove {target}
+  - remove {target} of chart
+  - hide chart {target}
+  - take away the {target}.
+  - remove chart {target}
+  - remove {target}
+  - remove the {target} from my chart
+  - remove {target} from graph
+  - remove the {target}
+  - remove the {target} from the chart
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - title
+
+- Intents:
+  - RemoveChartTitle
+  Templates:
+  - remove the {target} {text}
+  - remove the {text} {target} from top of the chart.
+  - delete {text} from top
+  - remove the {target} {text}
+  - take off the label {text}
+  - remove the {target} {text}
+  - duplicate chart, remove {text}
+  - remove the {target} {text}.
+  - remove {text} from the top of the chart.
+  - remove {text} from data chart
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - title
+  - Name: text
+    EntityType: String
+    Templates:
+    - <string>

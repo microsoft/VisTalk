@@ -1,0 +1,57 @@
+- Intents:
+  - Highlight
+  Templates:
+  - '{filter} highlighted in {color}'
+  - '{filter} only highlighted in {color}'
+  - Emphasize all {field} {filter} in {color}
+  - Emphasize {filter} in {color}
+  - Emphasize highest negative in {color}
+  - Emphasized change in letter {filter} in {color}
+  - Highlight bar "{filter}".
+  - highlight bar {filter} in {color}
+  - Highlight bar {filter}, change the color to {color}.
+  - Highlight bottom {color} color
+  - Highlight {filter}
+  - highlight {filter} in {color}
+  - Highlight data for {filter} {color}
+  - HIGHLIGHT FOR {color} COLOUR
+  - Highlight the 3rd bar in {color} to portray its importance.
+  - highlight the bar for the letter {filter}
+  - Highlight the {filter} bar with {color} color
+  - Highlight the {filter} data point in {color}.
+  - HIGHLIGHT THE LETTER {filter}
+  - Highlight the letter {filter} in {color}
+  - Highlight the lowest bar under zero {color}.
+  - Highlight the most negative value by {color} color.
+  - Highlight the second inverted bar in {color} color.
+  - Highlight third bar in {color} color
+  - Highlight third bar value in {color}
+  - Highlight value {filter} in {color}
+  - highlighted {filter} is {color} colour
+  - Highlighted single bar in {color}
+  - Highlighted single event in {color}
+  - Highlighted the {filter} column in {color}.
+  - in below 0 the second line of graph is to be highlight with {color} colour
+  - Only highlight bar {filter} in {color}
+  - Only highlight negative bar ({filter}) in {color}.
+  Parameters:
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>

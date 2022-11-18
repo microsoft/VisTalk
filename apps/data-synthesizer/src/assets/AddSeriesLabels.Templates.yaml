@@ -1,0 +1,72 @@
+- Intents:
+  - AddSeriesLabels
+  Templates:
+  - abbreviate each graphed company.
+  - Add {series} name labels to the right side of the graph
+  - Add {series} names on graph lines
+  - Add a label to each trendline
+  - Add {series} names to each line
+  - Add business name labels to the right side of the graph
+  - Add color-coded {series} name
+  - add company name
+  - Add company names on graph lines
+  - Add data labels to the lines
+  - add descriptor labels to each line
+  - Add label to show {series} name
+  - add labels
+  - Add labels for each line on the right.
+  - Add labels for the stock ticker for each company at the end of each line on the graph.
+  - add labels to each line on graph
+  - Add labels to the chart groups by each line.
+  - add names of the stocks to the graph
+  - Add stock ticker symbols to associated lines on chart
+  - Add the {series} abbreviation at the right end of each line in the same color as the line.
+  - Add the ticker at the end of each series
+  - Add the name for each trend line.
+  - Add the name of the graphs at the end point of each one
+  - Add the name of the stocks to the chart.
+  - Add the stock ticker at the end of each series on its current price.
+  - Add ticker labels to each chart line
+  - Added ticker symbols to data line
+  - Append the company's abbreviation, in the matching color code.
+  - Display {series} titles and names
+  - Display {series} abbreviation name
+  - Emphasize each {series} in a different color
+  - Label {series} names
+  - label each charted line with {series}
+  - Label each graph line on the right side of the graph.
+  - Label each line
+  - Label each line graph with the abbreviation of the {series} in the corresponding line's color.
+  - Label each line with a {series} on the right
+  - label each line with corresponding {series}
+  - Label each line with name of {series}
+  - Label each line with the {series} ticker
+  - Label each line with the corresponding {series}.
+  - Label graph lines
+  - Label line with stock ticker.
+  - Label lines at line endpoint.
+  - label lines with {series} names
+  - Label {series} names
+  - Label the chart lines on the right by color
+  - Label the {series} trends with their abbreviated names
+  - Label the four separate lines of data points.
+  - Label the series next to each line
+  - Label the stock symbols next to each line
+  - Label the time series with their abbreviated names
+  - Label with color code each individual curve in the graph.
+  - Labeled each line on line graph with {series} name.
+  - Labelled each {series}
+  - mention the graph names to the chart
+  - Name the line accordingly
+  - Please label graph lines with identification.
+  - Please label line graph to corresponding ticker symbols.
+  - The name is given clearly
+  - the name was given to the bars
+  - the names are given for {series}
+  - show the highlighted {series} name in different color
+  Parameters:
+  - Name: series
+    EntityType: DataField
+    Templates:
+    - <measure>
+    - <column>

@@ -1,0 +1,73 @@
+- Intents:
+  - IncreaseMargin
+  Templates:
+  - create white space to the {position} the {chart}.
+  - organize the graphic on the {position} of the page
+  - having thicker margins on the {position}.
+  - added a {border}
+  - added a {border} to this {chart}
+  - set large margins and {position} alignment
+  - graph redirection in the {position} area of the image
+  - move the chart to {position} corner
+  - show the chart in {position} of the page
+  - move the chart to the {position} of the page
+  - framed chart
+  - frame this {chart}
+  - corner the chart
+  - corner this {chart}
+  - move the chart to a lower position on the page.
+  - chart moved down and to the {position}
+  - move the chart to the {position} hand corner of the page.
+  - shrink the size of the chart and place it at the {position} of the window
+  - longer and wider on {position} of the chart
+  - add wider white {border} to the chart
+  - move chart to the {position} corner of the {border}.
+  - move the chart to the {position} corner.
+  - double the white area around the chart and move it to the {position} corner
+  - move the chart to the {position} of a larger white space.
+  - expand the blank box surrounding the chart
+  - position the chart so that it appears in the {position} corner of the box.
+  - increase the size of the box containing the graph
+  - move the graph all the way to the {position} corner.
+  - add a bounding box with white background and equal {border} on each side of the graph
+  - outside box of chart have changed and git bigger
+  - add a {bigger} {border}
+  - update the {chart} with extra {border}
+  - move the chart to the centre
+  - give empty space around the chart
+  - add free zone near the chart
+  - surround the graph with a box
+  - change the {chart} to a larger template
+  - increase the {position} margins of the chart.
+  - moved it {position} more
+  - add {border} to the {chart}
+  - added {border}
+  - added {border}
+  - add a {bigger} {border}
+  - add {bigger} {border}
+  - add {bigger} {border}
+  Parameters:
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: position
+    EntityType: None
+    Templates:
+    - bottom right
+    - right bottom
+    - left and above
+    - bottom right
+    - bottom left
+    - top and left
+  - Name: bigger
+    EntityType: None
+    Templates:
+    - bigger
+    - larger
+  - Name: border
+    EntityType: None
+    Templates:
+    - border
+    - frame
+    - margin

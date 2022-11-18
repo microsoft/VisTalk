@@ -1,0 +1,376 @@
+- Intents:
+  - HighlightOutlier
+  Templates:
+  - emphasized variable in {color}
+  - change lone dot in upper right to {color}.
+  - change the outlier dot color to {color}.
+  - outlier in {color}
+  - change the more scattered or deviated point color into {color}.
+  - highlighted the one data point that not similar with other in {color}.
+  - change anomaly dot in top right colors to {color}.
+  - highlight the extreme outliers.
+  - highlight {color} circle color
+  - change outlier color to {color}
+  - the outlier data point colour is changed in {color}
+  - outlier on scatter plot colored {color}
+  - turn the outlier dot {color}
+  - change outlier point to {color}.
+  - color outlier data point in {color}
+  - emphasize outliers in {color}
+  - highlight outlying integers in {color}
+  - highlight anomalies
+  - mark in {color} the data point that represents midway between the two extremes.
+  - the above 30 are indicated as {color} colour
+  - change color of outlying point to {color}
+  - change the color of any significant outliers to {color}
+  - color the outlier data point {color}
+  - highlight anomaly in {color}
+  - highlight the outlier data point as {color}
+  - highlight the individual plot point lying on y axis with {color} colour
+  - highlight the isolated dot in {color} color.
+  - make the furthest outlier above 150 {color}.
+  - misaligned engine data point performance
+  - highlight the outlier
+  - emphasize dot separately from the others
+  - change the color of the furthest outlying data point to {color}.
+  - spotted {color}
+  - highlight the outlier in {color}
+  - highlight outliers in {color}
+  - change outlier dot to {color}
+  - change the color of the most outlier plot point to {color}
+  - change the outlier color to {color}.
+  - color outlier {color}.
+  - color outliers {color}.
+  - color the outlier circle in {color}
+  - highlight an individual data point in {color} colour.
+  - highlight furthest outlier in {color}
+  - highlight outlier data points in {color}
+  - highlight outlier on graph
+  - highlight outlier point in {color}
+  - highlight the data point furthest from the pattern {color}.
+  - highlight the least conforming point.
+  - indicate an outlier in {color}.
+  - make outliers {color}
+  - mark the outlier in {color}.
+  - please change the anomaly to {color}.
+  - recolor the outliers with {color}
+  - emphasize variables in {color}
+  - changed the isolated dot in the upper right corner to {color}.
+  - changed outlier dot color to {color}.
+  - outliers in {color}
+  - changed more scattered or deviated point color to {color}.
+  - highlight one data point different from the others with {color}.
+  - changed outliers for top right color to {color}.
+  - highlight extreme outliers.
+  - change exception color to {color}
+  - data point color changed in {color}
+  - unusual color {color} on scatterplot
+  - rotation point {color}
+  - changed individual rings between 40 and 40 to {color}
+  - changed (150,33) points to {color}.
+  - color outlier data points in {color}
+  - highlight unusual integers in {color}
+  - marked with {color} to represent data points in the middle between the two extremes.
+  - 30 and above are represented as {color} colors
+  - horsepower represented by {color} in the figure
+  - change the color of outliers to {color}
+  - colorize anomalous data points {color}
+  - highlight exceptions in {color}
+  - highlight outlier data points as {color}
+  - use {color} colors to highlight individual plot points on the y-axis
+  - highlight outliers in {color} color.
+  - make the farthest outlier more than 150 {color}.
+  - highlight outliers
+  - emphasize that dots are separated from others
+  - change the color of the farthest peripheral data points to {color}.
+  - spots {color}
+  - changed outliers to {color}
+  - changed color of most outliers to {color}
+  - changed outlier color to {color}.
+  - color outlier circles in {color}
+  - highlight individual data point in {color} color.
+  - highlight furthest outliers in {color}
+  - highlight outliers on the graph
+  - highlight contour points in {color}
+  - highlight the most non-conforming points.
+  - represents an outlier in {color}.
+  - make outlier {color}
+  - flag outliers in {color}.
+  - please change the exception to {color}.
+  - recolor outliers with {color}
+  Parameters:
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+    - average
+    - min
+    - max
+    - count
+    - distinct count
+    - median
+
+- Intents:
+  - Highlight
+  Templates:
+  - '{verb} {filter}' # higlight ford sales
+  - '{verb} {filter} {aggr}' # higlight ford sales
+  - '{verb} {filter} {aggregation} {aggr}' # highlight ford total sales
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - highlight
+    - emphasize
+    - stand out
+    - stick out
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+    - average
+    - min
+    - max
+    - count
+    - distinct count
+    - median
+
+- Intents:
+  - Highlight
+  Templates:
+  - color data points in {color} with y greater than {greaterThan} and x greater than {greaterThan}
+  - highlight top graph in {color} color
+  - highlight the graph area between {greaterThanOrEqual} and {lessThanOrEqual} in a {color} color
+  - highlight when sum of count began declining
+  - highlight the section from {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the data area between {greaterThanOrEqual} and {lessThanOrEqual}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}.
+  - highlight the value for the period {greaterThanOrEqual} - {lessThanOrEqual} in {color}.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the graph starting in {greaterThanOrEqual} to {lessThanOrEqual} in {color}.
+  - highlight graph from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the years {greaterThanOrEqual} through {lessThanOrEqual} in {color}
+  - highlight dates between {greaterThanOrEqual} and {lessThanOrEqual}.
+  - highlight area of the chart between {greaterThanOrEqual} and {lessThanOrEqual}
+  - please paint chart from {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the section between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - select data from {greaterThanOrEqual} to {lessThanOrEqual} and highlight in {color}.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight {greaterThanOrEqual} through {lessThanOrEqual} with an {color} color
+  - highlight the date range from {greaterThanOrEqual} to {lessThanOrEqual} in dark {color}
+  - highlight the chart from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlights top {top_n} {field} in {color}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the {greaterThanOrEqual} to {lessThanOrEqual} data in {color} color.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the sum amount from {greaterThanOrEqual} to {lessThanOrEqual}
+  - show {greaterThanOrEqual} through {lessThanOrEqual} in {color}.
+  - highlight the results from {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight data between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - highlight {greaterThanOrEqual} - {lessThanOrEqual} graph mentioned in {color} color
+  - highlight the area between {greaterThanOrEqual} and {lessThanOrEqual} in {color}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the sum of count from {greaterThanOrEqual} to {lessThanOrEqual} in {color} color.
+  - highlight the best selling month
+  - highlight the months between {greaterThanOrEqual} and {lessThanOrEqual} and turn the highlighted parts {color}.
+  - highlight the section from {greaterThanOrEqual} to {lessThanOrEqual}
+  - values in {greaterThanOrEqual}-{lessThanOrEqual} in highlighted in {color} color
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight the {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the timespan between {greaterThanOrEqual} and {lessThanOrEqual} in {color}.
+  - highlight between {greaterThanOrEqual} and {lessThanOrEqual}
+  - highlight the section from {greaterThanOrEqual} through {lessThanOrEqual}.
+  - highlight the data from {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight the portion between {greaterThanOrEqual} and {lessThanOrEqual} of the graph in {color}.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual}.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight middle of data in {color}
+  - highlight {greaterThanOrEqual} through {lessThanOrEqual} {color}.
+  - highlight in {color} from {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the time between {greaterThanOrEqual} and {lessThanOrEqual} in {color} color
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}.
+  - from june {greaterThanOrEqual} to {lessThanOrEqual}, highlight in {color} color
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color}
+  - highlight in {color} {greaterThanOrEqual}-{lessThanOrEqual}
+  - highlight the area from {greaterThanOrEqual} - {lessThanOrEqual}
+  - highlight the period between {greaterThanOrEqual} and {lessThanOrEqual}
+  - highlight the dates between {greaterThanOrEqual} and {lessThanOrEqual} in {color}.
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual} in {color} color
+  - highlight {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight the data between the date of {greaterThanOrEqual} and {lessThanOrEqual}
+  - highlight the graph in {greaterThanOrEqual} to {lessThanOrEqual}
+  - highlight sum of count between {greaterThanOrEqual} and {lessThanOrEqual}.
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - highlight
+    - emphasize
+    - stand out
+    - stick out
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: greaterThan
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+
+- Intents:
+  - Highlight
+  Templates:
+  - '{verb} from {greaterThanOrEqual} to {lessThanOrEqual} in {color}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - highlight
+    - emphasize
+    - stand out
+    - stick out
+  - Name: greaterThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: lessThanOrEqual
+    EntityType: Filter
+    Templates:
+    - <number>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+
+- Intents:
+  - Highlight
+  Templates:
+  - '{verb} {filter} {split} {filter}' # highlight ford, bmw
+  - '{verb} {filter} {split} {filter} {split} {filter}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - highlight
+    - emphasize
+    - stand out
+    - stick out
+  - Name: split
+    EntityType: None
+    Templates:
+    - ','
+    - and
+    -
+  - Name: filter
+    EntityType: Filter
+    Templates:
+    - <value>
+
+- Intents:
+  - Highlight
+  Templates:
+  - '{verb} {top} {top_n} {field}' # higlight top 2 brand
+  - '{verb} {top} {top_n} {field} by {aggr}' # higlight top 2 brand by sales
+  - '{verb} {top} {top_n} {field} by {aggregation} of {aggr}' # higlight top 2 brand by sum of sales
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - highlight
+    - emphasize
+    - stand out
+    - stick out
+  - Name: top
+    EntityType: None
+    Templates:
+    - top
+    - highest
+  - Name: top_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: field
+    EntityType: DataField
+    Templates:
+    - <column>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
+  - Name: aggregation
+    EntityType: DataAggregation
+    Templates:
+    - sum
+    - average
+    - min
+    - max
+    - count
+    - distinct count
+    - median
+
+- Intents:
+  - Highlight
+  Templates:
+  - '{verb} {bottom} {bottom_n} {aggr}'
+  Parameters:
+  - Name: verb
+    EntityType: None
+    Templates:
+    - highlight
+    - emphasize
+    - stand out
+    - stick out
+  - Name: bottom
+    EntityType: None
+    Templates:
+    - bottom
+    - lowest
+  - Name: bottom_n
+    EntityType: Number
+    Templates:
+    - <number>
+  - Name: aggr
+    EntityType: DataField
+    Templates:
+    - <measure>
