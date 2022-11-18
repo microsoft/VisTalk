@@ -161,45 +161,6 @@
     - <UNK>
     - <string>
 
-#- Intents:
-#  - SetColor
-#  Templates:
-#  - '{verb} color {prep_color} {color}'
-#  - '{verb} {target} with {color} color'
-#  - '{verb} {target} {prep_color} {color}'
-#  - '{verb} color {prep_target} {target} {prep_color} {color}'
-#  Parameters:
-#  - Name: verb
-#    EntityType: None
-#    Templates:
-#    - set
-#    - specify
-#  - Name: prep_color
-#    EntityType: None
-#    Templates:
-#    - in
-#    - with
-#    - using
-#  - Name: prep_target
-#    EntityType: None
-#    Templates:
-#    - for
-#    - of
-#  - Name: color
-#    EntityType: Color
-#    Templates:
-#    # basic color will not bind to <color> to avoid conflict
-#    - <color>
-#  - Name: target
-#    EntityType: ChartComponentType
-#    Templates:
-#    - chart title
-#    - {target}
-#    - bars
-#    - line series
-#    - {target}
-#    - background
-
 - Intents:
   - SetColor
   Templates:
@@ -280,3 +241,444 @@
     EntityType: Color
     Templates:
     - <color>
+
+- Intents:
+  - SetColor
+  Templates:
+  - change the gradient colors across the lines.
+  - use gradient colour to indicate items
+  - higher color intensity on higher values
+  - shade the graph from {from} to {color}
+  - change the color of the chart to {color}
+  - change the colors of chart
+  - add gradiant and legend
+  - the system should use colour fading to tabulate as used in chart
+  - apply color gradient to {chart} light to deep
+  - change the colors of the chart
+  - mark the rise and fall and show difference using shades of same colors
+  - change {chart} to gradient fill
+  - switch row/column and add a legend on the right side
+  - colour code the values on the {from} spectrum
+  - indicate x axis values by color change
+  - paint the chart with gradient colors.
+  - change it to a shade {from} colour chart
+  - add a gradient from a to i
+  - change chart to gradient labels
+  - modify color to shade
+  - add data labels for different a's they have.
+  - make a colour coded {chart}.
+  - apply shades of {from} from a through i, lighter to dark shades.
+  - put a shade on chart
+  - show each alphabet values
+  - only color is the difference with these chart
+  - add a fade to the charts colour
+  - add color gradient to data and add legend
+  - change the shade of {from} of each value of a
+  - use color scale {from}
+  - change colors to degrade
+  - 'change color of the columns: from a light {from} to i dark {from}'
+  - make the {chart} color graded
+  - create a gradient for the graph from a-i
+  - colour the columns in the {chart} different shades of {from} from lightest to darkest
+  - change to a chart with captions
+  - use different huses of {color}.
+  - provide gradual color change from lighter shades to darker shade
+  - use {from} color from light to dark in the {chart}
+  - change to variegated color
+  - change full colored {chart} into gradient {chart}
+  - change the chart from one color to multi-colored
+  - create a color gradient along the x-axis.
+  - change the colors to fade from light {from} to bright {from}.
+  - change the color includes the labels
+  - change the color to a color gradient
+  - add color gradation for x axis.
+  - changing color is different
+  - change color fillings into different tones of {from}
+  - add a gradient of colour across the chart.
+  - change chart color with gradient and show x axis legend
+  - change color scheme to gradient
+  - change the color scheme for the {chart} to be a gradation
+  - change the colors to a gradient following the progression of the a axis
+  - change style of chart to a horizontal gradient
+  - change the color, set a different shade of {from} for each column. from clearer to darker {from}.
+  - make the fill ombre from light {from} to dark {from}
+  - give each {target} it's own shade of {from} and add a legend on the right.
+  - less brightness
+  - change shade of {chart} from a to i in increasing order
+  - show a color gradient for a to i, with a being the {color} color
+  - the colour has more lighter get it to dark
+  - assign different shade of {from} to section a:i
+  - change the chart design with same type.
+  - change the color of the graph
+  - add gradiant
+  - the system should use colour fading to tabulate as used in chart
+  - apply color gradient to chart {from} to {color}
+  - change graph to gradient fill
+  - colour code the values on the {color} spectrum
+  - change it to a shade {color} colour chart
+  - add data labels for different as they have.
+  - make a colour coded chart
+  - apply shades of {color} from a through i, lighter to dark shades.
+  - change the shade of {color} of each value of a
+  - use color scale {color}
+  - change color of the columns from a {from} to {color}
+  - colour the columns in the chart different shade from {from} to {color}
+  - use different huses of {color}
+  - use {color} color from {from} to {color} in the chart
+  - change full coloured chart into gradient {chart}
+  - change the chart from one color to {color}
+  - change the colors to fade from {from} to {color}.
+  - change the color includes the labels
+  - change color fillings into different tones of {color}
+  - change into same colour
+  - change the color set a different shade of {color} for each column
+  - make the fill ombre from {from} to {color}
+  - give each {target} it's own shade of {color}
+  - change shade of chart from a to i in increasing order
+  - the colour has more lighter get it to {color}
+  - change the colors from left to {color}
+  - assign different shade of {color}
+  - change the entire graph in different colors.
+  - colour coding to chart
+  - use color in the items
+  - change the color from {from} to multi-color as indicated to the key
+  - change color for chart
+  - change the chart colors
+  - mark the rise and fall and show difference using different colors
+  - change {chart} to multiple color scheme
+  - switch row/column and add a legend on the right hand side
+  - colour code the {chart} values
+  - add color as x values.
+  - make the chart colorful
+  - change it to a colorful {chart}
+  - make all the data different color
+  - change chart to random color labels
+  - modify color
+  - make them different colors
+  - make chart colour coded with colour key
+  - recolor my chart into random color
+  - change colors of each column and add legend to the chart
+  - change chart with different colored value from a to i
+  - give each columns a different colour
+  - use colorful color scale
+  - make it colorful
+  - every columns have to be in a different color
+  - color code x axis values in {chart}
+  - create a rainbow variance for the {chart}.
+  - colour in the column values in different bright color
+  - change to a color chart with captions
+  - change to a colorful chart.
+  - specific colors for each references
+  - use multiple colors in the {chart}
+  - changing the color of the legend
+  - change colors to multi-color
+  - change mono color {chart} to multi color {chart}
+  - keep a through i the same color
+  - change the chart blocks from {from} to multi-colored
+  - change items a through i to different colors.
+  - change the colors include labels
+  - give each column a different color
+  - assign random colors to all entries on x axis
+  - color differences easily shows value
+  - make all columns by different colors
+  - second chart is colour is the only difference
+  - give each {target} a different colour
+  - change  into same colour
+  - change chart to multicolor and show x axis legend
+  - change color scheme to mixed colors
+  - have different colors for each item for the a axis and show the the color label
+  - assign a color to each element on the a axis
+  - change the color of each column
+  - make each column a different color
+  - make each {target} it's own colour
+  - change to different colors
+  - change the colour of second chart into {from}
+  - change the colors by categories
+  - assign random colour
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - data point
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+   
+- Intents:
+  - SetColor
+  Templates:
+  - show the chart with different color for each {target}
+  - use different {target} colors
+  - '{target} color change'
+  - give differ color to each {target}.
+  - change the {from} coloured  {chart} to coloured {chart}s, each {target} of different color.
+  - change {target} diagram to colors representing {target} diagram
+  - give each {target} a different color
+  - make each {target} have a different color.
+  - the values are same but {target} color is change
+  - change mark of {target} to {target} with color
+  - colour every {target} in the chart with a different color
+  - change the colors of the each {target} in to unique colors.
+  - make different color in {target}
+  - apply different colors to each {target} of the chart
+  - change the {from} color of the {target} to a colorful one
+  - random colors for each {target}
+  - colour each {target} of the {chart} differently
+  - '{target} colour change'
+  - the {target} colour changein light to {color}
+  - change the color of the {target} to {color}
+  - show the chart with gradient color for each {target}
+  - change {target} diagram to color differences {target}
+  - give each {target} a different shade
+  - change mark from {target} to line
+  - the {target} colour changein light to dark
+  - better to change the {target} highlights.
+  - change the color of the {target} to gradient ramp
+  - change mark of {target} to {target} with color variation
+  - change the colors from left to right
+  - change {target} colors gradient
+  - display each category in the {target} plot with a different color
+  - change the colors of the {target} to individual colors per {target}
+  - color code the {target} of a to i
+  - use the same data but color in different colors for the {target} for a-i and add a colored key to show what each one represents.
+  - colour data {target} random
+  - change {target} color to a rainbow
+  - add a key to the graph showing different colors in different {target}
+  - put colors on {target}
+  - change the {from} colour of the {target} to {color}
+  - change the color scheme for the {target} to be a gradation
+  - change the {target} to various shades of {color} increasing slowly in depth of color
+  - change the dark {from} colour of the {target} to gradient {from} effect.
+  - use same data and the same {target} but shade in differently, start with light color, then shade to darker colors as you proceed to i. make a colored key for a-i showing each color of {from}.
+  - change color of {target} and provide a legend for each colour
+  - rainbow the saturation of {target} color
+  - show {target} in different shades
+  - use gradient to color the {target} from a to i
+  - add key to the graph to show different colors in {target}
+  - modify the chart so that the {target} go from light to dark as the go from a to i
+  - change the colors of the {target}
+  - make colour difference in {target}
+  - change the {target} to various shades of {from} increasing slowly in depth of color
+  - make the {target} lighter shaded
+  - highlight the recent {target}.
+  - darken the data {target} left to right
+  - make {target} alternative color and add legend
+  - add color to the chart.
+  - colorize {target} with different color all.
+  Parameters:
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - bar
+
+- Intents:
+  - SetColor
+  Templates:
+  - Change the color of the {chart} from {from} to {color}.
+  - change the chart {color}
+  - Change color to {color}
+  - The color changed from {from} to {color}.
+  - colour makes confusion, give look and feel colour
+  - changed the color
+  - Set bar {from} to {color}
+  - Change from {from} to {color} in the graph bars
+  - Change the chart color to {color}
+  - remove the {from} and add {from} to the chart
+  - Change the bar colour to {color}
+  - change the colour to {color}
+  - changed color from {from} to {color}
+  - this chart are change the color
+  - Change the bar coloring from {from} to {color}.
+  - change the chart color to {from} to {color}
+  - color of chart changed from {from} to {color}
+  - Change the chart color from {from} to {color}.
+  - Change the color of the area under the {chart} from {from} to {color}
+  - color change on right chart
+  - Change colour to {color}
+  - change the {from} areas to {color}.
+  - change the chart's color from {from} to {color}
+  - Change the color of the bars to {color}.
+  - Change the color of the bar data from {from} to {color}.
+  - switch to the color series chart.
+  - Change the color of the area from {from} to {color}.
+  - Change the chart color {from}
+  - Change the chart other colour
+  - Change color to {color}.
+  - Change the color of the bars to {color}
+  - Change the color of the bars from {from} to {color}
+  - bar changed color from {from} to {color}
+  - Change the color to {color}
+  - Change the bar colour to {color}
+  - Change the histogram color to {color}
+  - change color to {color}
+  - Change color of the chart from {from} into {color}
+  - the right chart modified about {color} colour.
+  - switch the chart colour {from} to {color}
+  - Display the graph in {color}
+  - change the colour of the chart
+  - Change the colour of the fill on the chart from {from} to {color}.
+  - color changed to {color}
+  - Change the bar color from {from} to {color}.
+  - Change {target} color from {from} to {color}
+  - Change the bar color to {color}
+  - show {chart} in {color}.
+  - Changed the bars colors in {color}
+  - Change all the bar colors from {from} to {color}
+  - change the color of all of the bars on the chart from {from} to {color}
+  - change the color {from} to {color}
+  - make color {color} to attracts the {chart}.
+  - make the bars {color}
+  - Change the color of the graph from {from} to {color}.
+  - Change the colour of the bars from {from} to {color}.
+  - Change the {chart} color to {color}
+  - Change the {chart} color from {from} into {color}.
+  - color of the chart has been changed
+  - Highlight all bar in {color} color
+  - Change graph color from back to {color}
+  - Change the bars from {from} to {color}.
+  - Switch to {color} bars.
+  - Highlight all bars in {from} color
+  - change the bar color to {color}.
+  - Change the bar colour to {color}.
+  - Highlight all bar in {color} color
+  - Highlight all bars {color}.
+  - Turn all of the bars on the graph {color}.
+  - Change {chart} color to {color}.
+  - Change graph bars to {color}.
+  - Change all bar colors to bright {color}
+  - Change the bar colors to {color}
+  - Change color scheme from {from} to {color}
+  - Change the bar color to {color}.
+  - Changes bars to {color}.
+  - highlight in {color}
+  - change {chart} color to {color}
+  - highlight all bars {color}
+  - Change graph color to {color}
+  - color change
+  - Please change bar color from {from} to {color}
+  - Change the {chart} colour from {from} to {color}.
+  - Change all bars from {from} to {color}.
+  - change colour of the bar to {color}
+  - change the color of the bars on the chart to {color}
+  - Change the color of all bars to {color}
+  - colour columns {color}
+  - Highlight top 1 bar in {color} color
+  - "Highlight with {color} color to all bar"
+  - replace the color of the bars to {color}
+  - Change all bars to {color}
+  - change the color to {color}
+  - color all bars in {color} color
+  - use {color} as the color of the bars
+  - Change bar color to {color}
+  - Change the bars colors to {color}.
+  - emphasize {color} bars on graph
+  - Change the {chart} color to {color}.
+  - Change the color of the graph from {from} to {color}.
+  - Change the color of the bars from {from} to {color}.
+  - Highlight all bars in {color}
+  - Turn the bars {color}.
+  - change the bar color to {color}
+  - All the bars are highlighted in {color} color
+  - Color is changed to {color}
+  - Apply {color} color to the chart
+  - change color to {color}
+  - Change the bar colour to {color}
+  - Highlight everything in {color}
+  - Change the color of the Bars to {color}.
+  - Change all the bars to {color}.
+  - show {color} bars reveals accuracy.
+  - Show letter frequencies in {color}.
+  - Make bars {color}
+  - '{from} bars are replaced by {color} colour bars.'
+  - the bar was changed to {from} to {color}
+  - change chart fill to {color}
+  - Change the color of the bars.
+  - Bright {color} color is highlighted
+  - make all the bars {color}
+  - change {chart} color to {color}
+  - Change the color of the {chart} from {from} to {color}.
+  - change the chart {from}
+  - Change color to {color}
+  - The color changed from {from} to {color}.
+  - colour makes confusion, give look and feel colour
+  - changed the color
+  - Chart 2 color is different from chart 1
+  - Set bar color to {color}
+  - Change from {from} to {color} in the graph bars
+  - Change the chart color to {color}
+  - make a good alignment on the bars
+  - remove the {from} and add {color} to the chart
+  - Change the bar colour to {color}
+  - change the colour to {color}
+  - this chart are change the color
+  - Change the bar coloring from {from} to {color}.
+  - change the chart color to {from} to {color}
+  - color of chart changed from {from} to {color}
+  - Change the chart color from {from} to {color}.
+  - Change the color of the area under the {chart} from {from} to {color}
+  - color change on right chart
+  - Change colour to {color}
+  - Change the light {from} areas on the graph to {color}
+  - change the chart's color from {from} to {color}
+  - Change the color of the bars to {color}.
+  - Change the color of the bar data from {from} to {color}.
+  - switch to the color series chart.
+  - Change the color of the area from {from} to {color}.
+  - Change the chart color {color}
+  - Change the chart other colour
+  - Change color to {color}.
+  - Change the color of the bars to {color}
+  - Change the color of the bars from {from} to {color}
+  - bar changed color from {from} to {color}
+  - Change the color to {color}
+  - Change the bar colour to {color}
+  - Change the histogram color to {color}
+  - change color to {color}
+  - Change color of the chart from {from} into {color}
+  - encode the line for easy view
+  - the right chart modified about {color} colour.
+  - switch the chart colour {from} to {color}
+  - Display the graph in {color}
+  - change the colour of the chart
+  - CHANGE THE COLOUR OF THE chart
+  - Change the colour of the fill on the chart from {from} to {color}.
+  - color changed to {color}
+  - Change the bar color from {from} to {color}.
+  Parameters:
+  - Name: target
+    EntityType: ChartComponentType
+    Templates:
+    - data point
+  - Name: from
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: color
+    EntityType: Color
+    Templates:
+    - <color>
+  - Name: chart
+    EntityType: ChartType
+    Templates:
+    - <visual>
