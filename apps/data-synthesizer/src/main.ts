@@ -1,7 +1,7 @@
 import { fstat, readdirSync, readFileSync, writeFileSync } from 'fs';
 import { parse, stringify } from 'yaml';
 import { ParameterEntity, tokenize } from '@vis-talk/interpreter';
-import { orderBy } from 'lodash';
+import { orderBy, uniq } from 'lodash';
 import { EOL } from 'os';
 import { resolve } from 'path';
 
@@ -91,7 +91,6 @@ function getParam(replaceCandidates: string[], randIdx: number) {
 const dir = resolve(__dirname,
   '..', '..', '..', 'apps', 'data-synthesizer', 'src', 'assets');
 
-console.log(dir);
 const dataset = new Array<string>();
 const tagNames = new Set<string>();
 const intentNames = new Set<string>();
@@ -195,14 +194,17 @@ for (const ent of readdirSync(dir)) {
   }
 }
 
-const data_all = dataset;
+console.log("original size " + dataset.length);
+const uniq_dataset = uniq(dataset);
+console.log("uniq size " + uniq_dataset.length);
+const data_all = uniq_dataset;
 const data_train = new Array<string>();
 const data_test = new Array<string>();
-for (let i = 0; i < data_all.length; i++) {
-  if (i % 3 === 0) {
-    data_test.push(data_all[i]);
-  } else {
+for (let i = 0; i < uniq_dataset.length; i++) {
+  if (i % 3 !== 0 || data_all[i].split(' ').length < 10) {
     data_train.push(data_all[i]);
+  } else {
+    data_test.push(data_all[i]);
   }
 }
 
@@ -217,7 +219,8 @@ const intentNameSorted = orderBy(Array.from(intentNames), (x) => x).map(
 const savePath = resolve(__dirname,
   '..', '..', '..', 'libs', 'dataset', 'assets');
 
-writeFileSync(resolve(savePath, 'data_all.txt'), dataset.join(EOL) + EOL);
+console.log('saved to ' + savePath);
+writeFileSync(resolve(savePath, 'data_all.txt'), data_all.join(EOL) + EOL);
 writeFileSync(resolve(savePath, 'data_train.txt'), data_train.join(EOL) + EOL);
 writeFileSync(resolve(savePath, 'data_test.txt'), data_test.join(EOL) + EOL);
 writeFileSync(resolve(savePath, 'tag_list.txt'),

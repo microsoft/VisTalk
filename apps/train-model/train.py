@@ -223,7 +223,9 @@ params = {
 
 model = VisTalkModel(params)
 tags_loss_object = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='none')
-
+# model.compile(optimizer='adam',
+#               loss=tags_loss_object,
+#               metrics=['accuracy'])
 def tags_loss_function(y_true, y_pred, loss_fn):
     loss = loss_fn(y_true, y_pred)
     mask = tf.cast((y_true > 0), dtype=tf.float32)
@@ -375,23 +377,24 @@ for epoch in range(epochs):
     for (batch, input) in enumerate(train_dataset):
         train_step(input)
 
-    tag_f1_train, intent_train = calculate_metrics(train_dataset)
-    tag_f1_val, intent_val = calculate_metrics(val_dataset)
+    # tag_f1_train, intent_train = calculate_metrics(train_dataset)
+    # tag_f1_val, intent_val = calculate_metrics(val_dataset)
     with train_summary_writer.as_default():
         tf.summary.scalar('loss', train_loss.result(), step=epoch)
         tf.summary.scalar('accuracy', tags_acc.result(), step=epoch)
-        tf.summary.scalar('f1', tag_f1_train, step=epoch)
-        tf.summary.scalar('intent', intent_train, step=epoch)
+        # tf.summary.scalar('f1', tag_f1_train, step=epoch)
+        # tf.summary.scalar('intent', intent_train, step=epoch)
         
-        
-    for (batch, input) in enumerate(val_dataset):
-        test_step(input)
+    if epoch % 10 == 0:
+        for (batch, input) in enumerate(val_dataset):
+            test_step(input)
 
-    with test_summary_writer.as_default():
-        tf.summary.scalar('loss', test_loss.result(), step=epoch)
-        tf.summary.scalar('accuracy', tags_test_acc.result(), step=epoch)
-        tf.summary.scalar('f1', tag_f1_val, step=epoch)
-        tf.summary.scalar('intent', intent_val, step=epoch)
+        tag_f1_val, intent_val = calculate_metrics(val_dataset)
+        with test_summary_writer.as_default():
+            tf.summary.scalar('loss', test_loss.result(), step=epoch)
+            tf.summary.scalar('accuracy', tags_test_acc.result(), step=epoch)
+            tf.summary.scalar('f1', tag_f1_val, step=epoch)
+            tf.summary.scalar('intent', intent_val, step=epoch)
 
     print(f'Epoch {epoch + 1} train_loss {train_loss.result():.4f} test_loss {test_loss.result():.4f} train acc {tags_acc.result():.4f}  test acc {tags_test_acc.result():.4f}', flush=True)
 

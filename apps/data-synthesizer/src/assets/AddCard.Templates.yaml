@@ -3,7 +3,6 @@
   - BindY
   Templates:
   - '{verb} {det} {chart} {aggr}' # add card sales
-  - '{verb} {det} {chart} {aggregation} {aggr}' # add min sales
   Parameters:
   - Name: verb
     EntityType: None
@@ -23,23 +22,12 @@
     EntityType: DataField
     Templates:
     - <measure>
-  - Name: aggregation
-    EntityType: DataAggregation
-    Templates:
-    - sum
-    - average
-    - min
-    - max
-    - count
-    - distinct count
-    - median
 
 - Intents:
   - SetChartType
   - BindY
   Templates:
   - '{verb} {det} {chart} {filter} {aggr}' # add card ford sales
-  - '{verb} {det} {chart} {filter} {aggregation} {aggr}' # add card ford total sales
   - 'add {chart} {filter} {aggr}' # add card ford sales
   Parameters:
   - Name: verb
@@ -63,24 +51,12 @@
     EntityType: DataField
     Templates:
     - <measure>
-  - Name: aggregation
-    EntityType: DataAggregation
-    Templates:
-    - sum
-    - average
-    - min
-    - max
-    - count
-    - distinct count
-    - median
-
 
 - Intents:
   - SetChartType
   - BindY
   Templates:
   - '{verb} {det} {chart} {filter} {aggr}' # add card ford sales
-  - '{verb} {det} {chart} {filter} {aggregation} {aggr}' # add card ford total sales
   Parameters:
   - Name: verb
     EntityType: None
@@ -105,13 +81,3 @@
     EntityType: DataField
     Templates:
     - <measure>
-  - Name: aggregation
-    EntityType: DataAggregation
-    Templates:
-    - sum
-    - average
-    - min
-    - max
-    - count
-    - distinct count
-    - median

@@ -13,7 +13,8 @@
     "test": "nx run-many --target=test --all=true",
     "package": "nx run-many --target=package --all=true",
     "e2e": "nx run-many --target=e2e --all=true",
-    "train": "nx run train-model:train"
+    "train": "nx run train-model:train",
+    "tensorboard": "python -m tensorboard.main --logdir=apps/train-model/logs/gradient_tape/"
   },
   "private": true,
   "dependencies": {

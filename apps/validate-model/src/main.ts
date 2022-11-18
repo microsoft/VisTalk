@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { getBackend } from '@tensorflow/tfjs-node';
 import { getModel } from '@vis-talk/interpreter';
 import { last } from 'lodash';
@@ -9,6 +9,7 @@ console.log(`Tensorflow Backend ${ getBackend() }`);
 console.time('validate-model');
 const files = ['data_all', 'data_train', 'data_test'];
 const dir = resolve(__dirname, '..', '..', '..', 'libs', 'dataset', 'assets');
+const logDir = __dirname;
 
 for (const file of files) {
   const data_all = readFileSync(resolve(dir, `${file}.txt`)).toString();
@@ -65,8 +66,10 @@ for (const file of files) {
       v.push(line);
       v.push(' -- ' + actual);
       groups.set(intent, v);
-      items.push(line + '/' + actual);
-      items.push(actual);
+      items.push(line)
+      items.push("Expected: " + expected);
+      items.push("Actual  : " + actual);
+      items.push('---');
     }
   }
   console.log(
@@ -77,5 +80,6 @@ for (const file of files) {
       ' % ' +
       correct / lines.length
   );
+  writeFileSync(resolve(logDir, file + '_wrong.txt'), items.join(EOL) + EOL);
 }
 console.timeEnd('validate-model');
