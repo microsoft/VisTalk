@@ -94,9 +94,9 @@ const dir = resolve(__dirname,
 const dataset = new Array<string>();
 const tagNames = new Set<string>();
 const intentNames = new Set<string>();
+let countOfTemplates = 0;
 for (const ent of readdirSync(dir)) {
   const file = resolve(dir, ent);
-  console.log(file);
   const yaml = readFileSync(file).toString();
   const templates = parse(yaml) as Template[];
   for (const template of templates) {
@@ -104,6 +104,7 @@ for (const ent of readdirSync(dir)) {
     const entities = new Set<string>();
     const intent = template.Intents.sort().join(',');
     intentNames.add(intent);
+
     let repeat = 1;
     if (template.Parameters) {
       for (const p of template.Parameters) {
@@ -123,6 +124,9 @@ for (const ent of readdirSync(dir)) {
       }
     }
     for (const t of template.Templates) {
+
+      countOfTemplates++;
+      
       const tokens = tokenize(t);
       const counts = new Array<number>();
       const parameters = tokens
@@ -219,6 +223,7 @@ const intentNameSorted = orderBy(Array.from(intentNames), (x) => x).map(
 const savePath = resolve(__dirname,
   '..', '..', '..', 'libs', 'dataset', 'assets');
 
+console.log('total templates: ' + countOfTemplates);
 console.log('saved to ' + savePath);
 writeFileSync(resolve(savePath, 'data_all.txt'), data_all.join(EOL) + EOL);
 writeFileSync(resolve(savePath, 'data_train.txt'), data_train.join(EOL) + EOL);
