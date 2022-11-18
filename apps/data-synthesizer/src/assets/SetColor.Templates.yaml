@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT license.
+
 # SetColor - specifies the intention to set the color of a given component of the chart.
 # The target component may or may not be explicitily mentioned.
 # Expected Entities:
@@ -258,16 +261,15 @@
   - mark the rise and fall and show difference using shades of same colors
   - change {chart} to gradient fill
   - switch row/column and add a legend on the right side
-  - colour code the values on the {from} spectrum
+  - colour code the values using {color}
   - indicate x axis values by color change
   - paint the chart with gradient colors.
-  - change it to a shade {from} colour chart
+  - change it to a shade {color} colour chart
   - add a gradient from a to i
   - change chart to gradient labels
   - modify color to shade
   - add data labels for different a's they have.
   - make a colour coded {chart}.
-  - apply shades of {from} from a through i, lighter to dark shades.
   - put a shade on chart
   - show each alphabet values
   - only color is the difference with these chart
@@ -301,7 +303,7 @@
   - change the colors to a gradient following the progression of the a axis
   - change style of chart to a horizontal gradient
   - change the color, set a different shade of {from} for each column. from clearer to darker {from}.
-  - make the fill ombre from light {from} to dark {from}
+  - make the fill ombre from light {from} to {color}
   - give each {target} it's own shade of {from} and add a legend on the right.
   - less brightness
   - change shade of {chart} from a to i in increasing order
@@ -392,7 +394,7 @@
   - make each column a different color
   - make each {target} it's own colour
   - change to different colors
-  - change the colour of second chart into {from}
+  - change the colour of the chart into {color}
   - change the colors by categories
   - assign random colour
   Parameters:
@@ -501,7 +503,7 @@
   - The color changed from {from} to {color}.
   - colour makes confusion, give look and feel colour
   - changed the color
-  - Set bar {from} to {color}
+  - Set bar from {from} to {color}
   - Change from {from} to {color} in the graph bars
   - Change the chart color to {color}
   - remove the {from} and add {from} to the chart
@@ -510,7 +512,6 @@
   - changed color from {from} to {color}
   - this chart are change the color
   - Change the bar coloring from {from} to {color}.
-  - change the chart color to {from} to {color}
   - color of chart changed from {from} to {color}
   - Change the chart color from {from} to {color}.
   - Change the color of the area under the {chart} from {from} to {color}
@@ -522,7 +523,7 @@
   - Change the color of the bar data from {from} to {color}.
   - switch to the color series chart.
   - Change the color of the area from {from} to {color}.
-  - Change the chart color {from}
+  - Change the chart color {color}
   - Change the chart other colour
   - Change color to {color}.
   - Change the color of the bars to {color}
@@ -558,7 +559,7 @@
   - Change graph color from back to {color}
   - Change the bars from {from} to {color}.
   - Switch to {color} bars.
-  - Highlight all bars in {from} color
+  - Highlight all bars in {color} color
   - change the bar color to {color}.
   - Change the bar colour to {color}.
   - Highlight all bar in {color} color

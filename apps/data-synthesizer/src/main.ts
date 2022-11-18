@@ -1,5 +1,8 @@
-import { fstat, readdirSync, readFileSync, writeFileSync } from 'fs';
-import { parse, stringify } from 'yaml';
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
+import { readdirSync, readFileSync, writeFileSync } from 'fs';
+import { parse } from 'yaml';
 import { ParameterEntity, tokenize } from '@vis-talk/interpreter';
 import { orderBy, uniq } from 'lodash';
 import { EOL } from 'os';
