@@ -32,5 +32,5 @@ export function testAndScreenshot(input: string[]) {
   cy.get('.vega-embed').should('exist');
 
   // cy.screenshot();
-  cy.get('.vega-embed').screenshot(input.join(', '));
+  cy.get('.vega-embed').screenshot(input.join(', ').replace(/[^a-zA-Z0-9]/g, '_'));
 }

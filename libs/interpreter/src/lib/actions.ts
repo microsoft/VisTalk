@@ -6,7 +6,6 @@ import { DataProvider } from './data';
 
 /**
  * Convert intent and sequence label/entities to EditAction.
- *
  * @export
  * @param {DataProvider} dataProvider data provider/context.
  * @param {string} intent model predicted intent name

@@ -103,7 +103,7 @@ const tests = [
       "B-aggr O B-field",
   ],
   [
-      "histogram of sales",
+      "distribution of sales",
       "BindX,SetChartType",
       "B-chart O B-aggr",
   ],
@@ -153,9 +153,9 @@ const tests = [
       "O O O O O O O B-color O",
   ],
   [
-      "make data point larger",
+      "please make the data point larger",
       "IncreaseDataPointWidth",
-      "O O O O",
+      "O O O O O O",
   ],
   [
       "modify it to add more range for the sales",
