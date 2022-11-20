@@ -11,6 +11,16 @@ import tensorflow_addons as tfa
 from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score
 
+epochs = 120
+batch_size = 32
+params = {
+    'num_layers': 2,
+    'dim': 64,
+    'ff_dim':  64,
+    'n_heads': 2,
+    'dropout': 0.15,
+}
+
 def to_dict(f):
     return dict([(x[0], int(x[1])) for x in [r.strip().split(' ') for r in open(f, "r").readlines()]])
 
@@ -26,8 +36,6 @@ num_words = 1 + max([int(x[1]) for x in [r.strip().split(' ') for r in
     open(dataset_path + "word_list.txt", "r").readlines()]])
 num_intents = len(intent2index)
 vocab_size = num_words
-epochs = 120
-batch_size = 32
 
 def get_word_id(word):
     return word2index[word] if word in word2index else word2index["<UNK>"]
@@ -213,14 +221,6 @@ class VisTalkModel(tf.keras.Model):
         intent = self.intent(state)
         return tags_logits, intent
 
-params = {
-    'num_layers': 2,
-    'dim': 64,      # 256,
-    'ff_dim': 64,   # 256,
-    'n_heads': 2,
-    'dropout': 0.15,
-}
-
 model = VisTalkModel(params)
 tags_loss_object = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='none')
 # model.compile(optimizer='adam',
@@ -285,7 +285,7 @@ def train_step(features):
         loss_tags = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=tags, logits=tags_logits)
         mask = tf.cast(mask, dtype=loss_tags.dtype)
         loss_tags *= mask
-        loss += tf.reduce_sum(loss_tags)/tf.reduce_sum(mask)
+        #loss += tf.reduce_sum(loss_tags)/tf.reduce_sum(mask)
         true_intents = features['intents']
         loss += tf.nn.sparse_softmax_cross_entropy_with_logits(labels=true_intents, logits=intent_logits)
 
