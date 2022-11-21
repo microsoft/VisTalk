@@ -11,6 +11,15 @@ import tensorflow_addons as tfa
 from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score
 
+
+epochs = 150
+params = {
+    'num_layers': 4,
+    'dim': 64,      # 256,
+    'ff_dim': 64,   # 256,
+    'n_heads': 2,
+    'dropout': 0.15,
+}
 def to_dict(f):
     return dict([(x[0], int(x[1])) for x in [r.strip().split(' ') for r in open(f, "r").readlines()]])
 
@@ -26,7 +35,6 @@ num_words = 1 + max([int(x[1]) for x in [r.strip().split(' ') for r in
     open(dataset_path + "word_list.txt", "r").readlines()]])
 num_intents = len(intent2index)
 vocab_size = num_words
-epochs = 150
 batch_size = 32
 
 def get_word_id(word):
@@ -177,12 +185,13 @@ class VisTalkModel(tf.keras.Model):
         self.ff_dim = params['ff_dim']
         self.num_heads = params['n_heads']
         self.num_layers = params['num_layers']
-        
-        self.token_emb = tf.keras.layers.Embedding(input_dim=num_words, output_dim=self.embed_dim)
+
+        self.token_emb = tf.keras.layers.Embedding(
+            input_dim=num_words, output_dim=self.embed_dim)
         self.pos_encoding = positional_encoding(max_len, self.embed_dim)
-        self.transformer_blocks_0 = TransformerBlock(self.embed_dim, self.num_heads, self.ff_dim)
-        self.transformer_blocks_1 = TransformerBlock(self.embed_dim, self.num_heads, self.ff_dim)
-   
+        self.transformer_blocks = [TransformerBlock(
+            self.embed_dim, self.num_heads, self.ff_dim) for _ in range(self.num_layers)]
+
         self.dropout0 = tf.keras.layers.Dropout(self.dropout)
         self.dropout1 = tf.keras.layers.Dropout(self.dropout)
         self.dropout2 = tf.keras.layers.Dropout(self.dropout)
@@ -201,25 +210,19 @@ class VisTalkModel(tf.keras.Model):
         x = self.dropout0(x, training=training)
 
         mask = create_padding_mask(inputs)
-        x = self.transformer_blocks_0(x, mask, training=training)
-        x = self.transformer_blocks_1(x, mask, training=training)
+        for i in range(self.num_layers):
+            x = self.transformer_blocks[i](x, mask, training=training)
 
         x0 = x
         x = self.dropout1(x, training=training)
+
+        x = self.relu_dense(x)
         tags_logits = self.ff_final(x)
 
         state = self.gap1d(x0)
         state = self.dropout2(state, training=training)
         intent = self.intent(state)
         return tags_logits, intent
-
-params = {
-    'num_layers': 2,
-    'dim': 64,      # 256,
-    'ff_dim': 64,   # 256,
-    'n_heads': 2,
-    'dropout': 0.15,
-}
 
 model = VisTalkModel(params)
 tags_loss_object = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='none')
@@ -318,7 +321,7 @@ def test_step(features):
     loss += tf.nn.sparse_softmax_cross_entropy_with_logits(labels=true_intents, logits=intent_logits)
     test_loss(loss)
 
-def calculate_metrics(dataset):
+def calculate_metrics(dataset, report=False):
     true_s = []
     pred_s = []
     true_intents_a = []
@@ -353,7 +356,8 @@ def calculate_metrics(dataset):
             intent_acc.append(1 if true_intent == pred_intent else 0)
 
     # print(len)
-    # print(classification_report(true_s, pred_s))
+    if report:
+        print(classification_report(true_s, pred_s))
     intent = np.average(intent_acc)
     slot_f1 = f1_score(true_s, pred_s, average='micro')
     return slot_f1, intent
@@ -396,6 +400,10 @@ for epoch in range(epochs):
             tf.summary.scalar('f1', tag_f1_val, step=epoch)
             tf.summary.scalar('intent', intent_val, step=epoch)
 
+        tag_f1_train, intent_train = calculate_metrics(train_dataset)
+        tag_f1_val, intent_val = calculate_metrics(val_dataset, True)
+        print(f'Epoch {epoch + 1} tag_f1_train {tag_f1_train:.4f} intent_train {intent_train:.4f} tag_f1_val {tag_f1_val:.4f} intent_val {intent_val:.4f}', flush=True)
+
     print(f'Epoch {epoch + 1} train_loss {train_loss.result():.4f} test_loss {test_loss.result():.4f} train acc {tags_acc.result():.4f}  test acc {tags_test_acc.result():.4f}', flush=True)
 
     it_acc = intent_acc.result()
@@ -406,11 +414,6 @@ for epoch in range(epochs):
     if acc > best_acc:
         best_acc = acc
         save = True
-
-    # if epoch % 10 == 0:        
-    #     tag_f1_train, intent_train = calculate_metrics(train_dataset)
-    #     tag_f1_val, intent_val = calculate_metrics(val_dataset)
-    #     print(f'train f1 {tag_f1_train:.4f} intent {intent_train:.4f} / val f1 {tag_f1_val:.4f} intent {intent_val:.4f}')
 
     if save:
         ckpt_save_path = ckpt_manager.save()
