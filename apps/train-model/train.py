@@ -14,11 +14,11 @@ from seqeval.metrics import f1_score
 
 epochs = 150
 params = {
-    'num_layers': 4,
+    'num_layers': 2,
     'dim': 64,      # 256,
     'ff_dim': 64,   # 256,
     'n_heads': 2,
-    'dropout': 0.15,
+    'dropout': 0.5,
 }
 def to_dict(f):
     return dict([(x[0], int(x[1])) for x in [r.strip().split(' ') for r in open(f, "r").readlines()]])
@@ -194,7 +194,7 @@ class VisTalkModel(tf.keras.Model):
 
         self.dropout0 = tf.keras.layers.Dropout(self.dropout)
         self.dropout1 = tf.keras.layers.Dropout(self.dropout)
-        self.dropout2 = tf.keras.layers.Dropout(self.dropout)
+        #self.dropout2 = tf.keras.layers.Dropout(self.dropout)
         #self.dropout3 = tf.keras.layers.Dropout(self.dropout)
         self.gap1d = tf.keras.layers.GlobalAveragePooling1D()
         # self.layer_norm = tf.keras.layers.LayerNormalization(epsilon=1e-6)
@@ -215,12 +215,11 @@ class VisTalkModel(tf.keras.Model):
         for i in range(self.num_layers):
             x = self.transformer_blocks[i](x, mask, training=training)
 
-        x0 = x
         x = self.dropout1(x, training=training)
         tags_logits = self.ff_final(x)
 
-        state = self.gap1d(x0)
-        state = self.dropout2(state, training=training)
+        state = self.gap1d(x)
+        # state = self.dropout2(state, training=training)
         intent = self.intent(state)
         return tags_logits, intent
 
