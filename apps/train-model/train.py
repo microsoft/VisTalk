@@ -195,7 +195,9 @@ class VisTalkModel(tf.keras.Model):
         self.dropout0 = tf.keras.layers.Dropout(self.dropout)
         self.dropout1 = tf.keras.layers.Dropout(self.dropout)
         self.dropout2 = tf.keras.layers.Dropout(self.dropout)
+        #self.dropout3 = tf.keras.layers.Dropout(self.dropout)
         self.gap1d = tf.keras.layers.GlobalAveragePooling1D()
+        # self.layer_norm = tf.keras.layers.LayerNormalization(epsilon=1e-6)
         self.ff_final = tf.keras.layers.Dense(num_tags, name='tags')
         self.intent = tf.keras.layers.Dense(num_intents, activation=None)
         self.transition_params = tf.Variable(tf.random.uniform(shape=(num_tags, num_tags)), name="crf")
@@ -215,8 +217,6 @@ class VisTalkModel(tf.keras.Model):
 
         x0 = x
         x = self.dropout1(x, training=training)
-
-        x = self.relu_dense(x)
         tags_logits = self.ff_final(x)
 
         state = self.gap1d(x0)
