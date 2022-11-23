@@ -13,12 +13,13 @@ from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score
 
 
+batch_size = 32
 epochs = 151
 params = {
     'num_layers': 2,    # 4: % 0.9445 vs 0.93
     'dim': 64,      # 256,
     'ff_dim': 64,   # 256,
-    'n_heads': 2,
+    'n_heads': 4,
     'dropout': 0.5,
 }
 def to_dict(f):
@@ -36,7 +37,6 @@ num_words = 1 + max([int(x[1]) for x in [r.strip().split(' ') for r in
     open(dataset_path + "word_list.txt", "r").readlines()]])
 num_intents = len(intent2index)
 vocab_size = num_words
-batch_size = 32
 
 def get_word_id(word):
     return word2index[word] if word in word2index else word2index["<UNK>"]
