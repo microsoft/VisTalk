@@ -6,15 +6,16 @@ import time
 import os
 import functools
 import tensorflow as tf
+from tensorflow import keras
 import datetime
 import tensorflow_addons as tfa
 from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score
 
 
-epochs = 150
+epochs = 151
 params = {
-    'num_layers': 2,
+    'num_layers': 2,    # 4: % 0.9445 vs 0.93
     'dim': 64,      # 256,
     'ff_dim': 64,   # 256,
     'n_heads': 2,
@@ -219,6 +220,8 @@ class VisTalkModel(tf.keras.Model):
         tags_logits = self.ff_final(x)
 
         state = self.gap1d(x)
+        # x = self.dropout1(state, training=training)
+        #state = self.layer_norm(state)
         # state = self.dropout2(state, training=training)
         intent = self.intent(state)
         return tags_logits, intent
@@ -363,6 +366,7 @@ def calculate_metrics(dataset, report=False):
 
 best_acc = 0
 best_tag_f1_val = 0
+best_intent_val = 0
 best_intent = 0
 best_total = 0
 start = time.time()
@@ -388,16 +392,22 @@ for epoch in range(epochs):
         # tf.summary.scalar('f1', tag_f1_train, step=epoch)
         # tf.summary.scalar('intent', intent_train, step=epoch)
         
-    if epoch % 10 == 0:
+    save = False
+    if epoch % 5 == 0:
         for (batch, input) in enumerate(val_dataset):
             test_step(input)
 
         tag_f1_val, intent_val = calculate_metrics(val_dataset)
-        with test_summary_writer.as_default():
-            tf.summary.scalar('loss', test_loss.result(), step=epoch)
-            tf.summary.scalar('accuracy', tags_test_acc.result(), step=epoch)
-            tf.summary.scalar('f1', tag_f1_val, step=epoch)
-            tf.summary.scalar('intent', intent_val, step=epoch)
+        if tag_f1_val > best_tag_f1_val and intent_val > best_intent_val:
+            best_tag_f1_val = tag_f1_val
+            best_intent_val = intent_val
+            save = True
+            
+            with test_summary_writer.as_default():
+                tf.summary.scalar('loss', test_loss.result(), step=epoch)
+                tf.summary.scalar('accuracy', tags_test_acc.result(), step=epoch)
+                tf.summary.scalar('f1', tag_f1_val, step=epoch)
+                tf.summary.scalar('intent', intent_val, step=epoch)
 
         tag_f1_train, intent_train = calculate_metrics(train_dataset)
         tag_f1_val, intent_val = calculate_metrics(val_dataset, True)
@@ -412,7 +422,6 @@ for epoch in range(epochs):
     acc = tags_acc.result()
     if acc > best_acc:
         best_acc = acc
-        save = True
 
     if save:
         ckpt_save_path = ckpt_manager.save()
