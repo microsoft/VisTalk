@@ -1,7 +1,6 @@
 <img src="https://microsoft.github.io/VisTalk/vistalk-icon.svg" width="64px" align="left" style="margin-right: 10px;" /> Vis Talk: A JavaScript toolkit for Natural Language-based Visualization Authoring
 ====
 
-[![CI](https://github.com/microsoft/VisTalk/actions/workflows/node.js.yml/badge.svg)](https://github.com/microsoft/VisTalk/actions/workflows/node.js.yml)
 [![npm version](https://img.shields.io/npm/v/@vis-talk/vega-builder.svg?color=0084ff)](https://www.npmjs.com/package/@vis-talk/vega-builder)
 [![DOI:10.1109/TVCG.2022.3209357](https://zenodo.org/badge/DOI/10.1109/TVCG.2022.3209357.svg)](https://doi.org/10.1109/TVCG.2022.3209357)
 [![arxiv badge](https://img.shields.io/badge/arXiv-2208.10947-red)](https://arxiv.org/abs/2208.10947)
